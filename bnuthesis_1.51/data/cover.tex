@@ -1,0 +1,56 @@
+% !Mode:: "TeX:UTF-8"
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
+%\secretlevel{绝密} \secretyear{10}
+
+\ctitle{多核芯片的温敏低功耗调度研究}
+%\makeatletter
+%\cdegree{博士}
+
+\makeatother
+
+\cauthor{闫佳琪}
+\csupervisor{骆祖莹\;副教授}
+\cdepartment[]{信息科学与技术学院}
+\cmajor{通信与信息系统}
+\cnum{201121210009}
+\cdate{\the\year  年 \the\month  月}
+
+\etitle{On Temperature and Power Management for MPSoC}
+
+% 定义中英文摘要和关键字
+\begin{cabstract}
+
+% CJC paper abstract
+  实时功耗温度管理（DPTM）通过对任务的准确预测与合理调度，可以有效地降低片上系统的运行能耗与峰值温度。 为了获得更好的DPTM调度效果，本文提出了一种精确的组合式任务预测算法和一种任务调度算法VP-TALK， 进而构建了一个完整的DPTM原型系统。 为了对复杂任务进行精确地任务预测，本文DPTM系统先将复杂任务按频谱长短分类为随机/周期/趋势等三种成分， 然后采用灰色模型/傅里叶模型/径向基函数（RBF）神经网络模型对这三种成分进行组合分析， 以获得精确的预测效果；基于精确预测的任务负载量， 本文所提出的VP-TALK算法可以计算出最优电压-频率对的理想值， 进而选择出两组与理想值相邻的电压-频率对、以获得两个现实的工作状态， 并考虑核心温度和任务实时性的条件，VP-TALK算法将任务负载分配到这两个工作状态， 以获得最优的DPTM效果；最后基于机器学习方法，我们综合四种源算法、构建了一套完整的DPTM原型系统。 
+  实验结果表明：
+  本文系统的任务预测组合方法的平均误差仅为2.89\%；
+  在相同的设定峰值温度约束下，与已有调度算法的能耗值相比，尽管假设了更为敏感的功率-温度影响关系， 但对于较高的工作负载率，本文所提出的VP-TALK调度算法仍能够获得平均14.33\%的能耗降低；
+  本文所提出DPTM原型系统可以获得接近于理想的能耗优化效果;
+
+
+  多核片上系统(MPSoC)的低功耗设计与实时功耗温度管理(DPTM)是目前重要的研究问题。 本文采用了自下而上的建模方法对MPSoC结构级热分析方法进行了研究，提出了三种具有不同算法复杂度与精度的热分析方法： 模块级方法BloTAM、核级方法CorTAM、考虑本核内模块相互影响的改良核级方法BiCorTAM， 均具有简单、高效、与现有简化模型兼容、易于扩展、能够解决温度对漏电流的影响等优点。 
+  
+  实验数据表明：
+  对核数较多MPSoC进行热分析的时候，CorTAM算法的复杂度低但精度也低，BloTAM算法的精度高但复杂度也高， 而BiCorTAM则具有算法复杂度低和精度高的优点，其中局部热点的温度增量平均误差可以控制在3\%以下， 热分析的速度实现了50倍以上的分析加速，两者均是较为理想的结构级热分析方法;
+  采用增量式的建模方法，本文方法可以快速进行用于降低热点温度的MPSOC布图规划;
+
+
+\end{cabstract}
+
+\ckeywords{实时功耗管理；实时温度管理；任务调度；热分析；多核片上系统；布图规划}
+
+\begin{eabstract}
+
+   Optimal Dynamic Power and Temperature Management (DPTM) methods can effectively cut down the soaring power consumption and alleviate the problem of chip temperature. In order to get better scheduling results, this paper mainly accomplish three things. First, with principles derived from analyzing three previous methods as thumb rules, we obtain an improved DPTM algorithm, named VP-TALK, that carefully schedule the processor's running and dormant behaviors. Besides, we propose a combined predicting model. It may predict the workload on the chip so as to draw out optimal but unpractical frequency (F) and voltage (V). This F \& V pair decides two distinct pairs of F \& V, with which VP-TALK schedules the processor according to both the core temperature and remaindering work load. Finally, combining the workload prediction method and four DPTM algorithms, we further build a DPTM control system. Even though our model assume a tighter and more sensitive relationship between energy and temperature, experiments show that: 1) the workload prediction's error is as less as 2.89\%; 2) under even more tough assumptions about thermal and power interrelation and the same peak temperature ceiling value, our proposed DPTM algorithm gains averagely 14.33\% energy saving comparing to previous algorithms when the workload ratio is comparatively high; 3) comprehensive DPTM control system's managing effect is near to the most ideal one.
+
+
+   Efficient thermal analysis plays a key role in the temperature-aware floorplan design for MultiProcessor System-on-Chip (MPSoC) and DPTM. This paper adopts bottom-up modeling method to study architecture-level MPSoC thermal analysis method. First extract relative thermal resistance between functional modules with HotSpot software, then, based on these parameters, we propose three analysis methods with different accuracy and algorithm complexity: Block-level Temperature Analysis Method (BloTAM), Core-level Temperature Analysis Method (CorTAM) and Block Improved Core Temperature Analysis Method (BiCorTAM). Experiment shows that BloTAM and BiCorTAM substantially reduce the time for MPSoC thermal analysis with guarantee of accurancy: speedup as high as 100 times is achieved with average temperature delta error as low as 3\%. Both are ideal system-level analysis method.
+
+\end{eabstract}
+
+\ekeywords{Dynamic Power Management, Dynamic Temperature Management, Thermal Analysis, Task Scheduling, MPSoC, Architecture level}
+

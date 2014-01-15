@@ -1,0 +1,25 @@
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.6)  7 JAN 2014 09:59
+entering extended mode
+**E:/YJQ/GraduateSchoolThesis/bnuthesis_1.51/bnuthesis_1.51/data/cover.tex
+(E:/YJQ/GraduateSchoolThesis/bnuthesis_1.51/bnuthesis_1.51/data/cover.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for loaded.
+! Undefined control sequence.
+l.9 \ctitle
+           {多核芯片的温敏低功耗调度研究}
+? 
+! Emergency stop.
+l.9 \ctitle
+           {多核芯片的温敏低功耗调度研究}
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 7 strings out of 495362
+ 266 string characters out of 3184024
+ 44825 words of memory out of 3000000
+ 3272 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 5i,0n,1p,127b,8s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

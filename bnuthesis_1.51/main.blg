@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
+A level-1 auxiliary file: data/chap01.aux
+A level-1 auxiliary file: data/chap02.aux
+The style file: bnubib.bst
+A level-1 auxiliary file: data/paper.aux
+A level-1 auxiliary file: data/ack.aux
+"*" can't follow a literal---line 1002 of file bnubib.bst
+Database file #1: ref/refs.bib
+I was expecting a `,' or a `}'---line 145 of file ref/refs.bib
+ :   
+ :   TITLE = {Leakage-aware Scheduling on Maximal Temperature Minimization for Periodic Hard Real-time Systems},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 207 of file ref/refs.bib
+ :   
+ :   PAGES = {299--306},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 212 of file ref/refs.bib
+ :   
+ :   TITLE = {Thermal-aware Online Task Allocation for 3D Multi-core Processor Throughput Optimization},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 250 of file ref/refs.bib
+ :   AUTHOR 
+ :          = {K. Skadron, M. R. Stan, W. Huang, et al},
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 307 of file ref/refs.bib
+ :   
+ :   PAGES = "501--513",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 315 of file ref/refs.bib
+ :   
+ :   VOLUME = 19,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 365 of file ref/refs.bib
+ :    TITLE 
+ :          = {Wilson L, Mangum S. International Technology Roadmap for Semiconductors (ITRS)},
+I'm skipping whatever remains of this entry
+You can't pop an empty literal stack for entry shaheshang
+while executing---line 1140 of file bnubib.bst
+You can't pop an empty literal stack for entry FistSystem01
+while executing---line 1140 of file bnubib.bst
+(There were 10 error messages)
