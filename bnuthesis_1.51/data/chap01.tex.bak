@@ -4,8 +4,40 @@
 %%% TeX-master: t
 %%% End:
 
-\chapter{带 English 的标题}
+% !Mode:: "TeX:UTF-8"
+
+\chapter{引言}
 \label{cha:intro}
+
+
+\section{研究背景与相关科学问题}
+当前，面向复杂应用的高性能片上系统为了规避和减轻功耗墙（power wall）问题\onlinecite{ThouCrCpTechPer}，延续摩尔定律[2]，采用了两种主要的技术手段。
+
+首先，必须在芯片运行中，通过合理任务调度来降低芯片的运行能耗和峰值工作温度。 因此，对芯片进行实时功耗温度管理(DPTM)的算法研究就具有重要的理论意义与广阔的应用前景，是目前电子设计自动化(EDA)研究的一个热点问题。
+最初为了降低芯片运行功耗、延长设备电池的使用寿命，研究人员提出了运用动态电压调节技术（DVS）对系统动态功耗进行实时功耗管理（DPM）\onlinecite{TheoPracLimofDVS, LkDVSRTEmbSys, TemSchAsgnHdRTApp, TheIntMtLPICDigtDsg}。 然而，随着IC进入纳米工艺，漏电流静态功耗已经超过动态功耗，成为芯片功耗的主要来源，而且漏电流和工作温度之间存在指数关系\onlinecite{TkSchAlgRTLkPowTemOpt, BSIM, TemMngSysHiPerfPPC}，如对于65nm工艺，当温度从60摄氏度增加到80摄氏度，芯片漏电流会增加21\%。
+
+其次，目前IC业界已经普遍采用多核并行计算结构来提升芯片性能（通量）、降低设计复杂度。 采用多核并行计算架构的多核片上系统(MPSoC)带来了热点分散的问题，即每个核都会产生一个局部热点[2]。 为了将MPSoC多个热点的温度控制在一个安全阈值内，必须在设计与运行阶段，以功能模块与处理器核为单位， 对芯片的功耗分布[2-5]与任务调度[6-8]进行优化，为此需要在结构级对芯片进行快速准确的热分析[5-6,10-11]。 鉴于纳米工艺CMOS器件的漏电流随着工作温度的升高而指数增加，漏电流功耗与温度之间存在直接的依赖关系，即电热耦合效应[6]。 为了提高分析的精度，必须在结构级热分析方法研究中考虑电热耦合效应[6-8]。
+
+
+\section{已有研究成果及其缺陷}
+为此，研究人员开始针对微处理器和大型服务器系统进行实时温度管理（DTM）\onlinecite{CtrlTechThemRCMdlAccDTM, TemMicArcMdlImpl, PreDTMMulApp}。 为了对片上系统进行功耗、温度的统一调度与管理，最近开始出现了实时功耗温度管理(DPTM)的研究报道\onlinecite{TemLkMinTechRTSys, EngRTTskSchTemDepLk, TemIdDistEngOptDVS, LkEngMinRTSysMaxTemConst}， 在考虑漏电流、温度相互作用关系和实时任务的时间限制这两个前提下，采用不同的DPTM策略来达到最小化运行能耗的目的。
+在DPTM研究中，为了提高DPTM系统的降温降耗效果，必须对系统的任务负载进行精确的预测， 事实上，任务负载的轻重决定了不同方法的DPTM效果。 目前，任务预测分为在线预测与离线预测两类，其中在线预测的速度快但精度差，而离线预测的速度慢但精度高。
+
+
+
+\section{本文工作及其贡献}
+为了构建一个高效的DPTM系统，本文不仅提出了一种具有高精度的组合式任务预测方法， 而且还提出一种新的DPTM任务调度算法VP-TALK，并进一步集成了一个基于负载预测的DPTM原型系统，该系统主要包括工作负载预测、任务实时调度两大模块。
+（1）基于组合任务预测方法的负载预测模块：根据频率范围，先将对应于复杂应用的任务分为随机/周期/趋势三种组分， 然后采用灰色模型/傅里叶模型/RBF神经网络模型分别对这三种组分进行精确分析，最后将三部分预测结果合成为复杂任务的预测值。
+（2）基于多种调度算法的实时调度模块：先根据对工作负载率的精确预测值、计算出最优工作状态的电压/频率理想值， 再从系统的电压/频率对的实际设定值中选取相邻的两个工作状态，最后考虑系统实时性、温度上限限制、静态功耗与温度的敏感关系以及芯片模式切换代价等多种因素，利用机器学习的方法，选择一种最优的调度策略。
+大量的模拟实验表明，（1）在负载预测方面，本文DPTM系统所采用的组合任务预测方法胜过众多的相关模型及算法，平均误差仅为2.89\%； （2）在节能效果方面，当负载率高于55\%时，基于相同的峰值温度约束， 本文所提出的VP-TALK算法分别比Pattern-based、M-oscillating和TALK对比算法节能约20.5\%、11.0\%、11.5\%； （3）本文DPTM原型系统的调度效果接近于理想调度效果。
+
+
+\section{文章结构安排}
+文章结构安排如下：第二节论述本文研究所使用的系统模型与功耗-温度模型； 第三节简单讨论了若干种已有调度算法的优缺点；第四节介绍本文所提出的VP-TALK算法调度； 第五节介绍本文所提出DPTM原型系统；第六节介绍基于组合模型的工作负载预测模块；第七节给出大量实验验证数据；最后给出结论。
+
+
+
+
 
 这是 \bnuthesis{} 的示例文档，基本上覆盖了模板中所有格式的设置。建议大家在使用模
 板之前，除了阅读《\bnuthesis{}用户手册》，这个示例文档也最好能看一看。
@@ -66,7 +98,7 @@
   离；离者丽也。}
 
 \section{表格样本}
-\label{chap1:sample:table} 
+\label{chap1:sample:table}
 
 \subsection{基本表格}
 \label{sec:basictable}
@@ -112,7 +144,7 @@
    \centering
    \caption{复杂表格示例 1}
    \label{tab:tabexamp1}
-   \begin{minipage}[t]{0.8\textwidth} 
+   \begin{minipage}[t]{0.8\textwidth}
      \begin{tabularx}{\linewidth}{|l|X|X|X|X|}
        \hline
   \multirow{2}* & \multicolumn{2}{c|}{First Half} & \multicolumn{2}{c|}{Second Half}\\\cline{2-5}
@@ -145,7 +177,7 @@
 张旭草书为三绝云。集三十卷。今编诗二十五卷。\hfill\pozhehao《全唐诗》诗人小传
 
 浮动体的并排放置一般有两种情况：1）二者没有关系，为两个独立的浮动体；2）二者隶属
-于同一个浮动体。对表格来说并排表格既可以像图~\ref{tab:parallel1}、图~\ref{tab:parallel2} 
+于同一个浮动体。对表格来说并排表格既可以像图~\ref{tab:parallel1}、图~\ref{tab:parallel2}
 使用小页环境，也可以如图~\ref{tab:subtable} 使用子表格来做。
 \begin{table}[h]
 \noindent\begin{minipage}{0.5\textwidth}
@@ -210,12 +242,12 @@
   \caption{复杂表格示例 2}
   \label{tab:tabexamp2}
   \begin{tabular}[c]{|c|m{0.8in}|c|c|c|c|c|}\hline
-    \multicolumn{2}{|c|}{Network Topology} & \# of nodes & 
+    \multicolumn{2}{|c|}{Network Topology} & \# of nodes &
     \multicolumn{3}{c|}{\# of clients} & Server \\\hline
     GT-ITM & Waxman Transit-Stub & 600 &
-    \multirow{2}{2em}{2\%}& 
-    \multirow{2}{2em}{10\%}& 
-    \multirow{2}{2em}{50\%}& 
+    \multirow{2}{2em}{2\%}&
+    \multirow{2}{2em}{10\%}&
+    \multirow{2}{2em}{50\%}&
     \multirow{2}{1.2in}{Max. Connectivity}\\\cline{1-3}
     \multicolumn{2}{|c|}{Inet-2.1} & 6000 & & & &\\\hline
     \multirow{2}{1in}{Xue} & Rui  & Ni &\multicolumn{4}{c|}{\multirow{2}*{\bnuthesis}}\\\cline{2-3}
@@ -240,7 +272,7 @@
 都是使用 Word 等字处理工具，以为 \LaTeX{}模板的用法也应该类似，所以就沿袭同样的思
 路来对待这种所见非所得的排版工具，结果被折腾的焦头烂额，疲惫不堪。
 
-如果您要排版的表格长度超过一页，那么推荐使用 \textsf{longtable} 或者 \textsf{supertabular} 
+如果您要排版的表格长度超过一页，那么推荐使用 \textsf{longtable} 或者 \textsf{supertabular}
 宏包，模板对 \textsf{longtable} 进行了相应的设置，所以用起来可能简单一些。
 表~\ref{tab:performance} 就是 \textsf{longtable} 的简单示例。
 \begin{longtable}[c]{c*{6}{r}}
@@ -309,7 +341,7 @@ EP.B.8 & 126.74 & 0.003 & 0.017 & 0.005 & 0.083 & 1656 \\
   \label{tab:badtabular}
   \begin{picture}(150,50)
     \framebox(150,50)[c]{\bnuthesis}
-  \end{picture}    
+  \end{picture}
   \end{minipage}\hfill
   \begin{minipage}{0.45\linewidth}
   \centering
@@ -376,7 +408,7 @@ EP.B.8 & 126.74 & 0.003 & 0.017 & 0.005 & 0.083 & 1656 \\
 \begin{remark}
 天不言自高，水不言自流。
 \begin{gather*}
-\begin{split} 
+\begin{split}
 \varphi(x,z)
 &=z-\gamma_{10}x-\gamma_{mn}x^mz^n\\
 &=z-Mr^{-1}x-Mr^{-(m+n)}x^mz^n
@@ -395,7 +427,7 @@ EP.B.8 & 126.74 & 0.003 & 0.017 & 0.005 & 0.083 & 1656 \\
 业。易简，而天下矣之理矣；天下之理得，而成位乎其中矣。
 
 \begin{axiom}
-两点间直线段距离最短。  
+两点间直线段距离最短。
 \begin{align}
 x&\equiv y+1\pmod{m^2}\\
 x&\equiv y+1\mod{m^2}\\
@@ -489,7 +521,7 @@ V_j & = v_j, & \qquad X_j & = x_j,
 \end{conjecture}
 
 \begin{problem}
- 回答还是不回答，是个问题。 
+ 回答还是不回答，是个问题。
 \end{problem}
 
 如何引用定理~\ref{the:theorem1} 呢？加上 \verb|label| 使用 \verb|ref| 即可。妾发
@@ -521,16 +553,16 @@ $p(\mathbf{x})$ 为先验；分母 $p(\mathbf{x})$ 为归一化因子。
 \begin{equation}
 \label{equ:chap1:bayes}
 p(y|\mathbf{x}) = \frac{p(\mathbf{x},y)}{p(\mathbf{x})}=
-\frac{p(\mathbf{x}|y)p(y)}{p(\mathbf{x})} 
+\frac{p(\mathbf{x}|y)p(y)}{p(\mathbf{x})}
 \end{equation}
 
 论文里面公式越多，\TeX{} 就越 happy。再看一个 \textsf{amsmath} 的例子：
-\newcommand{\envert}[1]{\left\lvert#1\right\rvert} 
+\newcommand{\envert}[1]{\left\lvert#1\right\rvert}
 \begin{equation}\label{detK2}
 \det\mathbf{K}(t=1,t_1,\dots,t_n)=\sum_{I\in\mathbf{n}}(-1)^{\envert{I}}
 \prod_{i\in I}t_i\prod_{j\in I}(D_j+\lambda_jt_j)\det\mathbf{A}
 ^{(\lambda)}(\overline{I}|\overline{I})=0.
-\end{equation} 
+\end{equation}
 
 前面定理示例部分列举了很多公式环境，可以说把常见的情况都覆盖了，大家在写公式的时
 候一定要好好看 \textsf{amsmath} 的文档，并参考模板中的用法：

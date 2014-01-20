@@ -6,39 +6,41 @@ A level-1 auxiliary file: data/paper.aux
 A level-1 auxiliary file: data/ack.aux
 "*" can't follow a literal---line 1002 of file bnubib.bst
 Database file #1: ref/refs.bib
-I was expecting a `,' or a `}'---line 145 of file ref/refs.bib
+Repeated entry---line 141 of file ref/refs.bib
+ : @inproceedings{LkDVSRTEmbSys
+ :                             ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 152 of file ref/refs.bib
  :   
  :   TITLE = {Leakage-aware Scheduling on Maximal Temperature Minimization for Periodic Hard Real-time Systems},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 207 of file ref/refs.bib
+Warning--I'm ignoring FreqVolPlMulProThemConst's extra "year" field
+--line 194 of file ref/refs.bib
+I was expecting a `,' or a `}'---line 214 of file ref/refs.bib
  :   
  :   PAGES = {299--306},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 212 of file ref/refs.bib
- :   
- :   TITLE = {Thermal-aware Online Task Allocation for 3D Multi-core Processor Throughput Optimization},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 250 of file ref/refs.bib
+I was expecting a `,' or a `}'---line 257 of file ref/refs.bib
  :   AUTHOR 
- :          = {K. Skadron, M. R. Stan, W. Huang, et al},
+ :          = {Skadron, K. and Stan, M. R. and Huang, W.},
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 307 of file ref/refs.bib
+I was expecting a `,' or a `}'---line 314 of file ref/refs.bib
  :   
  :   PAGES = "501--513",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 315 of file ref/refs.bib
+I was expecting a `,' or a `}'---line 322 of file ref/refs.bib
  :   
  :   VOLUME = 19,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 365 of file ref/refs.bib
+I was expecting a `,' or a `}'---line 372 of file ref/refs.bib
  :    TITLE 
- :          = {Wilson L, Mangum S. International Technology Roadmap for Semiconductors (ITRS)},
+ :          = {Wilson, L. and Mangum, S. International Technology Roadmap for Semiconductors (ITRS)},
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for ""
 You can't pop an empty literal stack for entry shaheshang
 while executing---line 1140 of file bnubib.bst
 You can't pop an empty literal stack for entry FistSystem01
