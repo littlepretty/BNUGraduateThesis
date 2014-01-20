@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.6)  20 JAN 2014 20:26
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.6)  20 JAN 2014 20:42
 entering extended mode
 **C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/main.tex
 (C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/main.tex
@@ -1568,13 +1568,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 15034 strings out of 495362
- 209357 string characters out of 3184024
+ 15036 strings out of 495362
+ 209382 string characters out of 3184024
  289538 words of memory out of 3000000
- 17137 multiletter control sequences out of 15000+200000
+ 17139 multiletter control sequences out of 15000+200000
  161362 words of font info for 466 fonts, out of 3000000 for 9000
  15 hyphenation exceptions out of 8191
- 51i,11n,44p,1535b,1937s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,11n,44p,1535b,1939s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Windows/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf>
 <C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/ch
 inese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/
@@ -1647,7 +1647,7 @@ pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/CTEX/MiKTeX/fonts/t
 ype1/public/txfonts/txtt.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pf
 b><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/
 urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (23 pages, 690991 bytes).
+Output written on main.pdf (23 pages, 691796 bytes).
 PDF statistics:
  989 PDF objects out of 1000 (max. 8388607)
  105 named destinations out of 1000 (max. 500000)
