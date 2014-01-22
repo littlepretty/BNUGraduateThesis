@@ -41,9 +41,5 @@ I was expecting a `,' or a `}'---line 381 of file ref/refs.bib
  :    TITLE 
  :          = {Wilson, L. and Mangum, S. International Technology Roadmap for Semiconductors (ITRS)},
 I'm skipping whatever remains of this entry
-You can't pop an empty literal stack for entry shaheshang
-while executing---line 1140 of file bnubib.bst
-You can't pop an empty literal stack for entry FistSystem01
-while executing---line 1140 of file bnubib.bst
 Warning--empty booktitle in LkSchMaxTemMinPerHdRTSys
-(There were 10 error messages)
+(There were 8 error messages)
