@@ -5,15 +5,16 @@
 \contentsline {section}{\numberline {1.2}已有研究成果及其缺陷}{1}{section.1.2}
 \contentsline {section}{\numberline {1.3}本文工作及其贡献}{2}{section.1.3}
 \contentsline {section}{\numberline {1.4}文章结构安排}{3}{section.1.4}
-\contentsline {section}{\numberline {1.5}封面相关}{4}{section.1.5}
-\contentsline {section}{\numberline {1.6}字体命令}{4}{section.1.6}
-\contentsline {section}{\numberline {1.7}表格样本}{5}{section.1.7}
-\contentsline {subsection}{\numberline {1.7.1}基本表格}{5}{subsection.1.7.1}
-\contentsline {subsection}{\numberline {1.7.2}复杂表格}{6}{subsection.1.7.2}
-\contentsline {subsection}{\numberline {1.7.3}其它}{9}{subsection.1.7.3}
-\contentsline {section}{\numberline {1.8}定理环境}{10}{section.1.8}
-\contentsline {section}{\numberline {1.9}参考文献}{13}{section.1.9}
-\contentsline {section}{\numberline {1.10}公式}{13}{section.1.10}
+\contentsline {section}{\numberline {1.5}手册}{3}{section.1.5}
+\contentsline {section}{\numberline {1.6}封面相关}{4}{section.1.6}
+\contentsline {section}{\numberline {1.7}字体命令}{4}{section.1.7}
+\contentsline {section}{\numberline {1.8}表格样本}{5}{section.1.8}
+\contentsline {subsection}{\numberline {1.8.1}基本表格}{5}{subsection.1.8.1}
+\contentsline {subsection}{\numberline {1.8.2}复杂表格}{5}{subsection.1.8.2}
+\contentsline {subsection}{\numberline {1.8.3}其它}{9}{subsection.1.8.3}
+\contentsline {section}{\numberline {1.9}定理环境}{10}{section.1.9}
+\contentsline {section}{\numberline {1.10}参考文献}{13}{section.1.10}
+\contentsline {section}{\numberline {1.11}公式}{14}{section.1.11}
 \contentsline {chapter}{2\hspace {1em} 基于任务精确预测的实时功耗温度管理}{15}{chapter.2}
 \contentsline {section}{\numberline {2.1}实时系统的工作负载模型}{15}{section.2.1}
 \contentsline {section}{\numberline {2.2}实时系统的热分析模型}{15}{section.2.2}
@@ -24,23 +25,23 @@
 \contentsline {subsection}{\numberline {2.4.3}M-Oscillating算法（简称MO算法）}{16}{subsection.2.4.3}
 \contentsline {subsection}{\numberline {2.4.4}对已有算法的评估}{16}{subsection.2.4.4}
 \contentsline {section}{\numberline {2.5}基于电压预测的TALK算法：VP-TALK}{17}{section.2.5}
-\contentsline {section}{\numberline {2.6}DPTM原型系统}{17}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}启发性示例}{17}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}基于机器学习的DPTM原型系统}{17}{subsection.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}基于单一调度策略的DPTM原型系统}{17}{subsection.2.6.3}
-\contentsline {section}{\numberline {2.7}其它例子}{17}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}绘图}{17}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}插图}{17}{subsection.2.7.2}
-\contentsline {subsubsection}{\numberline {2.7.2.1}一个图形}{18}{subsubsection.2.7.2.1}
-\contentsline {chapter}{参考文献}{20}{section*.17}
-\contentsline {chapter}{附录\nobreakspace {} 1\hspace {1em} 外文资料原文}{24}{appendix.A}
-\contentsline {section}{\numberline { 1.1}Single-Objective Programming}{24}{section.A.1}
-\contentsline {subsection}{\numberline { 1.1.1}Linear Programming}{25}{subsection.A.1.1}
-\contentsline {subsection}{\numberline { 1.1.2}Nonlinear Programming}{26}{subsection.A.1.2}
-\contentsline {chapter}{附录\nobreakspace {} 2\hspace {1em} 外文资料的调研阅读报告或书面翻译}{27}{appendix.B}
-\contentsline {section}{\numberline { 2.1}单目标规划}{27}{section.B.1}
-\contentsline {subsection}{\numberline { 2.1.1}线性规划}{27}{subsection.B.1.1}
-\contentsline {subsection}{\numberline { 2.1.2}非线性规划}{28}{subsection.B.1.2}
-\contentsline {chapter}{附录\nobreakspace {} 3\hspace {1em} 其它附录}{29}{appendix.C}
-\contentsline {chapter}{学术成果}{30}{section*.28}
-\contentsline {chapter}{致谢}{31}{section*.30}
+\contentsline {section}{\numberline {2.6}DPTM原型系统}{18}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}启发性示例}{18}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}基于机器学习的DPTM原型系统}{18}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}基于单一调度策略的DPTM原型系统}{19}{subsection.2.6.3}
+\contentsline {section}{\numberline {2.7}其它例子}{20}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}绘图}{20}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}插图}{20}{subsection.2.7.2}
+\contentsline {subsubsection}{\numberline {2.7.2.1}一个图形}{20}{subsubsection.2.7.2.1}
+\contentsline {chapter}{参考文献}{22}{section*.17}
+\contentsline {chapter}{附录\nobreakspace {} 1\hspace {1em} 外文资料原文}{26}{appendix.A}
+\contentsline {section}{\numberline { 1.1}Single-Objective Programming}{26}{section.A.1}
+\contentsline {subsection}{\numberline { 1.1.1}Linear Programming}{27}{subsection.A.1.1}
+\contentsline {subsection}{\numberline { 1.1.2}Nonlinear Programming}{28}{subsection.A.1.2}
+\contentsline {chapter}{附录\nobreakspace {} 2\hspace {1em} 外文资料的调研阅读报告或书面翻译}{29}{appendix.B}
+\contentsline {section}{\numberline { 2.1}单目标规划}{29}{section.B.1}
+\contentsline {subsection}{\numberline { 2.1.1}线性规划}{29}{subsection.B.1.1}
+\contentsline {subsection}{\numberline { 2.1.2}非线性规划}{30}{subsection.B.1.2}
+\contentsline {chapter}{附录\nobreakspace {} 3\hspace {1em} 其它附录}{31}{appendix.C}
+\contentsline {chapter}{学术成果}{32}{section*.28}
+\contentsline {chapter}{致谢}{33}{section*.30}

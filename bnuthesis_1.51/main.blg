@@ -22,21 +22,22 @@ I was expecting a `,' or a `}'---line 214 of file ref/refs.bib
  :   PAGES = {299--306},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 257 of file ref/refs.bib
- :   AUTHOR 
- :          = {Skadron, K. and Stan, M. R. and Huang, W.},
+I was expecting a `,' or a `}'---line 260 of file ref/refs.bib
+ :   
+ :   YEAR = 2003,
+(Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 314 of file ref/refs.bib
+I was expecting a `,' or a `}'---line 323 of file ref/refs.bib
  :   
  :   PAGES = "501--513",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 322 of file ref/refs.bib
+I was expecting a `,' or a `}'---line 331 of file ref/refs.bib
  :   
  :   VOLUME = 19,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 372 of file ref/refs.bib
+I was expecting a `,' or a `}'---line 381 of file ref/refs.bib
  :    TITLE 
  :          = {Wilson, L. and Mangum, S. International Technology Roadmap for Semiconductors (ITRS)},
 I'm skipping whatever remains of this entry
