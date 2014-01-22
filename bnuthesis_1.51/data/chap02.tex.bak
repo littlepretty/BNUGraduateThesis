@@ -1,11 +1,56 @@
 
-%%% Local Variables: 
+%%% Local Variables:
 %%% mode: latex
 %%% TeX-master: t
-%%% End: 
+%%% End:
 
-\chapter{中华人民共和国}
-\label{cha:china}
+% !Mode:: "TeX:UTF-8"
+
+\chapter{基于任务精确预测的实时功耗温度管理}
+\label{cha:DPTM}
+
+\section{实时系统的工作负载模型}
+\label{sec:workload}
+本文讨论的实时系统可以周期性地分配一段时间D作为执行某一任务的截止时间，该任务在最坏情况下所需要的执行时间为W。 不失一般性，我们假设任务的截止时间等于系统周期性分配的时间片，并且等价地只考虑一个周期内的任务。 文献\onlinecite{RTCalSchHdRTSys}与\onlinecite{LkSchMaxTemMinPerHdRTSys}根据任务的性质研究了如何决定(D,W)数据对的值。 本文中，由于可以预测出发送至实时系统的数据量，工作负荷便可以被认为是网络流量的归一化形式。
+
+
+\section{实时系统的热分析模型}
+\label{thermal}
+
+\section{实时系统的功耗分析模型}
+\label{power}
+
+\section{已有的DPTM调度算法}
+\label{algorithms}
+
+\subsection{TALK算法}
+
+\subsection{Pattern-Based算法（简称PB算法）}
+
+\subsection{M-Oscillating算法（简称MO算法）}
+
+\subsection{对已有算法的评估}
+
+
+
+\section{基于电压预测的TALK算法：VP-TALK}
+\label{vp-talk}
+
+\section{DPTM原型系统}
+\label{DPTM-system}
+
+
+\subsection{启发性示例}
+
+\subsection{基于机器学习的DPTM原型系统}
+
+\subsection{基于单一调度策略的DPTM原型系统}
+
+
+
+
+
+
 
 \section{其它例子}
 \label{sec:other}
@@ -15,7 +60,7 @@
 \begin{equation}
 \label{equ:chap2:bayes}
 p(y|\mathbf{x}) = \frac{p(\mathbf{x},y)}{p(\mathbf{x})}=
-\frac{p(\mathbf{x}|y)p(y)}{p(\mathbf{x})} 
+\frac{p(\mathbf{x}|y)p(y)}{p(\mathbf{x})}
 \end{equation}
 
 \subsection{绘图}
