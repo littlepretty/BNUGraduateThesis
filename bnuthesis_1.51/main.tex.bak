@@ -2,8 +2,9 @@
 %%% mode: latex
 %%% TeX-master: t
 %%% End:
-% !Mode::"TeX:UTF-8"
-\documentclass[doctor]{bnuthesis}
+% !Mode:: "TeX:UTF-8"
+
+\documentclass[master]{bnuthesis}
 % \documentclass[%
 %   bachelor|master|doctor, % mandatory option
 %   xetex|pdftex|dvips|dvipdfm, % optional
@@ -13,6 +14,7 @@
 
 % 所有其它可能用到的包都统一放在这里，可以根据实际需要添加或者删除。
 \usepackage{bnutils}
+\usepackage{graphicx,multirow}
 
 % 你可以在这里修改配置文件中的定义，导言区可以使用中文。
 % \def\myname{薛瑞尼}
