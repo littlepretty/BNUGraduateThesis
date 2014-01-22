@@ -16,20 +16,47 @@
 
 \section{实时系统的热分析模型}
 \label{thermal}
+为了研究处理器内核(Die)的热传导特性， 文献\onlinecite{LkDVSRTEmbSys,LkSchMaxTemMinPerHdRTSys,WCTemAnlyRTSys}等都广泛采用了等效RC电路方法进行热分析建模， 并采用如下公式进行工作温度的求解
+式中T和$T_{amb}$分别代表芯片的温度与环境温度，$P$代表芯片在时刻$t$的功耗，$R_{th}$与$C_{th}$分别为等效热阻与等效热容。
+
 
 \section{实时系统的功耗分析模型}
 \label{power}
+
+处理器的系统状态可以分为工作状态和休眠状态： 只有在工作状态下处理器才执行任务； 否则，处理器将进入休眠状态以减少功耗并降低自身温度。工作状态下的功耗：
+
+式中的第一项代表动态功耗，第二项代表静态功耗。当给定供电电压$V_{dd}$后，工作频率$f$为
+
+由于与工作电压成正比，我们可以得到动态功耗的计算公式
+
+通过HSPICE软件进行的曲线拟合，与温度、电压相关的漏电流可写为
+
+式中$A,B,\alpha,\beta,\gamma,\delta,\mu,\eta$是经验参数，由生产工艺所决定（本文的模拟实验默认选择采用65nm的工艺参数）。 当工作温度$T$在300K到380K的正常范围变化时，$\exp(\frac{1}{T})$的波动变化很小。 当给定了$V_{dd}$后，文献\onlinecite{EngRTTskSchTemDepLk}通过引入两个参考温度$TH$和$TL$进一步将漏电流简化为温度的二次函数。 于是，与漏电流相关的静态功耗可以用下式计算
+
+其中，
+
+此外，处理器的工作状态切换是通过改变工作电压来实现的， 状态切换所带来的开销包括能耗开销$p_r$、与延时开销$c_r$\onlinecite{TemIdDistEngOptDVS}。 整体而言，工作状态切换跨度越大，其能耗和时间的开销也就越大。
+
 
 \section{已有的DPTM调度算法}
 \label{algorithms}
 
 \subsection{TALK算法}
+TALK及其改进算法\onlinecite{TemLkMinTechRTSys}根据工作负载和截止时间的不同， 来控制不同时间段处理器的工作/休息状态：当负载量大并且温度较低时、处理器处于激活工作状态； 当负载量小并且温度较高时、处理器切换到睡眼状态以减小能耗，以降低温度。
+
 
 \subsection{Pattern-Based算法（简称PB算法）}
 
+PB算法将任务的截止时间或者运行周期D等分为n个时间片段，每段长$\Delta=D/n$， 采用PB算法的处理器将工作于特定规则的模式中\onlinecite{EngRTTskSchTemDepLk}： 执行$\Delta=D/n$时间后便切入休眠模式，以减少功耗并降低温度。 文献\onlinecite{EngRTTskSchTemDepLk}与\onlinecite{WCTemAnlyRTSys}证明：如果重复这种运行模式足够多次， 处理器将达到温度的平衡值，并进入稳定状态， 即每个周期的初始温度和结束温度将趋向于稳定值，以便于分析。
+
 \subsection{M-Oscillating算法（简称MO算法）}
 
+上面介绍的TALK算法和PB算法都要求处理器的工作速度要大于或者等于负载率$W/D$。 文献\onlinecite{LkSchMaxTemMinPerHdRTSys}证明，如果采用两个最接近的速度完成分配给处理器的任务，那么相对于采用其他的工作速度组合， 处于该速度组下处理器的温度是最优的。 如果进一步地将这种两步策略应用在m个时间片中， 不仅温度可以进一步优化，还可以将D时间内的总功耗表达为m的函数，而且必然存在能耗最小化的$m$值\onlinecite{LkEngMinRTSysMaxTemConst}。 由于要考虑电压切换所付出的时间开销和能耗开销，\onlinecite{LkEngMinRTSysMaxTemConst}给出了m所具有确定的上限值$Ceil$。
+
 \subsection{对已有算法的评估}
+作为温敏调度算法，TALK参照剩余任务量与当前温度、来合理地调度任务。 然而，简单的开关模式无法利用DVS技术，只能工作在固定速度。而且状态切换所导致的时间、能耗开销也是不可避免的。 根据切换时间和能耗开销\onlinecite{TemIdDistEngOptDVS}，从全速工作转变为零电压将产生最大的能耗和时间开销。
+无论采用TALK还是PB算法，都要求处理器工作在大于$W/D$的速度上。 大多数具有DVS或DVFS功能的实时系统通常只允许芯片的电压为若干离散值，根据负载率来调整电压工作档。 这往往会导致芯片实际上工作高于任务所需的速度，不仅增加了近似与电压三次方成正比的动态功耗和与电压近似成正比的静态功耗，而且加速了温度的攀升， 抬高了平衡态时的温度，进一步导致漏电流近似平方速度的增长。
+G.Quan等\onlinecite{LkEngMinRTSysMaxTemConst}提出的MO算法存在两个主要缺陷。首先，假设功率为温度的线性函数，使得峰值温度较PB有很大降低。 其次是在实际应用中不能忽略低工作负载率情况：当$W/D$小于处理器支持的最低工作速度时，MO只能退化为PB，以防止不必要的功耗增加。
 
 
 

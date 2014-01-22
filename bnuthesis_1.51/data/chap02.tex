@@ -11,13 +11,13 @@
 
 \section{实时系统的工作负载模型}
 \label{sec:workload}
-本文讨论的实时系统可以周期性地分配一段时间D作为执行某一任务的截止时间，该任务在最坏情况下所需要的执行时间为W。 不失一般性，我们假设任务的截止时间等于系统周期性分配的时间片，并且等价地只考虑一个周期内的任务。 文献\onlinecite{RTCalSchHdRTSys}与\onlinecite{LkSchMaxTemMinPerHdRTSys}根据任务的性质研究了如何决定(D,W)数据对的值。 本文中，由于可以预测出发送至实时系统的数据量，工作负荷便可以被认为是网络流量的归一化形式。
+本文讨论的实时系统可以周期性地分配一段时间$D$作为执行某一任务的截止时间，该任务在最坏情况下所需要的执行时间为$W$。 不失一般性，我们假设任务的截止时间等于系统周期性分配的时间片，并且等价地只考虑一个周期内的任务。 文献\onlinecite{RTCalSchHdRTSys}与\onlinecite{LkSchMaxTemMinPerHdRTSys}根据任务的性质研究了如何决定$(D,W)$数据对的值。 本文中，由于可以预测出发送至实时系统的数据量，工作负荷便可以被认为是网络流量的归一化形式。
 
 
 \section{实时系统的热分析模型}
 \label{thermal}
 为了研究处理器内核(Die)的热传导特性， 文献\onlinecite{LkDVSRTEmbSys,LkSchMaxTemMinPerHdRTSys,WCTemAnlyRTSys}等都广泛采用了等效RC电路方法进行热分析建模， 并采用如下公式进行工作温度的求解
-式中T和$T_{amb}$分别代表芯片的温度与环境温度，$P$代表芯片在时刻$t$的功耗，$R_{th}$与$C_{th}$分别为等效热阻与等效热容。
+式中$T$和$T_{amb}$分别代表芯片的温度与环境温度，$P$代表芯片在时刻$t$的功耗，$R_{th}$与$C_{th}$分别为等效热阻与等效热容。
 
 
 \section{实时系统的功耗分析模型}
@@ -35,14 +35,14 @@
 
 其中，
 
-此外，处理器的工作状态切换是通过改变工作电压来实现的， 状态切换所带来的开销包括能耗开销$p_r$、与延时开销$c_r$\onlinecite{TemIdDistEngOptDVS}。 整体而言，工作状态切换跨度越大，其能耗和时间的开销也就越大。
+此外，处理器的工作状态切换是通过改变工作电压来实现的， 状态切换所带来的开销包括能耗开销$p_r$与延时开销$c_r$\onlinecite{TemIdDistEngOptDVS}。 整体而言，工作状态切换跨度越大，其能耗和时间的开销也就越大。
 
 
 \section{已有的DPTM调度算法}
 \label{algorithms}
 
 \subsection{TALK算法}
-TALK及其改进算法\onlinecite{TemLkMinTechRTSys}根据工作负载和截止时间的不同， 来控制不同时间段处理器的工作/休息状态：当负载量大并且温度较低时、处理器处于激活工作状态； 当负载量小并且温度较高时、处理器切换到睡眼状态以减小能耗，以降低温度。
+TALK及其改进算法\onlinecite{TemLkMinTechRTSys}根据工作负载和截止时间的不同， 来控制不同时间段处理器的工作/休息状态：当负载量大并且温度较低时、处理器处于激活工作状态； 当负载量小并且温度较高时,处理器切换到睡眼状态以减小能耗，以降低温度。
 
 
 \subsection{Pattern-Based算法（简称PB算法）}
