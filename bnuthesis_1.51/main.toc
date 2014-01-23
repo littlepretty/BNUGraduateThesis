@@ -19,7 +19,11 @@
 \contentsline {subsection}{\numberline {2.6.1}启发性示例}{9}{subsection.2.6.1}
 \contentsline {subsection}{\numberline {2.6.2}基于机器学习的DPTM原型系统}{10}{subsection.2.6.2}
 \contentsline {subsection}{\numberline {2.6.3}基于单一调度策略的DPTM原型系统}{12}{subsection.2.6.3}
-\contentsline {chapter}{3\hspace {1em} DPTM-EXP}{13}{chapter.3}
+\contentsline {chapter}{3\hspace {1em} DPTM原型系统模拟实验}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}模拟实验环境}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}VP-TALK算法的DPTM效果验证}{13}{section.3.2}
+\contentsline {section}{\numberline {3.3}基于机器学习的DPTM原型系统的验证}{13}{section.3.3}
+\contentsline {section}{\numberline {3.4}小结}{13}{section.3.4}
 \contentsline {chapter}{参考文献}{14}{section*.14}
 \contentsline {chapter}{附录\nobreakspace {} 1\hspace {1em} 外文资料原文}{17}{appendix.A}
 \contentsline {section}{\numberline { 1.1}Single-Objective Programming}{17}{section.A.1}
