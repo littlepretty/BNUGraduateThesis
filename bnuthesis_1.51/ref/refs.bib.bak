@@ -253,7 +253,7 @@
   PAGES = {205--210},
 }
 
-@INPROCEEDINGS{
+@INPROCEEDINGS{TemMicroArch,
   AUTHOR = {Skadron, K. and Stan, M. R. and Huang, W.},
   TITLE = {Temperature-aware Microarchitecture},
   BOOKTITLE = {International Symposium on Computer Architecture}
@@ -262,14 +262,12 @@
   PAGES = {2--13},
 }
 
-@INPROCEEDINGS{
+@INPROCEEDINGS{DPTMbyYJQ,
   AUTHOR = {闫佳琪 AND 骆祖莹 AND 赵国兴},
-  TITLE = "基于任务精确预测的实时功耗温度管理",
-  BOOKTITLE = {中国图形学进展(2012)--第十七届全国计算机辅助设计与图形学学术会议(CAD/CG`2012)暨 第九届全国智能CAD与数字娱乐学术会议(CIDE2012)论文集},
+  TITLE = {基于任务精确预测的实时功耗温度管理},
+  BOOKTITLE = {第十七届全国计算机辅助设计与图形学学术会议暨第九届全国智能CAD与数字娱乐学术会议论文集},
   PUBLISHER = {清华大学出版社},
-  PAGES = {513-516},
-  
-  
+  PAGES = {513--516},
 }
 	（513）
 
@@ -379,12 +377,17 @@
    NOTE         = {\url{http://www.cs.utexas.edu/~yzhang/}},
 }
 
-@MISC{
+@MISC{ITRS
    TITLE = {Wilson, L. and Mangum, S. International Technology Roadmap for Semiconductors (ITRS)},
    HOWPUBLISHED = {[OL]},
    NOTE = {\url{http://public.itrs.net/}},
 }
 
+@MISC{MATLAB,
+   TITLE = {MATLAB},
+   HOWPUBLISHED = {[EB/OL]},
+   NOTE = {\url{http://www.mathworks.com/products/matlab/}},
+}
 
 
 

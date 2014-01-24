@@ -206,7 +206,11 @@ L.~Thiele, S.~Chakraborty, M.~Naedele.
 
 \bibitem{LkSchMaxTemMinPerHdRTSys}
 V.~Chaturvedi, H.~Huang, G.~Quan.
-\newblock [C].
+\newblock Leakage-aware Scheduling on Maximal Temperature Minimization for
+  Periodic Hard Real-time Systems[C].
+\newblock Proceedings of International Conference on Embedded Software and
+  System, Bradford, UK, 2010.
+\newblock  1802--1809.
 
 \bibitem{WCTemAnlyRTSys}
 D.~Rai, H.~Yang, I.~Bacivarov.
@@ -222,5 +226,10 @@ D.~Rai, H.~Yang, I.~Bacivarov.
   第十七届全国计算机辅助设计与图形学学术会议暨第九届全国智能CAD与数字娱乐学术会议论文集.
   清华大学出版社.
 \newblock  513--516.
+
+\bibitem{MATLAB}
+MATLAB[Z].
+\newblock [EB/OL].
+\newblock \url{http://www.mathworks.com/products/matlab/}.
 
 \end{thebibliography}

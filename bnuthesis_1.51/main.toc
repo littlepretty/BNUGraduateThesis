@@ -22,17 +22,17 @@
 \contentsline {chapter}{3\hspace {1em} DPTM原型系统模拟实验}{13}{chapter.3}
 \contentsline {section}{\numberline {3.1}模拟实验环境}{13}{section.3.1}
 \contentsline {section}{\numberline {3.2}VP-TALK算法的DPTM效果验证}{13}{section.3.2}
-\contentsline {section}{\numberline {3.3}基于机器学习的DPTM原型系统的验证}{13}{section.3.3}
-\contentsline {section}{\numberline {3.4}小结}{13}{section.3.4}
-\contentsline {chapter}{参考文献}{14}{section*.14}
-\contentsline {chapter}{附录\nobreakspace {} 1\hspace {1em} 外文资料原文}{17}{appendix.A}
-\contentsline {section}{\numberline { 1.1}Single-Objective Programming}{17}{section.A.1}
-\contentsline {subsection}{\numberline { 1.1.1}Linear Programming}{18}{subsection.A.1.1}
-\contentsline {subsection}{\numberline { 1.1.2}Nonlinear Programming}{19}{subsection.A.1.2}
-\contentsline {chapter}{附录\nobreakspace {} 2\hspace {1em} 外文资料的调研阅读报告或书面翻译}{20}{appendix.B}
-\contentsline {section}{\numberline { 2.1}单目标规划}{20}{section.B.1}
-\contentsline {subsection}{\numberline { 2.1.1}线性规划}{20}{subsection.B.1.1}
-\contentsline {subsection}{\numberline { 2.1.2}非线性规划}{21}{subsection.B.1.2}
-\contentsline {chapter}{附录\nobreakspace {} 3\hspace {1em} 其它附录}{22}{appendix.C}
-\contentsline {chapter}{学术成果}{23}{section*.25}
-\contentsline {chapter}{致谢}{24}{section*.27}
+\contentsline {section}{\numberline {3.3}基于机器学习的DPTM原型系统的验证}{15}{section.3.3}
+\contentsline {section}{\numberline {3.4}小结}{18}{section.3.4}
+\contentsline {chapter}{参考文献}{19}{section*.20}
+\contentsline {chapter}{附录\nobreakspace {} 1\hspace {1em} 外文资料原文}{22}{appendix.A}
+\contentsline {section}{\numberline { 1.1}Single-Objective Programming}{22}{section.A.1}
+\contentsline {subsection}{\numberline { 1.1.1}Linear Programming}{23}{subsection.A.1.1}
+\contentsline {subsection}{\numberline { 1.1.2}Nonlinear Programming}{24}{subsection.A.1.2}
+\contentsline {chapter}{附录\nobreakspace {} 2\hspace {1em} 外文资料的调研阅读报告或书面翻译}{25}{appendix.B}
+\contentsline {section}{\numberline { 2.1}单目标规划}{25}{section.B.1}
+\contentsline {subsection}{\numberline { 2.1.1}线性规划}{25}{subsection.B.1.1}
+\contentsline {subsection}{\numberline { 2.1.2}非线性规划}{26}{subsection.B.1.2}
+\contentsline {chapter}{附录\nobreakspace {} 3\hspace {1em} 其它附录}{27}{appendix.C}
+\contentsline {chapter}{学术成果}{28}{section*.31}
+\contentsline {chapter}{致谢}{29}{section*.33}

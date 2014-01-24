@@ -11,11 +11,6 @@ Repeated entry---line 141 of file ref/refs.bib
  : @inproceedings{LkDVSRTEmbSys
  :                             ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 152 of file ref/refs.bib
- :   
- :   TITLE = {Leakage-aware Scheduling on Maximal Temperature Minimization for Periodic Hard Real-time Systems},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Warning--I'm ignoring FreqVolPlMulProThemConst's extra "year" field
 --line 194 of file ref/refs.bib
 I was expecting a `,' or a `}'---line 214 of file ref/refs.bib
@@ -28,19 +23,19 @@ I was expecting a `,' or a `}'---line 260 of file ref/refs.bib
  :   YEAR = 2003,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 323 of file ref/refs.bib
+I was expecting a `,' or a `}'---line 322 of file ref/refs.bib
  :   
  :   PAGES = "501--513",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 331 of file ref/refs.bib
+I was expecting a `,' or a `}'---line 330 of file ref/refs.bib
  :   
  :   VOLUME = 19,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 381 of file ref/refs.bib
- :    TITLE 
- :          = {Wilson, L. and Mangum, S. International Technology Roadmap for Semiconductors (ITRS)},
+I was expecting a `,' or a `}'---line 380 of file ref/refs.bib
+ :    
+ :    TITLE = {Wilson, L. and Mangum, S. International Technology Roadmap for Semiconductors (ITRS)},
+(Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--empty booktitle in LkSchMaxTemMinPerHdRTSys
-(There were 8 error messages)
+(There were 7 error messages)
