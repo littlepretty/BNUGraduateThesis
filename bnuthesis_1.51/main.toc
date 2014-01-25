@@ -24,15 +24,24 @@
 \contentsline {section}{\numberline {3.2}VP-TALK算法的DPTM效果验证}{13}{section.3.2}
 \contentsline {section}{\numberline {3.3}基于机器学习的DPTM原型系统的验证}{15}{section.3.3}
 \contentsline {section}{\numberline {3.4}小结}{18}{section.3.4}
-\contentsline {chapter}{参考文献}{19}{section*.20}
-\contentsline {chapter}{附录\nobreakspace {} 1\hspace {1em} 外文资料原文}{22}{appendix.A}
-\contentsline {section}{\numberline { 1.1}Single-Objective Programming}{22}{section.A.1}
-\contentsline {subsection}{\numberline { 1.1.1}Linear Programming}{23}{subsection.A.1.1}
-\contentsline {subsection}{\numberline { 1.1.2}Nonlinear Programming}{24}{subsection.A.1.2}
-\contentsline {chapter}{附录\nobreakspace {} 2\hspace {1em} 外文资料的调研阅读报告或书面翻译}{25}{appendix.B}
-\contentsline {section}{\numberline { 2.1}单目标规划}{25}{section.B.1}
-\contentsline {subsection}{\numberline { 2.1.1}线性规划}{25}{subsection.B.1.1}
-\contentsline {subsection}{\numberline { 2.1.2}非线性规划}{26}{subsection.B.1.2}
-\contentsline {chapter}{附录\nobreakspace {} 3\hspace {1em} 其它附录}{27}{appendix.C}
-\contentsline {chapter}{学术成果}{28}{section*.31}
-\contentsline {chapter}{致谢}{29}{section*.33}
+\contentsline {chapter}{4\hspace {1em} 考虑温度对漏电流功耗影响的MPSoC结构级热分析方法}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}多核芯片热分析研究基础}{19}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}多核架构及其电热分布}{19}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}芯片热分析及HotSpot模块级模型}{19}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}电热耦合效应：温度对漏电流功耗的影响}{19}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}3种MPSoC结构级热分析方法}{19}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}模块级热分析方法BloTAM}{19}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}核级热分析方法CorTAM}{19}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}考虑核内模块相互影响的改良核级热分析方法BiCorTAM}{19}{subsection.4.2.3}
+\contentsline {chapter}{参考文献}{20}{section*.21}
+\contentsline {chapter}{附录\nobreakspace {} 1\hspace {1em} 外文资料原文}{23}{appendix.A}
+\contentsline {section}{\numberline { 1.1}Single-Objective Programming}{23}{section.A.1}
+\contentsline {subsection}{\numberline { 1.1.1}Linear Programming}{24}{subsection.A.1.1}
+\contentsline {subsection}{\numberline { 1.1.2}Nonlinear Programming}{25}{subsection.A.1.2}
+\contentsline {chapter}{附录\nobreakspace {} 2\hspace {1em} 外文资料的调研阅读报告或书面翻译}{26}{appendix.B}
+\contentsline {section}{\numberline { 2.1}单目标规划}{26}{section.B.1}
+\contentsline {subsection}{\numberline { 2.1.1}线性规划}{26}{subsection.B.1.1}
+\contentsline {subsection}{\numberline { 2.1.2}非线性规划}{27}{subsection.B.1.2}
+\contentsline {chapter}{附录\nobreakspace {} 3\hspace {1em} 其它附录}{28}{appendix.C}
+\contentsline {chapter}{学术成果}{29}{section*.32}
+\contentsline {chapter}{致谢}{30}{section*.34}
