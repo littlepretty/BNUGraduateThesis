@@ -5,5 +5,59 @@
 
 % !Mode:: "TeX:UTF-8"
 
-\chapter{�����¶ȶ�©��������Ӱ���MPSoC�ṹ���ȷ�������}
+\chapter{考虑温度对漏电流功耗影响的MPSoC结构级热分析方法}
 \label{cha:SSTA}
+
+
+\section{多核芯片热分析研究基础}
+\label{sec:SSTAbasic}
+
+\subsection{多核架构及其电热分布}
+
+目前多核CPU采用同质架构，即每个核拥有相同的逻辑功能模块、容量相同的专享缓存(cache)，占有相同的内核面积， 同时共享最后一级缓存(last level cache,LLC)缓存、I/O等功能模块。 每个核具有相同数量的工作模式，但不同的工作模式具有不同的能耗，即每个核具有一个全速高能模式外， 还具有多个节能程度不同的节能模式。
+在每个核内，一般都具有一个功耗密度最大的逻辑功能模块、一个指令L1缓存和一个数据L1缓存，其功耗密度次之， 一个功耗密度最小的L2缓存。由于注入的热量大，每个核的热点（温度最高点）出现在逻辑功能模块，所以在物理设计中， 逻辑功能模块一般要布放在散热条件好的芯片边沿处，而将功耗密度最小的LLC布放在散热条件最差的芯片中央，以降低芯片的热点温度。 图1(a)为Alpha 21264芯片的物理布局[13]，用HotSpot计算分析的温度分布如图1(b)所示。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth,height=0.3\textheight]{EV6}
+  \caption{Alpha21264芯片的物理布局}
+  \label{fig:ev6}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth,height=0.3\textheight]{EV6-GRID-TEM-SURF}
+  \caption{Alpha21264芯片的温度分布}
+  \label{fig:ev6-grid-temp-surf}
+\end{figure}
+
+
+
+
+\subsection{芯片热分析及HotSpot模块级模型}
+
+\subsection{电热耦合效应：温度对漏电流功耗的影响}
+
+
+
+
+
+\section{3种MPSoC结构级热分析方法}
+\label{sec:SSTAmethod}
+
+\subsection{模块级热分析方法BloTAM}
+
+\subsection{核级热分析方法CorTAM}
+
+\subsection{考虑核内模块相互影响的改良核级热分析方法BiCorTAM}
+
+
+
+
+
+
+
+
+
+
+

@@ -232,4 +232,16 @@ MATLAB[Z].
 \newblock [EB/OL].
 \newblock \url{http://www.mathworks.com/products/matlab/}.
 
+\bibitem{TemMicroArch}
+K.~Skadron, M.~R. Stan, W.~Huang.
+\newblock Temperature-aware Microarchitecture[C].
+\newblock Proceedings of International Symposium on Computer Architecture.
+
+\bibitem{TemSupVolPerfPowMdlMicroLvl}
+W.~P. Liao, L.~He, K.~M. Lepak.
+\newblock Temperature and Supply Voltage Aware Performance and Power Modeling
+  at Microarchitecture Level[J].
+\newblock IEEE Transactions on Computer-Aided Design of Integrated Circuits and
+  System, 2005, 24(7):1042--1053.
+
 \end{thebibliography}

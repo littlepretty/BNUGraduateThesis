@@ -15,7 +15,7 @@
 
 
 \section{实时系统的热分析模型}
-\label{thermal}
+\label{sec:thermal}
 为了研究处理器内核(Die)的热传导特性， 文献\onlinecite{LkDVSRTEmbSys,LkSchMaxTemMinPerHdRTSys,WCTemAnlyRTSys}等都广泛采用了等效RC电路方法进行热分析建模， 并采用如~\ref{equ:chap2:thermal_model}进行工作温度的求解
 \begin{equation}
 \label{equ:chap2:thermal_model}
@@ -26,7 +26,7 @@
 
 
 \section{实时系统的功耗分析模型}
-\label{power}
+\label{sec:power}
 
 处理器的系统状态可以分为工作状态和休眠状态： 只有在工作状态下处理器才执行任务； 否则，处理器将进入休眠状态以减少功耗并降低自身温度。工作状态下的功耗：
 \begin{equation}
@@ -66,7 +66,7 @@ $\hat{B}=I_{leakage}(TH,V_{dd})-\hat{A}{TL}^2$。
 
 
 \section{已有的DPTM调度算法}
-\label{algorithms}
+\label{sec:algorithms}
 
 \subsection{TALK算法}
 TALK及其改进算法\onlinecite{TemLkMinTechRTSys}根据工作负载和截止时间的不同， 来控制不同时间段处理器的工作/休息状态：当负载量大并且温度较低时、处理器处于激活工作状态； 当负载量小并且温度较高时,处理器切换到睡眼状态以减小能耗，以降低温度。
@@ -88,14 +88,14 @@ G.Quan等\onlinecite{LkEngMinRTSysMaxTemConst}提出的MO算法存在两个主�
 
 
 \section{基于电压预测的TALK算法：VP-TALK}
-\label{vp-talk}
+\label{sec:vp-talk}
 根据我们在DPTM领域的研究经验，可以获得如下关于DPTM改进的几点经验准则：
 (1)	必须考虑温度对静态功耗的影响。本文将功耗定为温度的二次函数。在温度限制下，DPTM系统最好具有温敏调控功能。
 (2)	如果能够准确预测负载量，确定任务所需的工作频率或者工作电压，就可以提前调度，更好的满足实时性。
 (3)	芯片电压选取。由于工作电压决定了运行速度，应该采用MO的电压选取方法，即使得芯片运行速度刚好满足工作负载的需求， 以最大程度地利用DVFS技术来降低能耗。
 (4)	调度过程中，必须考虑电压切换（状态切换）所带来的额外能耗、时间开销。
 
-基于以上观察，我们提出一种改良后的TALK算法，即具有电压选择的TALK算法，本文称为VP-TALK，其算法流程图如图~\ref{fig:vp-talk}所示。 
+基于以上观察，我们提出一种改良后的TALK算法，即具有电压选择的TALK算法，本文称为VP-TALK，其算法流程图如图~\ref{fig:vp-talk}所示。
 
 \begin{figure}[H] % use float package if you want it here
   \centering
@@ -162,4 +162,4 @@ DPTM_t = \arg(\max\limits_{1\le k \le N}(w_{k,t}))
 \subsection{基于单一调度策略的DPTM原型系统}
 
 值得一提的是，如果我们选定某一种调度策略，省略机器学习模块，就构成了基于单一调度策略的DPTM原型系统。 在该DPTM原型系统中，输入量为任务负载的历史值，通过这些历史值，利用第六节所述的任务负载预测模型，可以得到对于下一时刻任务量的预测值。 进而，可以确定完成预测任务值所需要的芯片电压或者频率，并利用上文所述的某一种算法进行调度。
-不论是基于及其学习的DPTM系统，还是基于单一调度策略的DPTM系统，都要求提前预知任务负载的大小。 因此，本文采用所提出的组合模型预测方法。该方法将复杂任务按频谱长短分类为随机/周期/趋势等三种成分， 然后采用灰色模型/傅里叶模型/径向基函数（RBF）神经网络模型对这三种成分进行组合分析， 可以得到平均相对误差低于3\%、归一化方差小于0.5的任务负载预测效果\onlinecite{DPTMbyYJQ}。
+不论是基于及其学习的DPTM系统，还是基于单一调度策略的DPTM系统，都要求提前预知任务负载的大小。 因此，本文采用所提出的组合模型预测方法。该方法将复杂任务按频谱长短分类为随机/周期/趋势等三种成分， 然后采用灰色模型/傅里叶模型/径向基函数（RBF）神经网络模型对这三种成分进行组合分析， 可以得到平均相对误差低于3\%、归一化方差小于0.5的任务负载预测效果\onlinecite{DPTMbyYJQ}。 
