@@ -16,13 +16,13 @@
 本文通过与现有的TALK、PB、MO算法进行对比，来验证本文提出的VP-TALK算法的优越性。 实验中选取$p_r$、$c_r$取值分别为0.001$s$/$V$和0.01$J$/$V^2$，温度最高上限设为390K，任务周期固定为10$s$。 支持DVFS芯片的电压值从0.6$V$到1.4$V$可调，步长0.1$V$。根据电压可以得到归一化的速度序列为{0.574, 0.6611, 0.7324, 0.7926, 0.8446, 0.8901, 0.930, 0.9670, 1}。 任务负载率为5\%至95\%，变化步长为5\%。 对于4种对比算法，我们分别将能耗情况（单位为焦耳$J$）和峰值温度情况（单位为绝对温度$K$）绘制于 图~\ref{fig:vp-talk-power-cmp}和图~\ref{fig:vp-talk-temp-cmp}。
 \begin{figure}[H]
   \centering
-  \includegraphics[width=1.0\textwidth,height=0.4\textheight]{VP-TALK-POWER-CMP}
+  \includegraphics[width=1.0\textwidth,height=0.5\textheight]{VP-TALK-POWER-CMP}
   \caption{能耗比较}
   \label{fig:vp-talk-power-cmp}
 \end{figure}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=1.0\textwidth,height=0.4\textheight]{VP-TALK-TEMP-CMP}
+  \includegraphics[width=1.0\textwidth,height=0.5\textheight]{VP-TALK-TEMP-CMP}
   \caption{峰值温度比较}
   \label{fig:vp-talk-temp-cmp}
 \end{figure}
@@ -64,4 +64,4 @@
 (3)通过图~\ref{fig:dptm-ideal-power-cmp}与图~\ref{fig:dptm-ideal-temp-cmp} 对本文原型系统的调度效果与理想值进行的直观比较， 看出本文原型系统可以获得比四种源算法均值更接近于理想值的优化效果。 与表3中理想值的$E_{TOTAL}/E_{MAX}/T_{PAVG}/T_{PMAX}$参数相比， 四种DPTM源算法调度效果平均值会产生28.64\%/30.09\%/7.71$\celsius$/9.73$\celsius$的差距， 而本文原型系统只产生了12.55\%/13.93\%/9.02$\celsius$/7.91$\celsius$差距。
 
 \section{小结}
-第~\ref{cha:DPTM}章深入分析与评估了已有的主流调度算法，提出了一系列调度准则和经验。 基于这些对芯片工作休眠状态调度的经验准则，我们提出一种在能耗节省方面更具优势的DPTM调度算法VP-TALK， 以此算法为基础，综合本文所提出的预测任务负载模型，构建了一个基于负载预测的DPTM系统。本章中的仿真实验表明， (1)本文的组合模型在负载预测方面胜过众多的相关模型及算法，平均误差仅为2.89\%； (2)本文所提出的VP-TALK算法在较高的工作负载率和共同的峰值温度约束下， 分别比Pattern-Based、M-Oscillating、TALK分别节能20.54\%、11.04\%、11.42\%； (3)本文所提出的综合四种源算法、基于机器学习的DPTM原型系统较为接近理想值， 与其$E_{TOTAL}/E_{MAX}/T_{PAVG}/T_{PMAX}$参数相比， 只产生了12.55\%/13.93\%/9.02$\celsius$/7.91$\celsius$差距。
+第~\ref{cha:DPTM}章深入分析与评估了已有的主流调度算法，提出了一系列调度准则和经验。 基于这些对芯片工作休眠状态调度的经验准则，我们提出一种在能耗节省方面更具优势的DPTM调度算法VP-TALK， 以此算法为基础，综合本文所提出的预测任务负载模型，构建了一个基于负载预测的DPTM系统。本章中的仿真实验表明， (1)本文的组合模型在负载预测方面胜过众多的相关模型及算法，平均误差仅为2.89\%； (2)本文所提出的VP-TALK算法在较高的工作负载率和共同的峰值温度约束下， 分别比Pattern-Based、M-Oscillating、TALK分别节能20.54\%、11.04\%、11.42\%； (3)本文所提出的综合四种源算法、基于机器学习的DPTM原型系统较为接近理想值， 与其$E_{TOTAL}/E_{MAX}/T_{PAVG}/T_{PMAX}$参数相比， 只产生了12.55\%/13.93\%/9.02$\celsius$/7.91$\celsius$差距。 
