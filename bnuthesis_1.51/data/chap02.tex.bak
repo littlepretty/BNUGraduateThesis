@@ -88,7 +88,7 @@ G.Quan等\onlinecite{LkEngMinRTSysMaxTemConst}提出的MO算法存在两个主�
 
 
 \section{基于电压预测的TALK算法：VP-TALK}
-\label{vp-talk}
+\label{sec:vp-talk}
 根据我们在DPTM领域的研究经验，可以获得如下关于DPTM改进的几点经验准则：
 (1)	必须考虑温度对静态功耗的影响。本文将功耗定为温度的二次函数。在温度限制下，DPTM系统最好具有温敏调控功能。
 (2)	如果能够准确预测负载量，确定任务所需的工作频率或者工作电压，就可以提前调度，更好的满足实时性。

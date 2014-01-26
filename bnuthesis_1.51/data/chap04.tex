@@ -64,18 +64,45 @@
 \label{sec:SSTAmethod}
 
 \subsection{模块级热分析方法BloTAM}
+为了对功能模块进行热分析建模，按照~\ref{fig:hotspot-model}对HotSpot的多核芯片热分析模型， 采用等效电路的方法对其进行进一步简化， 为此本文假设：每个功能模块内的功耗与温度分布是均匀的，以该模块中心点的温度作为该模块的温度， 并将功耗密度乘以面积作为该模块的功耗，加于模块中心点。
+在本文工作中，将模块$i$的功耗$P_{i,i}$作为注入热源。对于多核芯片，如果仅在模块$i$加上幅值为$P_{i,i}$的阶跃激励， 其他模块均不加激励，则可以使用HotSpot模拟器获得所有模块的温度$T_{j,i}$响应曲线。 先根据$T_{i,i}$的最终收敛值$\overline{T}_{i,i}$ 可以计算出模块$i$的等效热阻$R_{i,i}$，计算公式为~\ref{equ:chap4:blotam-rii}
+\begin{equation}
+\label{equ:chap4:blotam-rii}
+R_{i,i} = \frac{\overline{T}_{i,i}}{P_{i,i}}
+\end{equation}
+再根据等效热阻$R_{i,i}$以及模块$j$功耗$P_{j,j}$的阶跃激励作为单一注入热源所得到的$\overline{T}_{i,j}$， 可以采用~\ref{equ:chap4:blotam-rij}公式计算出反映$P_{j,j}$对模块$i$温度作用关系的等效热阻$R_{i,j}$，
+\begin{equation}
+\label{equ:chap4:blotam-rij}
+R_{i,j} = \frac{\overline{T}_{i,j}}{P_{j,j}}
+\end{equation}
+最后根据所获得的参数$R_{i,i}$与$R_{i,j}$ ，可以计算$P_{j,j}$对模块$i$温度计算产生影响的等效热源$P_{i,j}$：
+\begin{equation}
+\label{equ:chap4:blotam-pij}
+P_{i,j} = \frac{\overline{T}_{i,j}}{\overline{T}_{i,i}}P_{i,i} = \frac{R_{i,j}\times P_{j,j}}{R_{i,i}\times P_{i,i}}P_{i,i}=\frac{R_{i,j}}{R_{i,i}}P_{j,j}
+\end{equation}
+因此，按照图~\ref{fig:multicore-temp-model}中所给出的单模块温度分析模型，可以列出如下热分析表达式：
+\begin{equation}
+\label{equ:chap4:blotam-tii}
+T_{i,i} = R_{i,i}\sum\limits_{j=1}^N P_{i,j} = R_{i,i}\widehat{P_{i}}
+\end{equation}
+其中$N$为多核芯片中的功能模块数目，$\widehat{P_{i}} = \sum\limits_{j=1}^N P_{i,j}$为模块$i$的等效热源，由于一个模块只有一个等效热源， 可见式~\ref{equ:chap4:blotam-tii}提供的单模块热分析模型兼容了经典的单核（单模块）热分析模型[16]。 从式~\ref{equ:chap4:blotam-tii}可知：BloTAM方法的算法时间复杂度与空间复杂度均为$O(N^2)$，即算法复杂度为$O(N^2)$。
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth,height=0.35\textheight]{MULTICORE-TEMP-MODEL}
+  \caption{多核DPTM的单模块与单核热分析等效简化模型}
+  \label{fig:multicore-temp-model}
+\end{figure}
 
 \subsection{核级热分析方法CorTAM}
 
+
+
+
+
+
+
+
 \subsection{考虑核内模块相互影响的改良核级热分析方法BiCorTAM}
-
-
-
-
-
-
-
-
 
 
 

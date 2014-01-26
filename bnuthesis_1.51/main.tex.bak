@@ -16,6 +16,7 @@
 \usepackage{bnutils}
 \usepackage{graphicx,multirow}
 \usepackage{gensymb}
+\usepackage{amssymb}
 
 % 你可以在这里修改配置文件中的定义，导言区可以使用中文。
 % \def\myname{薛瑞尼}
