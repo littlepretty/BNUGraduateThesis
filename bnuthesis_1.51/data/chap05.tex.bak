@@ -1,0 +1,12 @@
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
+
+% !Mode:: "TeX:UTF-8"
+
+\chapter{MPSoC结构级热分析的实验数据与分析}
+\label{cha:SSTAexperiments}
+
+\section{实验平台与测例说明}
+为了检验本文所提出的模块级、核级、改良核级3种热分析方法的精度与效率，选择热分析软件HotSpot-5.02作为验证基准， 构建了3个测例进行温度-功耗数据对比分析。工作的硬件平台为配有Intel Core i7，8G RAM，运行Windows7和Ubuntu 12.04 LTS双系统的PC机。

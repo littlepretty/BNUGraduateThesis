@@ -47,7 +47,7 @@
 \include{data/chap02}
 \include{data/chap03}
 \include{data/chap04}
-
+\include{data/chap05}
 
 %%% 其它部分
 %\backmatter
@@ -58,9 +58,9 @@
  \bibliography{ref/refs}
 
 % 附录
-\begin{appendix}
-\input{data/appendix01}
-\end{appendix}
+%\begin{appendix}
+%\input{data/appendix01}
+%\end{appendix}
 %
 % % 学术成果
 \include{data/paper}
