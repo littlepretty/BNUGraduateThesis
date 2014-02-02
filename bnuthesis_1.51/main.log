@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.23)  29 JAN 2014 18:00
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.2)  2 FEB 2014 15:11
 entering extended mode
 **C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/main.tex
 (C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/main.tex
@@ -1440,28 +1440,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-LaTeX Warning: File ot14e.cmap not found on input line 104.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
-Overfull \vbox (22.5945pt too high) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/Vis
-io-VS-TALK.pdf>] <figures/power_cmp.jpg, id=715, 3476.48813pt x 2253.92062pt>
+ [7 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/Vis
+io-VS-TALK.pdf>] <figures/power_cmp.jpg, id=711, 3476.48813pt x 2253.92062pt>
 File: figures/power_cmp.jpg Graphic file (type jpg)
 
 <use figures/power_cmp.jpg>
-<figures/temp_cmp.jpg, id=716, 3159.55406pt x 2051.41406pt>
+<figures/temp_cmp.jpg, id=712, 3159.55406pt x 2051.41406pt>
 File: figures/temp_cmp.jpg Graphic file (type jpg)
 
 <use figures/temp_cmp.jpg>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/pow
+er_cmp.jpg>]
 
 LaTeX Warning: Command \textellipsis invalid in math mode on input line 131.
 
@@ -1474,33 +1465,29 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9]
+ [9 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/tem
+p_cmp.jpg>])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/po
-wer_cmp.jpg>]
+ [10]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/te
-mp_cmp.jpg>])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12]
+ [11]
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/chap03.tex
-<figures/VP-TALK-POWER-CMP.jpg, id=747, 3350.01563pt x 2187.67313pt>
+<figures/VP-TALK-POWER-CMP.jpg, id=744, 3350.01563pt x 2187.67313pt>
 File: figures/VP-TALK-POWER-CMP.jpg Graphic file (type jpg)
 
 <use figures/VP-TALK-POWER-CMP.jpg>
-<figures/VP-TALK-TEMP-CMP.jpg, id=748, 3208.48688pt x 2098.08844pt>
+<figures/VP-TALK-TEMP-CMP.jpg, id=745, 3208.48688pt x 2098.08844pt>
 File: figures/VP-TALK-TEMP-CMP.jpg Graphic file (type jpg)
 
 <use figures/VP-TALK-TEMP-CMP.jpg>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13
+ [12
 
 
 
@@ -1508,9 +1495,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+
+LaTeX Warning: File ot14e.cmap not found on input line 29.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/VP
+ [13 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/VP
 -TALK-POWER-CMP.jpg>]
 Underfull \hbox (badness 5667) in paragraph at lines 29--31
 []\C70/song/m/n/12.045/4e Î \C70/song/m/n/12.045/56 þ[]\OT1/txr/m/n/12.045 3.1[
@@ -1523,7 +1514,7 @@ T1/txr/m/n/12.045 55%\C70/song/m/n/12.045/65 ö \C70/song/m/n/12.045/ff \OT1/tx
 r/m/n/12.045 VP-TALK\C70/song/m/n/12.045/4f 
  []
 
-<figures/DPTM-SOURCE-ALG-POWER-CMP.jpg, id=770, 4549.24594pt x 2662.69781pt>
+<figures/DPTM-SOURCE-ALG-POWER-CMP.jpg, id=767, 4549.24594pt x 2662.69781pt>
 File: figures/DPTM-SOURCE-ALG-POWER-CMP.jpg Graphic file (type jpg)
 
 <use figures/DPTM-SOURCE-ALG-POWER-CMP.jpg>
@@ -1532,13 +1523,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/VP
+ [14 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/VP
 -TALK-TEMP-CMP.jpg>]
-<figures/DPTM-SOURCE-ALG-TEMP-CMP.jpg, id=776, 5495.53125pt x 2707.11375pt>
+<figures/DPTM-SOURCE-ALG-TEMP-CMP.jpg, id=773, 5495.53125pt x 2707.11375pt>
 File: figures/DPTM-SOURCE-ALG-TEMP-CMP.jpg Graphic file (type jpg)
 
 <use figures/DPTM-SOURCE-ALG-TEMP-CMP.jpg>
-<figures/DPTM-IDEAL-POWER-CMP.jpg, id=777, 3733.19719pt x 2298.33656pt>
+<figures/DPTM-IDEAL-POWER-CMP.jpg, id=774, 3733.19719pt x 2298.33656pt>
 File: figures/DPTM-IDEAL-POWER-CMP.jpg Graphic file (type jpg)
 
 <use figures/DPTM-IDEAL-POWER-CMP.jpg>
@@ -1547,9 +1538,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/DP
+ [15 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/DP
 TM-SOURCE-ALG-POWER-CMP.jpg>]
-<figures/DPTM-IDEAL-TEMP-CMP.jpg, id=784, 3968.07469pt x 2297.58376pt>
+<figures/DPTM-IDEAL-TEMP-CMP.jpg, id=781, 3968.07469pt x 2297.58376pt>
 File: figures/DPTM-IDEAL-TEMP-CMP.jpg Graphic file (type jpg)
 
 <use figures/DPTM-IDEAL-TEMP-CMP.jpg>
@@ -1558,36 +1549,36 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/DP
+ [16 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/DP
 TM-SOURCE-ALG-TEMP-CMP.jpg> <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bn
 uthesis_1.51/figures/DPTM-IDEAL-POWER-CMP.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/DP
+ [17 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/DP
 TM-IDEAL-TEMP-CMP.jpg>])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19]
+ [18]
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/chap04.tex
-<figures/EV6.jpg, id=812, 1279.02844pt x 1247.41031pt>
+<figures/EV6.jpg, id=809, 1279.02844pt x 1247.41031pt>
 File: figures/EV6.jpg Graphic file (type jpg)
  <use figures/EV6.jpg>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20
+ [19
 
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/EV
+ [20 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/EV
 6.jpg>]
-<figures/HOTSPOT-MODEL.png, id=832, 740.0147pt x 470.50781pt>
+<figures/HOTSPOT-MODEL.png, id=829, 740.0147pt x 470.50781pt>
 File: figures/HOTSPOT-MODEL.png Graphic file (type png)
 
 <use figures/HOTSPOT-MODEL.png>
-<figures/EV6-GRID-TEM-SURF.png, id=834, 721.19438pt x 566.86781pt>
+<figures/EV6-GRID-TEM-SURF.png, id=831, 721.19438pt x 566.86781pt>
 File: figures/EV6-GRID-TEM-SURF.png Graphic file (type png)
 
 <use figures/EV6-GRID-TEM-SURF.png>
@@ -1596,19 +1587,28 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/HO
-TSPOT-MODEL.png>] <figures/TP-ITERATION.jpg, id=848, 467.346pt x 331.9602pt>
+ [21 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/HO
+TSPOT-MODEL.png>]
+
+LaTeX Warning: Reference `equ:chap2:active_power_simplified' on page 22 undefin
+ed on input line 53.
+
+
+LaTeX Warning: Reference `equ:chap2:leakage_power' on page 22 undefined on inpu
+t line 53.
+
+<figures/TP-ITERATION.jpg, id=843, 467.346pt x 331.9602pt>
 File: figures/TP-ITERATION.jpg Graphic file (type jpg)
 
 <use figures/TP-ITERATION.jpg>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/EV
+ [22 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/EV
 6-GRID-TEM-SURF.png (PNG copy)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [24 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/TP
--ITERATION.jpg>] <figures/MULTICORE-TEMP-MODEL.png, id=865, 537.6888pt x 249.09
+ [23 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/TP
+-ITERATION.jpg>] <figures/MULTICORE-TEMP-MODEL.png, id=860, 537.6888pt x 249.09
 06pt>
 File: figures/MULTICORE-TEMP-MODEL.png Graphic file (type png)
 
@@ -1618,14 +1618,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25]
+ [24]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/MU
+ [25 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/MU
 LTICORE-TEMP-MODEL.png>])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27]
+ [26]
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/chap05.tex
 
 Underfull \hbox (badness 4859) in paragraph at lines 19--20
@@ -1640,56 +1640,56 @@ Underfull \hbox (badness 4859) in paragraph at lines 19--20
 /song/m/n/12.045/54  \C70/song/m/n/12.045/91 Ç
  []
 
-[28
+[27
 
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29]
+ [28]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30]
-<figures/EX1-PLK-ERROR.jpg, id=936, 631.60968pt x 330.48468pt>
+ [29]
+<figures/EX1-PLK-ERROR.jpg, id=932, 631.60968pt x 330.48468pt>
 File: figures/EX1-PLK-ERROR.jpg Graphic file (type jpg)
 
 <use figures/EX1-PLK-ERROR.jpg>
-<figures/EX1-TEMP-ERROR.jpg, id=937, 640.64343pt x 349.305pt>
+<figures/EX1-TEMP-ERROR.jpg, id=933, 640.64343pt x 349.305pt>
 File: figures/EX1-TEMP-ERROR.jpg Graphic file (type jpg)
 
 <use figures/EX1-TEMP-ERROR.jpg>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [31 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/EX
+ [30 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/EX
 1-PLK-ERROR.jpg> <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.5
 1/figures/EX1-TEMP-ERROR.jpg>])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32]
+ [31]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33]
+ [32]
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/chap06.tex
-) [34
+) [33
 
 
 
-] (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\main.bbl [35
+] (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\main.bbl [34
 
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36]
+ [35]
 
 LaTeX Warning: File c705a.cmap not found on input line 226.
 
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37]
+ [36]
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/paper.tex
 Underfull \hbox (badness 1019) in paragraph at lines 6--7
 []\OT1/txr/m/n/12.045 Jiaqi Yan, Zuy-ing Lu-o, Liang Tang:\C70/song/m/n/12.045/
@@ -1700,7 +1700,7 @@ Underfull \hbox (badness 1019) in paragraph at lines 6--7
 
 LaTeX Warning: File c7055.cmap not found on input line 7.
 
-) [38
+) [37
 
 
 
@@ -1712,7 +1712,7 @@ LaTeX Warning: File c7085.cmap not found on input line 10.
 
 LaTeX Warning: File c7084.cmap not found on input line 12.
 
-) [39
+) [38
 
 
 
@@ -1739,15 +1739,19 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C6BD768F48106A8E9605B4757190FC07;7502.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 15315 strings out of 495362
- 217769 string characters out of 3184023
- 309355 words of memory out of 3000000
- 17198 multiletter control sequences out of 15000+200000
+ 15308 strings out of 495362
+ 217678 string characters out of 3184024
+ 309237 words of memory out of 3000000
+ 17200 multiletter control sequences out of 15000+200000
  178607 words of font info for 534 fonts, out of 3000000 for 9000
  15 hyphenation exceptions out of 8191
- 51i,9n,44p,1604b,1942s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,9n,44p,1601b,1944s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/
 chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTe
 X/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun
@@ -1824,9 +1828,9 @@ public/txfonts/txex.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:
 rw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/CTE
 X/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on main.pdf (47 pages, 6703831 bytes).
+Output written on main.pdf (46 pages, 6703414 bytes).
 PDF statistics:
- 1494 PDF objects out of 1728 (max. 8388607)
- 187 named destinations out of 1000 (max. 500000)
+ 1489 PDF objects out of 1728 (max. 8388607)
+ 186 named destinations out of 1000 (max. 500000)
  782 words of extra memory for PDF output out of 10000 (max. 10000000)
 

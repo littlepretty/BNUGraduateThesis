@@ -16,12 +16,12 @@
 
 \section{实时系统的热分析模型}
 \label{sec:thermal}
-为了研究处理器内核(Die)的热传导特性， 文献\onlinecite{LkDVSRTEmbSys,LkSchMaxTemMinPerHdRTSys,WCTemAnlyRTSys}等都广泛采用了等效RC电路方法进行热分析建模， 并采用如~\ref{equ:chap2:thermal_model}进行工作温度的求解
+为了研究处理器内核(Die)的热传导特性， 文献\onlinecite{LkDVSRTEmbSys,LkSchMaxTemMinPerHdRTSys,WCTemAnlyRTSys}等都广泛采用了等效RC电路方法进行热分析建模， 并采用如\ref{equ:chap2:thermal_model}进行工作温度的求解
 \begin{equation}
 \label{equ:chap2:thermal_model}
 \frac{dT}{dt} = \frac{P}{C_{th}}-\frac{T-T_{amb}}{R_{th}C_{th}} = \alpha P -\beta (T-T_{amb})
 \end{equation}
-~\ref{equ:chap2:thermal_model}式中$T$和$T_{amb}$分别代表芯片的温度与环境温度， $P$代表芯片在时刻$t$的功耗，$R_{th}$与$C_{th}$分别为等效热阻与等效热容。
+\ref{equ:chap2:thermal_model}式中$T$和$T_{amb}$分别代表芯片的温度与环境温度， $P$代表芯片在时刻$t$的功耗，$R_{th}$与$C_{th}$分别为等效热阻与等效热容。
 
 \section{实时系统的功耗分析模型}
 \label{sec:power}
@@ -30,12 +30,12 @@
 \label{equ:chap2:active_power}
 P_{active} = CV_{dd}^2f+N_{gate}I_{leakage}V_{dd}
 \end{equation}
-~\ref{equ:chap2:active_power}中的第一项代表动态功耗，第二项代表静态功耗。当给定供电电压$V_{dd}$后，工作频率$f$为
+\ref{equ:chap2:active_power}中的第一项代表动态功耗，第二项代表静态功耗。当给定供电电压$V_{dd}$后，工作频率$f$为
 \begin{equation}
 \label{equ:chap2:freq}
 f = \frac{(V_{dd}-V_t)^\mu}{(V_{dd}T_{max})^\eta}\times 4.2824\times 10^{14} \approx C_1V_{dd}
 \end{equation}
-由于与工作电压成正比，我们可以使用~\ref{equ:chap2:active_power_simplified}计算动态功耗
+由于与工作电压成正比，我们可以使用\ref{equ:chap2:active_power_simplified}计算动态功耗
 \begin{equation}
 \label{equ:chap2:active_power_simplified}
 P_{active} = C_2V_{dd}^3
@@ -45,23 +45,26 @@ P_{active} = C_2V_{dd}^3
 \label{equ:chap2:leakage_current}
 I_{leakage} = I(V_0,T_0)(AT^2\exp(\frac{\alpha V_{dd}+\beta}{T})+B\exp(\gamma V_{dd}+\delta))
 \end{equation}
-~\ref{equ:chap2:leakage_current}式中$A,B,\alpha,\beta,\gamma,\delta,\mu,\eta$是经验参数，由生产工艺所决定。 本文的模拟实验默认选择采用65nm的工艺参数，如表所示。
+\ref{equ:chap2:leakage_current}式中$A,B,\alpha,\beta,\gamma,\delta,\mu,\eta$是经验参数，由生产工艺所决定。 本文的模拟实验默认选择采用65nm的工艺参数，如表\ref{tab:chap2:tech-parameters}所示。
 \begin{table}
 \caption{$A,B,\alpha,\beta,\gamma,\delta,\mu,\eta$的取值}
 \centering
-\begin{tabular}{c|c|c|c|c|c|c|c|c}
+\begin{tabular}{c c c c c c c c c}
+\hline\hline
 参数 & $A$ & $B$ & $\alpha$ & $\beta$ & $\gamma$ & $\delta$ & $\mu$ & $\eta$ \\
-取值 & 1.143E-12 & 1.013E-14 466.403 & -1224.741 & 6.282 & 6.909 & 1.19 & 1.20 \\
+\hline
+取值 & 1.143E-12 & 1.013E-14 & 466.403 & -1224.741 & 6.282 & 6.909 & 1.19 & 1.20 \\
+\hline
 \end{tabular}
 \label{tab:chap2:tech-parameters}
 \end{table}
 
-当工作温度$T$在300K到380K的正常范围变化时，$\exp(\frac{1}{T})$的波动变化很小。 当给定了$V_{dd}$后， 文献\onlinecite{EngRTTskSchTemDepLk}通过引入两个参考温度$TH$和$TL$进一步将漏电流简化为温度的二次函数。 于是，与漏电流相关的静态功耗可以用~\ref{equ:chap2:leakage_power}式计算
+当工作温度$T$在300K到380K的正常范围变化时，$\exp(\frac{1}{T})$的波动变化很小。 当给定了$V_{dd}$后， 文献\onlinecite{EngRTTskSchTemDepLk}通过引入两个参考温度$TH$和$TL$进一步将漏电流简化为温度的二次函数。 于是，与漏电流相关的静态功耗可以用\ref{equ:chap2:leakage_power}式计算
 \begin{equation}
 \label{equ:chap2:leakage_power}
 P_{leakage} = N_{gate}(\hat{A}T^2+\hat{B})V_{dd}
 \end{equation}
-~\ref{equ:chap2:leakage_power}中，
+\ref{equ:chap2:leakage_power}中，
 $\hat{A}=\frac{I_{leakage}(TH,V_{dd})-I_{leakage}(TL,V_{dd})}{{TH}^2-{TL}^2}$，
 $\hat{B}=I_{leakage}(TH,V_{dd})-\hat{A}{TL}^2$。
 此外，处理器的工作状态切换是通过改变工作电压来实现的， 状态切换所带来的开销包括能耗开销$p_r$与延时开销$c_r$\onlinecite{TemIdDistEngOptDVS}。 整体而言，工作状态切换跨度越大，其能耗和时间的开销也就越大。
@@ -89,9 +92,9 @@ G.Quan等\onlinecite{LkEngMinRTSysMaxTemConst}提出的MO算法存在两个主�
 根据我们在DPTM领域的研究经验，可以获得如下关于DPTM改进的几点经验准则：
 (1)	必须考虑温度对静态功耗的影响。本文将功耗定为温度的二次函数。在温度限制下，DPTM系统最好具有温敏调控功能。
 (2)	如果能够准确预测负载量，确定任务所需的工作频率或者工作电压，就可以提前调度，更好的满足实时性。
-(3)	芯片电压选取。由于工作电压决定了运行速度，应该采用MO的电压选取方法，即使得芯片运行速度刚好满足工作负载的需求， 以最大程度地利用DVFS技术来降低能耗。
+(3)	 芯片电压选取。由于工作电压决定了运行速度，应该采用MO的电压选取方法，即使得芯片运行速度刚好满足工作负载的需求， 以最大程度地利用DVFS技术来降低能耗。
 (4)	调度过程中，必须考虑电压切换（状态切换）所带来的额外能耗、时间开销。
-基于以上观察，我们提出一种改良后的TALK算法，即具有电压选择的TALK算法，本文称为VP-TALK， 其算法流程图如图~\ref{fig:vp-talk}所示。
+基于以上观察，我们提出一种改良后的TALK算法，即具有电压选择的TALK算法，本文称为VP-TALK， 其算法流程图如图\ref{fig:vp-talk}所示。
 \begin{figure}[H] % use float package if you want it here
   \centering
   \includegraphics[width=1.0\textwidth,height=1.0\textheight]{Visio-VS-TALK}
@@ -103,7 +106,7 @@ G.Quan等\onlinecite{LkEngMinRTSysMaxTemConst}提出的MO算法存在两个主�
 \section{DPTM原型系统}
 \label{DPTM-system}
 \subsection{启发性示例}
-在之前的分析中，我们已经指出，较轻工作负载时的MO必然要退化至PB的方法. 这是因为当工作所需电压低于可选的最小电压值时，MO中阶梯型工作电压策略无法通过逼近最优工作电压的方式节省动态功耗。 为了探究工作量与最优调度算法之间的关系，我们设定任务长度为10秒， 并考虑比文献\onlinecite{LkEngMinRTSysMaxTemConst}更强的温度对漏电流影响， 我们在工作负载率全区间（5\%-95\%）范围内，对TALK、PB与MO这3种已有调度源算法的调度效果进行了考察。 图~\ref{fig:exp_power_cmp}给出了能耗的数据，图~\ref{fig:exp_temp_cmp}给出了温度数据。
+在之前的分析中，我们已经指出，较轻工作负载时的MO必然要退化至PB的方法. 这是因为当工作所需电压低于可选的最小电压值时，MO中阶梯型工作电压策略无法通过逼近最优工作电压的方式节省动态功耗。 为了探究工作量与最优调度算法之间的关系，我们设定任务长度为10秒， 并考虑比文献\onlinecite{LkEngMinRTSysMaxTemConst}更强的温度对漏电流影响， 我们在工作负载率全区间（5\%-95\%）范围内，对TALK、PB与MO这3种已有调度源算法的调度效果进行了考察。 图\ref{fig:exp_power_cmp}给出了能耗的数据，图\ref{fig:exp_temp_cmp}给出了温度数据。
 \begin{figure}%[H] % use float package if you want it here
   \centering
   \includegraphics[width=1.0\textwidth]{power_cmp}
@@ -125,17 +128,17 @@ G.Quan等\onlinecite{LkEngMinRTSysMaxTemConst}提出的MO算法存在两个主�
 \subsection{基于机器学习的DPTM原型系统}
 根据调度算法性能与工作负载大小相关的观察，我们提出了基于工作负载预测结果来选择DPTM调度算法的调度策略， 并以此构建了本文的DPTM原型系统，整个系统由工作负载预测、调度策略选择和调度策略评价三大模块组成， 其具体的架构及其工作原理如图4所示。
 在该系统工作中，其三大模块主要完成如下功能。 (1)工作负载预测模块：我们根据负载变化周期的长短，提出了一种组合式的负载预测方法， 采用多种不同拟合方法来分别对任务的不同物理意义成分进行精确预测，以获得对复杂任务的精确预测； (2)调度策略选择模块：我们综合考虑实时完成任务、温度上限、能耗最小化、 漏电流与温度相关以及芯片模式切换代价等多种因素， 选用不同的任务调度策略； (3)调度策略评价模块：对每种策略的系统能耗与峰值温度进行评价，并将其作为DPTM系统的反馈量，供调度策略选择模块参考。
-调度策略选择的学习主要通过后期性能评价的评价值完成。假设存在$N$类DPTM，编号为$1,2,……,N$。 它们在某一时刻$t$的得分或者权重为，$w_t=(w_{1t},w_{2t},...,w_{Nt})$对其中任一个权重分量$w_{kt}$可以 采用~\ref{equ:chap2:cal_weight}进行计算
+调度策略选择的学习主要通过后期性能评价的评价值完成。假设存在$N$类DPTM，编号为$1,2,……,N$。 它们在某一时刻$t$的得分或者权重为，$w_t=(w_{1t},w_{2t},...,w_{Nt})$对其中任一个权重分量$w_{kt}$可以 采用\ref{equ:chap2:cal_weight}进行计算
 \begin{equation}
 \label{equ:chap2:cal_weight}
 w_{kt} = 1- \sum\limits_{j=t_0}^{t-1} \frac{E_{k,j}\lambda_j}{\sum\limits_{i=1}^N E_{i,j}}
 \end{equation}
-式中$E_{i,j}$代表芯片使用第$i$类DPTM在时刻$j$的负载情况下消耗的能量，$\lambda_{j}$为一可调整的参数， 代表时刻$j$的能耗情况对决策的影响程度，$t_0$是可以变动的初始值， 它的取值意味着选取从何时开始的能耗情况作为以后决策的参考。在预测出工作负荷值后， 则开始使用~\ref{equ:chap2:decide}进行决策：
+式中$E_{i,j}$代表芯片使用第$i$类DPTM在时刻$j$的负载情况下消耗的能量，$\lambda_{j}$为一可调整的参数， 代表时刻$j$的能耗情况对决策的影响程度，$t_0$是可以变动的初始值， 它的取值意味着选取从何时开始的能耗情况作为以后决策的参考。在预测出工作负荷值后， 则开始使用\ref{equ:chap2:decide}进行决策：
 \begin{equation}
 \label{equ:chap2:decide}
 DPTM_t = \arg(\max\limits_{1\le k \le N}(w_{k,t}))
 \end{equation}
-~\ref{equ:chap2:decide}中$DPTM_t$为$t$时刻选择出的动态功耗温度调度策略。考虑到温度上的限制， 我们需要考察所选的调度源算法是否会超过温度上限。 如果能耗的节约是在很高的峰值温度的代价下换取的，我们将放弃该源算法，而选择次优的但是有较低峰值温度的调度源算法。
+\ref{equ:chap2:decide}中$DPTM_t$为$t$时刻选择出的动态功耗温度调度策略。考虑到温度上的限制， 我们需要考察所选的调度源算法是否会超过温度上限。 如果能耗的节约是在很高的峰值温度的代价下换取的，我们将放弃该源算法，而选择次优的但是有较低峰值温度的调度源算法。
 与三种已有源算法和本文提出的VP-TALK算法相比，本文DPTM系统的主要扩展改进点在于： 具有高精度的任务预测模块，为根据负载量而进行的策略选择提供前提基础； 通过基于调度效果评价的机器学习，自适应地根据负载量的轻重选择调度策略。
 
 \subsection{基于单一调度策略的DPTM原型系统}

@@ -13,7 +13,7 @@
 为了验证本文所提出的预测任务负载模型、VP-TALK调度算法以及DPTM原型系统，我们进行了三组模拟实验。实验运行平台为配有Intel Core 2 Q9550 CPU、4GB RAM的Windows7 64位操作系统，预测模型以及各DPTM算法在MATLAB\onlinecite{MATLAB}软件中模拟实现。
 
 \section{VP-TALK算法的DPTM效果验证}
-本文通过与现有的TALK、PB、MO算法进行对比，来验证本文提出的VP-TALK算法的优越性。 实验中选取$p_r$、$c_r$取值分别为0.001$s$/$V$和0.01$J$/$V^2$，温度最高上限设为390K，任务周期固定为10$s$。 支持DVFS芯片的电压值从0.6$V$到1.4$V$可调，步长0.1$V$。根据电压可以得到归一化的速度序列为{0.574, 0.6611, 0.7324, 0.7926, 0.8446, 0.8901, 0.930, 0.9670, 1}。 任务负载率为5\%至95\%，变化步长为5\%。 对于4种对比算法，我们分别将能耗情况（单位为焦耳$J$）和峰值温度情况（单位为绝对温度$K$）绘制于 图~\ref{fig:vp-talk-power-cmp}和图~\ref{fig:vp-talk-temp-cmp}。
+本文通过与现有的TALK、PB、MO算法进行对比，来验证本文提出的VP-TALK算法的优越性。 实验中选取$p_r$、$c_r$取值分别为0.001$s$/$V$和0.01$J$/$V^2$，温度最高上限设为390K，任务周期固定为10$s$。 支持DVFS芯片的电压值从0.6$V$到1.4$V$可调，步长0.1$V$。根据电压可以得到归一化的速度序列为{0.574, 0.6611, 0.7324, 0.7926, 0.8446, 0.8901, 0.930, 0.9670, 1}。 任务负载率为5\%至95\%，变化步长为5\%。 对于4种对比算法，我们分别将能耗情况（单位为焦耳$J$）和峰值温度情况（单位为绝对温度$K$）绘制于 图\ref{fig:vp-talk-power-cmp}和图\ref{fig:vp-talk-temp-cmp}。
 \begin{figure}[H]
   \centering
   \includegraphics[width=1.0\textwidth,height=0.5\textheight]{VP-TALK-POWER-CMP}
@@ -45,7 +45,7 @@
 
 \section{基于机器学习的DPTM原型系统的验证}
 为了评价本文基于机器学习的DPTM原型系统功耗与温度的调度效果，我们做了两组实验。
-首先，基于\onlinecite{DPTMbyYJQ}中所得到的每个时刻工作负载预测值，我们分别采用四种对比源算法， 即TALK\onlinecite{TemLkMinTechRTSys}、PB\onlinecite{EngRTTskSchTemDepLk}、 MO\onlinecite{LkEngMinRTSysMaxTemConst}，VP-TALK， 算出每个时刻每种算法的能耗值与峰值温度； 然后将四种对比源算法每个时刻的能耗值与峰值温度进行平均，得到四种对比源算法每个时刻的平均调度效果； 最后使用图~\ref{fig:dptm-source-alg-power-cmp}与图~\ref{fig:dptm-source-alg-temp-cmp}分别 比较了本文原型系统与四种对比源算法平均调度效果的能耗（单位$J$）和峰值温度（单位$\celsius$）。
+首先，基于\onlinecite{DPTMbyYJQ}中所得到的每个时刻工作负载预测值，我们分别采用四种对比源算法， 即TALK\onlinecite{TemLkMinTechRTSys}、PB\onlinecite{EngRTTskSchTemDepLk}、 MO\onlinecite{LkEngMinRTSysMaxTemConst}，VP-TALK， 算出每个时刻每种算法的能耗值与峰值温度； 然后将四种对比源算法每个时刻的能耗值与峰值温度进行平均，得到四种对比源算法每个时刻的平均调度效果； 最后使用图\ref{fig:dptm-source-alg-power-cmp}与图\ref{fig:dptm-source-alg-temp-cmp}分别 比较了本文原型系统与四种对比源算法平均调度效果的能耗（单位$J$）和峰值温度（单位$\celsius$）。
 \begin{figure}[H]
   \centering
   \includegraphics[width=1.0\textwidth,height=0.4\textheight]{DPTM-SOURCE-ALG-POWER-CMP}
@@ -71,11 +71,11 @@
   \label{fig:dptm-ideal-temp-cmp}
 \end{figure}
 
-其次，同样基于\onlinecite{DPTMbyYJQ}中所得到的每个时刻工作负载真实值，采用四种源算法，分别算出每个时刻的能耗值与峰值温度， 取其中的最优值作为DPTM调度的理想值； 然后使用这批理想值来客观评价集成了TALK、PB、MO以及VP-TALK算法的DPTM原型系统的调度效果； 最后使用图~\ref{fig:dptm-ideal-power-cmp}与图~\ref{fig:dptm-ideal-temp-cmp}分别 比较了本文原型系统与四种对比源算法理论最优调度效果的能耗（单位$J$）和峰值温度（单位$\celsius$）。
-从图~\ref{fig:dptm-source-alg-power-cmp}与图~\ref{fig:dptm-source-alg-temp-cmp}可以直观地看出： 与四种源算法平均调度效果相比， 本文原型系统择优式的组合DPTM算法可以明显拉低实时系统的运行能耗曲线和峰值温度曲线， 这表明对比于四种DPTM源算法，本文基于机器学习的DPTM原型系统获得了"取其长、去其短"的优化效果。 同时从表3的比较数据可以得出"本文原型系统可以获得近似最优的调度效果"的结论，其实验依据如下：
-(1)与四种DPTM源算法的平均效果相比（图~\ref{fig:dptm-source-alg-power-cmp}）， 本文原型系统采用的择优式组合DPTM算法可获得更优的能耗优化效果， 所有时间采样点能耗的累加值$E_{TOTAL}$（总能耗）可获得18.39\%的改进， 所有时间采样点中的最大值$E_{MAX}$（最大能耗）可获得18.77\%的改进。整体改进效果非常明显。
-(2)与四种DPTM源算法相比（图~\ref{fig:dptm-source-alg-temp-cmp}），本文原型系统可以获得更优的峰值温度优化效果， 所有时间采样点中的最大峰值温度$T_{PMAX}$是最优， 所有时间采样点峰值温度的平均值$T_{PAVG}$是比算法均值稍弱。与四种DPTM源算法调度效果平均值相比， 本文原型系统可以获得$T_{PMAX}$1.81$\celsius$的改进，但$T_{PAVG}$ 有-1.31$\celsius$的退化。从拉低最大峰值温度的角度来讲，改进效果较为明显。
-(3)通过图~\ref{fig:dptm-ideal-power-cmp}与图~\ref{fig:dptm-ideal-temp-cmp} 对本文原型系统的调度效果与理想值进行的直观比较， 看出本文原型系统可以获得比四种源算法均值更接近于理想值的优化效果。 与表3中理想值的$E_{TOTAL}/E_{MAX}/T_{PAVG}/T_{PMAX}$参数相比， 四种DPTM源算法调度效果平均值会产生28.64\%/30.09\%/7.71$\celsius$/9.73$\celsius$的差距， 而本文原型系统只产生了12.55\%/13.93\%/9.02$\celsius$/7.91$\celsius$差距。
+其次，同样基于\onlinecite{DPTMbyYJQ}中所得到的每个时刻工作负载真实值，采用四种源算法，分别算出每个时刻的能耗值与峰值温度， 取其中的最优值作为DPTM调度的理想值； 然后使用这批理想值来客观评价集成了TALK、PB、MO以及VP-TALK算法的DPTM原型系统的调度效果； 最后使用图\ref{fig:dptm-ideal-power-cmp}与图\ref{fig:dptm-ideal-temp-cmp}分别 比较了本文原型系统与四种对比源算法理论最优调度效果的能耗（单位$J$）和峰值温度（单位$\celsius$）。
+从图\ref{fig:dptm-source-alg-power-cmp}与图\ref{fig:dptm-source-alg-temp-cmp}可以直观地看出： 与四种源算法平均调度效果相比， 本文原型系统择优式的组合DPTM算法可以明显拉低实时系统的运行能耗曲线和峰值温度曲线， 这表明对比于四种DPTM源算法，本文基于机器学习的DPTM原型系统获得了"取其长、去其短"的优化效果。 同时从表3的比较数据可以得出"本文原型系统可以获得近似最优的调度效果"的结论，其实验依据如下：
+(1)与四种DPTM源算法的平均效果相比（图\ref{fig:dptm-source-alg-power-cmp}）， 本文原型系统采用的择优式组合DPTM算法可获得更优的能耗优化效果， 所有时间采样点能耗的累加值$E_{TOTAL}$（总能耗）可获得18.39\%的改进， 所有时间采样点中的最大值$E_{MAX}$（最大能耗）可获得18.77\%的改进。整体改进效果非常明显。
+(2)与四种DPTM源算法相比（图\ref{fig:dptm-source-alg-temp-cmp}），本文原型系统可以获得更优的峰值温度优化效果， 所有时间采样点中的最大峰值温度$T_{PMAX}$是最优， 所有时间采样点峰值温度的平均值$T_{PAVG}$是比算法均值稍弱。与四种DPTM源算法调度效果平均值相比， 本文原型系统可以获得$T_{PMAX}$1.81$\celsius$的改进，但$T_{PAVG}$ 有-1.31$\celsius$的退化。从拉低最大峰值温度的角度来讲，改进效果较为明显。
+(3)通过图\ref{fig:dptm-ideal-power-cmp}与图\ref{fig:dptm-ideal-temp-cmp} 对本文原型系统的调度效果与理想值进行的直观比较， 看出本文原型系统可以获得比四种源算法均值更接近于理想值的优化效果。 与表3中理想值的$E_{TOTAL}/E_{MAX}/T_{PAVG}/T_{PMAX}$参数相比， 四种DPTM源算法调度效果平均值会产生28.64\%/30.09\%/7.71$\celsius$/9.73$\celsius$的差距， 而本文原型系统只产生了12.55\%/13.93\%/9.02$\celsius$/7.91$\celsius$差距。
 
 \section{小结}
-第~\ref{cha:DPTM}章深入分析与评估了已有的主流调度算法，提出了一系列调度准则和经验。 基于这些对芯片工作休眠状态调度的经验准则，我们提出一种在能耗节省方面更具优势的DPTM调度算法VP-TALK， 以此算法为基础，综合本文所提出的预测任务负载模型，构建了一个基于负载预测的DPTM系统。本章中的仿真实验表明， (1)本文的组合模型在负载预测方面胜过众多的相关模型及算法，平均误差仅为2.89\%； (2)本文所提出的VP-TALK算法在较高的工作负载率和共同的峰值温度约束下， 分别比Pattern-Based、M-Oscillating、TALK分别节能20.54\%、11.04\%、11.42\%； (3)本文所提出的综合四种源算法、基于机器学习的DPTM原型系统较为接近理想值， 与其$E_{TOTAL}/E_{MAX}/T_{PAVG}/T_{PMAX}$参数相比， 只产生了12.55\%/13.93\%/9.02$\celsius$/7.91$\celsius$差距。 
+第\ref{cha:DPTM}章深入分析与评估了已有的主流调度算法，提出了一系列调度准则和经验。 基于这些对芯片工作休眠状态调度的经验准则，我们提出一种在能耗节省方面更具优势的DPTM调度算法VP-TALK， 以此算法为基础，综合本文所提出的预测任务负载模型，构建了一个基于负载预测的DPTM系统。本章中的仿真实验表明， (1)本文的组合模型在负载预测方面胜过众多的相关模型及算法，平均误差仅为2.89\%； (2)本文所提出的VP-TALK算法在较高的工作负载率和共同的峰值温度约束下， 分别比Pattern-Based、M-Oscillating、TALK分别节能20.54\%、11.04\%、11.42\%； (3)本文所提出的综合四种源算法、基于机器学习的DPTM原型系统较为接近理想值， 与其$E_{TOTAL}/E_{MAX}/T_{PAVG}/T_{PMAX}$参数相比， 只产生了12.55\%/13.93\%/9.02$\celsius$/7.91$\celsius$差距。 
