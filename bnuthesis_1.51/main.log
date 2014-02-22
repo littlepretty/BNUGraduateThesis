@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.2)  2 FEB 2014 15:11
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.6)  22 FEB 2014 16:54
 entering extended mode
 **C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/main.tex
 (C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/main.tex
@@ -1707,10 +1707,10 @@ LaTeX Warning: File c7055.cmap not found on input line 7.
 ]
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/ack.tex
 
-LaTeX Warning: File c7085.cmap not found on input line 10.
+LaTeX Warning: File c7085.cmap not found on input line 12.
 
 
-LaTeX Warning: File c7084.cmap not found on input line 12.
+LaTeX Warning: File c7084.cmap not found on input line 14.
 
 ) [38
 
@@ -1745,10 +1745,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 15308 strings out of 495362
- 217678 string characters out of 3184024
+ 15316 strings out of 495362
+ 217784 string characters out of 3184024
  309237 words of memory out of 3000000
- 17200 multiletter control sequences out of 15000+200000
+ 17208 multiletter control sequences out of 15000+200000
  178607 words of font info for 534 fonts, out of 3000000 for 9000
  15 hyphenation exceptions out of 8191
  51i,9n,44p,1601b,1944s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1828,7 +1828,7 @@ public/txfonts/txex.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:
 rw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/CTE
 X/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on main.pdf (46 pages, 6703414 bytes).
+Output written on main.pdf (46 pages, 6704274 bytes).
 PDF statistics:
  1489 PDF objects out of 1728 (max. 8388607)
  186 named destinations out of 1000 (max. 500000)
