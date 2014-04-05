@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.6)  4 APR 2014 14:53
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.6)  5 APR 2014 15:16
 entering extended mode
 **C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/main.tex
 (C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/main.tex
@@ -1411,9 +1411,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [3]
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/chap02.tex
 Package hyperref Info: bookmark level for unknown equation defaults to 0 on inp
-ut line 23.
+ut line 24.
 
-LaTeX Warning: File c708e.cmap not found on input line 28.
+LaTeX Warning: File c708e.cmap not found on input line 29.
 
 [4
 
@@ -1421,12 +1421,12 @@ LaTeX Warning: File c708e.cmap not found on input line 28.
 
 ]
 
-LaTeX Warning: File c709e.cmap not found on input line 48.
+LaTeX Warning: File c709e.cmap not found on input line 49.
 
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 50
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 51
 .
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 12.39626pt on input line 74.
+(Font)              scaled to size 12.39626pt on input line 75.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1449,30 +1449,30 @@ File: figures/power_cmp.jpg Graphic file (type jpg)
 File: figures/temp_cmp.jpg Graphic file (type jpg)
 
 <use figures/temp_cmp.jpg>
+
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 132.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/pow
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/pow
 er_cmp.jpg>]
-
-LaTeX Warning: Command \textellipsis invalid in math mode on input line 131.
-
-
-LaTeX Warning: Command \textellipsis invalid in math mode on input line 131.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/tem
-p_cmp.jpg>])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10]
+ [10 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/te
+mp_cmp.jpg>])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11]
@@ -1734,7 +1734,7 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  15316 strings out of 495362
  217750 string characters out of 3184024
- 309199 words of memory out of 3000000
+ 309200 words of memory out of 3000000
  17208 multiletter control sequences out of 15000+200000
  178607 words of font info for 534 fonts, out of 3000000 for 9000
  15 hyphenation exceptions out of 8191
@@ -1815,7 +1815,7 @@ public/txfonts/txex.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:
 rw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/CTE
 X/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on main.pdf (46 pages, 6705057 bytes).
+Output written on main.pdf (46 pages, 6705557 bytes).
 PDF statistics:
  1490 PDF objects out of 1728 (max. 8388607)
  186 named destinations out of 1000 (max. 500000)

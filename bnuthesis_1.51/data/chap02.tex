@@ -11,12 +11,13 @@
 
 \section{实时系统的工作负载模型}
 \label{sec:workload}
-本文讨论的实时系统可以周期性地分配一段时间$D$作为执行某一任务的截止时间，该任务在最坏情况下所需要的执行时间为$W$。 不失一般性，我们假设任务的截止时间等于系统周期性分配的时间片，并且等价地只考虑一个周期内的任务。 文献\onlinecite{RTCalSchHdRTSys}与\onlinecite{LkSchMaxTemMinPerHdRTSys}根据任务的性质研究了如何 决定$(D,W)$数据对的值。 本文中，由于可以预测出发送至实时系统的数据量，工作负荷便可以被认为是网络流量的归一化形式。
+本文讨论的实时系统的工作负载模型具有简单地结构。 系统会周期性地分配一段时间$D$，某一任务的必须在该截止时间以前完成。该任务在最坏情况下所需要的执行时间为$W$。 本文中假设任务的截止时间等于系统周期性分配的时间片，并且等价地只考虑一个周期内任务的执行情况。 根据任务的性质，\onlinecite{RTCalSchHdRTSys}与\onlinecite{LkSchMaxTemMinPerHdRTSys}等文献研究了如何估计$(D,W)$数据对的值。
+本文中我们认为工作负荷是发送至实时系统的网络流量的归一化形式。
 
 
 \section{实时系统的热分析模型}
 \label{sec:thermal}
-为了研究处理器内核(Die)的热传导特性， 文献\onlinecite{LkDVSRTEmbSys,LkSchMaxTemMinPerHdRTSys,WCTemAnlyRTSys}等都广泛采用了等效RC电路方法进行热分析建模， 并采用式\ref{equ:chap2:thermal-model}进行工作温度的求解
+为了研究处理器内核(Die)的热传导特性， 文献\onlinecite{LkDVSRTEmbSys,LkSchMaxTemMinPerHdRTSys,WCTemAnlyRTSys}等都广泛采用了等效RC电路方法进行热分析， 并采用式\ref{equ:chap2:thermal-model}进行内核工作温度的分析
 \begin{equation}
 \label{equ:chap2:thermal-model}
 \frac{dT}{dt} = \frac{P}{C_{th}}-\frac{T-T_{amb}}{R_{th}C_{th}} = \alpha P -\beta (T-T_{amb})
@@ -25,7 +26,7 @@
 
 \section{实时系统的功耗分析模型}
 \label{sec:power}
-处理器的系统状态可以分为工作状态和休眠状态： 只有在工作状态下处理器才执行任务； 否则，处理器将进入休眠状态以减少功耗并降低自身温度。工作状态下的功耗：
+多数处理器拥有两种主要模式，即工作状态和休眠状态：只有在工作状态下处理器被充足供电，并执行计算任务； 否则，处理器将进入休眠状态以减少功耗，同时降低自身温度。工作状态下的功耗为：
 \begin{equation}
 \label{equ:chap2:active-power}
 P_{active} = CV_{dd}^2f+N_{gate}I_{leakage}V_{dd}
@@ -45,7 +46,7 @@ P_{active} = C_2V_{dd}^3
 \label{equ:chap2:leakage-current}
 I_{leakage} = I(V_0,T_0)(AT^2\exp(\frac{\alpha V_{dd}+\beta}{T})+B\exp(\gamma V_{dd}+\delta))
 \end{equation}
-式\ref{equ:chap2:leakage-current}中$A,B,\alpha,\beta,\gamma,\delta,\mu,\eta$是经验参数，由生产工艺所决定。 本文的模拟实验默认选择采用65nm的工艺参数，如表\ref{tab:chap2:tech-parameters}所示。
+式\ref{equ:chap2:leakage-current}中$A,B,\alpha,\beta,\gamma,\delta,\mu,\eta$是经验参数，由芯片的生产工艺参数所决定。 本文的模拟实验默认选择采用65nm的工艺参数，具体参数数值见表\ref{tab:chap2:tech-parameters}。
 \begin{table}
 \caption{$A,B,\alpha,\beta,\gamma,\delta,\mu,\eta$的取值}
 \centering
@@ -67,7 +68,7 @@ P_{leakage} = N_{gate}(\hat{A}T^2+\hat{B})V_{dd}
 \ref{equ:chap2:leakage-power}中，
 $\hat{A}=\frac{I_{leakage}(TH,V_{dd})-I_{leakage}(TL,V_{dd})}{{TH}^2-{TL}^2}$，
 $\hat{B}=I_{leakage}(TH,V_{dd})-\hat{A}{TL}^2$。
-此外，处理器的工作状态切换是通过改变工作电压来实现的， 状态切换所带来的开销包括能耗开销$p_r$与延时开销$c_r$\onlinecite{TemIdDistEngOptDVS}。 整体而言，工作状态切换跨度越大，其能耗和时间的开销也就越大。
+此外，处理器在两种工作状态之间的切换是通过改变工作电压来实现的， 状态切换将带来额外的开销，包括能耗开销$p_r$与延时开销$c_r$\onlinecite{TemIdDistEngOptDVS}。 整体而言，工作状态切换跨度越大（切换电压差越大），其能耗和时间的开销也就越大。
 
 \section{已有的DPTM调度算法}
 \label{sec:algorithms}
@@ -92,7 +93,7 @@ G.Quan等\onlinecite{LkEngMinRTSysMaxTemConst}提出的MO算法存在两个主�
 根据我们在DPTM领域的研究经验，可以获得如下关于DPTM改进的几点经验准则：
 (1)	必须考虑温度对静态功耗的影响。本文将功耗定为温度的二次函数。在温度限制下，DPTM系统最好具有温敏调控功能。
 (2)	如果能够准确预测负载量，确定任务所需的工作频率或者工作电压，就可以提前调度，更好的满足实时性。
-(3)	 芯片电压选取。由于工作电压决定了运行速度，应该采用MO的电压选取方法，即使得芯片运行速度刚好满足工作负载的需求， 以最大程度地利用DVFS技术来降低能耗。
+(3)	芯片电压选取。由于工作电压决定了运行速度，应该采用MO的电压选取方法，即使得芯片运行速度刚好满足工作负载的需求， 以最大程度地利用DVFS技术来降低能耗。
 (4)	调度过程中，必须考虑电压切换（状态切换）所带来的额外能耗、时间开销。
 基于以上观察，我们提出一种改良后的TALK算法，即具有电压选择的TALK算法，本文称为VP-TALK， 其算法流程图如图\ref{fig:vp-talk}所示。
 \begin{figure}[H] % use float package if you want it here

@@ -17,7 +17,7 @@
 \contentsline {section}{\numberline {2.5}基于电压预测的TALK算法：VP-TALK}{6}{section.2.5}
 \contentsline {section}{\numberline {2.6}DPTM原型系统}{8}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}启发性示例}{8}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}基于机器学习的DPTM原型系统}{10}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.2}基于机器学习的DPTM原型系统}{9}{subsection.2.6.2}
 \contentsline {subsection}{\numberline {2.6.3}基于单一调度策略的DPTM原型系统}{11}{subsection.2.6.3}
 \contentsline {chapter}{3\hspace {1em} DPTM原型系统模拟实验}{12}{chapter.3}
 \contentsline {section}{\numberline {3.1}模拟实验环境}{12}{section.3.1}

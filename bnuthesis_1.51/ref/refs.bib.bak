@@ -388,8 +388,8 @@
    NOTE = {\url{http://www.mathworks.com/products/matlab/}},
 }
 
-@MISC{INTELIi7,
-   TITLE = {Intel-I7},
+@MISC{INTELi7,
+   TITLE = {Intel Sandy Bridge-E架构的8核高端CPU},
    HOWPUBLISHED = {[OL]},
    NOTE = {\url{http://ark.intel.com/products/63696}},
 }
