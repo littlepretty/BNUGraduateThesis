@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.6)  27 MAR 2014 18:31
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.6)  4 APR 2014 14:53
 entering extended mode
-**main.tex
-(C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\main.tex
+**C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/main.tex
+(C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/main.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for loaded.
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\bnuthesis.cls
@@ -898,7 +898,21 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 (C:\CTEX\MiKTeX\tex\latex\was\gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
 )
-(C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\main.aux)
+(C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\main.aux
+(C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/chap01.aux
+)
+(C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/chap02.aux
+)
+(C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/chap03.aux
+)
+(C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/chap04.aux
+)
+(C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/chap05.aux
+)
+(C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/chap06.aux
+)
+(C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/paper.aux)
+(C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/ack.aux))
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 24.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 24.
 
@@ -1358,227 +1372,27 @@ l.32 \makecover
 
 
 ] [4]
+(C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\main.toc
 
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+LaTeX Warning: File c708a.cmap not found on input line 3.
 
-\tf@toc=\write4
 [5
 
 
-]
+])
+\tf@toc=\write4
+ [6]
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/chap01.tex
-
-LaTeX Warning: File c708a.cmap not found on input line 9.
-
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
 (Font)              scaled to size 13.34981pt on input line 13.
 
-Package natbib Warning: Citation `ThouCrCpTechPer' on page 1 undefined on input
- line 14.
-
-
-Package natbib Warning: Citation `MooreRule' on page 1 undefined on input line 
-14.
-
-
 LaTeX Warning: File c7099.cmap not found on input line 15.
-
-
-Package natbib Warning: Citation `TheoPracLimofDVS' on page 1 undefined on inpu
-t line 16.
-
-
-Package natbib Warning: Citation `LkDVSRTEmbSys' on page 1 undefined on input l
-ine 16.
-
-
-Package natbib Warning: Citation `TemSchAsgnHdRTApp' on page 1 undefined on inp
-ut line 16.
-
-
-Package natbib Warning: Citation `TheIntMtLPICDigtDsg' on page 1 undefined on i
-nput line 16.
-
-
-Package natbib Warning: Citation `TkSchAlgRTLkPowTemOpt' on page 1 undefined on
- input line 16.
-
-
-Package natbib Warning: Citation `BSIM' on page 1 undefined on input line 16.
-
-
-Package natbib Warning: Citation `TemMngSysHiPerfPPC' on page 1 undefined on in
-put line 16.
-
-
-Package natbib Warning: Citation `MnyDsgThemPer' on page 1 undefined on input l
-ine 17.
-
-
-Package natbib Warning: Citation `ThemOptMulMulFlp' on page 1 undefined on inpu
-t line 17.
-
-
-Package natbib Warning: Citation `FreqVolPlMulProThemConst' on page 1 undefined
- on input line 17.
-
-
-Package natbib Warning: Citation `ThmBefMulCrFlrPlLimSty' on page 1 undefined o
-n input line 17.
-
-
-Package natbib Warning: Citation `ThrOptTskAllocThemConstMulPro' on page 1 unde
-fined on input line 17.
-
-
-Package natbib Warning: Citation `TskAllocMinSysPowHomoMulPro' on page 1 undefi
-ned on input line 17.
-
-
-Package natbib Warning: Citation `ThemOlTskAllocMulProThrOpt' on page 1 undefin
-ed on input line 17.
-
-
-Package natbib Warning: Citation `ThmBefMulCrFlrPlLimSty' on page 1 undefined o
-n input line 17.
-
-
-Package natbib Warning: Citation `ThrOptTskAllocThemConstMulPro' on page 1 unde
-fined on input line 17.
-
-
-Package natbib Warning: Citation `LrnAutoRegMdlFstTransThemAlysCp' on page 1 un
-defined on input line 17.
 
 
 LaTeX Warning: File c7092.cmap not found on input line 17.
 
 
-Package natbib Warning: Citation `ThrOptTskAllocThemConstMulPro' on page 1 unde
-fined on input line 17.
-
-
-Package natbib Warning: Citation `ThrOptTskAllocThemConstMulPro' on page 1 unde
-fined on input line 17.
-
-
-Package natbib Warning: Citation `TskAllocMinSysPowHomoMulPro' on page 1 undefi
-ned on input line 17.
-
-
-Package natbib Warning: Citation `ThemOlTskAllocMulProThrOpt' on page 1 undefin
-ed on input line 17.
-
-
 LaTeX Warning: File c7094.cmap not found on input line 20.
-
-
-Package natbib Warning: Citation `CtrlTechThemRCMdlAccDTM' on page 1 undefined 
-on input line 20.
-
-
-Package natbib Warning: Citation `TemMicArcMdlImpl' on page 1 undefined on inpu
-t line 20.
-
-
-Package natbib Warning: Citation `PreDTMMulApp' on page 1 undefined on input li
-ne 20.
-
-
-Package natbib Warning: Citation `TemLkMinTechRTSys' on page 1 undefined on inp
-ut line 20.
-
-
-Package natbib Warning: Citation `EngRTTskSchTemDepLk' on page 1 undefined on i
-nput line 20.
-
-
-Package natbib Warning: Citation `TemIdDistEngOptDVS' on page 1 undefined on in
-put line 20.
-
-
-Package natbib Warning: Citation `LkEngMinRTSysMaxTemConst' on page 1 undefined
- on input line 20.
-
-
-Package natbib Warning: Citation `ElecAlysOptTechNanoIC' on page 1 undefined on
- input line 22.
-
-
-Package natbib Warning: Citation `HotSpotCmptThemMdlMethErVLSIDsn' on page 1 un
-defined on input line 22.
-
-
-Package natbib Warning: Citation `HotSpotCmptThemMdlMethErVLSIDsn' on page 1 un
-defined on input line 22.
-
-
-Package natbib Warning: Citation `ThmBefMulCrFlrPlLimSty' on page 1 undefined o
-n input line 22.
-
-
-Package natbib Warning: Citation `LrnAutoRegMdlFstTransThemAlysCp' on page 1 un
-defined on input line 22.
-
-
-Package natbib Warning: Citation `MnyDsgThemPer' on page 1 undefined on input l
-ine 23.
-
-
-Package natbib Warning: Citation `ThemOptMulMulFlp' on page 1 undefined on inpu
-t line 23.
-
-
-Package natbib Warning: Citation `ThrOptTskAllocThemConstMulPro' on page 1 unde
-fined on input line 23.
-
-
-Package natbib Warning: Citation `TskAllocMinSysPowHomoMulPro' on page 1 undefi
-ned on input line 23.
-
-
-Package natbib Warning: Citation `LrnAutoRegMdlFstTransThemAlysCp' on page 1 un
-defined on input line 23.
-
-
-Package natbib Warning: Citation `ThemOptMulMulFlp' on page 1 undefined on inpu
-t line 23.
-
-
-Package natbib Warning: Citation `MnyDsgThemPer' on page 1 undefined on input l
-ine 23.
-
-
-Package natbib Warning: Citation `ThrOptTskAllocThemConstMulPro' on page 1 unde
-fined on input line 23.
-
-
-Package natbib Warning: Citation `TskAllocMinSysPowHomoMulPro' on page 1 undefi
-ned on input line 23.
-
-
-Package natbib Warning: Citation `HotCrThemCoupFtrMulArch' on page 1 undefined 
-on input line 23.
-
-
-Package natbib Warning: Citation `ThmBefMulCrFlrPlLimSty' on page 1 undefined o
-n input line 24.
-
-
-Package natbib Warning: Citation `MnyDsgThemPer' on page 1 undefined on input l
-ine 24.
-
-
-Package natbib Warning: Citation `TskAllocMinSysPowHomoMulPro' on page 1 undefi
-ned on input line 24.
-
-
-Package natbib Warning: Citation `ThrOptTskAllocThemConstMulPro' on page 1 unde
-fined on input line 24.
-
-
-Package natbib Warning: Citation `ThemOlTskAllocMulProThrOpt' on page 1 undefin
-ed on input line 24.
 
 [1
 
@@ -1596,46 +1410,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/chap02.tex
-
-Package natbib Warning: Citation `RTCalSchHdRTSys' on page 4 undefined on input
- line 14.
-
-
-Package natbib Warning: Citation `LkSchMaxTemMinPerHdRTSys' on page 4 undefined
- on input line 14.
-
-
-Package natbib Warning: Citation `LkDVSRTEmbSys' on page 4 undefined on input l
-ine 19.
-
-
-Package natbib Warning: Citation `LkSchMaxTemMinPerHdRTSys' on page 4 undefined
- on input line 19.
-
-
-Package natbib Warning: Citation `WCTemAnlyRTSys' on page 4 undefined on input 
-line 19.
-
-
-LaTeX Warning: Reference `equ:chap2:thermal-model' on page 4 undefined on input
- line 19.
-
 Package hyperref Info: bookmark level for unknown equation defaults to 0 on inp
 ut line 23.
 
-LaTeX Warning: Reference `equ:chap2:thermal-model' on page 4 undefined on input
- line 24.
-
-
 LaTeX Warning: File c708e.cmap not found on input line 28.
-
-
-LaTeX Warning: Reference `equ:chap2:active-power' on page 4 undefined on input 
-line 33.
-
-
-LaTeX Warning: Reference `equ:chap2:active-power-simplified' on page 4 undefine
-d on input line 38.
 
 [4
 
@@ -1643,112 +1421,31 @@ d on input line 38.
 
 ]
 
-LaTeX Warning: Reference `equ:chap2:leakage-current' on page 5 undefined on inp
-ut line 48.
-
-
 LaTeX Warning: File c709e.cmap not found on input line 48.
-
-
-LaTeX Warning: Reference `tab:chap2:tech-parameters' on page 5 undefined on inp
-ut line 48.
 
 LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 50
 .
-
-Package natbib Warning: Citation `EngRTTskSchTemDepLk' on page 5 undefined on i
-nput line 62.
-
-
-LaTeX Warning: Reference `equ:chap2:leakage-power' on page 5 undefined on input
- line 62.
-
-
-LaTeX Warning: Reference `equ:chap2:leakage-power' on page 5 undefined on input
- line 67.
-
-
-Package natbib Warning: Citation `TemIdDistEngOptDVS' on page 5 undefined on in
-put line 70.
-
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
 (Font)              scaled to size 12.39626pt on input line 74.
-
-Package natbib Warning: Citation `TemLkMinTechRTSys' on page 5 undefined on inp
-ut line 75.
-
-
-Package natbib Warning: Citation `EngRTTskSchTemDepLk' on page 5 undefined on i
-nput line 79.
-
-
-Package natbib Warning: Citation `EngRTTskSchTemDepLk' on page 5 undefined on i
-nput line 79.
-
-
-Package natbib Warning: Citation `WCTemAnlyRTSys' on page 5 undefined on input 
-line 79.
-
-
-Package natbib Warning: Citation `LkSchMaxTemMinPerHdRTSys' on page 5 undefined
- on input line 83.
-
-
-Package natbib Warning: Citation `LkEngMinRTSysMaxTemConst' on page 5 undefined
- on input line 83.
-
-
-Package natbib Warning: Citation `LkEngMinRTSysMaxTemConst' on page 5 undefined
- on input line 83.
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5]
-
-Package natbib Warning: Citation `TemIdDistEngOptDVS' on page 6 undefined on in
-put line 86.
-
-
-Package natbib Warning: Citation `LkEngMinRTSysMaxTemConst' on page 6 undefined
- on input line 88.
-
-
-LaTeX Warning: Reference `fig:vp-talk' on page 6 undefined on input line 97.
-
-<figures/Visio-VS-TALK.pdf, id=459, 597.45204pt x 845.1575pt>
+<figures/Visio-VS-TALK.pdf, id=612, 597.45204pt x 845.1575pt>
 File: figures/Visio-VS-TALK.pdf Graphic file (type pdf)
 
 <use figures/Visio-VS-TALK.pdf>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
-
-Package natbib Warning: Citation `LkEngMinRTSysMaxTemConst' on page 7 undefined
- on input line 104.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/Vis
-io-VS-TALK.pdf>]
-
-Package natbib Warning: Citation `LkEngMinRTSysMaxTemConst' on page 8 undefined
- on input line 109.
-
-
-LaTeX Warning: Reference `fig:exp-power-cmp' on page 8 undefined on input line 
-109.
-
-
-LaTeX Warning: Reference `fig:exp-temp-cmp' on page 8 undefined on input line 1
-09.
-
-<figures/power_cmp.jpg, id=555, 3476.48813pt x 2253.92062pt>
+io-VS-TALK.pdf>] <figures/power_cmp.jpg, id=711, 3476.48813pt x 2253.92062pt>
 File: figures/power_cmp.jpg Graphic file (type jpg)
 
 <use figures/power_cmp.jpg>
-<figures/temp_cmp.jpg, id=556, 3159.55406pt x 2051.41406pt>
+<figures/temp_cmp.jpg, id=712, 3159.55406pt x 2051.41406pt>
 File: figures/temp_cmp.jpg Graphic file (type jpg)
 
 <use figures/temp_cmp.jpg>
@@ -1763,34 +1460,13 @@ LaTeX Warning: Command \textellipsis invalid in math mode on input line 131.
 LaTeX Warning: Command \textellipsis invalid in math mode on input line 131.
 
 
-LaTeX Warning: Reference `equ:chap2:cal-weight' on page 9 undefined on input li
-ne 131.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/tem
-p_cmp.jpg>]
-
-LaTeX Warning: Reference `equ:chap2:cal-weight' on page 10 undefined on input l
-ine 136.
-
-
-LaTeX Warning: Reference `equ:chap2:decide' on page 10 undefined on input line 
-136.
-
-
-LaTeX Warning: Reference `equ:chap2:decide' on page 10 undefined on input line 
-141.
-
-
-Package natbib Warning: Citation `DPTMbyYJQ' on page 10 undefined on input line
- 146.
-
-)
+p_cmp.jpg>])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1801,23 +1477,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11]
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/chap03.tex
-
-Package natbib Warning: Citation `MATLAB' on page 12 undefined on input line 13
-.
-
-
-LaTeX Warning: Reference `fig:vp-talk-power-cmp' on page 12 undefined on input 
-line 16.
-
-
-LaTeX Warning: Reference `fig:vp-talk-temp-cmp' on page 12 undefined on input l
-ine 16.
-
-<figures/VP-TALK-POWER-CMP.jpg, id=581, 3350.01563pt x 2187.67313pt>
+<figures/VP-TALK-POWER-CMP.jpg, id=744, 3350.01563pt x 2187.67313pt>
 File: figures/VP-TALK-POWER-CMP.jpg Graphic file (type jpg)
 
 <use figures/VP-TALK-POWER-CMP.jpg>
-<figures/VP-TALK-TEMP-CMP.jpg, id=582, 3208.48688pt x 2098.08844pt>
+<figures/VP-TALK-TEMP-CMP.jpg, id=745, 3208.48688pt x 2098.08844pt>
 File: figures/VP-TALK-TEMP-CMP.jpg Graphic file (type jpg)
 
 <use figures/VP-TALK-TEMP-CMP.jpg>
@@ -1839,55 +1503,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/VP
 -TALK-POWER-CMP.jpg>]
-
-LaTeX Warning: Reference `fig:vp-talk-power-cmp' on page 14 undefined on input 
-line 29.
-
-
-LaTeX Warning: Reference `tab:chap3:vp-talk-cmp' on page 14 undefined on input 
-line 29.
-
-
-LaTeX Warning: Reference `fig:vp-talk-temp-cmp' on page 14 undefined on input l
-ine 30.
-
-
-Underfull \hbox (badness 6157) in paragraph at lines 29--31
-[]\C70/song/m/n/12.045/4e Î \C70/song/m/n/12.045/56 þ[]\C70/song/m/n/12.045/53 
-ï \C70/song/m/n/12.045/4e å \C70/song/m/n/12.045/77  \C70/song/bx/n/12.045/51 
-ú \C70/song/m/n/12.045/ff  \C70/song/m/n/12.045/5b ù \C70/song/m/n/12.045/4e Ž
- \C70/song/m/n/12.045/80 ý  \C70/song/m/n/12.045/ff  \C70/song/m/n/12.045/5f 
-S \C70/song/m/n/12.045/8d  \C70/song/m/n/12.045/8f } \C70/song/m/n/12.045/73 ‡
- \C70/song/m/n/12.045/5c  \C70/song/m/n/12.045/4e Ž\OT1/txr/m/n/12.045 55%\C70
-/song/m/n/12.045/65 ö \C70/song/m/n/12.045/ff \OT1/txr/m/n/12.045 VP-TALK\C70/
-song/m/n/12.045/4f 
+Underfull \hbox (badness 5667) in paragraph at lines 29--31
+[]\C70/song/m/n/12.045/4e Î \C70/song/m/n/12.045/56 þ[]\OT1/txr/m/n/12.045 3.1[
+]\C70/song/m/n/12.045/53 ï \C70/song/m/n/12.045/4e å \C70/song/m/n/12.045/77  
+\C70/song/bx/n/12.045/51 ú \C70/song/m/n/12.045/ff  \C70/song/m/n/12.045/5b ù 
+\C70/song/m/n/12.045/4e Ž \C70/song/m/n/12.045/80 ý  \C70/song/m/n/12.045/ff 
+ \C70/song/m/n/12.045/5f S \C70/song/m/n/12.045/8d  \C70/song/m/n/12.045/8f } 
+\C70/song/m/n/12.045/73 ‡ \C70/song/m/n/12.045/5c  \C70/song/m/n/12.045/4e Ž\O
+T1/txr/m/n/12.045 55%\C70/song/m/n/12.045/65 ö \C70/song/m/n/12.045/ff \OT1/tx
+r/m/n/12.045 VP-TALK\C70/song/m/n/12.045/4f 
  []
 
-
-Package natbib Warning: Citation `DPTMbyYJQ' on page 14 undefined on input line
- 48.
-
-
-Package natbib Warning: Citation `TemLkMinTechRTSys' on page 14 undefined on in
-put line 48.
-
-
-Package natbib Warning: Citation `EngRTTskSchTemDepLk' on page 14 undefined on 
-input line 48.
-
-
-Package natbib Warning: Citation `LkEngMinRTSysMaxTemConst' on page 14 undefine
-d on input line 48.
-
-
-LaTeX Warning: Reference `fig:dptm-source-alg-power-cmp' on page 14 undefined o
-n input line 48.
-
-
-LaTeX Warning: Reference `fig:dptm-source-alg-temp-cmp' on page 14 undefined on
- input line 48.
-
-<figures/DPTM-SOURCE-ALG-POWER-CMP.jpg, id=595, 4549.24594pt x 2662.69781pt>
+<figures/DPTM-SOURCE-ALG-POWER-CMP.jpg, id=767, 4549.24594pt x 2662.69781pt>
 File: figures/DPTM-SOURCE-ALG-POWER-CMP.jpg Graphic file (type jpg)
 
 <use figures/DPTM-SOURCE-ALG-POWER-CMP.jpg>
@@ -1898,11 +1525,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/VP
 -TALK-TEMP-CMP.jpg>]
-<figures/DPTM-SOURCE-ALG-TEMP-CMP.jpg, id=601, 5495.53125pt x 2707.11375pt>
+<figures/DPTM-SOURCE-ALG-TEMP-CMP.jpg, id=773, 5495.53125pt x 2707.11375pt>
 File: figures/DPTM-SOURCE-ALG-TEMP-CMP.jpg Graphic file (type jpg)
 
 <use figures/DPTM-SOURCE-ALG-TEMP-CMP.jpg>
-<figures/DPTM-IDEAL-POWER-CMP.jpg, id=602, 3733.19719pt x 2298.33656pt>
+<figures/DPTM-IDEAL-POWER-CMP.jpg, id=774, 3733.19719pt x 2298.33656pt>
 File: figures/DPTM-IDEAL-POWER-CMP.jpg Graphic file (type jpg)
 
 <use figures/DPTM-IDEAL-POWER-CMP.jpg>
@@ -1913,7 +1540,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/DP
 TM-SOURCE-ALG-POWER-CMP.jpg>]
-<figures/DPTM-IDEAL-TEMP-CMP.jpg, id=609, 3968.07469pt x 2297.58376pt>
+<figures/DPTM-IDEAL-TEMP-CMP.jpg, id=781, 3968.07469pt x 2297.58376pt>
 File: figures/DPTM-IDEAL-TEMP-CMP.jpg Graphic file (type jpg)
 
 <use figures/DPTM-IDEAL-TEMP-CMP.jpg>
@@ -1925,63 +1552,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [16 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/DP
 TM-SOURCE-ALG-TEMP-CMP.jpg> <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bn
 uthesis_1.51/figures/DPTM-IDEAL-POWER-CMP.jpg>]
-
-Package natbib Warning: Citation `DPTMbyYJQ' on page 17 undefined on input line
- 74.
-
-
-LaTeX Warning: Reference `fig:dptm-ideal-power-cmp' on page 17 undefined on inp
-ut line 74.
-
-
-LaTeX Warning: Reference `fig:dptm-ideal-temp-cmp' on page 17 undefined on inpu
-t line 74.
-
-
-LaTeX Warning: Reference `fig:dptm-source-alg-power-cmp' on page 17 undefined o
-n input line 75.
-
-
-LaTeX Warning: Reference `fig:dptm-source-alg-temp-cmp' on page 17 undefined on
- input line 75.
-
-
-LaTeX Warning: Reference `fig:dptm-source-alg-power-cmp' on page 17 undefined o
-n input line 76.
-
-
-LaTeX Warning: Reference `fig:dptm-source-alg-temp-cmp' on page 17 undefined on
- input line 77.
-
-
-LaTeX Warning: Reference `fig:dptm-ideal-power-cmp' on page 17 undefined on inp
-ut line 78.
-
-
-LaTeX Warning: Reference `fig:dptm-ideal-temp-cmp' on page 17 undefined on inpu
-t line 78.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/DP
-TM-IDEAL-TEMP-CMP.jpg>]
-
-LaTeX Warning: Reference `cha:DPTM' on page 18 undefined on input line 81.
-
-)
+TM-IDEAL-TEMP-CMP.jpg>])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [18]
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/chap04.tex
-
-LaTeX Warning: Reference `fig:ev6' on page 19 undefined on input line 18.
-
-
-Package natbib Warning: Citation `TemMicroArch' on page 19 undefined on input l
-ine 18.
-
-<figures/EV6.jpg, id=627, 1279.02844pt x 1247.41031pt>
+<figures/EV6.jpg, id=809, 1279.02844pt x 1247.41031pt>
 File: figures/EV6.jpg Graphic file (type jpg)
  <use figures/EV6.jpg>
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1991,44 +1570,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-
-Package natbib Warning: Citation `ThmBefMulCrFlrPlLimSty' on page 20 undefined 
-on input line 35.
-
-
-Package natbib Warning: Citation `TemSupVolPerfPowMdlMicroLvl' on page 20 undef
-ined on input line 35.
-
-
-Package natbib Warning: Citation `TemMicroArch' on page 20 undefined on input l
-ine 35.
-
-
-LaTeX Warning: Reference `equ:chap4:gtp' on page 20 undefined on input line 35.
-
-
-
-LaTeX Warning: Reference `fig:hotspot-model' on page 20 undefined on input line
- 35.
-
-
-Package natbib Warning: Citation `ThrOptTskAllocThemConstMulPro' on page 20 und
-efined on input line 35.
-
-
-LaTeX Warning: Reference `fig:ev6-grid-temp-surf' on page 20 undefined on input
- line 35.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/EV
 6.jpg>]
-<figures/HOTSPOT-MODEL.png, id=644, 740.0147pt x 470.50781pt>
+<figures/HOTSPOT-MODEL.png, id=829, 740.0147pt x 470.50781pt>
 File: figures/HOTSPOT-MODEL.png Graphic file (type png)
 
 <use figures/HOTSPOT-MODEL.png>
-<figures/EV6-GRID-TEM-SURF.png, id=646, 721.19438pt x 566.86781pt>
+<figures/EV6-GRID-TEM-SURF.png, id=831, 721.19438pt x 566.86781pt>
 File: figures/EV6-GRID-TEM-SURF.png Graphic file (type png)
 
 <use figures/EV6-GRID-TEM-SURF.png>
@@ -2038,23 +1588,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/HO
-TSPOT-MODEL.png>]
-
-LaTeX Warning: Reference `sec:power' on page 22 undefined on input line 53.
-
-
-LaTeX Warning: Reference `equ:chap2:active_power_simplified' on page 22 undefin
-ed on input line 53.
-
-
-LaTeX Warning: Reference `equ:chap2:leakage_power' on page 22 undefined on inpu
-t line 53.
-
-
-LaTeX Warning: Reference `fig:tp-iteration' on page 22 undefined on input line 
-54.
-
-<figures/TP-ITERATION.jpg, id=653, 467.346pt x 331.9602pt>
+TSPOT-MODEL.png>] <figures/TP-ITERATION.jpg, id=844, 467.346pt x 331.9602pt>
 File: figures/TP-ITERATION.jpg Graphic file (type jpg)
 
 <use figures/TP-ITERATION.jpg>
@@ -2062,36 +1596,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [22 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/EV
 6-GRID-TEM-SURF.png (PNG copy)>]
-
-LaTeX Warning: Reference `fig:hotspot-model' on page 23 undefined on input line
- 67.
-
-
-LaTeX Warning: Reference `equ:chap4:blotam-rii' on page 23 undefined on input l
-ine 68.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/TP
--ITERATION.jpg>]
-
-LaTeX Warning: Reference `equ:chap4:blotam-rij' on page 24 undefined on input l
-ine 73.
-
-
-LaTeX Warning: Reference `fig:multicore-temp-model' on page 24 undefined on inp
-ut line 83.
-
-
-LaTeX Warning: Reference `equ:chap4:blotam-tii' on page 24 undefined on input l
-ine 88.
-
-
-LaTeX Warning: Reference `equ:chap4:blotam-tii' on page 24 undefined on input l
-ine 88.
-
-<figures/MULTICORE-TEMP-MODEL.png, id=664, 537.6888pt x 249.0906pt>
+-ITERATION.jpg>] <figures/MULTICORE-TEMP-MODEL.png, id=861, 537.6888pt x 249.09
+06pt>
 File: figures/MULTICORE-TEMP-MODEL.png Graphic file (type png)
 
 <use figures/MULTICORE-TEMP-MODEL.png>
@@ -2101,78 +1610,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
-
-LaTeX Warning: Reference `fig:hotspot-model' on page 25 undefined on input line
- 97.
-
-
-LaTeX Warning: Reference `equ:chap4:cortam-rpp' on page 25 undefined on input l
-ine 106.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/MU
-LTICORE-TEMP-MODEL.png>]
-
-LaTeX Warning: Reference `fig:multicore-temp-model' on page 26 undefined on inp
-ut line 116.
-
-
-LaTeX Warning: Reference `equ:chap4:cortam-tpp' on page 26 undefined on input l
-ine 122.
-
-
-LaTeX Warning: Reference `equ:chap4:cortam-tpp' on page 26 undefined on input l
-ine 122.
-
-
-LaTeX Warning: Reference `equ:chap4:bicortam-rpq' on page 26 undefined on input
- line 131.
-
-
-LaTeX Warning: Reference `equ:chap4:bicortam-tii' on page 26 undefined on input
- line 138.
-
-)
+LTICORE-TEMP-MODEL.png>])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26]
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/chap05.tex
 
-Package natbib Warning: Citation `LrnAutoRegMdlFstTransThemAlysCp' on page 27 u
-ndefined on input line 14.
-
-
-LaTeX Warning: Reference `tab:chap5:exp-flp-parameters' on page 27 undefined on
- input line 14.
-
-
-Package natbib Warning: Citation `INTELi7' on page 27 undefined on input line 1
-5.
-
-
-LaTeX Warning: Reference `tab:chap5:exp-flp-parameters' on page 27 undefined on
- input line 15.
-
-
-LaTeX Warning: Reference `tab:chap5:exp-flp-parameters' on page 27 undefined on
- input line 19.
-
-
-LaTeX Warning: Reference `equ:chap5:et' on page 27 undefined on input line 19.
-
-
-Underfull \hbox (badness 5231) in paragraph at lines 19--20
+Underfull \hbox (badness 4859) in paragraph at lines 19--20
 []\C70/song/bx/n/12.045/67 , \C70/song/m/n/12.045/65 ‡ \C70/song/bx/n/12.045/51
  H \C70/song/bx/n/12.045/63 	 \C70/song/m/n/12.045/71 g \C70/song/m/n/12.045/88
- h[]\C70/song/m/n/12.045/4e - \C70/song/m/n/12.045/8b ¾ \C70/song/m/n/12.045/5b
- š \C70/song/bx/n/12.045/76 „ \C70/song/m/n/12.045/53 Â \C70/song/m/n/12.045/65
- p \C70/song/m/n/12.045/30  \C70/song/m/n/12.045/4e § \C70/song/bx/n/12.045/75
- \OT1/txr/m/n/12.045 100\C70/song/m/n/12.045/4e * \C70/song/m/n/12.045/8f “ \C
-70/song/bx/n/12.045/51 e \C70/song/m/n/12.045/54  \C70/song/m/n/12.045/91 Ï \C
-70/song/m/n/12.045/ff  \C70/song/m/n/12.045/71 6 \C70/song/m/n/12.045/54  \C7
-0/song/m/n/12.045/91 Ç
+ h[]\OT1/txr/m/n/12.045 5.1[]\C70/song/m/n/12.045/4e - \C70/song/m/n/12.045/8b 
+¾ \C70/song/m/n/12.045/5b š \C70/song/bx/n/12.045/76 „ \C70/song/m/n/12.045/53 
+Â \C70/song/m/n/12.045/65 p \C70/song/m/n/12.045/30  \C70/song/m/n/12.045/4e §
+ \C70/song/bx/n/12.045/75 \OT1/txr/m/n/12.045 100\C70/song/m/n/12.045/4e * \C7
+0/song/m/n/12.045/8f “ \C70/song/bx/n/12.045/51 e \C70/song/m/n/12.045/54  \C7
+0/song/m/n/12.045/91 Ï \C70/song/m/n/12.045/ff  \C70/song/m/n/12.045/71 6 \C70
+/song/m/n/12.045/54  \C70/song/m/n/12.045/91 Ç
  []
 
 [27
@@ -2180,111 +1636,25 @@ Underfull \hbox (badness 5231) in paragraph at lines 19--20
 
 
 ]
-
-LaTeX Warning: Reference `equ:chap5:eplk' on page 28 undefined on input line 29
-.
-
-
-LaTeX Warning: Reference `tab:chap5:temp-error' on page 28 undefined on input l
-ine 30.
-
-
-LaTeX Warning: Reference `tab:chap5:power-leakage-error' on page 28 undefined o
-n input line 31.
-
-
-LaTeX Warning: Reference `fig:ex1-plk-error' on page 28 undefined on input line
- 97.
-
-
-LaTeX Warning: Reference `fig:ex1-temp-error' on page 28 undefined on input lin
-e 97.
-
-
-LaTeX Warning: Reference `fig:ex1-plk-error' on page 28 undefined on input line
- 98.
-
-
-LaTeX Warning: Reference `fig:ex1-temp-error' on page 28 undefined on input lin
-e 98.
-
-
-LaTeX Warning: Reference `fig:ex1-plk-error' on page 28 undefined on input line
- 99.
-
-
-LaTeX Warning: Reference `fig:ex1-temp-error' on page 28 undefined on input lin
-e 99.
-
-
-LaTeX Warning: Reference `fig:ex1-plk-error' on page 28 undefined on input line
- 100.
-
-
-LaTeX Warning: Reference `fig:ex1-temp-error' on page 28 undefined on input lin
-e 100.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29]
-<figures/EX1-PLK-ERROR.jpg, id=709, 631.60968pt x 330.48468pt>
+<figures/EX1-PLK-ERROR.jpg, id=933, 631.60968pt x 330.48468pt>
 File: figures/EX1-PLK-ERROR.jpg Graphic file (type jpg)
 
 <use figures/EX1-PLK-ERROR.jpg>
-<figures/EX1-TEMP-ERROR.jpg, id=710, 640.64343pt x 349.305pt>
+<figures/EX1-TEMP-ERROR.jpg, id=934, 640.64343pt x 349.305pt>
 File: figures/EX1-TEMP-ERROR.jpg Graphic file (type jpg)
 
 <use figures/EX1-TEMP-ERROR.jpg>
-
-LaTeX Warning: Reference `equ:chap4:blotam-tii' on page 30 undefined on input l
-ine 118.
-
-
-LaTeX Warning: Reference `equ:chap4:cortam-tpp' on page 30 undefined on input l
-ine 118.
-
-
-LaTeX Warning: Reference `equ:chap4:bicortam-tii' on page 30 undefined on input
- line 118.
-
-
-LaTeX Warning: Reference `tab:chap5:time-speedup' on page 30 undefined on input
- line 119.
-
-
-LaTeX Warning: Reference `equ:chap4:blotam-tii' on page 30 undefined on input l
-ine 119.
-
-
-LaTeX Warning: Reference `equ:chap4:cortam-tpp' on page 30 undefined on input l
-ine 119.
-
-
-LaTeX Warning: Reference `equ:chap4:bicortam-tii' on page 30 undefined on input
- line 119.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [30 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/EX
 1-PLK-ERROR.jpg> <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.5
-1/figures/EX1-TEMP-ERROR.jpg>]
-
-LaTeX Warning: Reference `tab:chap5:temp-error' on page 31 undefined on input l
-ine 121.
-
-
-LaTeX Warning: Reference `tab:chap5:time-speedup' on page 31 undefined on input
- line 121.
-
-
-LaTeX Warning: Reference `cha:SSTA' on page 31 undefined on input line 143.
-
-)
+1/figures/EX1-TEMP-ERROR.jpg>])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31]
@@ -2292,20 +1662,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [32]
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/chap06.tex
-
-LaTeX Warning: Reference `cha:DPTM' on page 33 undefined on input line 12.
-
-
-LaTeX Warning: Reference `cha:DPTMexperiments' on page 33 undefined on input li
-ne 12.
-
-
-LaTeX Warning: Reference `cha:SSTA' on page 33 undefined on input line 15.
-
-
-LaTeX Warning: Reference `cha:SSTAexperiments' on page 33 undefined on input li
-ne 15.
-
 ) [33
 
 
@@ -2354,13 +1710,9 @@ LaTeX Warning: File c7084.cmap not found on input line 14.
 
 ]
 \tf@thm=\write5
-
-
-Package natbib Warning: There were undefined citations.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
-(C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\main.aux
+ (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\main.aux
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/chap01.aux
 )
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/chap02.aux
@@ -2373,56 +1725,39 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
 )
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/chap06.aux
 )
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/paper.aux)
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/ack.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 14C59B1E102A4EE19DF1458D69A74D83;8288
-(rerunfilecheck)             After:  C6BD768F48106A8E9605B4757190FC07;7502.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: C6BD768F48106A8E9605B4757190FC07;7502.
  ) 
 Here is how much of TeX's memory you used:
- 15171 strings out of 495362
- 213992 string characters out of 3184024
- 292515 words of memory out of 3000000
- 17139 multiletter control sequences out of 15000+200000
- 161801 words of font info for 477 fonts, out of 3000000 for 9000
+ 15316 strings out of 495362
+ 217750 string characters out of 3184024
+ 309199 words of memory out of 3000000
+ 17208 multiletter control sequences out of 15000+200000
+ 178607 words of font info for 534 fonts, out of 3000000 for 9000
  15 hyphenation exceptions out of 8191
- 51i,9n,44p,1538b,1959s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,9n,44p,1865b,1944s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/
-chinese/simsun.ttf><C:/Windows/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/ch
-inese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/Windows/Fo
+chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTe
+X/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun
+.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf>{C:/CTEX/MiKTeX/fonts/enc/
+dvips/fontname/8r.enc}<C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/
+CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/sim
+sun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/tru
+etype/chinese/simsun.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.
+ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts
+/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windo
+ws/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><
+C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simh
+ei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fo
 nts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Wi
 ndows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.tt
 f><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/s
 imhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows
-/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chi
-nese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/Windows/Fon
-ts/simhei.ttf>{C:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/Windows/Fonts
-/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windo
-ws/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><
-C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simh
-ei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/CTEX/CTeX/
-fonts/truetype/chinese/simsun.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Font
-s/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/font
-s/truetype/chinese/simsun.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/si
-mhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/CTEX/CTe
-X/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun
+/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:
+/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei
 .ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Font
 s/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Wind
 ows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf>
@@ -2480,9 +1815,9 @@ public/txfonts/txex.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:
 rw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/CTE
 X/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on main.pdf (45 pages, 6664117 bytes).
+Output written on main.pdf (46 pages, 6705057 bytes).
 PDF statistics:
- 1288 PDF objects out of 1440 (max. 8388607)
- 185 named destinations out of 1000 (max. 500000)
+ 1490 PDF objects out of 1728 (max. 8388607)
+ 186 named destinations out of 1000 (max. 500000)
  782 words of extra memory for PDF output out of 10000 (max. 10000000)
 
