@@ -19,14 +19,14 @@
 本文先按照表\ref{tab:chap5:exp-flp-parameters}中设定的参数、产生100个输入向量， 然后采用HotSpot、BloTAM、BioCorTAM、CorTAM这4种方法 来测试各个核与功能模块的温度与静态功耗，其中一个核的静态功耗值等于所属模块的静态功耗值之和， 这个核的局部热点温度是它的Core\_x模块温度。本文采用HotSpot的测值作为基准、来求解其余3种方法的相对误差。 由于芯片的工作温度均是相对环境温度$T_{ambient}$，本文使用式\ref{equ:chap5:et}来计算温度误差$E_T$：
 \begin{equation}
 \label{equ:chap5:et}
-E_T = |\frac{T-T_{HOTSPOT}}{T_{HOTSPOT}-T_{ambient}}|
+E_T = |\frac{T-T_{HotSpot}}{T_{HotSpot}-T_{ambient}}|
 \end{equation}
-其中$T_{HOTSPOT}$是HotSpot的测值，$T$是本文方法的温度计算值。同时，本文采用下式来计算静态功耗误差$E_{Plk}$：
+其中$T_{HotSpot}$是HotSpot的测值，$T$是本文方法的温度计算值。同时，本文采用下式来计算静态功耗误差$E_{Plk}$：
 \begin{equation}
 \label{equ:chap5:eplk}
-E_{Plk} = |\frac{Plk-Plk_{HOTSPOT}}{Plk_{HOTSPOT}}|
+E_{Plk} = |\frac{Plk-Plk_{HotSpot}}{Plk_{HotSpot}}|
 \end{equation}
-式\ref{equ:chap5:eplk}中$Plk_{HOTSPOT}$是HotSpot的静态功耗测值，$Plk$是本文方法的静态功耗计算值。
+式\ref{equ:chap5:eplk}中$Plk_{HotSpot}$是HotSpot的静态功耗测值，$Plk$是本文方法的静态功耗计算值。
 本文3种方法的温度误差如表\ref{tab:chap5:temp-error}所示。BloTAM的精度最高，平均误差小于1.6\%， 最大误差小于5\%；BiCorTAM的精度次之， 平均误差小于4.2\%，最大误差小于15\%；CorTAM的精度最低，平均误差达到33\%，最大误差达到45\%。 因此，BloTAM和BiCorTAM 2种方法均可以提供满意的计算精度。
 本文3种方法的静态功耗误差如表\ref{tab:chap5:power-leakage-error}所示。BloTAM的精度最高，最大误差小于0.5\%； BiCorTAM的精度次之， 平均误差小于1.2\%， 最大误差小于3.7\%；CorTAM的精度最低，平均误差达到25\%，最大误差达到35\%。因此，BloTAM和BiCorTAM 2种方法均可以提供满意的计算精度。
 \begin{table}
