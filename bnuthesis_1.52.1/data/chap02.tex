@@ -73,15 +73,15 @@ $\hat{B}=I_{leakage}(TH,V_{dd})-\hat{A}{TL}^2$。
 \section{已有的DPTM调度算法}
 \label{sec:algorithms}
 \subsection{TALK算法}
-TALK及其改进算法\onlinecite{TemLkMinTechRTSys}根据工作负载和截止时间的不同， 来控制不同时间段处理器的工作/休息状态：当负载量大并且温度较低时、处理器处于激活工作状态； 当负载量小并且温度较高时,处理器切换到睡眼状态以减小能耗，以降低温度。
+TALK及其改进算法\onlinecite{TemLkMinTechRTSys,DPTMbyYJQ}根据工作负载和截止时间的不同， 来控制不同时间段处理器的工作/休息状态：当负载量大并且温度较低时、处理器处于激活工作状态； 当负载量小并且温度较高时,处理器切换到睡眼状态以减小能耗，以降低温度。
 
 \subsection{Pattern-Based算法（简称PB算法）}
 
-PB算法将任务的截止时间或者运行周期D等分为n个时间片段，每段长$\Delta=D/n$， 采用PB算法的处理器将工作于特定规则的模式中\onlinecite{EngRTTskSchTemDepLk}： 执行$\Delta=D/n$时间后便切入休眠模式，以减少功耗并降低温度。 文献\onlinecite{EngRTTskSchTemDepLk}与\onlinecite{WCTemAnlyRTSys}证明：如果重复这种运行模式足够多次， 处理器将达到温度的平衡值，并进入稳定状态， 即每个周期的初始温度和结束温度将趋向于稳定值，以便于分析。
+PB算法将任务的截止时间或者运行周期D等分为n个时间片段，每段长$\Delta=D/n$， 采用PB算法的处理器将工作于特定规则的模式中\onlinecite{EngRTTskSchTemDepLk,DPTMbyYJQ}： 执行$\Delta=D/n$时间后便切入休眠模式，以减少功耗并降低温度。 文献\onlinecite{EngRTTskSchTemDepLk}与\onlinecite{WCTemAnlyRTSys}证明：如果重复这种运行模式足够多次， 处理器将达到温度的平衡值，并进入稳定状态， 即每个周期的初始温度和结束温度将趋向于稳定值，以便于分析。
 
 \subsection{M-Oscillating算法（简称MO算法）}
 
-上面介绍的TALK算法和PB算法都要求处理器的工作速度要大于或者等于负载率$W/D$。 文献\onlinecite{LkSchMaxTemMinPerHdRTSys}证明，如果采用两个最接近的速度完成分配给处理器的任务， 那么相对于采用其他的工作速度组合， 处于该速度组下处理器的温度是最优的。 如果进一步地将这种两步策略应用在m个时间片中， 不仅温度可以进一步优化，还可以将$D$时间内的总功耗表达为$m$的函数， 而且必然存在能耗最小化的$m$值\onlinecite{LkEngMinRTSysMaxTemConst}。 由于要考虑电压切换所付出的时间开销和能耗开销，\onlinecite{LkEngMinRTSysMaxTemConst}给出了$m$所具有确定的 上限值$Ceil$。
+上面介绍的TALK算法和PB算法都要求处理器的工作速度要大于或者等于负载率$W/D$。 文献\onlinecite{LkSchMaxTemMinPerHdRTSys}证明，如果采用两个最接近的速度完成分配给处理器的任务， 那么相对于采用其他的工作速度组合， 处于该速度组下处理器的温度是最优的。 如果进一步地将这种两步策略应用在m个时间片中\onlinecite{DPTMbyYJQ}， 不仅温度可以进一步优化，还可以将$D$时间内的总功耗表达为$m$的函数， 而且必然存在能耗最小化的$m$值\onlinecite{LkEngMinRTSysMaxTemConst}。 由于要考虑电压切换所付出的时间开销和能耗开销，\onlinecite{LkEngMinRTSysMaxTemConst}给出了$m$所具有确定的 上限值$Ceil$。
 
 \subsection{对已有算法的评估}
 作为温敏调度算法，TALK参照剩余任务量与当前温度、来合理地调度任务。 然而，简单的开关模式无法利用DVS技术，只能工作在固定速度。而且状态切换所导致的时间、能耗开销也是不可避免的。 根据切换时间和能耗开销\onlinecite{TemIdDistEngOptDVS}，从全速工作转变为零电压将产生最大的能耗和时间开销。

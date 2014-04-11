@@ -37,7 +37,7 @@
 \contentsline {section}{\numberline {5.1}实验平台与测例说明}{27}{section.5.1}
 \contentsline {section}{\numberline {5.2}方法分析精度的实验数据与分析}{27}{section.5.2}
 \contentsline {section}{\numberline {5.3}本文方法计算速度的实验数据与分析}{31}{section.5.3}
-\contentsline {section}{\numberline {5.4}小结}{31}{section.5.4}
+\contentsline {section}{\numberline {5.4}小结}{32}{section.5.4}
 \contentsline {chapter}{6\hspace {1em} 总结}{33}{chapter.6}
 \contentsline {chapter}{参考文献}{34}{section*.36}
 \contentsline {chapter}{学术成果}{37}{section*.38}
