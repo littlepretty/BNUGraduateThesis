@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.6)  5 APR 2014 15:16
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.2)  14 APR 2014 20:14
 entering extended mode
 **C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/main.tex
 (C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/main.tex
@@ -1431,7 +1431,7 @@ LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5]
-<figures/Visio-VS-TALK.pdf, id=612, 597.45204pt x 845.1575pt>
+<figures/Visio-VS-TALK.pdf, id=614, 597.45204pt x 845.1575pt>
 File: figures/Visio-VS-TALK.pdf Graphic file (type pdf)
 
 <use figures/Visio-VS-TALK.pdf>
@@ -1441,11 +1441,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/Vis
-io-VS-TALK.pdf>] <figures/power_cmp.jpg, id=711, 3476.48813pt x 2253.92062pt>
+io-VS-TALK.pdf>] <figures/power_cmp.jpg, id=713, 3476.48813pt x 2253.92062pt>
 File: figures/power_cmp.jpg Graphic file (type jpg)
 
 <use figures/power_cmp.jpg>
-<figures/temp_cmp.jpg, id=712, 3159.55406pt x 2051.41406pt>
+<figures/temp_cmp.jpg, id=714, 3159.55406pt x 2051.41406pt>
 File: figures/temp_cmp.jpg Graphic file (type jpg)
 
 <use figures/temp_cmp.jpg>
@@ -1477,11 +1477,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11]
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/chap03.tex
-<figures/VP-TALK-POWER-CMP.jpg, id=744, 3350.01563pt x 2187.67313pt>
+<figures/VP-TALK-POWER-CMP.jpg, id=746, 3350.01563pt x 2187.67313pt>
 File: figures/VP-TALK-POWER-CMP.jpg Graphic file (type jpg)
 
 <use figures/VP-TALK-POWER-CMP.jpg>
-<figures/VP-TALK-TEMP-CMP.jpg, id=745, 3208.48688pt x 2098.08844pt>
+<figures/VP-TALK-TEMP-CMP.jpg, id=747, 3208.48688pt x 2098.08844pt>
 File: figures/VP-TALK-TEMP-CMP.jpg Graphic file (type jpg)
 
 <use figures/VP-TALK-TEMP-CMP.jpg>
@@ -1514,7 +1514,7 @@ T1/txr/m/n/12.045 55%\C70/song/m/n/12.045/65 ö \C70/song/m/n/12.045/ff \OT1/tx
 r/m/n/12.045 VP-TALK\C70/song/m/n/12.045/4f 
  []
 
-<figures/DPTM-SOURCE-ALG-POWER-CMP.jpg, id=767, 4549.24594pt x 2662.69781pt>
+<figures/DPTM-SOURCE-ALG-POWER-CMP.jpg, id=769, 4549.24594pt x 2662.69781pt>
 File: figures/DPTM-SOURCE-ALG-POWER-CMP.jpg Graphic file (type jpg)
 
 <use figures/DPTM-SOURCE-ALG-POWER-CMP.jpg>
@@ -1525,11 +1525,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/VP
 -TALK-TEMP-CMP.jpg>]
-<figures/DPTM-SOURCE-ALG-TEMP-CMP.jpg, id=773, 5495.53125pt x 2707.11375pt>
+<figures/DPTM-SOURCE-ALG-TEMP-CMP.jpg, id=775, 5495.53125pt x 2707.11375pt>
 File: figures/DPTM-SOURCE-ALG-TEMP-CMP.jpg Graphic file (type jpg)
 
 <use figures/DPTM-SOURCE-ALG-TEMP-CMP.jpg>
-<figures/DPTM-IDEAL-POWER-CMP.jpg, id=774, 3733.19719pt x 2298.33656pt>
+<figures/DPTM-IDEAL-POWER-CMP.jpg, id=776, 3733.19719pt x 2298.33656pt>
 File: figures/DPTM-IDEAL-POWER-CMP.jpg Graphic file (type jpg)
 
 <use figures/DPTM-IDEAL-POWER-CMP.jpg>
@@ -1540,7 +1540,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/DP
 TM-SOURCE-ALG-POWER-CMP.jpg>]
-<figures/DPTM-IDEAL-TEMP-CMP.jpg, id=781, 3968.07469pt x 2297.58376pt>
+<figures/DPTM-IDEAL-TEMP-CMP.jpg, id=783, 3968.07469pt x 2297.58376pt>
 File: figures/DPTM-IDEAL-TEMP-CMP.jpg Graphic file (type jpg)
 
 <use figures/DPTM-IDEAL-TEMP-CMP.jpg>
@@ -1560,7 +1560,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [18]
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.51\data/chap04.tex
-<figures/EV6.jpg, id=809, 1279.02844pt x 1247.41031pt>
+<figures/EV6.jpg, id=811, 1279.02844pt x 1247.41031pt>
 File: figures/EV6.jpg Graphic file (type jpg)
  <use figures/EV6.jpg>
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1574,11 +1574,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/EV
 6.jpg>]
-<figures/HOTSPOT-MODEL.png, id=829, 740.0147pt x 470.50781pt>
+<figures/HOTSPOT-MODEL.png, id=831, 740.0147pt x 470.50781pt>
 File: figures/HOTSPOT-MODEL.png Graphic file (type png)
 
 <use figures/HOTSPOT-MODEL.png>
-<figures/EV6-GRID-TEM-SURF.png, id=831, 721.19438pt x 566.86781pt>
+<figures/EV6-GRID-TEM-SURF.png, id=833, 721.19438pt x 566.86781pt>
 File: figures/EV6-GRID-TEM-SURF.png Graphic file (type png)
 
 <use figures/EV6-GRID-TEM-SURF.png>
@@ -1588,7 +1588,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/HO
-TSPOT-MODEL.png>] <figures/TP-ITERATION.jpg, id=844, 467.346pt x 331.9602pt>
+TSPOT-MODEL.png>] <figures/TP-ITERATION.jpg, id=846, 467.346pt x 331.9602pt>
 File: figures/TP-ITERATION.jpg Graphic file (type jpg)
 
 <use figures/TP-ITERATION.jpg>
@@ -1599,7 +1599,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.51/figures/TP
--ITERATION.jpg>] <figures/MULTICORE-TEMP-MODEL.png, id=861, 537.6888pt x 249.09
+-ITERATION.jpg>] <figures/MULTICORE-TEMP-MODEL.png, id=864, 537.6888pt x 249.09
 06pt>
 File: figures/MULTICORE-TEMP-MODEL.png Graphic file (type png)
 
@@ -1642,11 +1642,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29]
-<figures/EX1-PLK-ERROR.jpg, id=933, 631.60968pt x 330.48468pt>
+<figures/EX1-PLK-ERROR.jpg, id=938, 631.60968pt x 330.48468pt>
 File: figures/EX1-PLK-ERROR.jpg Graphic file (type jpg)
 
 <use figures/EX1-PLK-ERROR.jpg>
-<figures/EX1-TEMP-ERROR.jpg, id=934, 640.64343pt x 349.305pt>
+<figures/EX1-TEMP-ERROR.jpg, id=939, 640.64343pt x 349.305pt>
 File: figures/EX1-TEMP-ERROR.jpg Graphic file (type jpg)
 
 <use figures/EX1-TEMP-ERROR.jpg>
@@ -1675,7 +1675,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [35]
 
-LaTeX Warning: File c705a.cmap not found on input line 226.
+LaTeX Warning: File c7055.cmap not found on input line 193.
+
+
+LaTeX Warning: File c705a.cmap not found on input line 232.
 
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1687,9 +1690,6 @@ Underfull \hbox (badness 1019) in paragraph at lines 6--7
 30 
 \OT1/txr/m/n/12.045 Accurate Architecture-level Ther-mal Anal-y-sis
  []
-
-
-LaTeX Warning: File c7055.cmap not found on input line 7.
 
 ) [37
 
@@ -1732,10 +1732,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C6BD768F48106A8E9605B4757190FC07;7502.
  ) 
 Here is how much of TeX's memory you used:
- 15316 strings out of 495362
- 217750 string characters out of 3184024
- 309200 words of memory out of 3000000
- 17208 multiletter control sequences out of 15000+200000
+ 15320 strings out of 495362
+ 217823 string characters out of 3184024
+ 310216 words of memory out of 3000000
+ 17211 multiletter control sequences out of 15000+200000
  178607 words of font info for 534 fonts, out of 3000000 for 9000
  15 hyphenation exceptions out of 8191
  51i,9n,44p,1865b,1944s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1815,9 +1815,9 @@ public/txfonts/txex.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:
 rw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/CTE
 X/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on main.pdf (46 pages, 6705557 bytes).
+Output written on main.pdf (46 pages, 6706984 bytes).
 PDF statistics:
- 1490 PDF objects out of 1728 (max. 8388607)
- 186 named destinations out of 1000 (max. 500000)
+ 1496 PDF objects out of 1728 (max. 8388607)
+ 187 named destinations out of 1000 (max. 500000)
  782 words of extra memory for PDF output out of 10000 (max. 10000000)
 
