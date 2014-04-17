@@ -1,5 +1,7 @@
 \contentsline {chapter}{摘\hspace {1em}要}{I}{section*.2}
 \contentsline {chapter}{ABSTRACT}{III}{section*.4}
+\contentsline {chapter}{插图索引}{VII}{section*.8}
+\contentsline {chapter}{表格索引}{VIII}{section*.10}
 \contentsline {chapter}{1\hspace {1em} 引言}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}研究背景与相关科学问题}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}已有研究成果及其缺陷}{1}{section.1.2}
@@ -14,7 +16,7 @@
 \contentsline {subsection}{\numberline {2.4.2}Pattern-Based算法（简称PB算法）}{5}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}M-Oscillating算法（简称MO算法）}{6}{subsection.2.4.3}
 \contentsline {subsection}{\numberline {2.4.4}对已有算法的评估}{6}{subsection.2.4.4}
-\contentsline {section}{\numberline {2.5}基于电压预测的TALK算法：VP-TALK}{6}{section.2.5}
+\contentsline {section}{\numberline {2.5}基于电压预测的TALK算法：VP-TALK}{7}{section.2.5}
 \contentsline {section}{\numberline {2.6}DPTM原型系统}{8}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}启发性示例}{8}{subsection.2.6.1}
 \contentsline {subsection}{\numberline {2.6.2}基于机器学习的DPTM原型系统}{9}{subsection.2.6.2}
@@ -22,8 +24,8 @@
 \contentsline {chapter}{3\hspace {1em} DPTM原型系统模拟实验}{12}{chapter.3}
 \contentsline {section}{\numberline {3.1}模拟实验环境}{12}{section.3.1}
 \contentsline {section}{\numberline {3.2}VP-TALK算法的DPTM效果验证}{12}{section.3.2}
-\contentsline {section}{\numberline {3.3}基于机器学习的DPTM原型系统的验证}{15}{section.3.3}
-\contentsline {section}{\numberline {3.4}小结}{18}{section.3.4}
+\contentsline {section}{\numberline {3.3}基于机器学习的DPTM原型系统的验证}{14}{section.3.3}
+\contentsline {section}{\numberline {3.4}小结}{17}{section.3.4}
 \contentsline {chapter}{4\hspace {1em} 考虑温度对漏电流功耗影响的MPSoC结构级热分析方法}{19}{chapter.4}
 \contentsline {section}{\numberline {4.1}多核芯片热分析研究基础}{19}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}多核架构及其电热分布}{19}{subsection.4.1.1}
@@ -37,8 +39,8 @@
 \contentsline {section}{\numberline {5.1}实验平台与测例说明}{27}{section.5.1}
 \contentsline {section}{\numberline {5.2}方法分析精度的实验数据与分析}{27}{section.5.2}
 \contentsline {section}{\numberline {5.3}本文方法计算速度的实验数据与分析}{31}{section.5.3}
-\contentsline {section}{\numberline {5.4}小结}{32}{section.5.4}
+\contentsline {section}{\numberline {5.4}小结}{31}{section.5.4}
 \contentsline {chapter}{6\hspace {1em} 总结}{33}{chapter.6}
-\contentsline {chapter}{参考文献}{34}{section*.36}
-\contentsline {chapter}{学术成果}{37}{section*.38}
-\contentsline {chapter}{致谢}{38}{section*.40}
+\contentsline {chapter}{参考文献}{35}{section*.40}
+\contentsline {chapter}{学术成果}{38}{section*.42}
+\contentsline {chapter}{致谢}{39}{section*.44}
