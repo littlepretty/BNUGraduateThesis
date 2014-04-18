@@ -66,7 +66,7 @@ H.~Sanchez, B.~Kuttanna, T.~Olson.
 W.~Huang, M.~R. Stan, K.~Sankaranarayanan.
 \newblock Many-core Design from a Thermal Perspective[C].
 \newblock Proceedings of the 45th Design Automation Conference, Anaheim,
-  California, USA, 2008.
+  California, USA: New York: ACM Press, 2008.
 \newblock  746--749.
 
 \bibitem{ThemOptMulMulFlp}
@@ -189,6 +189,12 @@ W.~Huang, S.~Ghosh, S.~Velusamy.
   Design[J].
 \newblock IEEE Transactions on Very Large Scale Integration Systems, 2006,
   14(5):501--513.
+
+\bibitem{MySSTAPaper}
+闫佳琪, 骆祖莹, 唐亮, et~al.
+\newblock
+  考虑温度对漏电流功耗影响的MPSoC结构级热分析方法[J].
+\newblock 计算机辅助设计与图形学学报, 2013, 25(11):1767--1774.
 
 \bibitem{HotCrThemCoupFtrMulArch}
 M.~Janicki, J.~H. Collet, A.~Louri.

@@ -3,4 +3,4 @@
 \contentsline {table}{\numberline {5.1}{\ignorespaces 本文测例各功能模块的面积与功耗参数设定\relax }}{29}{table.caption.33}
 \contentsline {table}{\numberline {5.2}{\ignorespaces 多核芯片核内局部热点的温度分析精度对比\relax }}{29}{table.caption.34}
 \contentsline {table}{\numberline {5.3}{\ignorespaces 多核芯片各核静态功耗的分析精度对比\relax }}{30}{table.caption.35}
-\contentsline {table}{\numberline {5.4}{\ignorespaces 1000次热分析的各个算法耗时及其加速倍数$X$对比\relax }}{31}{table.caption.38}
+\contentsline {table}{\numberline {5.4}{\ignorespaces 1000组热分析各算法计算耗时及加速倍数$X$对比\relax }}{31}{table.caption.38}
