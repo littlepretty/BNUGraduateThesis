@@ -1,6 +1,6 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces 基于电压预测的温敏漏电流技术的流程图\relax }}{7}{figure.caption.15}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces 各种调度算法的能耗效果比较\relax }}{9}{figure.caption.16}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces 各种调度算法的温度效果比较\relax }}{10}{figure.caption.17}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces 各种调度算法的能耗效果随负载率变化的比较\relax }}{9}{figure.caption.16}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces 各种调度算法的峰值温度效果随负载率变化的比较\relax }}{10}{figure.caption.17}
 \contentsline {figure}{\numberline {3.1}{\ignorespaces 各种算法的能耗调度效果比较\relax }}{13}{figure.caption.19}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces 各种算法的峰值温度调度效果比较\relax }}{13}{figure.caption.20}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces 基于在线评价的动态温度与功耗管理系统VS各种源算法均值（能耗调度效果）\relax }}{15}{figure.caption.22}
@@ -11,6 +11,6 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces HotSpot对芯片的电路等效热分析模型\relax }}{21}{figure.caption.28}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Alpha21264芯片的温度分布\relax }}{22}{figure.caption.29}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces 考虑电热耦合效应的多核芯片最高温度与静态功耗的迭代求解\relax }}{23}{figure.caption.30}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces 多核DPTM的单模块与单核热分析等效简化模型\relax }}{25}{figure.caption.31}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces 对测例1中各模块的静态功耗分析误差\relax }}{30}{figure.caption.36}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces 对测例1中各能模块峰值温度的分析误差\relax }}{30}{figure.caption.37}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces 多核DPTM的单模块与单核热分析简化等效电路模型\relax }}{25}{figure.caption.31}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces 对测例1中各模块的静态功耗计算误差\relax }}{31}{figure.caption.37}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces 对测例1中各能模块峰值温度的计算误差\relax }}{32}{figure.caption.38}
