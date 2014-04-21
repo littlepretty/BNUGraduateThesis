@@ -12,6 +12,45 @@
 \section{多核芯片热分析的研究对象建模}
 \label{sec:SSTAbasic}
 
+\subsection{芯片的散热系统}
+图\ref{fig:cpu-disperse-package}给出了完整的芯片散热系统结构，在散热片下依次是导热层2(TIM2)、扩热层、导热层1(TIM1)， 导热层1下方就是芯片的内核(die)，注意：内核＋导热层1＋扩热层＋散热片+风扇构成了芯片的主散热通道。 内核下方是芯片的封装基座，封装基座下方是芯片插座，芯片插座下方则是印刷电路版(PCB)， 注意：内核＋封装基座＋芯片插座＋PCB构成了辅散热通道。主散热通道的散热能力强于辅散热通道几个数量级， 所以在全芯片3D热分析中，均只讨论主散热通道，而忽略辅散热通道，本文下面将主散热通道简称散热通道。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth,height=0.45\textheight]{CPUDispersePackage}
+  \caption{IC散热系统的结构示意}
+  \label{fig:cpu-disperse-package}
+\end{figure}
+
+从图\ref{fig:cpu-disperse-package}还可以看出，IC散热系统包括：内核的硅衬底、由硅胶或硅脂等软性材料构成的导热层、 由芯片金属壳构成的扩热层、及散热片等散热器件。 图\ref{fig:intel-fclg-package}为Intel公司FCLGA10的散热系统结构，可以看出， 在封装好的芯片内，芯片金属封盖起到扩热的作用；为了保护内核，封盖与内核之间采用的是一层很薄的软性材料（多数为硅脂）。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth,height=0.20\textheight]{IntelFCLG10Package}
+  \caption{Intel公司FCLGA10封装的散热系统结构}
+  \label{fig:intel-fclg-package}
+\end{figure}
+
+一般而言，芯片散热系统所用的导材料有：铜Cu（封盖与散热片）、硅Si（硅衬底）、硅胶或硅脂（导热层）， 其中铜和硅的导热能力要远高于硅胶与硅脂。因此，在散热系统中，为了降低系统的热阻，必须尽量减小导热层的厚度， 但为了保证不损坏内核，金属封盖与内核之间的导热层厚度一般取0.5-0.8mm， 从图\ref{fig:intel-fclg-package}可以看出：Intel公司CPU芯片的导热层厚度要小于0.5mm，这主要取决于该公司的巨大技术实力。
+
+\begin{table}
+\centering
+\caption{导热材料的热设计参数}
+\begin{tabular}{c c c c}
+\hline\hline
+材料 & $k$($W/(cm \times K)$) & $\rho$($kg/cm^3$) & $c$($J/(kg \times K)$) \\ [0.5ex]
+\hline
+铜 & 4.00 & 0.00892 & 386.00  \\
+硅 & 1.00 & 0.00232 & 171.00 \\
+硅脂 & 0.04 & 0.00240 & NA \\
+\hline
+\end{tabular}
+\label{tab:chap4:cu-si-material}
+\end{table}
+
+为了对芯片温度进行稳态或者瞬态分析，就必须对各传热器件进行热阻（热导）和热容的参数提取。 为此，我们将铜、硅、导热层(TIM)材料的热导率$k$（单位为$W/(cm \times K)$）、比重$\rho$ （单位为$kg/cm^3$）、比热容$c$（单位为$J/(kg \times K)$）列于表\ref{tab:chap4:cu-si-material}中。 对于作为导热层材料的硅脂，由于工艺不同，其参数变化较大，所以取上界。
+
+
 \subsection{多核架构及其电热分布}
 
 目前多核CPU普遍采用同质架构。即每个核心（core）拥有相同的逻辑功能模块（computing unit）、容量相同的专享缓存(exclusive cache)，占有相同的内核面积， 同时共享最后一级缓存(last level cache,LLC)缓存、I/O等功能模块\onlinecite{TemMicroArch,TemMicArcMdlImpl}。 每个核心具有相同数量的工作模式，不同的工作模式意味着消耗不同程度的能量。一般来说，每个核心除具有一个全速高能模式外， 还具有多种耗能程度不同的节能模式\onlinecite{ThrOptTskAllocThemConstMulPro}。
@@ -32,7 +71,7 @@
 \label{equ:chap4:gtp}
 \mathbf{G} \times \mathbf{T} = \mathbf{P}
 \end{equation}
-对于多核实时功耗温度管理(dynamic power and temperature management, DPTM)研究\onlinecite{ThmBefMulCrFlrPlLimSty,TemSupVolPerfPowMdlMicroLvl}， 目前广泛采用Skadron等人提出的HotSpot热分析模型（软件）\onlinecite{TemMicroArch}构建热导矩阵$\mathbf{G}$， 并采用式\ref{equ:chap4:gtp}进行计算。 HotSpot采用基于等效热导的电路模型，将体系结构级的功能模块作为分析热点的对象。除了模块级别的热分析模型，HotSpot仍然提供了更为复杂的网格级（grid mode）热分析模型与方法。本文所指的HotSpot模型及其计算结果均指模块模式（block mode）的热分析模型与结果。 一种直观的对应芯片以及热封装的物理结构的具体建模例子如图\ref{fig:hotspot-model} 所示。电路模型在垂直热传导方向上有3层：内核（die）层、扩热（heat spreader）层、与散热片（heatsink）层，另外加入第4层热对流（heat convector）层，即与环境温度的接口。内核层根据芯片的几何布局被分为块；扩热层分为5块： 与内核层完好对应的$R_sp$以及4块呈梯形状的环绕块；散热片层按照与扩热层相似的划分方法，分为$R_hs$以及4个环绕块； 最后，从热封装到外界环境的热对流层由$R_convection$表示\onlinecite{ThrOptTskAllocThemConstMulPro,MySSTAPaper}。 层与层之间模型刻画由内核直至封装及外界环境的热流； 层内水平模型刻画相邻模块间的热扩散。内核层产生的功耗等效为每个模块中心的电流源\onlinecite{TemMicArcMdlImpl,MySSTAPaper}。 建模完成后，通过电路分析可得到芯片的温度分布。 用HotSpot计算分析Alpha 21264芯片的温度分布如图\ref{fig:ev6-grid-temp-surf}所示。
+对于多核实时功耗温度管理(dynamic power and temperature management, DPTM)研究\onlinecite{ThmBefMulCrFlrPlLimSty,TemSupVolPerfPowMdlMicroLvl}， 目前广泛采用Skadron等人提出的HotSpot热分析模型（软件）\onlinecite{TemMicroArch}构建热导矩阵$\mathbf{G}$， 并采用式\ref{equ:chap4:gtp}进行计算。 HotSpot采用基于等效热导的电路模型，将体系结构级的功能模块作为分析热点的对象。除了模块级别的热分析模型， HotSpot仍然提供了更为复杂的网格级（grid mode）热分析模型与方法。本文所指的HotSpot模型及其计算结果均指模块模式（block mode）的热分析模型与结果。 一种直观的对应芯片以及热封装的物理结构的具体建模例子如图\ref{fig:hotspot-model} 所示。电路模型在垂直热传导方向上有3层：内核（die）层、扩热（heat spreader）层、与散热片（heatsink）层，另外加入第4层热对流（heat convector）层，即与环境温度的接口。内核层根据芯片的几何布局被分为块；扩热层分为5块： 与内核层完好对应的$R_sp$以及4块呈梯形状的环绕块；散热片层按照与扩热层相似的划分方法，分为$R_hs$以及4个环绕块； 最后，从热封装到外界环境的热对流层由$R_convection$表示\onlinecite{ThrOptTskAllocThemConstMulPro,MySSTAPaper}。 层与层之间模型刻画由内核直至封装及外界环境的热流； 层内水平模型刻画相邻模块间的热扩散。内核层产生的功耗等效为每个模块中心的电流源\onlinecite{TemMicArcMdlImpl,MySSTAPaper}。 建模完成后，通过RC瞬态与稳态电路分析，可得到芯片的温度分布。 用HotSpot计算分析Alpha 21264芯片的温度分布如图\ref{fig:ev6-grid-temp-surf}所示。
 
 \begin{figure}[H]
   \centering
@@ -50,7 +89,7 @@
 
 
 \subsection{电热耦合效应：温度对漏电流功耗的影响}
-正如\ref{sec:power}节中，式\ref{equ:chap2:active-power-simplified}、式\ref{equ:chap2:leakage-power} 所定性与定量地描述那样，芯片功耗由动态功耗$P_{dynamic}$与静态功耗$P_{leakage}$两部分组成， 随着芯片制作工艺的提高，$P_{leakage}$已成为芯片功耗的主要贡献者。 而工作温度$T$的升高可以明显增大$P_{leakage}$。这就是所谓的芯片内部电热耦合效应。在考虑电热耦合效应的热分析过程中， 需要对$T-P$采用迭代方法计算，如\ref{fig:tp-iteration}所示，对于一个16核CPU的测例（具体的实验参数设置见第\ref{cha:SSTAexperiments}章）， 采用迭代算法来逼近最终的精确解。
+正如\ref{sec:power}节中，式\ref{equ:chap2:active-power-simplified}、式\ref{equ:chap2:leakage-power} 所定性与定量地描述那样，芯片功耗由动态功耗$P_{dynamic}$与静态功耗$P_{leakage}$两部分组成， 随着芯片制作工艺的提高，$P_{leakage}$已成为芯片功耗的主要贡献者。 而工作温度$T$的升高可以明显增大$P_{leakage}$。这就是所谓的芯片内部电热耦合效应。在考虑电热耦合效应的热分析过程中， 需要对$T-P$采用迭代方法计算，如\ref{fig:tp-iteration}所示， 对于一个16核CPU的测例（具体的实验参数设置见第\ref{cha:SSTAexperiments}章）， 采用迭代算法来逼近最终的精确解。
 
 与不考虑电热耦合效应的初始解相比，芯片最高温度与静态功耗都有了明显的增加， 这表明在芯片的温度分析中、必须考虑温度对静态功耗的影响，否则，将会产生较大的分析误差。同时，与不考虑电热耦合效应的温度分析算法相比， 由于考虑电热耦合效应的温度分析算法需要采用7次迭代计算才能获得精确解， 所以其算法复杂度是对比算法的7倍；因此降低考虑电热耦合效应的温度分析算法复杂度就具有非常重要的研究意义。
 \begin{figure}[H]
@@ -125,7 +164,7 @@ T_{s,s} = R_{s,s}\sum\limits_{t=1}^n P_{s,t}
 式\ref{equ:chap4:cortam-tpp}中$n$为多核芯片中的核数。从式\ref{equ:chap4:cortam-tpp}可知： CoreTAM方法的算法复杂度为$O(n^2)$。 从计算机系统结构可知， 核数$n$远小于模块数$N$，因此，多核芯片的核级温度分析复杂度要远小于模块级。
 
 \subsection{考虑核内模块相互影响的改良核级热分析方法（简称BlockInsideCoreTAM算法）}
-在核级热分析方法研究中，假设了核内各个模块对核内逻辑模块中心温度具有相同的相关热阻， 并且每个核内仅需计算一个点的温度；核内各模块均使用该温度来刷新模块的漏电流功耗， 会使整个核的漏电流功耗增大。为了使漏电流计算更为精确，必须计算出各自模块的温度，为此， 下面给出一个考虑核内模块相互影响的改良核级热分析方法：BlockInsideCoreTAM。在BlockInsideCoreTAM方法中，先进行如下的假设\onlinecite{MySSTAPaper}：
+在核级热分析方法研究中，假设了核内各个模块对核内逻辑模块中心温度具有相同的相关热阻， 并且每个核内仅需计算一个点的温度；核内各模块均使用该温度来刷新模块的漏电流功耗， 会使整个核的漏电流功耗增大。为了使漏电流计算更为精确，必须计算出各自模块的温度，为此， 下面给出一个考虑核内模块相互影响的改良核级热分析方法：BlockInsideCoreTAM。在BlockInsideCoreTAM方法中， 先进行如下的假设\onlinecite{MySSTAPaper}：
 \begin{enumerate}[1)]
 \item 核$t$的功耗$P_{t,t}$对核$s$内所有模块均产生相同的等效热量影响为$P_{s,t} = \frac{R_{s,t}}{R_{s,s}}P_{t,t}$，其中$R_{s,t}$为两个核内所有模块之间相关热阻的平均值，即
 \begin{equation}
