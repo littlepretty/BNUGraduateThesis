@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {2.4.2}基于固定周期的技术（简称Pattern-Based，PB技术）}{5}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}M阶震荡调节技术（简称M-Oscillating，MO技术）}{6}{subsection.2.4.3}
 \contentsline {subsection}{\numberline {2.4.4}小结与评价}{6}{subsection.2.4.4}
-\contentsline {section}{\numberline {2.5}基于电压预测的温敏漏电流技术（简称VP-TALk技术}{7}{section.2.5}
+\contentsline {section}{\numberline {2.5}基于电压预测的温敏漏电流技术（简称VP-TALk技术）}{7}{section.2.5}
 \contentsline {section}{\numberline {2.6}动态温度与功耗管理系统}{8}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}启发性示例}{8}{subsection.2.6.1}
 \contentsline {subsection}{\numberline {2.6.2}基于在线评价的动态温度与功耗管理系统}{9}{subsection.2.6.2}
@@ -40,7 +40,9 @@
 \contentsline {section}{\numberline {5.2}验证实验所用到的测例}{28}{section.5.2}
 \contentsline {section}{\numberline {5.3}针对MPSoC结构级热分析算法精度的实验数据与分析}{28}{section.5.3}
 \contentsline {section}{\numberline {5.4}针对MPSoC结构级热分析算法速度的实验数据与分析}{32}{section.5.4}
-\contentsline {chapter}{6\hspace {1em} 全文总结}{34}{chapter.6}
-\contentsline {chapter}{参考文献}{36}{section*.40}
-\contentsline {chapter}{学术成果}{39}{section*.42}
-\contentsline {chapter}{致谢}{40}{section*.44}
+\contentsline {chapter}{6\hspace {1em} 研究总结与展望}{34}{chapter.6}
+\contentsline {section}{\numberline {6.1}本文总结}{34}{section.6.1}
+\contentsline {section}{\numberline {6.2}未来工作展望}{35}{section.6.2}
+\contentsline {chapter}{参考文献}{37}{section*.40}
+\contentsline {chapter}{学术成果}{40}{section*.42}
+\contentsline {chapter}{致谢}{41}{section*.44}

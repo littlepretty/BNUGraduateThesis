@@ -258,4 +258,19 @@ Intel Sandy Bridge-E架构的8核高端CPU[Z].
 \newblock [OL].
 \newblock \url{http://ark.intel.com/products/63696}.
 
+\bibitem{iPhoneMultiCore}
+采用多核结构的iPhone移动设备[Z].
+\newblock [OL].
+\newblock \url{http://www.apple.com/cn/iphone/compare/}.
+
+\bibitem{iPadMultiCore}
+采用多核结构的iPad移动设备[Z].
+\newblock [OL].
+\newblock \url{http://www.apple.com/cn/ipad/compare/}.
+
+\bibitem{GPUAtPhone}
+手机GPU芯片图形性能跑分横向对比[Z].
+\newblock [OL].
+\newblock \url{http://www.dashi.com/article/1148.html}.
+
 \end{thebibliography}

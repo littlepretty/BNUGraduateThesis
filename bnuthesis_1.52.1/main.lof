@@ -11,6 +11,6 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces HotSpot对芯片的电路等效热分析模型\relax }}{21}{figure.caption.28}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Alpha21264芯片的温度分布\relax }}{22}{figure.caption.29}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces 考虑电热耦合效应的多核芯片最高温度与静态功耗的迭代求解\relax }}{23}{figure.caption.30}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces 多核DPTM的单模块与单核热分析简化等效电路模型\relax }}{25}{figure.caption.31}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces 多核实时功耗温度管理的单模块与单核热分析简化等效电路模型\relax }}{25}{figure.caption.31}
 \contentsline {figure}{\numberline {5.1}{\ignorespaces 对测例1中各模块的静态功耗计算误差\relax }}{31}{figure.caption.37}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces 对测例1中各能模块峰值温度的计算误差\relax }}{32}{figure.caption.38}
