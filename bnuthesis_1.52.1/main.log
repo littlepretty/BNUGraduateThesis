@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.6)  28 APR 2014 15:02
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.6)  29 APR 2014 15:35
 entering extended mode
 **C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/main.tex
 (C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/main.tex
@@ -1354,6 +1354,9 @@ LaTeX Warning: File c7086.cmap not found on input line 32.
 LaTeX Warning: File c7070.cmap not found on input line 32.
 
 
+LaTeX Warning: File c707d.cmap not found on input line 32.
+
+
 LaTeX Warning: File c706f.cmap not found on input line 32.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has 
@@ -1376,9 +1379,6 @@ l.32 \makecover
 
 ] [4]
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.52.1\main.toc
-
-LaTeX Warning: File c707d.cmap not found on input line 3.
-
 
 LaTeX Warning: File c708a.cmap not found on input line 5.
 
@@ -1461,6 +1461,10 @@ LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5]
+
+LaTeX Warning: File ot165.cmap not found on input line 96.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
@@ -1687,26 +1691,23 @@ m/n/12.045/5f S$\OML/txmi/m/it/12.045 m \OMS/txsy/m/n/12.045 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [30]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [31]
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.52.1\data/chap05.t
 ex
 
 LaTeX Warning: File c7084.cmap not found on input line 15.
 
-<figures/Core-i7-3960X.jpg, id=1074, 416.538pt x 408.654pt>
+<figures/Core-i7-3960X.jpg, id=1070, 416.538pt x 408.654pt>
 File: figures/Core-i7-3960X.jpg Graphic file (type jpg)
 
 <use figures/Core-i7-3960X.jpg>
 Underfull \vbox (badness 2142) has occurred while \output is active []
 
- [32
+ [31
 
 
 
 ]
-<figures/InnerCore-Core-i7-3960X.png, id=1082, 697.60625pt x 352.31625pt>
+<figures/InnerCore-Core-i7-3960X.png, id=1078, 697.60625pt x 352.31625pt>
 File: figures/InnerCore-Core-i7-3960X.png Graphic file (type png)
 
 <use figures/InnerCore-Core-i7-3960X.png>
@@ -1715,11 +1716,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/figures/
+ [32 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/figures/
 Core-i7-3960X.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/figures/
+ [33 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/figures/
 InnerCore-Core-i7-3960X.png (PNG copy)>]
 Underfull \hbox (badness 1077) in paragraph at lines 52--53
 \C70/song/m/n/12.045/5c  \C70/song/m/n/12.045/4e Ž\OT1/txr/m/n/12.045 3.7%\C70
@@ -1737,12 +1738,12 @@ n/12.045/8b ï \C70/song/m/n/12.045/5d î \C70/song/m/n/12.045/8f ¾ \C70/song/m/n
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35]
-<figures/EX1-PLK-ERROR.jpg, id=1120, 631.60968pt x 330.48468pt>
+ [34]
+<figures/EX1-PLK-ERROR.jpg, id=1116, 631.60968pt x 330.48468pt>
 File: figures/EX1-PLK-ERROR.jpg Graphic file (type jpg)
 
 <use figures/EX1-PLK-ERROR.jpg>
-<figures/EX1-TEMP-ERROR.jpg, id=1121, 640.64343pt x 349.305pt>
+<figures/EX1-TEMP-ERROR.jpg, id=1117, 640.64343pt x 349.305pt>
 File: figures/EX1-TEMP-ERROR.jpg Graphic file (type jpg)
 
 <use figures/EX1-TEMP-ERROR.jpg>
@@ -1751,21 +1752,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36]
+ [35]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/figures/
+ [36 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/figures/
 EX1-PLK-ERROR.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/figures/
+ [37 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/figures/
 EX1-TEMP-ERROR.jpg>])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39]
+ [38]
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.52.1\data/chap06.t
 ex
 Underfull \hbox (badness 10000) in paragraph at lines 26--27
@@ -1778,7 +1779,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--27
 70/song/m/n/12.045/ff  \OT1/txr/m/n/12.045 Block-
  []
 
-[40
+[39
 
 
 
@@ -1800,26 +1801,26 @@ LaTeX Warning: File c7055.cmap not found on input line 32.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41])
+ [40])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [42]
+ [41]
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.52.1\main.bbl
-[43
+[42
 
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44]
+ [43]
 
 LaTeX Warning: File c705a.cmap not found on input line 233.
 
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [45]
+ [44]
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.52.1\data/paper.te
 x
 Underfull \hbox (badness 1019) in paragraph at lines 7--8
@@ -1828,7 +1829,7 @@ Underfull \hbox (badness 1019) in paragraph at lines 7--8
 \OT1/txr/m/n/12.045 Accurate Architecture-level Ther-mal Anal-y-sis
  []
 
-) [46
+) [45
 
 
 
@@ -1840,7 +1841,7 @@ LaTeX Warning: File c709f.cmap not found on input line 27.
 
 LaTeX Warning: File ot161.cmap not found on input line 31.
 
-[47
+[46
 
 
 
@@ -1848,7 +1849,7 @@ LaTeX Warning: File ot161.cmap not found on input line 31.
 ])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [48]
+ [47]
 \tf@thm=\write7
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
@@ -1875,21 +1876,27 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C8AE59B214C5B4969F8979A516309825;9448.
  ) 
 Here is how much of TeX's memory you used:
- 16096 strings out of 495362
- 229644 string characters out of 3184024
- 309691 words of memory out of 3000000
- 17856 multiletter control sequences out of 15000+200000
+ 16105 strings out of 495362
+ 229798 string characters out of 3184024
+ 309709 words of memory out of 3000000
+ 17861 multiletter control sequences out of 15000+200000
  192237 words of font info for 578 fonts, out of 3000000 for 9000
  15 hyphenation exceptions out of 8191
- 51i,9n,44p,1942b,2010s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,9n,44p,1867b,2016s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/
 chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTe
 X/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun
 .ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truety
 pe/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/
 CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/sim
-sun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/tru
-etype/chinese/simsun.ttf>{C:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/Wi
+sun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf>{C:/CTEX/MiKTeX/fonts/e
+nc/dvips/fontname/8r.enc}<C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.
+ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts
+/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windo
+ws/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><
+C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simh
+ei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fo
+nts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Wi
 ndows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.tt
 f><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/s
 imhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows
@@ -1901,13 +1908,7 @@ ows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf>
 <C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/sim
 hei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/F
 onts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/W
-indows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.t
-tf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/
-simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Window
-s/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C
-:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhe
-i.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fon
-ts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/CTE
+indows/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTE
 X/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/s
 imsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/t
 ruetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/
@@ -1961,9 +1962,9 @@ s/txsy.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txsyc.pfb><C:/CTEX/MiKTeX
 /fonts/type1/urw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmb
 8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on main.pdf (58 pages, 7816748 bytes).
+Output written on main.pdf (57 pages, 7815058 bytes).
 PDF statistics:
- 1754 PDF objects out of 2073 (max. 8388607)
- 256 named destinations out of 1000 (max. 500000)
+ 1750 PDF objects out of 2073 (max. 8388607)
+ 255 named destinations out of 1000 (max. 500000)
  862 words of extra memory for PDF output out of 10000 (max. 10000000)
 
