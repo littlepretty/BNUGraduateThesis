@@ -13,7 +13,7 @@
 \label{sec:SSTAbasic}
 
 \subsection{芯片的散热系统}
-图\ref{fig:cpu-disperse-package}给出了完整的芯片散热系统结构，在散热片下依次是导热层2(TIM2)、扩热层、导热层1(TIM1)， 导热层1下方就是芯片的内核(die)，注意：内核＋导热层1＋扩热层＋散热片+风扇构成了芯片的主散热通道。 内核下方是芯片的封装基座，封装基座下方是芯片插座，芯片插座下方则是印刷电路版(PCB)， 注意：内核＋封装基座＋芯片插座＋PCB构成了辅散热通道。主散热通道的散热能力强于辅散热通道几个数量级， 所以在全芯片3D热分析中，均只讨论主散热通道，而忽略辅散热通道，本文下面将主散热通道简称散热通道。
+图\ref{fig:cpu-disperse-package}给出了完整的芯片散热系统结构，在散热片下依次是导热层2(TIM2)、扩热层、导热层1(TIM1)， 导热层1下方就是芯片的内核(die)，注意：内核＋导热层1＋扩热层＋散热片+风扇构成了芯片的主散热通道。 内核下方是芯片的封装基座，封装基座下方是芯片插座，芯片插座下方则是印刷电路版(PCB)。 需要特别指出：内核、封装基座、芯片插座和PCB构成了辅散热通道。散热通道的散热能力强于主散热通道辅近两三个数量级， 所以在各种规模各种粒度的芯片散热系统建模中，一般均只讨论主散热通道，而忽略辅散热通道。
 
 \begin{figure}[H]
   \centering
@@ -71,7 +71,7 @@
 \label{equ:chap4:gtp}
 \mathbf{G} \times \mathbf{T} = \mathbf{P}
 \end{equation}
-对于多核实时功耗温度管理(dynamic power and temperature management, DPTM)研究\onlinecite{ThmBefMulCrFlrPlLimSty,TemSupVolPerfPowMdlMicroLvl}， 目前广泛采用Skadron等人提出的HotSpot热分析模型（软件）\onlinecite{TemMicroArch}构建热导矩阵$\mathbf{G}$， 并采用式\ref{equ:chap4:gtp}进行计算。 HotSpot采用基于等效热导的电路模型，将体系结构级的功能模块作为分析热点的对象。除了模块级别的热分析模型， HotSpot仍然提供了更为复杂的网格级（grid mode）热分析模型与方法。本文所指的HotSpot模型及其计算结果均指模块模式（block mode）的热分析模型与结果。 一种直观的对应芯片以及热封装的物理结构的具体建模例子如图\ref{fig:hotspot-model} 所示。电路模型在垂直热传导方向上有3层：内核（die）层、扩热（heat spreader）层、与散热片（heatsink）层，另外加入第4层热对流（heat convector）层，即与环境温度的接口。内核层根据芯片的几何布局被分为块；扩热层分为5块： 与内核层完好对应的$R_sp$以及4块呈梯形状的环绕块；散热片层按照与扩热层相似的划分方法，分为$R_hs$以及4个环绕块； 最后，从热封装到外界环境的热对流层由$R_convection$表示\onlinecite{ThrOptTskAllocThemConstMulPro,MySSTAPaper}。 层与层之间模型刻画由内核直至封装及外界环境的热流； 层内水平模型刻画相邻模块间的热扩散。内核层产生的功耗等效为每个模块中心的电流源\onlinecite{TemMicArcMdlImpl,MySSTAPaper}。 建模完成后，通过RC瞬态与稳态电路分析，可得到芯片的温度分布。 用HotSpot计算分析Alpha 21264芯片的温度分布如图\ref{fig:ev6-grid-temp-surf}所示。
+对于多核实时功耗温度管理(dynamic power and temperature management, DPTM)研究\onlinecite{ThmBefMulCrFlrPlLimSty,TemSupVolPerfPowMdlMicroLvl}， 目前广泛采用Skadron等人提出的HotSpot热分析模型（软件）\onlinecite{TemMicroArch}构建热导矩阵$\mathbf{G}$， 并采用式\ref{equ:chap4:gtp}进行计算。 HotSpot采用基于等效热导的电路模型，将体系结构级的功能模块作为分析热点的对象。除了模块级别的热分析模型， HotSpot仍然提供了更为复杂的网格级（grid mode）热分析模型与方法。本文所指的HotSpot模型及其计算结果均指模块模式（block mode）的热分析模型与结果。 直观的对应芯片以及芯片热封装的物理构造的具体建模如图\ref{fig:hotspot-model} 所示。电路模型在垂直热传导方向上有3层：内核（die）层、扩热（heat spreader）层、与散热片（heatsink）层，另外加入第4层热对流（heat convector）层，即与环境温度的接口。内核层根据处理器的功能布局被分为对应的功能模块；扩热层分为5块： 与内核层完好对应的$R_sp$以及4块呈梯形状的环绕块；散热片层按照与扩热层相似的划分方法，分为$R_hs$以及4个环绕块； 最后，从热封装到外界环境的热对流层由$R_convection$表示\onlinecite{ThrOptTskAllocThemConstMulPro,MySSTAPaper}。 层与层之间模型刻画由内核直至封装及外界环境的热流； 层内水平模型刻画相邻模块间的热扩散。内核层产生的功耗等效为每个模块中心的电流源\onlinecite{TemMicArcMdlImpl,MySSTAPaper}。 用HotSpot计算分析Alpha 21264芯片的温度分布如图\ref{fig:ev6-grid-temp-surf}所示。
 
 \begin{figure}[H]
   \centering
@@ -89,9 +89,9 @@
 
 
 \subsection{电热耦合效应：温度对漏电流功耗的影响}
-正如\ref{sec:power}节中，式\ref{equ:chap2:active-power-simplified}、式\ref{equ:chap2:leakage-power} 所定性与定量地描述那样，芯片功耗由动态功耗$P_{dynamic}$与静态功耗$P_{leakage}$两部分组成， 随着芯片制作工艺的提高，$P_{leakage}$已成为芯片功耗的主要贡献者。 而工作温度$T$的升高可以明显增大$P_{leakage}$。这就是所谓的芯片内部电热耦合效应。在考虑电热耦合效应的热分析过程中， 需要对$T-P$采用迭代方法计算，如\ref{fig:tp-iteration}所示， 对于一个16核CPU的测例（具体的实验参数设置见第\ref{cha:SSTAexperiments}章）， 采用迭代算法来逼近最终的精确解。
+正如\ref{sec:power}节中，式\ref{equ:chap2:active-power-simplified}、式\ref{equ:chap2:leakage-power} 所定性与定量地描述那样，芯片功耗由不仅包含运行功耗（动态功耗$P_{dynamic}$），还包括与热相关的静态功耗$P_{leakage}$。 近年来，芯片制作工艺的提高使得$P_{leakage}$已成为芯片功耗的主要贡献者。 而工作温度$T$的升高可以明显增大$P_{leakage}$。这就是所谓的芯片内部电热耦合效应。在考虑电热耦合效应的热分析过程中， 需要对$T-P$采用迭代方法计算，如\ref{fig:tp-iteration}所示， 对于一个16核CPU的测例（具体的实验参数设置见第\ref{cha:SSTAexperiments}章），对比了采用迭代算法和不采用迭代算法的分析结果。
 
-与不考虑电热耦合效应的初始解相比，芯片最高温度与静态功耗都有了明显的增加， 这表明在芯片的温度分析中、必须考虑温度对静态功耗的影响，否则，将会产生较大的分析误差。同时，与不考虑电热耦合效应的温度分析算法相比， 由于考虑电热耦合效应的温度分析算法需要采用7次迭代计算才能获得精确解， 所以其算法复杂度是对比算法的7倍；因此降低考虑电热耦合效应的温度分析算法复杂度就具有非常重要的研究意义。
+与不考虑电热耦合效应的初始解相比，芯片峰值温度与静态功耗都有了明显的增加， 这表明在芯片的温度分析中、如果不考虑温度对静态功耗的影响，将会产生较大的分析误差。同时，与不考虑电热耦合效应的温度分析算法相比， 考虑电热耦合效应的温度分析算法需要经过7次迭代计算才能获得精确解， 换句话说，其算法复杂度将是对比算法的7倍。因此，出于热分析精度和热分析速度这两方面的考虑， 都应当降低考虑电热耦合效应的温度分析算法复杂度。
 \begin{figure}[H]
   \centering
   \includegraphics[width=1\textwidth,height=0.6\textheight]{TP-ITERATION}
@@ -136,8 +136,8 @@ T_{u,u} = R_{u,u}\sum\limits_{v=1}^N P_{u,v} = R_{u,u}\widehat{P_{u}}
 \subsection{核级热分析方法（简称CoreTAM算法）}
 为了对处理器核进行热分析建模，可以基于图\ref{fig:hotspot-model}中HotSpot的多核芯片热分析模型， 采用等效电路的方法对其进行进一步简化，为此，进行如下的假设\onlinecite{MySSTAPaper}：
 \begin{enumerate}[1)]
-\item 在处理器核多个功能模块中，逻辑模块（包括ALU等器件）产生最高的工作温度，将逻辑模块的温度作为处理器核的温度; 为了对其他核产生影响，将处理器核中所有功能模块的功耗加到逻辑模块中心。
-\item 为了计算温度对漏电流功耗的影响，将逻辑模块的静-动态功耗比例、作为处理器核中所有功能模块的静-动态功耗比例， 也就是：随着工作温度的变化，变的是静-动态功耗比例，不变的是核内所有模块功耗的比例。
+\item 在处理器核多个功能模块中，逻辑模块（包括ALU等器件）产生最高的工作温度，将逻辑模块的温度作为处理器核的温度; 为了对其他核产生影响，逻辑模块中心被注入处理器核中对应功能模块的功耗。
+\item 为了计算温度对漏电流功耗的影响，将逻辑模块的静-动态功耗比例、作为处理器核中所有功能模块的静-动态功耗比例。
 \end{enumerate}
 
 基于如上假设，将核p内的所有模块均加上符合核内功耗比例要求的阶跃激励，其他核均不加激励， 则可以使用HotSpot模拟器获得所有核的温度$T_{t,s}$响应曲线。先根据$T_{s,s}$的最终收敛值$\overline{T}_{s,s}$ 可以计算出核$s$的等效热阻$R_{s,s}$，计算公式如下：
