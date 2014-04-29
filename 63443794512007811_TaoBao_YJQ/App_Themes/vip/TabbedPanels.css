@@ -1,0 +1,154 @@
+﻿.TabbedPanels
+{
+	margin: 0px;
+	width: 100%;
+}
+#TabGroup
+{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	width: 360px;
+	background: #fff;
+	float: left;
+	text-align: left;
+}
+
+.TabbedPanelsTabGroup
+{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	height: 36px;
+	width: 100%;
+	text-align: left;
+	background-image: url(../../images/pmlc12_w_bj.gif);
+	background-repeat: repeat-x;
+}
+.TabbedPanelsGR
+ {
+ 	padding-top:5px;
+	margin: 0px;
+	width:100%;
+}
+
+.TabbedPanelsTabGroupGR
+{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	height:36px;
+	width:100%;
+	text-align:left;
+	background-image:url(../../images/pmlc12_w_bj.gif);
+	background-repeat:repeat-x;
+}
+.TabbedPanelsTab
+{
+	cursor: pointer;
+	position: relative;
+	float: left;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #005d00;
+	height: 36px;
+	font-weight: bold;
+	width: 128px;
+	line-height: 36px;
+	text-align: center;
+	background-image: url(../../images/pmlc12_w_bja.gif);
+	background-repeat: no-repeat;
+}
+
+.TabbedPanelsTabHover
+{
+	background-color: #f0f8eb;
+}
+
+.TabbedPanelsTabSelected
+{
+	color: #fff;
+	background-image: url(../../images/pmlc12_w_bjb.gif);
+	background-repeat: no-repeat;
+}
+
+.TabbedPanelsTab a
+{
+	color: black;
+	text-decoration: none;
+}
+
+.TabbedPanelsContentGroup
+{
+	width: 100%;
+	padding-top: 10px;
+}
+.TabbedPanelsContentGroupGR
+{
+	width:100%;
+	text-align:left;
+	padding-top:10px;
+}
+.Content
+{
+	padding: 10px 10px 10px 20px;
+	color: #555;
+	text-align: left;
+}
+
+.ContentVisible
+{
+}
+
+.VTabbedPanels .TabGroup
+{
+	float: left;
+	background-color: #EEE;
+	position: relative;
+}
+.TabbedPanelsContent
+{
+	padding: 0px;
+}
+.VTabbedPanels .PanelsTab
+{
+	float: none;
+	margin: 0px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+.VTabbedPanels .TabSelected
+{
+	background-color: #fff;
+}
+
+.VTabbedPanels .ContentGroup
+{
+	clear: none;
+	float: left;
+	padding: 0px;
+	width: 500px;
+	height: 300px;
+}
+.PMLC12_text_kuang
+{
+	height: 18px;
+	border: 1px solid #7ab06c;
+	color: #333;
+}
+.PMLC12_w_table
+{
+	width: 320px;
+	height: 36px;
+	float: right;
+}
+.PMLC12_w_table1
+{
+	width: 700px;
+	height: 36px;
+	float:left;
+}

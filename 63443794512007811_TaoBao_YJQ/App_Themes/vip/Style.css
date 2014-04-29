@@ -1,0 +1,3266 @@
+﻿*
+{
+    margin: 0;
+    padding: 0;
+}
+html, body
+{
+    font-size: 12px;
+    color: #666;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.n_main
+{
+    background-image: url(../../images/pmlc12_bg_sy.gif);
+}
+img
+{
+    border: 0;
+}
+a
+{
+    color: #0c7020;
+    text-decoration: underline;
+}
+a:link
+{
+    color: #0c7020;
+    text-decoration: underline;
+}
+a:visited
+{
+    color: #0c7020;
+    text-decoration: underline;
+}
+a:hover, a:active
+{
+    color: #2f9042;
+    text-decoration: underline;
+}
+.huanhang
+{
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.PMLC12_mainbody
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/************************head***************************/
+.PMLC12_banner
+{
+    width: 100%;
+    height: 116px;
+    background-image: url(../../images/pmlc12_banner_b.gif);
+    background-repeat: repeat-x;
+    vertical-align: top;
+}
+.PMLC12_banner_a
+{
+    width: 717px;
+    height: 116px;
+    background-image: url(../../images/pmlc12_banner_a.gif);
+    background-repeat: no-repeat;
+}
+
+
+.PMLC12_banner_b
+{
+    width: 10%;
+    height: 116px;
+    background-image: url(../../images/pmlc12_banner_b.gif);
+    background-repeat: repeat-x;
+}
+.PMLC12_banner_c
+{
+    width: 20%;
+    height: 116px;
+    background-image: url(../../images/pmlc12_banner_c.gif);
+    background-repeat: no-repeat;
+}
+
+.PMLC12_kfdxz
+{
+    width: 142px;
+    height: 33px;
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 130px;
+}
+.PMLC12_user
+{
+    width: 200px;
+    padding-left: 70px;
+    text-align: right;
+}
+.PMLC12_t_yellow
+{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f8f508;
+    line-height: 25px;
+}
+.PMLC12_t_white
+{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    line-height: 25px;
+}
+.PMLC12_t_white_a
+{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding-left: 5px;
+    color: #fff;
+    line-height: 24px;
+}
+.PMLC12_t_white_a a:link
+{
+    color: #FFF;
+    text-decoration: none;
+}
+.PMLC12_t_white_a a:visited
+{
+    color: #FFF;
+    text-decoration: none;
+}
+.PMLC12_t_white_a a:hover
+{
+    color: #f56c07;
+    text-decoration: none;
+}
+.PMLC12_t_white_a a:active
+{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.PMLC12_banner_btn
+{
+    width: 240px;
+    height: 25px;
+    padding-top: 2px;
+    padding-left: 40px;
+    text-align: right;
+}
+/************************head结束***************************/
+/*************************center********************************/
+.PMLC12_center
+{
+    width: 100%;
+    margin: 0;
+    background-image: url(../../images/pmlc12_left_bg.gif);
+    background-repeat: repeat-y;
+    vertical-align: top;
+    height: 500px;
+}
+
+/*********************左边区域**************************************/
+.PMLC12_center_left
+{
+    width: 255px;
+    height: auto;
+    margin: 0px;
+}
+.PMLC12_left_a
+{
+    width: 253px;
+    height: auto;
+}
+.PMLC12_left_a1
+{
+    width: 253px;
+    height: auto;
+    background-image: url(../../images/PMLC12_left_bgb.gif);
+    background-repeat: repeat-y;
+}
+
+.PMLC12_center_lefttable
+{
+    width: 241px;
+    height: 113px;
+    margin: 10px;
+    padding-top: 10px;
+}
+.PMLC12_left_abgc
+{
+    width: 253px;
+    height: 10px;
+    background-image: url(../../images/pmlc12_left_abgc.gif);
+    background-repeat: no-repeat;
+}
+.PMLC12_text_gray
+{
+    color: #0b4702;
+    font-size: 12px;
+    text-align: right;
+    line-height: 15px;
+}
+.PMLC12_text_gray_a
+{
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: left;
+    line-height: 15px;
+}
+.PMLC12_text_gray_aF
+{
+    color: Black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-left: 3px;
+    text-align: left;
+    line-height: 15px;
+}
+.PMLC12_text_red
+{
+    color: #830404;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: left;
+    line-height: 14px;
+}
+
+.PMLC12_text_green a:link
+{
+    color: #179404;
+}
+.PMLC12_text_green a:visited
+{
+    color: #179404;
+}
+.PMLC12_text_green a:hover
+{
+    color: #000;
+}
+.PMLC12_text_green a:active
+{
+    color: #179404;
+}
+.PMLC12_text_green_a
+{
+    color: #0b4702;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+}
+.PMLC12_left_b
+{
+    width: 253px;
+    height: auto;
+}
+.PMLC12_left_b_top
+{
+    width: 253px;
+    height: 38px;
+    background-image: url(../../images/pmlc12_center_left_btop.gif);
+    background-repeat: no-repeat;
+}
+.PMLC12_btn_xjwjj
+{
+    width: 100px;
+    height: 21px;
+    padding-top: 3px;
+    padding-left: 140px;
+}
+.PMLC12_left_b_bg
+{
+    width: 253px;
+    height: auto;
+    background-image: url(../../images/pmlc12_left_bg.gif);
+    background-repeat: repeat-y;
+}
+.PMLC12_left_b_bgb
+{
+    width: 253px;
+    height: auto;
+    background-image: url(../../images/pmlc12_left_bgb.gif);
+    background-repeat: repeat-y;
+}
+.PMLC12_left_wjj_a
+{
+    height: 27px;
+    text-align: left;
+    background-image: url(../../images/PMLC12_lef_b2.gif);
+    background-repeat: no-repeat;
+}
+.PMLC12_left_wjj_b
+{
+    height: 27px;
+    background-image: url(../../images/PMLC12_lef_b2a.gif);
+    background-repeat: no-repeat;
+}
+.PMLC12_text_gray_b
+{
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: left;
+    padding-left: 35px;
+    line-height: 27px;
+}
+.PMLC12_left_b_kuang_a
+{
+    width: 240px;
+    height: auto;
+    padding-left: 5px;
+    padding-right: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-align: left;
+}
+.PMLC12_left_b_kuang
+{
+    width: 230px;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-align: left;
+}
+.PMLC12_left_bgc
+{
+    width: 253px;
+    height: 10px;
+    background-image: url(../../images/pmlc12_left_bgc.gif);
+    background-repeat: no-repeat;
+}
+.PMLC12_left_cklsjl
+{
+    width: 253px;
+    height: auto;
+}
+/*********************左边区域结束**************************************/
+/*********************右边区域**************************************/
+.PMLC12_center_right
+{
+    width: 82%;
+    height: auto;
+    background-color: #f8fcf9;
+    margin: 7px;
+    padding: 7px;
+    vertical-align: top;
+}
+
+.PMLC12_text_green_big
+{
+    color: #047a21;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+    line-height: 21px;
+}
+
+
+.PMLC12_biaoge
+{
+    padding-left: 3px;
+    height: 21px;
+}
+.PMLC12_biaoge_a
+{
+    width: auto;
+}
+.PMLC12_right_xxlb
+{
+    width: 80px;
+    height: 21px;
+    background-image: url(../../images/PMLC12_btn_xxlb.gif);
+    background-repeat: no-repeat;
+    color: #333;
+    text-align: left;
+    padding-left: 20px;
+    line-height: 21px;
+}
+.PMLC12_text_blocka
+{
+    color: #333;
+    font-size: 12px;
+    text-align: left;
+    padding-left: 10px;
+    line-height: 20px;
+}
+.PMLC12_right_center
+{
+    width: 100%;
+    height: auto;
+    padding-top: 3px;
+}
+.PMLC12_right_center_bt
+{
+    width: 100%;
+    height: 37px;
+    background-image: url(../../images/PMLC12_right_bt.gif);
+    background-repeat: repeat-x;
+}
+
+.PMLC12_right_tablea
+{
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.PMLC12_right_table_bga
+{
+    width: 100%;
+    height: 35px;
+    background-image: url(../../images/PMLC12_right_bt00001.gif);
+    background-repeat: repeat-x;
+}
+
+.PMLC12_text_green_biao
+{
+    color: #005d00;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 24px;
+}
+.PMLC12_text_blockbiao
+{
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+}
+.PMLC12_text_blockbiao_a
+{
+    color: #333;
+    font-size: 12px;
+    text-align: left;
+}
+.PMLC12_text_blockbiao_b
+{
+    width: 48px;
+    color: #333;
+    font-size: 12px;
+    text-align: left;
+}
+.PMLC12_text_blockbiao_c
+{
+    color: #666;
+    font-size: 12px;
+    text-align: left;
+    padding-left: 2px;
+}
+.PMLC12_pictuer_bg
+{
+    width: 100%;
+    height: 70px;
+    background-color: #ebeceb;
+    text-align: left;
+}
+.PMLC12_jcjg
+{
+    width: 48px;
+    height: 17px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.PMLC12_jcjg11
+{
+    height: 17px;
+    background-repeat: no-repeat;
+    text-align: left;
+}
+ul li
+{
+    padding: 0;
+    margin: 0;
+}
+.list_menu
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 20;
+}
+.list_menu li
+{
+    float: left;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    z-index: 20;
+    margin: 0;
+    padding: 0;
+}
+.list_menu li a
+{
+    display: block;
+    font-weight: 700;
+    height: 23px;
+    text-decoration: none;
+    text-align: center;
+}
+.list_menu li a:hover
+{
+}
+.list_menu ul
+{
+    position: absolute;
+    left: 0;
+    display: none;
+    background: #f0f8eb;
+    padding: 0;
+    list-style: none;
+    z-index: 20;
+    border-bottom: solid 1px #c6cbcf;
+    border-left: solid 1px #c6cbcf;
+    border-right: solid 1px #c6cbcf;
+    margin: 0;
+}
+.list_menu ul li
+{
+    width: 140px;
+    float: left;
+    border-top: 1px solid #fff;
+    text-align: left;
+}
+.list_menu ul a
+{
+    display: block;
+    height: 15px;
+    padding: 8px 5px;
+    text-align: left;
+}
+.list_menu ul a:hover
+{
+    text-decoration: underline;
+}
+.list_menu2
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 10;
+}
+.list_menu2 li
+{
+    float: left;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+}
+.list_menu2 li a
+{
+    display: block;
+    font-weight: 700;
+    height: 23px;
+    text-decoration: none;
+    text-align: center;
+}
+.list_menu2 li a:hover
+{
+}
+.list_menu2 ul
+{
+    position: absolute;
+    left: 0;
+    display: none;
+    background: #f0f8eb;
+    padding: 0;
+    list-style: none;
+    z-index: 10;
+    border-bottom: solid 1px #c6cbcf;
+    border-left: solid 1px #c6cbcf;
+    border-right: solid 1px #c6cbcf;
+    margin: 0;
+}
+.list_menu2 ul li
+{
+    width: 140px;
+    float: left;
+    border-top: 1px solid #fff;
+    text-align: left;
+}
+.list_menu2 ul a
+{
+    display: block;
+    height: 15px;
+    padding: 8px 5px;
+    text-align: left;
+}
+.list_menu2 ul a:hover
+{
+    text-decoration: underline;
+}
+.clear
+{
+    clear: both;
+}
+.NoSearch
+{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.Load_Div
+{
+    position: absolute;
+    top: 280px;
+    margin: auto;
+    z-index: 999;
+    border: solid 1px #000000;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+    margin-left: -100px;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f0f8eb;
+}
+/***********************************排序******************************************/
+a.Order1
+{
+    color: #179404;
+    text-decoration: underline;
+}
+a.Order2
+{
+    color: #980000;
+    text-decoration: none;
+}
+a.Order2:visited
+{
+    color: #980000;
+    text-decoration: none;
+}
+.PMLC12_text_green
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+/***********************************排序结束******************************************/
+
+/*********************右边区域结束*********************************************/
+
+
+
+/****************************弹出框*************************************/
+.w_t_l
+{
+    background-image: url(../../images/bg_01.gif);
+    width: 9px;
+    height: 31px;
+    background-repeat: no-repeat;
+}
+.w_t_c
+{
+    background-image: url(../../images/bg_02.gif);
+    height: 31px;
+    text-align: left;
+    background-repeat: repeat-x;
+    font-size: 14px;
+    font-weight: bold;
+    color: #005d00;
+    line-height: 30px;
+}
+.w_t_r
+{
+    background-image: url(../../images/bg_03.gif);
+    width: 31px;
+    cursor: pointer;
+    height: 31px;
+    background-repeat: no-repeat;
+}
+.w_t_r_1
+{
+    background-image: url(../../images/bg_03_1.gif);
+    width: 31px;
+    height: 31px;
+    background-repeat: no-repeat;
+}
+.w_b
+{
+    border-left: 1px #99ab92 solid;
+    border-bottom: 1px #99ab92 solid;
+    border-right: 1px #99ab92 solid;
+}
+/****************************弹出框结束*************************************/
+
+/****************************center结束*************************************/
+
+/************************************上传论文对话框***********************************/
+.PMLC12_window
+{
+    width: 800px;
+    height: auto;
+    margin: auto;
+    background-color: #FFF;
+}
+.PMLC12_window_bt
+{
+    width: 800px;
+    height: 30px;
+}
+.PMLC12_window_bta
+{
+    width: 120px;
+    height: 30px;
+    float: left;
+    text-align: left;
+    padding-left: 10px;
+}
+.PMLC12_w_text_green
+{
+    height: 30px;
+    color: #003300;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.PMLC12_w_exit
+{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    float: right;
+}
+.PMLC12_w_text_greena
+{
+    color: #006600;
+    height: 30px;
+    line-height: 30px;
+}
+.PMLC12_w_ba
+{
+    font: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+    line-height: 20px;
+}
+.PMLC12_w_table_a
+{
+    padding-top: 10px;
+    width: 795px;
+    border: 0;
+    height: auto;
+    margin: auto;
+}
+.PMLC12_w_table_b
+{
+    padding-top: 25px;
+    width: 795px;
+    border: 0;
+    height: auto;
+    margin: auto;
+}
+.PMLC12_w_table_bN
+{
+    padding-top: 25px;
+    width: 800px;
+    border: 0;
+    height: auto;
+    margin: auto;
+    border-left: 1px #99ab92 solid;
+    border-bottom: 1px #99ab92 solid;
+    border-right: 1px #99ab92 solid;
+}
+.PMLC12_w_text_a
+{
+    font: 12px;
+    color: #666;
+    text-align: left;
+    font-weight: bold;
+    line-height: 20px;
+    vertical-align: top;
+}
+.PMLC12_w_text_b
+{
+    font: 12px;
+    color: #9d061f;
+    text-align: left;
+    line-height: 20px;
+}
+.PMLC12_w_text_c
+{
+    font: 12px;
+    color: #999;
+    text-align: left;
+    line-height: 20px;
+}
+.PMLC12_w_text_d
+{
+    font: 12px;
+    color: #666;
+    text-align: left;
+    line-height: 20px;
+}
+.PMLC12_w_text_gray
+{
+    color: #0b4702;
+    font-size: 12px;
+    text-align: right;
+    line-height: 30px;
+    font-weight: bold;
+}
+.PMLC12_w_bian
+{
+    height: 20px;
+    line-height: 20px;
+    width: 240px;
+    font-size: 12px;
+    border: #7ab06c 1px solid;
+}
+.PMLC12_w_bian_a
+{
+    height: auto;
+    font-size: 12px;
+    border: #7ab06c 1px solid;
+}
+.PMLC12_w_bgxian
+{
+    height: 30px;
+    background-image: url(../../images/pmlc12_w_bgxian.gif);
+    background-repeat: repeat-x;
+}
+.PMLC12_w_bgxian1
+{
+    height: 2px;
+    background-image: url(../../images/pmlc12_w_bgxian_q.gif);
+    background-repeat: repeat-x;
+}
+.PMLC12_w_sc
+{
+    padding-top: 20px;
+    height: 70px;
+    text-align: center;
+    margin: auto;
+}
+a.BigButton, a.BigButton:visited, a.BigButton:link
+{
+    background-image: url('../../images/pmlc_btn11.gif');
+    width: 90px;
+    height: 26px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 26px;
+    color: #325b18;
+    font-size: 14px;
+    font-weight: bold;
+}
+a.BigButton:hover, a.BigButton:active
+{
+    background-image: url('../../images/pmlc_btn11.1.gif');
+    width: 90px;
+    height: 26px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 26px;
+    color: #325b18;
+    font-size: 14px;
+    font-weight: bold;
+}
+.PMLC12_sclw_table_b
+{
+    padding-top: 25px;
+    width: 100%;
+    border: 0;
+    height: auto;
+    margin: auto;
+}
+/************************************上传论文对话框结束***********************************/
+
+/************************************检测结果样式***********************************/
+.per_g
+{
+    float: left;
+    background-image: url(../../images/pmlc_icon1.gif);
+    width: 45px;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    background-position: left center;
+    text-align: left;
+    height: 17px;
+    line-height: 17px;
+    display: block;
+}
+.per_y
+{
+    float: left;
+    background-image: url(../../images/pmlc_icon2.gif);
+    width: 45px;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    background-position: left center;
+    text-align: left;
+    height: 17px;
+    line-height: 17px;
+    display: block;
+}
+.per_o
+{
+    float: left;
+    background-image: url(../../images/pmlc_icon3.gif);
+    width: 45px;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    background-position: left center;
+    text-align: left;
+    height: 17px;
+    line-height: 17px;
+    display: block;
+}
+.per_r
+{
+    float: left;
+    background-image: url(../../images/pmlc_icon4.gif);
+    width: 45px;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    background-position: left center;
+    text-align: left;
+    height: 17px;
+    line-height: 17px;
+    display: block;
+}
+.words
+{
+    float: left;
+    width: 40px;
+    text-align: left;
+}
+.PMLC12_jcjg_a
+{
+    width: 48px;
+    height: 17px;
+    background-image: url(../../images/pmlc_icon4.gif);
+    background-repeat: no-repeat;
+    text-align: left;
+    line-height: 17px;
+    padding-left: 10px;
+    color: #333;
+}
+a.ResultSel, a.ResultSel:visited, a.ResultSel:link, a.ResultSel:hover, a.ResultSel:active
+{
+    font-weight: bold;
+    font-size: 12px;
+    color: Black;
+    text-decoration: underline;
+}
+
+a.ResultNoSel, a.ResultNoSel:visited, a.ResultNoSel:link, a.ResultNoSel:hover, a.ResultNoSel:active
+{
+    font-size: 10px;
+    color: #666;
+    text-decoration: underline;
+}
+.Small_CheckResult
+{
+    font-size: 10px;
+}
+/************************************检测结果样式结束***********************************/
+
+
+/****************************版本信息*************************************/
+.PMLC12_bottom
+{
+    height: 82px;
+    background-image: url(../../images/pmlc12_bottom_bg.gif);
+    background-repeat: repeat-x;
+}
+.PMLC12_bottom_logo
+{
+    width: 500px;
+    height: 54px;
+    padding-top: 5px;
+    margin: auto;
+}
+.PMLC12_bottom_left
+{
+    width: 144px;
+    height: 54px;
+    background-image: url(../../images/PMLC12_logo.gif);
+    background-repeat: no-repeat;
+    float: left;
+}
+.PMLC12_bottom_right
+{
+    width: 355px;
+    height: 54px;
+    float: right;
+}
+.PMLC12_text_bottom
+{
+    color: #9bf380;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.PMLC12_input
+{
+    font-size: 12px;
+    border: #289019 1px solid;
+}
+/****************************版本信息结束*************************************/
+/****************************菜单开始*************************************/
+ul
+{
+    list-style-type: none;
+}
+#PMLC12_banner_menu
+{
+    position: relative;
+    width: 717px;
+    height: 32px;
+    background-image: url(../../images/PMLC12_banner_menu_bg.gif);
+    background-repeat: no-repeat;
+    margin-top: 83px;
+    z-index: 90;
+}
+#PMLC12_banner_menu ul
+{
+    height: 32px;
+    line-height: 32px;
+    margin-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+#PMLC12_banner_menu ul li
+{
+    float: left;
+    width: 83px;
+    height: 32px;
+    line-height: 32px;
+}
+#PMLC12_banner_menu ul li a
+{
+    font-size: 12px;
+    color: #c8ff88;
+    width: 83px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+#PMLC12_banner_menu ul li a:hover
+{
+    font-weight: 700;
+    background-image: url(../../images/pmlc12_menu_bga.gif);
+    background-repeat: no-repeat;
+    color: #fff;
+}
+#PMLC12_banner_menu .subnav
+{
+    z-index: 90;
+    height: 63px;
+    display: none;
+    position: absolute;
+    width: auto !important;
+    min-width: 80px;
+    height: 63px;
+    background-image: url(../../images/pmlc12_t1.gif);
+    background-repeat: no-repeat;
+    float: left;
+    _width: 0;
+    _white-space: nowrap;
+}
+#PMLC12_banner_menu .back_div
+{
+    display: none;
+    margin-top: 2px;
+    position: absolute;
+    height: 63px;
+}
+#PMLC12_banner_menu .subnav p
+{
+    height: 63px;
+    margin-left: 10px;
+    padding-right: 10px;
+    background-image: url(../../images/pmlc12_t3.gif);
+    background-position: right;
+}
+#PMLC12_banner_menu .subnav p span
+{
+    height: 63px;
+    display: block;
+    background-repeat: repeat-x;
+    background-image: url(../../images/pmlc12_t21.gif);
+}
+#PMLC12_banner_menu .subnav p a
+{
+    height: 63px;
+    display: block;
+    float: left;
+}
+#PMLC12_banner_menu .subnav p a:hover
+{
+    height: 63px;
+    background-image: none;
+    background-image: url(../../images/pmlc12_t2b.gif);
+}
+#PMLC12_banner_menu .subnav .arrow
+{
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 7px;
+    background-image: url(../../images/pmlc12_t4.gif);
+}
+/****************************菜单结束*************************************/
+/************************************管理员中心************************************/
+.PMLC12_glyzx_left
+{
+    width: 253px;
+    height: 38px;
+    background-image: url(../../images/pmlc12_bg_menu.gif);
+    background-repeat: no-repeat;
+}
+.PMLC12_glyzx_left_text
+{
+    color: #fff;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 10px;
+    line-height: 38px;
+}
+.PMLC12_glyzx_text_gray
+{
+    color: #0b4702;
+    font-size: 12px;
+    text-align: right;
+    line-height: 25px;
+}
+/************************************管理员中心结束************************************/
+/*************************************文献检测结果************************************/
+.PMLC12_center_a
+{
+    width: 100%;
+    height: auto !important;
+    height: 500px;
+    min-height: 500px;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: top;
+}
+.PMLC12_center_b
+{
+    width: 100%;
+    height: auto !important;
+    height: atuo;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: top;
+}
+.PMLC12_center_wxjcjg_bt
+{
+    width: 100%;
+    height: 42px;
+    background-image: url(../../images/pmlc12_wxjcjg_bja.gif);
+    background-repeat: repeat-x;
+}
+.PMLC12_wxjcjg_text_a
+{
+    color: #1f6502;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 42px;
+    padding-left: 10px;
+}
+
+.PMLC12_wxjcjg_text_aF
+{
+    color: #1f6502;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.PMLC12_wxjcjg_text_a1
+{
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 42px;
+    padding-left: 10px;
+}
+.PMlc12_wxjcjg_center_left
+{
+    width: 60%;
+    height: auto;
+    float: left;
+}
+.PMlc12_wxjcjg_center_lefttable
+{
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+}
+.PMlc12_wxjcjg_center_lefttable td
+{
+    border: 0px;
+    height: 22px;
+}
+.PMlC12_wxjcjg_text_b
+{
+    color: #333;
+    font-size: 14px;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 30px;
+}
+.PMlC12_wxjcjg_text_b p
+{
+    text-indent: 2em;
+    line-height: 24px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.PMlC12_wxjcjg_center_right
+{
+    width: 20%;
+    height: auto;
+    float: right;
+}
+.PMlC12_wxjcjg_center_rightNew
+{
+    width: 40%;
+    height: auto;
+    float: right;
+}
+.PMlC12_wxjcjg_center_right_a
+{
+    width: 150px;
+    height: auto;
+    margin: auto;
+}
+.PMlC12_wxjcjg_center_right_a1
+{
+    width: 150px;
+    height: 25px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+/**************************************文献检测结果结束*********************************/
+/*****************************表格*****************************************/
+.PMLC12_right_table_bg
+{
+    width: 100%;
+    height: 24px;
+    border: 0px;
+    margin: auto;
+}
+.PMLC12_right_table_bg tr
+{
+    width: 100%;
+    height: 35px;
+    border: 0px;
+}
+.PMLC12_right_table_bg td
+{
+    border: 0px;
+}
+.PMLC12_right_table_bg th
+{
+    border: 0px;
+}
+.PMLC12_right_table_bg_row
+{
+    width: 100%;
+    height: 35px;
+    background-color: #def4d5;
+}
+.PMLC12_right_table_bg_rowb
+{
+    width: 100%;
+    height: 35px;
+    background-color: #FFF;
+}
+.PMLC12_right_table_bg_rowa
+{
+    width: 100%;
+    height: 35px;
+    background-color: #f3fcf3;
+}
+
+/*****************************表格结束**************************************/
+
+/*****************************FileSection表格*****************************************/
+.PMLC12_right_table_bgF
+{
+    width: 100%;
+    height: 24px;
+    border: 0px;
+    margin: auto;
+}
+.PMLC12_right_table_bgF tr
+{
+    width: 100%;
+    height: 24px;
+    border: 0px;
+}
+.PMLC12_right_table_bgF td
+{
+    border: 0px;
+}
+.PMLC12_right_table_bgF th
+{
+    border: 0px;
+}
+.PMLC12_right_table_bg_rowF
+{
+    width: 100%;
+    height: 24px;
+    background-color: #def4d5;
+}
+.PMLC12_right_table_bg_rowbF
+{
+    width: 100%;
+    height: 24px;
+    background-color: #FFF;
+}
+.PMLC12_right_table_bg_rowaF
+{
+    width: 100%;
+    height: 24px;
+    background-color: #f3fcf3;
+}
+
+/*****************************FileSection表格结束**************************************/
+
+/*****************************己发表文献*********************************/
+.PMLC12_right_table_full_height
+{
+    width: 100%;
+    background-color: #f8fcf9;
+    padding-top: 10px;
+}
+a.PMLC12_yjcwx_btn, a.PMLC12_yjcwx_btn :visited, a.PMLC12_yjcwx_btn:link
+{
+    width: 220px;
+    height: 39px;
+    background-image: url(../../images/pmlc12_m_btnb.gif);
+    background-repeat: no-repeat;
+    color: #666;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding-top: 7px;
+    line-height: 30px;
+}
+a.PMLC12_yjcwx_btn:hover, a.PMLC12_yjcwx_btn:active
+{
+    width: 220px;
+    height: 39px;
+    background-image: url(../../images/pmlc12_m_btna.gif);
+    background-repeat: no-repeat;
+    color: #6c6106;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding-top: 7px;
+    line-height: 30px;
+}
+a.PMLC12_yjcwx_btn_a, a.PMLC12_yjcwx_btn_a:visited, a.PMLC12_yjcwx_btn_a:link
+{
+    width: 220px;
+    height: 39px;
+    background-image: url(../../images/pmlc12_m_btna.gif);
+    background-repeat: no-repeat;
+    color: #6c6106;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding-top: 7px;
+    line-height: 30px;
+}
+a.PMLC12_yjcwx_btn_a:hover, a.PMLC12_yjcwx_btn_a:active
+{
+    width: 220px;
+    height: 39px;
+    background-image: url(../../images/pmlc12_m_btna.gif);
+    background-repeat: no-repeat;
+    color: #666;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding-top: 7px;
+    line-height: 30px;
+}
+
+.PMLC12_yfbwx_text_a
+{
+    color: #1f6502;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 30px;
+    padding-left: 10px;
+}
+.pmlc12_yfbwx_btn_jc
+{
+    width: 100%;
+    height: 60px;
+    padding-top: 10px;
+    margin: auto;
+    text-align: left;
+}
+.PMLC12_w_text_d p
+{
+    text-indent: 2em;
+}
+/***********************************己发表文献结束*********************************/
+
+/****************************************个人比对库*********************************/
+.PMLC12_grbdk_sc
+{
+    padding-top: 10px;
+    width: 100%;
+    height: 60px;
+    text-align: left;
+    margin: auto;
+}
+.PMLC12_grbdk_table_b
+{
+    padding-top: 25px;
+    width: 100%;
+    border: 0;
+    height: auto;
+    text-align: left;
+}
+.PMLC12_grbdk_jsb
+{
+    width: 800px;
+    height: auto;
+    float: left;
+}
+/******************************************个人比对库结束*****************************/
+
+/**************************************引文核对*********************************/
+.PMLC12_ywhd_dhk
+{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-top: 5px;
+    text-align: center;
+}
+.PMLC12_ywhd_text_a
+{
+    color: #1f6502;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+}
+.PMLC12_ywhd_dhk_a
+{
+    width: 800px;
+    height: auto;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+.PMLC12_w_text_c p
+{
+    text-indent: 2em;
+}
+.PMLC12_center_ywhd
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: top;
+    min-height: 500px;
+    height: auto !important;
+}
+/**************************************引文核对结束*********************************/
+
+/**************************************两两比对*********************************/
+.PMLC12_w_text_b p
+{
+    text-indent: 2em;
+}
+.PMLC12_llbd
+{
+    width: 50%;
+    height: auto;
+    padding: 30px;
+    text-align: center;
+}
+.PMLC12_llbd_a
+{
+    width: 95%;
+    background: #fff;
+    height: 800px;
+    margin: 5px;
+    overflow: auto;
+    border: 1px solid #98c092;
+    line-height: 20px;
+    text-align: left;
+    font-size: 14px;
+}
+.PMLC12_llbd_clearfix
+{
+    display: inline-block;
+}
+/**************************************两两比对结束*********************************/
+
+/**************************************单篇比对*********************************/
+.PMLC12_dpbd
+{
+    width: 95%;
+    padding: 15px;
+    border: 1px solid #98c092;
+    height: 200px;
+    margin: 5px;
+    color: #333;
+    font-size: 14px;
+    text-align: left;
+    line-height: 30px;
+}
+.PMLC12_dpbd_inputsimple
+{
+    width: 95%;
+    padding: 15px;
+    height: 800px;
+    margin: 5px;
+    border: 1px solid #98c092;
+    line-height: 30px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    overflow: auto;
+    background: #fff;
+}
+.PMLC12_dpbd_a
+{
+    width: 95%;
+    padding: 15px;
+    border: 1px1 solid #98c092;
+    height: 800px;
+    margin: 5px;
+}
+.PMLC12_dpbd_inputsimple p
+{
+    text-indent: 2em;
+    word-break: break-all;
+    word-wrap: break-word;
+    line-height: 24px;
+}
+.PMLC12_dpbd_inputsimple p span
+{
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.PMLC12_dpbd_gray
+{
+    color: #0b4702;
+    font-size: 12px;
+    text-align: left;
+    line-height: 15px;
+    padding-left: 10px;
+}
+.PMLC12_dpbd_imgebtn
+{
+    text-align: right;
+    padding-right: 10px;
+}
+A.Blue
+{
+    color: #0000ff;
+    text-decoration: none;
+}
+A.Blue:visited
+{
+    color: #0000ff;
+    text-decoration: none;
+}
+A.Red
+{
+    color: #ff0000;
+    text-decoration: none;
+}
+A.Red:visited
+{
+    color: #ff0000;
+    text-decoration: none;
+}
+.Red
+{
+    color: #ff0000;
+    text-decoration: none;
+}
+.Blue
+{
+    color: #0000ff;
+    text-decoration: none;
+}
+/**************************************单篇比对结束*********************************/
+
+/***********************************信息统计***********************************************/
+.PMLC12_xxtj
+{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    text-align: center;
+    vertical-align: top;
+}
+.PMLC12_xxtj_a
+{
+    margin: auto;
+    background-color: #E4ECD5;
+    width: 50%;
+    height: auto;
+    padding: 15px;
+    border: 1px solid #98c092;
+}
+.PMLC12_xxtj_imge
+{
+    width: 605px;
+    text-align: center;
+    vertical-align: top;
+    margin: 10px 10px 10px 10px;
+    background-color: #E4ECD5;
+    height: auto;
+    border: 1px solid #98c092;
+    padding: 15px;
+}
+.PMLC12_xxtj_imge_a
+{
+    width: 96%;
+    text-align: center;
+    vertical-align: top;
+    margin: 10px 0px 10px 0px;
+    background-color: #E4ECD5;
+    height: auto;
+    border: 1px solid #98c092;
+    padding: 15px;
+}
+.PMLC12_xxtj_table_b
+{
+    width: 95%;
+    border: 0;
+    height: auto;
+    text-align: left;
+}
+.PMLC12_xxtj_table_c
+{
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    text-align: left;
+}
+.PMLC12_xxtj_statistics
+{
+    width: 95%;
+    border: 1px solid #ccc;
+    margin: 10px 0px 10px 10px;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 320px;
+    height: auto;
+    text-align: left;
+}
+.PMLC12_xxtj_text
+{
+    width: 95%;
+    height: auto;
+    margin: 0px 0px 5px 10px;
+    padding-left: 10px;
+    text-align: left;
+}
+.PMLC12_xxtj_zyxxtj_a
+{
+    margin: auto;
+    width: 800px;
+    height: auto;
+    padding: 15px;
+}
+/***********************************信息统计结束***********************************************/
+/***********************************提建议、文献转移***********************************************/
+.PMLC12_xxtj_zyxxtj_a
+{
+    margin: auto;
+    width: 800px;
+    height: auto;
+    padding: 15px;
+}
+.PMLC12_tjy
+{
+    margin: auto;
+    width: 820px;
+    height: auto;
+    padding-top: 5px;
+}
+
+.PMLC12_tjy_a
+{
+    width: 806px;
+    height: auto;
+    margin: auto;
+}
+.PMLC12_tjy_imga
+{
+    width: 806px;
+    height: 52px;
+    background-image: url(../../images/pmlc12_fbjy_imges_a.gif);
+    background-repeat: no-repeat;
+}
+.PMLC12_tjy_imgb
+{
+    width: 806px;
+    min-height: 400px;
+    height: auto !important;
+    background-image: url(../../images/pmlc12_fbjy_imges_b.gif);
+    background-repeat: repeat-y;
+    vertical-align: top;
+}
+.PMLC12_tjy_imgd
+{
+    width: 806px;
+    height: 32px;
+    background-image: url(../../images/pmlc12_fbjy_imges_d.gif);
+    background-repeat: no-repeat;
+}
+.PMLC12_tjy_imgc
+{
+    width: 806px;
+    height: 23px;
+    background-image: url(../../images/pmlc12_fbjy_imges_c.gif);
+    background-repeat: no-repeat;
+}
+.PMLC12_tjy_imge
+{
+    width: 806px;
+    height: 8px;
+    background-image: url(../../images/pmlc12_fbjy_imges_e.gif);
+    background-repeat: no-repeat;
+}
+.PMLC12_wjzy_imga
+{
+    width: 806px;
+    height: 52px;
+    background-image: url(../../images/pmlc12_wjzy.gif);
+    background-repeat: no-repeat;
+}
+.NeiRong
+{
+    border: #7ab06c 1px solid;
+}
+/***********************************提建议、文献转移结束***********************************************/
+/***********************************修改密码和一键还原***********************************************/
+.PMLC12_change_table_b
+{
+    padding-top: 2px;
+    width: 100%;
+    border: 0;
+    height: auto !important;
+    height: 530px;
+    min-height: 530px;
+}
+.PMLC12_change
+{
+    width: 776px;
+    height: 512px;
+    margin: auto;
+    background-image: url(../../images/pmlc12_changeps.gif);
+    background-repeat: no-repeat;
+}
+.PMLC12_yxchange
+{
+    width: 776px;
+    height: 512px;
+    margin: auto;
+    background-image: url(../../images/pmlc12_yxchangeps.gif);
+    background-repeat: no-repeat;
+}
+.PMLC12_change_a
+{
+    width: 750px;
+    height: 300px;
+    margin: auto;
+    padding-top: 75px;
+}
+.PMLC12_change_bian
+{
+    height: 25px;
+    font-size: 12px;
+    border: #7ab06c 1px solid;
+}
+.PMLC12_yjqk
+{
+    width: 776px;
+    height: 512px;
+    margin: auto;
+    background-image: url(../../images/pmlc12_yjqk.gif);
+    background-repeat: no-repeat;
+}
+/***********************************修改密码和一键还原结束***********************************************/
+/***********************************标红开始***********************************************/
+.OverStyle
+{
+    color: Red;
+    font-weight: bold;
+    cursor: pointer;
+}
+.OutStyle
+{
+    cursor: pointer;
+    color: Red;
+}
+.OverStyle2
+{
+    color: Red;
+    font-weight: bold;
+}
+.OutStyle2
+{
+    color: Red;
+}
+.MessageShow
+{
+    border: solid 1px #aaccee;
+    background-color: #f0f8eb;
+    display: block;
+    z-index: 50;
+    position: absolute;
+    width: 300px;
+}
+.MessageHidden
+{
+    display: none;
+}
+.MessageTitle
+{
+    height: 16px;
+    text-align: right;
+    border-bottom: solid 1px #aaccee;
+}
+
+.Font_Color_Red
+{
+    color: Red;
+}
+.Font_Color_Green
+{
+    color: #e28a05;
+}
+.Font_Color_Grey
+{
+    color: #666666;
+}
+/***********************************标红结束***********************************************/
+/***********************************新建文件夹开始***************************************************/
+.PMLC12_xjwjj_imga
+{
+    width: 806px;
+    height: 52px;
+    background-image: url(../../images/pmlc12_xjwjj_a.gif);
+    background-repeat: no-repeat;
+}
+.PMLC12_xjwjj_imgd
+{
+    width: 806px;
+    height: 32px;
+    background-image: url(../../images/pmlc12_xjwjj_c.gif);
+    background-repeat: no-repeat;
+}
+/***********************************新建文件夹结束***************************************************/
+/***********************************登陆开始***************************************************/
+.PMLC12_login_mainbody
+{
+    width: 100%;
+    height: 100%;
+    background-color: #fefdf7;
+}
+.PMlC12_login_head
+{
+    width: 100%;
+    height: 82px;
+    background-color: #1b7a02;
+    text-align: center;
+}
+.PMLC12_login_head_bg_reg
+{
+    width: 1005px;
+    height: 82px;
+    background-image: url(../../images/login0203.gif);
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.PMlC12_login_bottom
+{
+    width: 100%;
+    height: 70px;
+    background-color: #1b7a02;
+    text-align: center;
+}
+.PMLC12_login_bottom_logo
+{
+    width: 500px;
+    height: 54px;
+    padding-top: 5px;
+    margin: auto;
+}
+.PMLC12_login_bottom_left
+{
+    width: 144px;
+    height: 54px;
+    background-image: url(../../images/PMLC12_logo.gif);
+    background-repeat: no-repeat;
+    float: left;
+}
+.PMLC12_login_bottom_right
+{
+    width: 355px;
+    height: 54px;
+    float: right;
+}
+.PMLC12_login_text_bottom
+{
+    color: #9bf380;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.TMLC12_login_top
+{
+    width: 100%;
+    height: 117px;
+    background-color: #127803;
+    text-align: center;
+}
+.TMLC12_login_bg
+{
+    width: 1003px;
+    height: 117px;
+    background-image: url(../../images/TMLC2_login.gif);
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.VIP_menu
+{
+    width: 300px;
+    float: right;
+    height: 30px;
+    padding-right: 20px;
+    color: #ceeb8f;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    font-size: 12px;
+}
+.VIP_menu a:link
+{
+    color: #ceeb8f;
+    text-decoration: none;
+}
+.VIP_menu a:visited
+{
+    color: #ceeb8f;
+    text-decoration: none;
+}
+.VIP_menu a:hover
+{
+    color: #fff;
+    text-decoration: none;
+}
+.VIP_menu a:active
+{
+    color: #ceeb8f;
+    text-decoration: none;
+}
+
+.PMLC12_login_head_bg
+{
+    width: 1005px;
+    height: 82px;
+    background-image: url(../../images/login0203.gif);
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.PMlC12_login_center
+{
+    width: 1005px;
+    height: auto;
+    background-color: #fefdf7;
+    text-align: center;
+    margin: auto;
+}
+.PMLC12_login_left
+{
+    width: 707px;
+    height: 263px;
+    float: left;
+    background-image: url(../../images/pmlc12_login_banner.gif);
+    background-repeat: no-repeat;
+}
+.PMLC12_login_right
+{
+    width: 298px;
+    height: 263px;
+    float: right;
+    background-image: url(../../images/pmlc12_login_login.gif);
+    background-repeat: no-repeat;
+}
+.PMLC12_login_c
+{
+    width: 707px;
+    height: 276px;
+    float: left;
+    background-image: url(../../images/pmlc12_login_c.gif);
+    background-repeat: no-repeat;
+}
+.PMLC12_login_d
+{
+    width: 298px;
+    height: 276px;
+    float: right;
+}
+.PMLC12_login_c1
+{
+    width: 216px;
+    height: 62px;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 40px;
+}
+
+.PMLC12__FL
+{
+    width: 580px;
+    height: auto;
+    text-align: left;
+    padding-top: 8px;
+}
+.PMLC12_FL ul
+{
+    width: 500px;
+    height: auto;
+    padding-left: 80px;
+}
+.PMLC12_FL li
+{
+    list-style-image: url(../../images/pmlc12_F_d.gif);
+    height: 20px;
+    text-align: left;
+    font-size: 12px;
+    color: #666;
+}
+.PMLC12_login_c2
+{
+    width: 216px;
+    height: 62px;
+    padding-top: 20px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.PMLC12_FRt
+{
+    width: 260px;
+    padding-left: 25px;
+    padding-top: 15px;
+    height: 90px;
+    text-align: left;
+}
+.PMLC12_tx
+{
+    font-size: 12px;
+    color: #006600;
+    line-height: 20px;
+}
+
+.PMLC12_p1
+{
+    color: #333;
+    width: 60px;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.PMLC12_an_left
+{
+    width: 73px;
+    height: 24px;
+    float: left;
+    text-align: center;
+}
+.PMLC12_an_right
+{
+    width: 73px;
+    height: 24px;
+    float: right;
+    text-align: center;
+}
+.PMlC12_login_bottom
+{
+    width: 100%;
+    height: 70px;
+    background-color: #1b7a02;
+    text-align: center;
+}
+.PMLC12_login_bottom_logo
+{
+    width: 500px;
+    height: 54px;
+    padding-top: 5px;
+    margin: auto;
+}
+.PMLC12_login_bottom_left
+{
+    width: 144px;
+    height: 54px;
+    background-image: url(../../images/PMLC12_logo.gif);
+    background-repeat: no-repeat;
+    float: left;
+}
+.PMLC12_login_bottom_right
+{
+    width: 355px;
+    height: 54px;
+    float: right;
+}
+.PMLC12_login_text_bottom
+{
+    color: #9bf380;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.PMLC12_honour
+{
+    width: 620px;
+    height: 34px;
+    font-family: "Times New Roman" , Times, serif;
+    font-size: 12px;
+    color: #006600;
+    line-height: 30px;
+    float: right;
+    padding: 220px 30px 0 0;
+}
+.PMLC12_honour a:link
+{
+    color: #006600;
+    text-decoration: none;
+}
+.PMLC12_honour a:visited
+{
+    color: #006600;
+    text-decoration: none;
+}
+.PMLC12_honoura:hover
+{
+    color: #006600;
+    text-decoration: none;
+}
+.PMLC12_honour a:active
+{
+    color: #006600;
+    text-decoration: none;
+}
+.PMLC12_sysms
+{
+    width: 298px;
+    height: 60px;
+    margin: auto;
+}
+
+/***********************************登陆结束***************************************************/
+
+/********************************************注册*********************************************/
+.PMLC12_zc_table_b
+{
+    padding-top: 2px;
+    width: 100%;
+    border: 0;
+    height: auto;
+}
+.PMLC12_zc
+{
+    margin: auto;
+    width: 877px;
+    height: auto;
+    padding-top: 5px;
+}
+.PMLC12_zc_a
+{
+    width: 877px;
+    height: auto;
+    margin: auto;
+}
+.PMLC12_zc_imga
+{
+    width: 877px;
+    height: 50px;
+    background-image: url(../../images/pmlc12_zc_a.gif);
+    background-repeat: no-repeat;
+}
+.PMLC12_zc_table_b
+{
+    width: 100%;
+    border: 0;
+    height: auto;
+    text-align: left;
+}
+.PMLC12_zc_text_gray
+{
+    color: #0b4702;
+    font-size: 14px;
+    text-align: right;
+    line-height: 30px;
+}
+.PMLC12_zc_text_gray_a
+{
+    color: #156004;
+    font-size: 12px;
+    text-align: left;
+    line-height: 18px;
+}
+.PMLC12_zc_text_d
+{
+    font: 12px;
+    color: #666;
+    text-align: left;
+    line-height: 30px;
+}
+.PMLC12_zc_imgb
+{
+    width: 877px;
+    min-height: 400px;
+    height: auto !important;
+    background-image: url(../../images/pmlc12_zc_b.gif);
+    background-repeat: repeat-y;
+    vertical-align: top;
+}
+.PMLC12_zc_imgg
+{
+    width: 877px;
+    height: 32px;
+    background-image: url(../../images/pmlc12_zc_g.gif);
+    background-repeat: no-repeat;
+}
+.PMLC12_zc_red
+{
+    color: #830404;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+}
+.PMLC12_zc_red_a
+{
+    color: #830404;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    line-height: 18px;
+}
+.PMLC12_zc_imgc
+{
+    width: 877px;
+    height: 32px;
+    background-image: url(../../images/pmlc12_zc_c.gif);
+    background-repeat: no-repeat;
+}
+.PMLC12_zc_imgd
+{
+    width: 877px;
+    height: 32px;
+    background-image: url(../../images/pmlc12_zc_d.gif);
+    background-repeat: no-repeat;
+}
+.PMLC12_zc_imge
+{
+    width: 877px;
+    height: 32px;
+    background-image: url(../../images/pmlc12_zc_e.gif);
+    background-repeat: no-repeat;
+}
+.PMLC12_zc_imgf
+{
+    width: 877px;
+    height: 32px;
+    background-image: url(../../images/pmlc12_zc_f.gif);
+    background-repeat: no-repeat;
+}
+/********************************************注册结束*********************************************/
+/***********************************专业信息统计*************************************************/
+.PMLC12_zytj_table
+{
+    width: 100%;
+    height: 100%;
+    background-color: #f8fcf9;
+    padding-top: 10px;
+}
+.PMLC12_zytj_table_b
+{
+    width: 100%;
+    border: 0;
+    height: auto;
+    text-align: left;
+}
+.PMLC12_zytj_table_c
+{
+    width: 100%;
+    height: auto;
+}
+.PMLC12_zytj_text
+{
+    width: 95%;
+    height: auto;
+    margin: 0px 0px 5px 10px;
+    text-align: left;
+}
+.PMLC12_zytj_image
+{
+    width: 605px;
+    text-align: center;
+    vertical-align: top;
+    margin: 10px 0px 10px 0px;
+    background-color: #E4ECD5;
+    height: auto;
+    border: 1px solid #98c092;
+    padding: 15px;
+}
+.PMLC12_zytj_right
+{
+    width: 82%;
+    height: auto;
+    background-color: #f8fcf9;
+    margin: 7px;
+    padding: 7px;
+    vertical-align: top;
+    text-align: left;
+}
+/***********************************专业信息统计结束*************************************************/
+
+/***********************************上传样式开始*************************************************/
+.progressWrapper
+{
+    width: 650px;
+    padding-left: 80px;
+    overflow: hidden;
+}
+
+.progressContainer
+{
+    width: 600px;
+    margin: 5px;
+    border: solid 1px #E8E8E8;
+    overflow: hidden;
+    text-align: left;
+}
+.progressName
+{
+    font-size: 9pt;
+    font-weight: 700;
+    color: #555;
+    width: 323px;
+    height: 14px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.progressBarInProgress, .progressBarComplete, .progressBarError
+{
+    font-size: 0;
+    width: 0%;
+    height: 2px;
+    background-color: blue;
+    margin-top: 2px;
+}
+
+.progressBarComplete
+{
+    width: 100%;
+    visibility: hidden;
+}
+
+.progressBarError
+{
+    width: 100%;
+    background-color: red;
+    visibility: hidden;
+}
+
+.progressBarStatus
+{
+    margin-top: 2px;
+    width: 337px;
+    font-size: 9pt;
+    font-family: Arial;
+    text-align: left;
+    white-space: nowrap;
+}
+
+a.progressCancel
+{
+    font-size: 0;
+    display: block;
+    height: 14px;
+    width: 14px;
+    background-repeat: no-repeat;
+    background-position: -14px 0px;
+    float: right;
+}
+
+a.progressCancel:hover
+{
+    background-position: 0px 0px;
+}
+/***********************************上传样式结束*************************************************/
+/************************************客户端下载工具*************************************************/
+.PMLC12_xzkhd_bg
+{
+    width: 640px;
+    height: 520px;
+    background-image: url(../../images/pmlc12_bg_khdxzgj.gif);
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.PMLC12_anniu
+{
+    width: 600px;
+    height: 64px;
+    padding-top: 90px;
+    padding-left: 30px;
+    text-align: left;
+}
+
+a.PMLC12_btn_xz, a.PMLC12_btn_xz:visited, a.PMLC12_btn_xz:link
+{
+    width: 322px;
+    height: 64px;
+    background-image: url(../../images/pmlc12_xzkhd_bb.gif);
+    background-repeat: no-repeat;
+    display: block;
+}
+a.PMLC12_btn_xz:hover, a.PMLC12_btn_xz:active
+{
+    width: 322px;
+    height: 64px;
+    background-image: url(../../images/pmlc12_xzkhd_aa.gif);
+    background-repeat: no-repeat;
+    display: block;
+}
+a.PMLC12_btn_xz_A, a.PMLC12_btn_xz_A:visited, a.PMLC12_btn_xz_A:link
+{
+    width: 322px;
+    height: 64px;
+    background-image: url(../../images/pmlc12_xzkhd_aa.gif);
+    background-repeat: no-repeat;
+    display: block;
+}
+a.PMLC12_btn_xz_A:hover, a.PMLC12_btn_xz_A:active
+{
+    width: 322px;
+    height: 64px;
+    background-image: url(../../images/pmlc12_xzkhd_aa.gif);
+    background-repeat: no-repeat;
+    display: block;
+}
+.PMLC12_khdxz_bta
+{
+    width: 580px;
+    height: 40px;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+.PMLC12_khdxz_bt
+{
+    width: 580px;
+    height: auto;
+    padding-top: 5px;
+    padding-left: 50px;
+    text-align: left;
+}
+/************************************客户端下载工具结束*************************************************/
+/*****************************************检测相似表格****************************************************/
+.PMLC12_jcxsbg_table
+{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 10px auto auto auto;
+    padding-bottom: 10px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #006600;
+}
+.PMLC12_jcxsbg_table_a
+{
+    width: 97%;
+    height: auto;
+}
+.PMLC12_jcxsbg_a
+{
+    width: 48%;
+    height: auto;
+    float: left;
+    margin-top: 5px;
+    padding: 5px;
+    border: #B3E1BE solid 1px;
+    vertical-align: top;
+}
+.PMLC12_jcxsbg_b
+{
+    width: 48%;
+    float: right;
+    height: auto;
+    margin-top: 5px;
+    padding: 5px;
+    border: #B3E1BE solid 1px;
+    vertical-align: top;
+}
+.PMLC12_jcxsbg_k
+{
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.RedFont
+{
+    color: Red;
+}
+.PMLC12_text_block_a2
+{
+    color: #333;
+    text-align: left;
+    padding-left: 10px;
+    line-height: 20px;
+}
+.table_check_rs table
+{
+    border: solid 1px #cccccc;
+    border-collapse: collapse;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.table_check_rs table td, th
+{
+    border: solid 1px #cccccc;
+    padding: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.PMLC12_jcxsbg_text
+{
+    color: #0b4702;
+    font-size: 12px;
+    text-align: left;
+    line-height: 15px;
+    padding-left: 10px;
+    padding-bottom: 3px;
+}
+.PMLC12_jcxsbg_text_a
+{
+    color: #000;
+    font-size: 12px;
+    text-align: left;
+    line-height: 15px;
+    padding-left: 10px;
+    padding-bottom: 3px;
+}
+.PMLC12_jcxsbg_text_b
+{
+    font-weight: bold;
+    font-size: 12px;
+    color: Black;
+    text-align: left;
+    line-height: 15px;
+    padding-left: 10px;
+    padding-bottom: 3px;
+}
+/*****************************************检测相似表格结束****************************************************/
+a.menu_sel, a.menu_sel:visited, a.menu_sel:link, a.menu_sel:active, a.menu_sel:hover
+{
+    font-weight: 700;
+    background-image: url(../../images/pmlc12_menu_bga.gif);
+    background-repeat: no-repeat;
+    color: #fff;
+}
+/*************************************增加详细列表******************************************/
+
+.PMLC12_xxlb_table_bga
+{
+    width: 100%;
+    height: 24px;
+}
+.PMLC12_xxlb_table_bga tr
+{
+    width: 100%;
+    height: 24px;
+    border: 0px;
+}
+.PMLC12_xxlb_table_bgb
+{
+    width: 100%;
+    height: 24px;
+}
+.PMLC12_xxlb_table_bgb tr
+{
+    width: 100%;
+    height: 24px;
+    border: 0px;
+}
+/*************************************增加详细列表结束******************************************/
+
+/************************************修改上传论文样式开始*************************************************/
+a.PMLC12_sclw_a, a.PMLC12_sclw_a:visited, a.PMLC12_sclw_a:link
+{
+    width: 155px;
+    height: 33px;
+    background-image: url(../../images/PMLC12_sclw.gif);
+    background-repeat: no-repeat;
+    display: block;
+}
+a.PMLC12_sclw_a:hover, a.PMLC12_sclw_a:active
+{
+    width: 155px;
+    height: 33px;
+    background-image: url(../../images/PMLC12_sclw_A.gif);
+    background-repeat: no-repeat;
+    display: block;
+}
+a.PMLC12_sclw_b, a.PMLC12_sclw_b:visited, a.PMLC12_sclw_b:link
+{
+    width: 155px;
+    height: 33px;
+    background-image: url(../../images/PMLC12_sclw_A.gif);
+    background-repeat: no-repeat;
+    display: block;
+}
+a.PMLC12_sclw_b:hover, a.PMLC12_sclw_b:active
+{
+    width: 155px;
+    height: 33px;
+    background-image: url(../../images/PMLC12_sclw_A.gif);
+    background-repeat: no-repeat;
+    display: block;
+}
+/************************************修改上传论文样式结束*************************************************/
+
+/************************************检测结果观点弹出开始*************************************************/
+.PMLC12_gd_text_a
+{
+    font-size: 12px;
+    text-align: left;
+    color: #333;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.PMLC12_gd_text_c
+{
+    line-height: 20px;
+    font-size: 12px;
+    text-align: left;
+}
+/************************************检测结果观点弹出结束*************************************************/
+
+/***********************************文件夹管理开始********************************/
+.PMLC12_zyxxtj
+{
+    margin: auto;
+    width: 877px;
+    height: auto !important;
+    height: 530px;
+    min-height: 530px;
+    padding-top: 5px;
+}
+.PMLC12_zyxxtj_a
+{
+    width: 877px;
+    height: auto;
+    margin: auto;
+}
+.PMLC12_wjjgl_imga
+{
+    width: 877px;
+    height: 50px;
+    background-image: url(../../images/pmlc12_wjjgl_images_a.gif);
+    background-repeat: no-repeat;
+}
+.PMLC12_zyxxtj_imga
+{
+    width: 877px;
+    height: 50px;
+    background-image: url(../../images/pmlc12_xxtj_zyxxtj.gif);
+    background-repeat: no-repeat;
+}
+.PMLC12_zyxxtj_imgb
+{
+    width: 877px;
+    min-height: 400px;
+    height: auto !important;
+    background-image: url(../../images/pmlc12_zc_b.gif);
+    background-repeat: repeat-y;
+    vertical-align: top;
+}
+.PMLC12_zyxxtj_table_b
+{
+    width: 95%;
+    border: 0;
+    height: auto;
+    margin: 10px 25px 10px 18px;
+    padding-top: 10px;
+}
+.PMLC12_zyxxtj_imgg
+{
+    width: 877px;
+    height: 32px;
+    background-image: url(../../images/pmlc12_zc_g.gif);
+    background-repeat: no-repeat;
+}
+/***********************************文件夹管理结束********************************/
+
+/***********************************文献溯源开始********************************/
+.div_r_info
+{
+    border: solid 1px #c6cbcf;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.div_r_item
+{
+    display: none;
+}
+.but_control_show
+{
+    cursor: pointer;
+}
+.but_control_hide
+{
+    cursor: pointer;
+}
+.text1
+{
+    width: 100%;
+    height: auto;
+    margin: 5px 0px;
+    padding: 0px;
+    text-align: left;
+}
+.table
+{
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    margin: 10px auto 10px auto;
+    text-align: left;
+}
+/***********************************文献溯源结束********************************/
+/***********************************文件夹统计 下拉选择开始**********************************/
+.LC_text
+{
+    font: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: right;
+    line-height: 20px;
+}
+.LC_p3
+{
+    color: #006600;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: left;
+}
+.LC_p4
+{
+    color: #333333;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: left;
+}
+.LC_p5
+{
+    color: #666666;
+    font-size: 12px;
+    text-align: left;
+    line-height: 20px;
+}
+.LC_Div
+{
+    position: relative;
+}
+.LC_Table
+{
+    width: 370;
+    margin: 5px 3px 5px 3px;
+}
+.LC_Table_TR
+{
+    line-height: 24px;
+}
+.LC_Table_TD1
+{
+    text-align: right;
+    width: 80px;
+}
+.LC_Table_TD2
+{
+    text-align: left;
+}
+.LC_Table_TD3
+{
+    text-align: right;
+    padding-right: 63px;
+}
+.LC_TableTD4
+{
+    text-align: right;
+    width: 100%;
+}
+.LC_Btn
+{
+    width: 17px;
+    height: 18px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.LC_Form_Div
+{
+    width: 380px;
+    height: auto;
+    background-color: #fff;
+    border: #666 1px solid;
+    position: absolute;
+    z-index: 50;
+    left: 323px;
+    top: 30px;
+    float: left;
+}
+.LC_Form_Div2
+{
+    width: 380px;
+    height: auto;
+    background-color: #fff;
+    border: #666 1px solid;
+    position: absolute;
+    z-index: 50;
+    left: 60px;
+    top: 30px;
+    float: left;
+}
+.LC_Form_Div1
+{
+    width: 100%;
+    height: 15px;
+    background-color: #8FBC8F;
+}
+.LC_Table_text
+{
+    width: 150px;
+    border: #666 1px solid;
+    height: 15px;
+}
+.LC_Table1
+{
+    width: 100%;
+    height: 15px;
+}
+.LC_Table_Input
+{
+    width: 150px;
+    height: 16px;
+    line-height: 16px;
+}
+.lc_w_bgxian
+{
+    height: 20px;
+    background-image: url(../../images/pmlc12_w_bgxian_a.gif);
+    background-repeat: repeat-x;
+}
+/***********************************文件夹统计结束**********************************/
+.wai
+{
+    text-align: left;
+    font-family: 宋体;
+    width: 400px;
+    margin: auto;
+    margin-top: 100px;
+    line-height: 30px;
+    height: 200px;
+    padding: 10px;
+    border: solid 1px #c7c7c7;
+    background-color: #f5f5f5;
+}
+.wai h3
+{
+    line-height: 40px;
+}
+.wai1-2
+{
+    text-align: left;
+    font-family: 宋体;
+    width: 260px;
+    margin: auto;
+    margin-top: 100px;
+    line-height: 30px;
+    height: 200px;
+    padding: 10px;
+    border: solid 1px #c7c7c7;
+    background-color: #f5f5f5;
+}
+/***********************************分段浏览开始**********************************/
+.s_new_table_bt
+{
+    border-bottom: 2px #b3c6ad solid;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 42px;
+    padding-left: 80px;
+}
+.s_new_wxjcjg_center_left
+{
+    width: 60%;
+    height: auto;
+    float: left;
+}
+.s_new_wxjcjg_center_right
+{
+    width: 40%;
+    height: auto;
+    float: right;
+}
+.s_new_wxjcjg_center_right_a
+{
+    width: 150px;
+    height: auto;
+    margin: auto;
+}
+.s_new_wxjcjg_center_right_a1
+{
+    width: 150px;
+    height: 25px;
+    padding-top: 30px;
+    text-align: center;
+}
+.s_new_text_grayl a, .s_new_text_gray_am a
+{
+    color: #0b4702;
+}
+.s_new_text_grayl a:hover
+{
+    color: #7bab7c;
+}
+.s_new_text_gray_am a:hover
+{
+    color: #7bab7c;
+}
+a.s_new_n
+{
+    color: #666;
+}
+a.s_new_n:hover
+{
+    color: #666;
+}
+.s_new_w_bian
+{
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.s_new_w_bians
+{
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.s_new_text_gray
+{
+    color: #0b4702;
+    font-size: 12px;
+    text-align: right;
+    line-height: 15px;
+}
+.s_new_text_gray_zwz
+{
+    color: #0b4702;
+    font-size: 12px;
+    text-align: right;
+    line-height: 15px;
+    font-weight: bold;
+}
+.s_new_text_grayl
+{
+    color: #0b4702;
+    font-size: 12px;
+    text-align: left;
+    line-height: 15px;
+}
+.s_new_text_gray img
+{
+    float: left;
+}
+.s_new_text_grays
+{
+    color: #7bab7c;
+    font-size: 12px;
+    text-align: right;
+    line-height: 15px;
+}
+.s_new_text_gray_a
+{
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-left: 3px;
+    text-align: left;
+    line-height: 15px;
+}
+.s_new_tj_fzb
+{
+    color: #666;
+    font-size: 10px;
+}
+.s_new_text_gray_as
+{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-left: 3px;
+    text-align: left;
+    line-height: 15px;
+}
+.s_new_text_gray_am
+{
+    color: #0b4702;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-left: 3px;
+    text-align: left;
+    line-height: 15px;
+}
+.s_new_table_js
+{
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+}
+.s_new_table_js td
+{
+    line-height: 20px;
+}
+.s_new_table_zyjs
+{
+    width: 100%;
+    height: auto;
+    line-height: 20px;
+}
+.s_new_jcjg_a
+{
+    width: 48px;
+    height: 17px;
+    background-repeat: no-repeat;
+    text-align: left;
+}
+.s_new_fzb_ct
+{
+    color: #333;
+    line-height: 15px;
+    font-weight: bold;
+}
+.s_new_table_zyjs td
+{
+    line-height: 20px;
+}
+.s_new_w_bgxian
+{
+    height: 18px;
+    background-image: url(../../images/pmlc12_w_bgxian.gif);
+    background-repeat: repeat-x;
+}
+.s_new_w_bgxians
+{
+    height: 18px;
+    background-image: url(../../images/pmlc12_w_bgxians.gif);
+    background-repeat: repeat-x;
+}
+.s_new_table_ck
+{
+    color: #0c7020;
+}
+.s_new_table_ck:hover
+{
+    color: #7bab7c;
+}
+.s_new_tj_bgsj
+{
+    color: #000;
+}
+.s_new_tj_bgsj:hover
+{
+    color: #a00206;
+}
+.s_new_hui
+{
+    color: #666;
+}
+.s_new_bz
+{
+    font-weight: normal;
+}
+.s_new_table_td
+{
+    min-height: 150px;
+    vertical-align: top;    
+}
+.s_new_img
+{
+    vertical-align: middle;
+}
+.t_new_tj_bgsj
+{
+    font-weight: bold;
+}
+
+.t_new_table_bt
+{
+    border-bottom: 2px #b3c6ad solid;
+    color: #333;
+    text-align: left;
+    line-height: 42px;
+}
+.t_right_table_bg_row
+{
+    width: 100%;
+    height: 25px;
+    background-color: #def4d5;
+}
+.t_right_table_bg_row td
+{
+    font-weight: bold;
+    color: #005d00;
+}
+.t_text_blockbiao_a a
+{
+    color: #005d00;
+}
+.t_text_blockbiao_a a:hover
+{
+    color: #038403;
+}
+.t_right_table_bg
+{
+    width: 100%;
+    height: 24px;
+}
+.t_right_table_bg_a
+{
+    margin-top: 10px;
+}
+.t_right_table_bg tr
+{
+    width: 100%;
+    border: 0px;
+}
+.t_right_table_bg td
+{
+    border: 0px;
+}
+.t_right_table_bg_row
+{
+    width: 100%;
+    height: 25px;
+    background-color: #def4d5;
+}
+.t_right_table_bg_rowb
+{
+    width: 100%;
+    height: 25px;
+    background-color: #FFF;
+}
+.t_right_table_bg_rowa
+{
+    width: 100%;
+    height: 25px;
+    background-color: #f3fcf3;
+}
+.t_jc_xh
+{
+    text-align: center;
+}
+.t_jc_dlzs
+{
+    color: #666666;
+}
+td.t_pqgd
+{
+    color: #000000;
+    text-align:left;
+}
+.t_pqgd_lb
+{
+    padding: 10px;
+    width: 96%;
+    margin: 10px auto;
+    background: #ecedec;
+}
+.t_table_bz_gdh
+{
+    color: #2d2d2c;
+    height: 20px;
+    line-height: 20px;
+    text-indent: 18px;
+    font-weight: bold;
+    text-align:left;
+}
+.t_table_bz_gd
+{
+    color: #810404;
+    line-height: 20px;
+    text-align:left;
+}
+.t_table_bz_mark
+{
+    text-align: center;
+    font-weight: bold;
+    line-height: 20px;
+}
+.t_pqgd_lb_a
+{
+    border-bottom: 1px #127803 dotted;
+}
+/***********************************分段浏览结束**********************************/

@@ -1,0 +1,315 @@
+﻿body_report
+{
+	width: auto;
+	height: auto;
+	margin: 0px;
+	background-color: #CCCCCC;
+	size: auto;
+}
+@media print
+{
+	.clear_report
+	{
+		display: none;
+	}
+}
+#container_report
+{
+	width: 750px;
+	height: auto;
+	background-color: #FFFFFF;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-bottom: 0px;
+	margin-right: auto;
+}
+#header_report
+{
+	width: 640px;
+	height: 70px;
+	border: 0px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-bottom: 0px;
+	margin-right: auto;
+}
+.text1_report
+{
+	width: 640px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+.text2_report
+{
+	width: 638px;
+	height: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #990000;
+	margin-top: 10px;
+}
+.text3_report
+{
+	width: 638px;
+	height: auto;
+	border: 1px solid #990000;
+	margin: 0px auto 5px auto;
+}
+#mainbody_report
+{
+	width: 640px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+#footer_report
+{
+	width: 640px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+.h1_report
+{
+	font-family: "Times New Roman" , Times, serif, "宋体";
+	font-size: 22px;
+	font-weight: bold;
+	color: #990000;
+	margin: 30px auto 10px auto;
+	text-align: center;
+}
+.h2_report
+{
+	font-family: "Times New Roman" , Times, serif, "宋体";
+	font-size: 12px;
+	font-weight: lighter;
+	color: #990000;
+	margin: 0px;
+	line-height: 18px;
+}
+.h3_report
+{
+	font-family: "Times New Roman" , Times, serif, "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	color: #777;
+	text-align: left;
+	line-height: 18px;
+	margin: 0px;
+}
+.h3_report1
+{
+	font-family: "Times New Roman" , Times, serif, "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	color: #4e4e4e;
+	margin: 3px auto 3px auto;
+	text-align: center;
+	line-height: 18px;
+}
+.h4_report
+{
+	font-family: "Times New Roman" , Times, serif, "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	color: #555;
+	line-height: 18px;
+	text-align: left;
+	margin: 0px;
+}
+.h4_report1
+{
+	font-family: "Times New Roman" , Times, serif, "宋体";
+	font-size: 12px;
+	font-weight: lighter;
+	color: #4e4e4e;
+	margin: 3px auto 3px 15px;
+	line-height: 18px;
+}
+.h5_report
+{
+	font-family: "Times New Roman" , Times, serif, "宋体";
+	font-size: 14px;
+	color: #333333;
+	font-weight: bold;
+	margin: 0px;
+	line-height: 18px;
+}
+.h5_report1
+{
+	font-family: "Times New Roman" , Times, serif, "宋体";
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin: 3px auto 3px 15px;
+	letter-spacing: 1em;
+}
+.h6_report
+{
+	font-family: "Times New Roman" , Times, serif, "宋体";
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: lighter;
+	text-align: right;
+	margin: 0px;
+	background-color: #666666;
+	line-height: 24px;
+}
+
+.p_report
+{
+	font-family: "Times New Roman" , Times, serif, "宋体";
+	font-size: 12px;
+	font-weight: lighter;
+	color: #666;
+	text-align: left;
+	line-height: 18px;
+	margin: 0px;
+}
+.p2_report
+{
+	font-family: "Times New Roman" , Times, serif, "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	color: #555;
+	text-align: left;
+	line-height: 18px;
+	margin: 0px;
+}
+.p3_report
+{
+	font-family: "Times New Roman" , Times, serif, "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	color: #990000;
+	margin: 0px;
+}
+.p4_report
+{
+	font-family: "Times New Roman" , Times, serif, "宋体";
+	font-size: 14px;
+	font-weight: lighter;
+	color: #000;
+	text-align: left;
+	line-height: 18px;
+	margin: 0px;
+}
+.p5_report
+{
+	font-family: "Times New Roman" , Times, serif, "宋体";
+	font-size: 12px;
+	font-weight: lighter;
+	color: #000000;
+	text-align: left;
+	line-height: 18px;
+	margin: 0px;
+}
+.p5_report p
+{
+	text-indent: 2em;
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+}
+.p6_report
+{
+	font-family: "Times New Roman" , Times, serif, "宋体";
+	font-size: 14px;
+	font-weight: bold;
+	color: #990000;
+	margin: 0px;
+	text-align: left;
+	line-height: 20px;
+}
+.p7_report
+{
+	font-family: "Times New Roman" , Times, serif, "宋体";
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	line-height: 18px;
+	text-align: left;
+	margin: 0px;
+}
+.table_report
+{
+	border-bottom: 1px solid #999;
+	border-top: 0px;
+}
+.jcbg_report
+{
+	width: 100%;
+	line-height: 28px;
+	font-size: 14px;
+	text-align: left;
+}
+.table0_report
+{
+	border-top: 0px solid #e1e1e1;
+	border-right: 1px solid #E1E1E1;
+	border-bottom: 1px solid #e1e1e1;
+	border-left: 1px solid #E1E1E1;
+}
+.table1_report
+{
+	border-top: 0px solid #E1E1E1;
+	border-right: 1px solid #E1E1E1;
+	border-bottom: 1px solid #E1E1E1;
+	border-left: 0px solid #E1E1E1;
+}
+
+.table2_report
+{
+	background-image: url(../../images/bg01.gif);
+	text-align: center;
+	height: 20px;
+	border: 1px solid #E1E1E1;
+}
+.table3_report
+{
+	border-bottom: 1px dashed #ccc;
+}
+
+.table4_report
+{
+	border-right: 1px solid #ccc;
+}
+.table5_report
+{
+	background-image: url(../../images/bg02.gif);
+	border: 1px solid #E1E1E1;
+}
+.table6_report
+{
+	border-top: 1px solid #ccc;
+	background-image: url(../../images/jb.gif);
+}
+.table7_report
+{
+	color: #CC0000;
+}
+.table8_report
+{
+	border-top: 2px solid #fff;
+	background: url(../../images/bg04.gif) no-repeat;
+}
+.table9_report
+{
+	background: url(../../images/jb.gif);
+	border-bottom: 1px dashed #ccc;
+	border-right: 1px solid #ccc;
+}
+.RedFont_report
+{
+	color: Red;
+	text-decoration: underline;
+}
+.sy_bg
+{
+	background-image: url(../../images/shuiyin.gif);
+	background-repeat: repeat-y;
+	background-position: center top;
+}
