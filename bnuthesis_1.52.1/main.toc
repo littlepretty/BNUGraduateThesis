@@ -37,15 +37,15 @@
 \contentsline {subsection}{\numberline {4.2.1}模块级热分析算法（简称BlockTAM算法）}{27}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}核级热分析方法（简称CoreTAM算法）}{29}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}考虑核内模块相互影响的改良核级热分析方法（简称BlockInsideCoreTAM算法）}{30}{subsection.4.2.3}
-\contentsline {chapter}{5\hspace {1em} MPSoC结构级热分析算法的验证实验}{32}{chapter.5}
-\contentsline {section}{\numberline {5.1}验证实验平台}{32}{section.5.1}
-\contentsline {section}{\numberline {5.2}验证实验所用到的测例}{32}{section.5.2}
-\contentsline {section}{\numberline {5.3}针对MPSoC结构级热分析算法精度的实验数据与分析}{34}{section.5.3}
-\contentsline {section}{\numberline {5.4}针对MPSoC结构级热分析算法速度的实验数据与分析}{38}{section.5.4}
-\contentsline {section}{\numberline {5.5}小结}{39}{section.5.5}
-\contentsline {chapter}{6\hspace {1em} 研究总结与展望}{40}{chapter.6}
-\contentsline {section}{\numberline {6.1}本文总结}{40}{section.6.1}
-\contentsline {section}{\numberline {6.2}未来工作展望}{41}{section.6.2}
-\contentsline {chapter}{参考文献}{43}{section*.45}
-\contentsline {chapter}{学术成果}{46}{section*.47}
-\contentsline {chapter}{致谢}{47}{section*.49}
+\contentsline {chapter}{5\hspace {1em} MPSoC结构级热分析算法的验证实验}{31}{chapter.5}
+\contentsline {section}{\numberline {5.1}验证实验平台}{31}{section.5.1}
+\contentsline {section}{\numberline {5.2}验证实验所用到的测例}{31}{section.5.2}
+\contentsline {section}{\numberline {5.3}针对MPSoC结构级热分析算法精度的实验数据与分析}{33}{section.5.3}
+\contentsline {section}{\numberline {5.4}针对MPSoC结构级热分析算法速度的实验数据与分析}{37}{section.5.4}
+\contentsline {section}{\numberline {5.5}小结}{38}{section.5.5}
+\contentsline {chapter}{6\hspace {1em} 研究总结与展望}{39}{chapter.6}
+\contentsline {section}{\numberline {6.1}本文总结}{39}{section.6.1}
+\contentsline {section}{\numberline {6.2}未来工作展望}{40}{section.6.2}
+\contentsline {chapter}{参考文献}{42}{section*.45}
+\contentsline {chapter}{学术成果}{45}{section*.47}
+\contentsline {chapter}{致谢}{46}{section*.49}
