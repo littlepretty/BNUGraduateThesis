@@ -23,7 +23,7 @@
 第\ref{cha:SSTA}章-第\ref{cha:SSTAexperiments}章中，采用自下而上的策略，使用HotSpot提取MPSoC功能模块之间的热相关系数， 建立了模块级热分析方法BlockTAM； 仅依靠热点之间的热相关系数、建立一个算法复杂度非常低的核级热分析方法CoreTAM； 结合BlockTAM与CoreTAM两种方法，进一步提出了考虑本核内模块相互影响的改良核级方法BlockInsideCoreTAM。与现有的结构级热分析算法相比， 本文所提出的三种方法均具有简单、高效、与现有简化模型兼容、易于扩展、考虑LDT影响等优点，可以满足多核芯片温敏布局设计时对高效、 精确的结构级热分析方法的需求。
 本文算法的实验数据表明：
 \begin{enumerate}[1)]
-\item 对核数较多MPSoC进行局部热点温度分析的时候， BlockTAM和BlockInsideCoreTAM只产生2\%、3\%以下的温度增量平均误差。
+\item 对核数较多MPSoC进行局部热点温度分析的时候， BlockTAM和BlockInsideCoreTAM只产生3\%以下的温度增量平均误差。
 \item 在采用电压频率调节的温敏16核CPU布图规划研究中，在包含参数提取时间的情况下，BlockTAM和BlockInsideCoreTAM可以提供50倍左右的计算加速。
 \item 从总体效果来看，在本文所提出三种建模分析方法中，BlockTAM和BlockInsideCoreTAM方法可以提供满意的计算精度与分析加速， 是较为理想的多核结构级热分析方法。
 \end{enumerate}
