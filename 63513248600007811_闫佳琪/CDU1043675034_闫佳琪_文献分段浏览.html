@@ -1,0 +1,801 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="App_Themes/VIP/calendar.css" type="text/css" rel="stylesheet" /><link href="App_Themes/VIP/form.css" type="text/css" rel="stylesheet" /><link href="App_Themes/VIP/Style.css" type="text/css" rel="stylesheet" /><link href="App_Themes/VIP/TabbedPanels.css" type="text/css" rel="stylesheet" /><title>
+	CDU1043675034_闫佳琪-文献分段浏览
+</title>
+
+    <script type="text/javascript" src="Script/Common.js"></script>
+
+    <script type="text/javascript">
+        function CloseTableDiv(obj_id) {
+            var obj = Fid(obj_id);
+
+            if (obj != null) {
+                obj.style.display = 'none';
+                FunsetModal();
+            }
+        }
+    </script>
+
+    <style type="text/css">
+        a.Red-Font, a.Red-Font:link, a.Red-Font:visited, a.Red-Font:hover, a.Red-Font:active
+        {
+            color: Red;
+        }
+        .NewFKui
+        {
+            height: 6px;
+            width: 6px;
+            overflow: hidden;
+            background-color: #567e08;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+    <form name="form1" method="post" action="filesection.aspx?ID=90104287" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+
+<script src="/vip/ScriptResource.axd?d=UosE1fS50-bruvo0IryThlL6nOb7h4pFhX96bATOA-Rgh5dyaY_nQwJeGLmRUaVhReJvFzRCEj8QqVpbIkQyMKtZEPghCDUPFvTy1tWPh0qvnPeQkItHVwpCV3rtN2IUqGkpdd1y2nOFmEYBhDB3yBh-yEA_380gtK3N0wHLNbGt5jjy0&amp;t=ffffffffc54b93b9" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax 客户端框架未能加载。');
+//]]>
+</script>
+
+<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="hPuqj0nPah2iSLYSbnAEA9RKW1+hCL1A0MgPOkHkMDBX+rDIj5ItkghF1BtIpo5WJMHJXUZXYtfpqM3KKvbNLF1wncT9cuQEp9kef465nOUR5OxiN0rD97U5bgnFHu+cR16X5Q4s/bxx9K/UpIvW5uXsbdiyl6W/1baLo5xv0I+FJ+EW7cNMl0MM80dtyFuzDKenFw==" />
+    
+    
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="PMLC12_banner">
+            <table cellpadding="0" cellspacing="0" border="0" class="PMLC12_banner">
+                <tr class="PMLC12_banner">
+                    <td class="PMLC12_banner_a" style="text-align: left;">
+                        <div id="PMLC12_banner_menu">
+                            <ul>
+                                <li>
+                                    <a id="Head1_HyperLink31" href="Upload/up.aspx">上传论文</a></li>
+                                <li>
+                                    <a id="Head1_HyperLink32" class="menu_sel" href="SimResult.aspx">检测结果</a></li>
+                                <li>
+                                    <a id="Head1_HyperLink22" href="SearchResult.aspx">结果查询</a></li>
+                                <li id="Head1_li_issue">
+                                    <a id="Head1_HyperLink23" href="IssueList.aspx">已发表文献</a></li>
+                                <li>
+                                    <a id="Head1_HyperLink24" href="Others/checkref.aspx">辅助功能</a>
+                                    <div class="back_div">
+                                        <iframe border="0" frameborder="0" width="100%" height="60"></iframe>
+                                    </div>
+                                    <div class="subnav">
+                                        <em class="arrow"></em>
+                                        <p>
+                                            <span>
+                                                <a id="Head1_HyperLink25" title="引文核对" href="Others/checkref.aspx"><img title="引文核对" src="images/pmlc12_menu_ywhd.gif" alt="引文核对" border="0" /></a><a id="Head1_HyperLink26" title="两两比对" href="Others/TempCompare.aspx"><img title="两两比对" src="images/pmlc12_menu_llbd.gif" alt="两两比对" border="0" /></a><a id="Head1_HyperLink27" title="问题库" href="Question.aspx"><img title="问题库" src="images/pmlc12_menu_wtk.gif" alt="问题库" border="0" /></a></span></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a id="Head1_HyperLink28" href="Data/FolderData.aspx">信息统计</a>
+                                    <div class="back_div">
+                                        <iframe border="0" frameborder="0" width="100%" height="60"></iframe>
+                                    </div>
+                                    <div class="subnav">
+                                        <em class="arrow"></em>
+                                        <p>
+                                            <span>
+                                                <a id="Head1_HyperLink41" title="文件夹信息统计" href="Data/FolderData.aspx"><img title="文件夹信息统计" src="images/pmlc12_wjjtj.gif" alt="文件夹信息统计" border="0" /></a><a id="Head1_HyperLink42" title="专业信息统计" href="Data/SpecialtyData.aspx"><img title="专业信息统计" src="images/pmlc12_zyxxtj.gif" alt="专业信息统计" border="0" /></a></span></p>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <a id="Head1_HyperLink36" href="Users/UserModPWD.aspx">设置</a>
+                                    <div class="back_div">
+                                        <iframe border="0" frameborder="0" width="100%" height="60"></iframe>
+                                    </div>
+                                    <div class="subnav">
+                                        <em class="arrow"></em>
+                                        <p>
+                                            <span>
+                                                <a id="Head1_HyperLink37" title="修改密码" href="Users/UserModPWD.aspx"><img title="修改密码" src="images/pmlc12_menu_xgmm.gif" alt="修改密码" border="0" /></a><a id="Head1_HyperLink48" title="文件夹管理" href="Users/FolderManage.aspx"><img title="文件夹管理" src="images/pmlc12_menu_wjjgl.gif" alt="文件夹管理" border="0" /></a><a id="Head1_HyperLink38" title="个人比对库" href="Users/PersonDB.aspx"><img title="个人比对库" src="images/pmlc12_menu_grbdk.gif" alt="个人比对库" border="0" /></a><a id="Head1_HyperLink40" title="提建议" href="Users/UserSuggest.aspx"><img title="提建议" src="images/pmlc12_menu_tjy.gif" alt="提建议" border="0" /></a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <script type="text/javascript">
+                            var get = {
+                                byId: function(id) {
+                                    return document.getElementById(id)
+                                },
+                                byClass: function(sClass, oParent) {
+                                    var aClass = [];
+                                    var reClass = new RegExp("(^| )" + sClass + "( |$)");
+                                    var aElem = this.byTagName("*", oParent);
+                                    for (var i = 0; i < aElem.length; i++) reClass.test(aElem[i].className) && aClass.push(aElem[i]);
+                                    return aClass
+                                },
+                                byTagName: function(elem, obj) {
+                                    return (obj || document).getElementsByTagName(elem)
+                                }
+                            };
+
+                            var oNav = get.byId("PMLC12_banner_menu");
+                            var aLi = get.byTagName("li", oNav);
+                            var aSubNav = get.byClass("subnav", oNav);
+                            var aSubNav_bak = get.byClass("back_div", oNav);
+                            var oSubNav = oEm = timer = oSubNav_bak = null;
+                            var i = 0;
+
+                            function SetMenu() {
+                                oNav = get.byId("PMLC12_banner_menu");
+                                aLi = get.byTagName("li", oNav);
+                                aSubNav = get.byClass("subnav", oNav);
+                                aSubNav_bak = get.byClass("back_div", oNav);
+
+                                for (i = 1; i < aLi.length; i++) {
+                                    aLi[i].onmouseover = function() {
+                                        //隐藏所有子菜单
+                                        for (i = 0; i < aSubNav.length; i++) {
+                                            aSubNav[i].style.display = "none";
+                                            aSubNav_bak[i].style.display = "none";
+                                        }
+
+                                        //获取该项下的子菜单
+                                        oSubNav = get.byClass("subnav", this)[0];
+
+                                        if (oSubNav == undefined) {
+                                            return;
+                                        }
+
+
+                                        //获取该项下的菜单背景
+                                        oSubNav_bak = get.byClass("back_div", this)[0];
+                                        oSubNav_bak.style.display = "block";
+
+                                        //获取该项下的指示箭头
+                                        oEm = get.byTagName("em", this)[0];
+
+                                        //显示该项下的子菜单
+                                        oSubNav.style.display = "block";
+
+                                        //判断显示区域
+                                        oNav.offsetWidth - this.offsetLeft > oSubNav.offsetWidth ?
+
+                                        //如果在显示范围居左显示
+                        oSubNav.style.left = this.offsetLeft + "px" :
+
+                                        //超出显示范围居右显示
+                        oSubNav.style.right = 0;
+
+
+                                        oNav.offsetWidth - this.offsetLeft > oSubNav.offsetWidth ?
+
+                                        //如果在显示范围居左显示
+                        oSubNav_bak.style.left = this.offsetLeft + "px" :
+
+                                        //超出显示范围居右显示
+                        oSubNav_bak.style.right = 0;
+
+                                        //计算指标箭头显示位置
+                                        oEm.style.left = this.offsetLeft - oSubNav.offsetLeft + 50 + "px";
+
+                                        //太贱了，不算搞不定！
+                                        var l = oSubNav.getElementsByTagName("a");
+
+                                        oSubNav.style.width = (l.length * 83 + 20) + "px";
+
+                                        oSubNav_bak.style.width = (l.length * 83 + 20) + "px";
+                                        clearTimeout(timer);
+
+                                        //阻止事件冒泡
+                                        oSubNav.onmouseover = function(event) {
+                                            (event || window.event).cancelBubble = true;
+                                            clearTimeout(timer)
+                                        }
+                                    };
+
+                                    aLi[i].onmouseout = function() {
+                                        timer = setTimeout(function() {
+                                            if (oSubNav == undefined) {
+                                                return;
+                                            }
+                                            oSubNav.style.display = "none";
+                                            oSubNav_bak.style.display = "none";
+                                        }, 300)
+                                    }
+                                }
+                            }
+                        </script>
+
+                    </td>
+                    <td class="PMLC12_banner_b">
+                    </td>
+                    <td class="PMLC12_banner_c">
+                        <div class="PMLC12_kfdxz">
+                            <a id="Head1_HyperLink43" href="http://check7.cnki.net/client2013/" target="_blank"><img src="images/PMLC12_btn_khdxz.gif" border="0" /></a>
+                        </div>
+                        <div class="PMLC12_user">
+                            <span class="PMLC12_t_yellow">
+                                <span id="Head1_lblUserName">wxbd0411</span>
+                            </span><span class="PMLC12_t_white">欢迎您使用本系统</span></div>
+                        <div class="PMLC12_banner_btn">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td>
+                                        <a id="Head1_HyperLink45" href="Users/UserSuggest.aspx"><img src="images/pmlc12_btn_tjy%20.gif" border="0" /></a>
+                                    </td>
+                                    <td width="110" class="PMLC12_t_white_a">
+                                        <a id="Head1_HyperLink44" href="Users/UserSuggest.aspx">提&nbsp;建&nbsp;议</a>
+                                    </td>
+                                    <td>
+                                        <a id="Head1_hlk_Help1" href="Help/Help.htm" target="_blank"><img src="images/pmlc12_btn_help.gif" border="0" /></a>
+                                    </td>
+                                    <td width="80" class="PMLC12_t_white_a">
+                                        <a id="Head1_hlk_Help2" href="Help/Help.htm" target="_blank">帮&nbsp;&nbsp;助</a>
+                                    </td>
+                                    <td>
+                                        
+                                        <img id="Head1_Image1" src="images/pmlc12_btn_zx.gif" border="0" />
+                                    </td>
+                                    <td width="80" class="PMLC12_t_white_a">
+                                        <a id="Head1_LinkButton3" href="javascript:__doPostBack('Head1$LinkButton3','')">注&nbsp;&nbsp;销</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+    <span id="UpdatePanel1">
+            <!----------------------------------------中间区域---------------------------------------------->
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="5%" class="s_new_table_bt">
+                        &nbsp;
+                    </td>
+                    <td width="45%" class="s_new_table_bt">
+                        <div style="margin-top: 10px; margin-bottom: 10px;">
+                            <span id="Literal2">CDU1043675034_闫佳琪</span></div>
+                    </td>
+                    <td width="50%" class="t_new_table_bt">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="s_new_text_gray">
+                                    作者：
+                                </td>
+                                <td class="s_new_text_gray_as">
+                                    [闫佳琪]
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="s_new_text_gray">
+                                    上传时间：
+                                </td>
+                                <td class="s_new_text_gray_as">
+                                    [<span id="Label_UploadTime">2014-4-30 10:25:43</span>]
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td style="text-align: left; width: 1000px;">
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="s_new_table_js">
+                                        <tr>
+                                            <td width="150" class="s_new_text_gray">
+                                                导师：
+                                            </td>
+                                            <td width="100" class="s_new_text_gray_as">
+                                                [<span id="dslbl"></span>]
+                                            </td>
+                                            <td width="150" class="s_new_text_gray">
+                                                单位：
+                                            </td>
+                                            <td width="100" class="s_new_text_gray_as">
+                                                [<span id="xhlbl"></span>]
+                                            </td>
+                                            <td width="150" class="s_new_text_gray">
+                                                专业：
+                                            </td>
+                                            <td class="s_new_text_gray_as">
+                                                [<span id="zylbl"></span>]
+                                            </td>
+                                        </tr>
+                                        <tr id="tr_dupcheck">
+	<td width="150" class="s_new_text_gray">
+                                            </td>
+	<td class="s_new_text_gray_as" colspan="5">
+                                                <span id="label_DupCheck"><font color="Red"><image src='images/flag_cfjc_cf.gif' title='可能已提前检测，检测时间：2014-4-29 19:56:42，检测结果：21.3%' style='border:0' />可能已提前检测，检测时间：2014-4-29 19:56:42，检测结果：21.3%</font></span>
+                                            </td>
+</tr>
+
+                                    </table>
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="s_new_table_zyjs">
+                                        <tr>
+                                            <td width="150" class="s_new_text_gray_zwz">
+                                                <table style="float: right;">
+                                                    <tr>
+                                                        <td>
+                                                            <div class="NewFKui">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            总文字复制比<span class="s_new_bz">：</span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td colspan="5" class="s_new_jcjg_a">
+                                                <div id="Div_Copy_All" class="per_o">
+                                                    <a id="LinkButton_Copy_All" title="点击查看,完整的检测结果" class="ResultSel" href="javascript:__doPostBack('LinkButton_Copy_All','')">20.6%</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="150" class="s_new_text_grays">
+                                                去除引用文献复制比：
+                                            </td>
+                                            <td width="100" class="s_new_text_gray_a">
+                                                <div id="Div_Copy_Quote">
+                                                    <a id="LinkButton_Copy_Quote" title="点击查看,去除引用文献的检测结果" class="ResultNoSel" href="javascript:__doPostBack('LinkButton_Copy_Quote','')">20.6%</a>
+                                                </div>
+                                            </td>
+                                            <td width="180" class="s_new_text_grays">
+                                                去除本人已发表文献复制比：
+                                            </td>
+                                            <td width="100" class="s_new_text_gray_a">
+                                                <div id="Div_Copy_SameAuthor">
+                                                    <a id="LinkButton_Copy_SameAuthor" title="点击查看,去除本人文献的检测结果" class="ResultNoSel" href="javascript:__doPostBack('LinkButton_Copy_SameAuthor','')">0.9%</a>
+                                                </div>
+                                            </td>
+                                            <td width="150" class="s_new_text_grays">
+                                                单篇最大文字复制比：
+                                            </td>
+                                            <td class="s_new_text_gray_a">
+                                                <span id="LabelCopy_Max">19.7%</span>
+                                                <a id="danpianzuidaLink" title="考虑温度对漏电流功耗影响的MPSoC结构级热分析方法" href="http://www.cnki.net/kcms/detail/detail.aspx?filename=JSJF201311021&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=MjgxMDNLdkJSbDcwa09RQXZyM1dBMkZyQ1VSTDZmWStWdkZ5bm1WTDNKTHo3QmFMRzRIOUxOcm85SFpZUU9DWDk=" target="_blank">（考虑温度对漏电流功耗影响的MPSoC结构）</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="s_new_text_gray">
+                                                重复字数：
+                                            </td>
+                                            <td class="s_new_text_gray_as">
+                                                [&nbsp;<span id="Label_CopyWords">7220</span>&nbsp;]
+                                            </td>
+                                            <td class="s_new_text_gray">
+                                                总字数：
+                                            </td>
+                                            <td class="s_new_text_gray_as">
+                                                [&nbsp;<span id="lb_zzs">34980</span>&nbsp;]
+                                            </td>
+                                            <td class="s_new_text_gray">
+                                                单篇最大重复字数：
+                                            </td>
+                                            <td class="s_new_text_gray_as">
+                                                [&nbsp;<span id="lbl_MaxWods">6877</span>&nbsp;]
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="s_new_text_gray">
+                                                总段落数：
+                                            </td>
+                                            <td class="s_new_text_gray_as">
+                                                [&nbsp;<span id="lb_zzjs">4</span>&nbsp;]
+                                            </td>
+                                            <td class="s_new_text_gray">
+                                                前部重合字数：
+                                            </td>
+                                            <td class="s_new_text_gray_as">
+                                                [&nbsp;<span id="lb_qcf">1561</span>&nbsp;]
+                                            </td>
+                                            <td class="s_new_text_gray">
+                                                疑似段落最大重合字数：
+                                            </td>
+                                            <td class="s_new_text_gray_as">
+                                                [&nbsp;<span id="lb_yszdcf">4605</span>&nbsp;]
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="s_new_text_gray">
+                                                疑似段落数：
+                                            </td>
+                                            <td class="s_new_text_gray_as">
+                                                [&nbsp;<span id="lb_yszj">4</span>&nbsp;]
+                                            </td>
+                                            <td class="s_new_text_gray">
+                                                后部重合字数：
+                                            </td>
+                                            <td class="s_new_text_gray_as">
+                                                [&nbsp;<span id="lb_hcf">5659</span>&nbsp;]
+                                            </td>
+                                            <td class="s_new_text_gray">
+                                                疑似段落最小重合字数：
+                                            </td>
+                                            <td class="s_new_text_gray_as">
+                                                [&nbsp;<span id="lb_yszxcf">133</span>&nbsp;]
+                                            </td>
+                                        </tr>
+                                        <tr id="row_ckwx">
+	<td width="150" class="s_new_text_gray">
+                                                <span id="Label_ckwx"><span class='PMLC12_text_gra' >参考文献字符数：</span></span>
+                                            </td>
+	<td colspan="5" class="s_new_text_gray_as">
+                                                <span id="Label_ckwx1">[ 5529 ]</span>
+                                                &nbsp;<a onclick="ShowMessage('div_ckwx');return false;" id="LinkButton1" href="javascript:__doPostBack('LinkButton1','')">查看</a>
+                                            </td>
+</tr>
+
+                                    </table>
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="s_new_table_zyjs">
+                                        <tr>
+                                            <td width="150" class="s_new_text_gray_zwz">
+                                                <table style="float: right;">
+                                                    <tr>
+                                                        <td>
+                                                            <div class="NewFKui">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            中英文互检结果<span class="s_new_bz">：</span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <div id="Div1" style="text-align: left;">
+                                                    <a id="HyperLink_CE" title="点击查看详细的检测结果" target="_blank">0%</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="s_new_table_zyjs">
+                                        <tr>
+                                            <td width="150" class="s_new_text_gray_zwz">
+                                                <table style="float: right;">
+                                                    <tr>
+                                                        <td>
+                                                            <div class="NewFKui">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            指标<span class="s_new_bz">：</span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td width="20">
+                                                <img id="ImageType5" class="s_new_img" src="images/n_btn_gd_Ah.gif" border="0" />
+                                            </td>
+                                            <td colspan="5" class="s_new_text_gray_am">
+                                                <span id="Label_Type5" class="s_new_hui">剽窃观点</span>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="150" class="s_new_text_grays">
+                                            </td>
+                                            <td width="20">
+                                                <img id="ImageType3" class="s_new_img" src="images/wu.gif" border="0" />
+                                            </td>
+                                            <td width="150" class="s_new_text_grayl">
+                                                <span id="Label_Type3" class="s_new_hui">自我剽窃</span>
+                                                
+                                            </td>
+                                            <td width="20">
+                                                <img id="ImageType6" class="s_new_img" src="images/wu.gif" border="0" />
+                                            </td>
+                                            <td width="150" class="s_new_text_grayl s_new_hui">
+                                                <span id="Label_Type6" class="s_new_hui">一稿多投</span>
+                                                
+                                            </td>
+                                            <td width="20">
+                                                <img id="ImageType7" class="s_new_img" src="images/wu.gif" border="0" />
+                                            </td>
+                                            <td class="s_new_text_grayl s_new_hui">
+                                                <span id="Label_Type7" class="s_new_hui">过度引用</span>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="s_new_text_grays">
+                                            </td>
+                                            <td width="20">
+                                                <img id="ImageType1" class="s_new_img" src="images/wu.gif" border="0" />
+                                            </td>
+                                            <td class="s_new_text_grayl s_new_hui">
+                                                <span id="Label_Type1" class="s_new_hui">整体剽窃</span>
+                                                
+                                            </td>
+                                            <td width="20">
+                                                <img id="ImageType2" class="s_new_img" src="images/wu.gif" border="0" />
+                                            </td>
+                                            <td class="s_new_text_grayl">
+                                                <span id="Label_Type2" class="s_new_hui">重复发表</span>
+                                                
+                                            </td>
+                                            <td width="20">
+                                                <img id="ImageType4" class="s_new_img" src="images/wu.gif" border="0" />
+                                            </td>
+                                            <td class="s_new_text_grayl">
+                                                <span id="Label_Type4" class="s_new_hui">剽窃文字表述</span>
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="s_new_table_zyjs">
+                                        <tr>
+                                            <td width="150" class="s_new_text_gray_zwz">
+                                                <table style="float: right;">
+                                                    <tr>
+                                                        <td>
+                                                            <div class="NewFKui">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            表格<span class="s_new_bz">：</span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td width="100" class="s_new_text_gray_a">
+                                                <span id="Label_Table_Result">没提取到表格信息</span>
+                                            </td>
+                                            <td width="150" class="s_new_text_gray">
+                                                脚注与尾注：
+                                            </td>
+                                            <td class="s_new_text_gray_a t_new_tj_bgsj">
+                                                <span id="lbl_MarkCount">0</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="text-align: left;">
+                                    <div class="PMlC12_wxjcjg_center_right_a1" style="height: 15px; text-align: left;">
+                                        <span id="Label_w2"></span></div>
+                                    <div class="PMlC12_wxjcjg_center_right_a1" style="height: 15px; text-align: left;">
+                                        <input type="image" name="ImageButton1" id="ImageButton1" title="加入问题库" src="images/pmlc_btn13.gif" alt="加入问题库" border="0" /></div>
+                                    <div class="PMlC12_wxjcjg_center_right_a1" style="height: 15px; text-align: left;">
+                                        <input type="image" name="ImageButton2" id="ImageButton2" src="images/pmlc_btn14.gif" alt="放入个人对比库" border="0" /></div>
+                                    <div class="PMlC12_wxjcjg_center_right_a1" style="height: 15px; text-align: left;">
+                                        <select name="DropDownList_Report" id="DropDownList_Report" onchange="if(this.value != &quot;&quot;){window.open(this.value);}">
+	<option value="">请选择报告单的类型</option>
+	<option value="Report.aspx?LeftFile=90104287&amp;t=p">简洁</option>
+	<option value="Report.aspx?LeftFile=90104287&amp;t=a">全文(标明引文)</option>
+	<option value="Report.aspx?LeftFile=90104287&amp;t=s">去除本人文献</option>
+	<option value="Report.aspx?LeftFile=90104287&amp;t=c">全文对照</option>
+	<option value="Report.aspx?LeftFile=90104287&amp;t=e">跨语言</option>
+
+</select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--------------------------------------以上为指标部分--------------------------------------------->
+            <div class="t_right_table_bg_a">
+                <div>
+	<table class="PMLC12_right_table_bgF" cellspacing="0" rules="all" border="1" id="GridView2" width="100%">
+		<tr class="PMLC12_right_table_bg_rowF PMLC12_text_green_biao">
+			<th scope="col">序号</th><th scope="col">段落名</th><th scope="col">段文字数</th><th scope="col">检测结果</th><th scope="col">&nbsp;</th>
+		</tr><tr class="PMLC12_right_table_bg_rowbF">
+			<td align="center" width="120">
+                                <span id="GridView2_ctl02_Label1">1</span>
+                            </td><td align="left" valign="middle" width="500">
+                                <a href='maxred.aspx?ID=90104287_000' target="_blank">CDU1043675034_闫佳琪_第1部分</a>
+                            </td><td align="center" valign="middle" width="250">
+                                10799
+                            </td><td align="left" valign="middle" width="70">
+                                <div class="per_y">14.5%</div>
+                            </td><td>
+                            </td>
+		</tr><tr class="PMLC12_right_table_bg_rowaF">
+			<td align="center" width="120">
+                                <span id="GridView2_ctl03_Label1">2</span>
+                            </td><td align="left" valign="middle" width="500">
+                                <a href='maxred.aspx?ID=90104287_001' target="_blank">CDU1043675034_闫佳琪_第2部分</a>
+                            </td><td align="center" valign="middle" width="250">
+                                9637
+                            </td><td align="left" valign="middle" width="70">
+                                <div class="per_y">9.6%</div>
+                            </td><td>
+                            </td>
+		</tr><tr class="PMLC12_right_table_bg_rowbF">
+			<td align="center" width="120">
+                                <span id="GridView2_ctl04_Label1">3</span>
+                            </td><td align="left" valign="middle" width="500">
+                                <a href='maxred.aspx?ID=90104287_002' target="_blank">CDU1043675034_闫佳琪_第3部分</a>
+                            </td><td align="center" valign="middle" width="250">
+                                10374
+                            </td><td align="left" valign="middle" width="70">
+                                <div class="per_o">44.4%</div>
+                            </td><td>
+                            </td>
+		</tr><tr class="PMLC12_right_table_bg_rowaF">
+			<td align="center" width="120">
+                                <span id="GridView2_ctl05_Label1">4</span>
+                            </td><td align="left" valign="middle" width="500">
+                                <a href='maxred.aspx?ID=90104287_003' target="_blank">CDU1043675034_闫佳琪_第4部分</a>
+                            </td><td align="center" valign="middle" width="250">
+                                4170
+                            </td><td align="left" valign="middle" width="70">
+                                <div class="per_y">3.2%</div>
+                            </td><td>
+                            </td>
+		</tr>
+	</table>
+</div>
+                <div style="text-align: center; line-height: 30px;">
+                    
+<!-- AspNetPager V7.0.2 for VS2005 & VS2008  Copyright:2003-2007 Webdiyer (www.webdiyer.com) -->
+<!--记录总数只有一页，AspNetPager已自动隐藏，若需在只有一页数据时显示AspNetPager，请将AlwaysShow属性值设为true！-->
+<!-- AspNetPager V7.0.2 for VS2005 & VS2008 End -->
+
+
+                </div>
+            </div>
+            <!----------------------------------段落列表结束------------------------------------------->
+            <!----------------------------------剽窃观点开始------------------------------------------->
+            <div class="s_new_table_td">
+                <table cellpadding="0" cellspacing="0" border="0" class="t_right_table_bg">
+                    <tr class="t_right_table_bg_row">
+                        <td width="9%" class="t_jc_xh">
+                            剽窃观点
+                        </td>
+                        <td width="1%">
+                            <img id="ImgType5_1" class="s_new_img" src="images/n_btn_gd_Ah.gif" border="0" />
+                        </td>
+                        <td width="90%" class="t_pqgd">
+                            (<span id="lblType_5_Count">0</span>)
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+            <!----------------------------------剽窃观点结束------------------------------------------->
+            <!----------------------------------中间部分结束------------------------------------------->
+            <!----------------------------------指标弹出框开始------------------------------------------->
+            <div style="display: none; position: absolute; z-index: 200; width: 800px; height: 400px;
+                margin: auto; background-color: #f0f8eb;" id="div_guandian">
+                <table width="100%" cellpadding="0" border="0" cellspacing="0">
+                    <tr>
+                        <td class="w_t_l">
+                            &nbsp;
+                        </td>
+                        <td class="w_t_c">
+                            指标（<span id="lblTypeName">Label</span>）
+                        </td>
+                        <td class="w_t_r" onclick="CloseTableDiv('div_guandian');">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%" cellpadding="0" border="0" cellspacing="0">
+                    <tr>
+                        <td class="w_b">
+                            <div style="height: 368px; width: 798px; overflow-y: scroll;">
+                                
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!----------------------------------指标弹出框结束------------------------------------------->
+        </span>
+    <div>
+        <div id="UpdateProgress1" style="display:none;">
+	
+                <div class="Load_Div">
+                    <img src='images/ajax-loaderg.gif' alt='' />数据加载中
+                </div>
+            
+</div>
+    </div>
+    <div style="display: none; position: absolute; z-index: 200; width: 800px; height: 400px;"
+        id="div_ckwx">
+        <table width="100%" cellpadding="0" border="0" cellspacing="0">
+            <tr>
+                <td class="w_t_l">
+                    &nbsp;
+                </td>
+                <td class="w_t_c">
+                    参考文献
+                </td>
+                <td class="w_t_r" onclick="CloseMessage('div_ckwx');">
+                    &nbsp;
+                </td>
+            </tr>
+        </table>
+        <table width="100%" cellpadding="0" border="0" cellspacing="0">
+            <tr>
+                <td class="w_b">
+                    <div style="height: 380px; line-height: 18px; overflow-y: scroll; word-break: break-all;
+                        word-wrap: break-word; background-color: #f0f8eb; width: 798px; text-align: left;">
+                        <span id="Label_ckwx_con"><p>参考文献</p><p>1.S.Borkar.Thousand Core Chips:A Technology Perspective[C].Proceedings of the 44th</p><p> Design Automation Conference,San Diego,USA,2007.746–749.</p><p>2.G.Moore.Progress in Digital Integrated Electronics[C].Proceedings of IEDM Tech Digest,</p><p> Washigdon D.C.,USA,1975.11–13.</p><p>3.B.Zhai.Theoretical and Practical Limits of Dynamic Voltage Scaling[C].Proceedings of</p><p> the 40th Design Automation Conference,San Diego,USA,2004.868–873.</p><p>4.R.Jejurikar,C.Pereira,R.Gupta.Leakage Aware Dynamic Voltage Scaling for Real-Time</p><p> Embedded Systems[C].Proceedings of the 40th Design Automation Conference,San Diego,</p><p> USA,2004.275–280.</p><p>5.T.Chantem,R.P.Dick,X.S.Hu.Temperature-aware Scheduling and Assignment for Hard</p><p> Real-time Applications on MPSoCs[C].Proceedings of Design,Automation &Test in Europe,</p><p> Munich,Germany,2008.288–293.</p><p>6.M.Santarini.Thermal Integrity:A Must for Low-power-IC Digital Design[J].Sustainable</p><p> Computing,Informatics and Systems,2011,4:286–293.</p><p>7.Z.G.Fu,C.S.Sun,Z.Y.Luo.A Task Scheduling Algorithm of Real-time Leakage Power</p><p> and Temperature Optimization[C].Proceedings of Computer Aided Design and Computer</p><p> Graphics,Yellow Mountain City,China,2009.484–491.</p><p>8.Berkeley BSIM3 Device Models[Z].[EB/OL].http://www.device.EECS.Berkeley.edu/</p><p> bsim3.</p><p>9.H.Sanchez,B.Kuttanna,T.Olson.Thermal Management System for High Performance</p><p> Power PC Microprocessors[C].Proceedings of International Conference on Technologies for</p><p> the Information Superhighway,San Jose,USA,1997.325–330.</p><p>10.闫佳琪,骆祖莹,唐亮,et al.考虑温度对漏电流功耗影响的MPSoC结构级热分析方</p><p> 法[J].计算机辅助设计与图形学学报,2013,25(11):1767–1774.</p><p>11.W.Huang,M.R.Stan,K.Sankaranarayanan.Many-core Design from a Thermal Perspec-</p><p> tive[C].Proceedings of the 45th Design Automation Conference,Anaheim,California,USA:</p><p> New York:ACM Press,2008.746–749.</p><p>12.M.B.Healy,H.H.S.Lee,G.H.Loh.Thermal Optimization in Multi-granularity Multi-</p><p> core Floorplanning[C].Proceedings of Asia and South Paci?c Design Automation Conference.</p><p> Piscataway,NJ:IEEE Press,2009.43–48.</p><p></p><p>参考文献</p><p>13.K.Michael,R.Sherief.Frequency and Voltage Planning for Multi-core Processors under</p><p> Thermal Constraints[C].Proceedings of International Conference on Computer Design,Can-</p><p> cun,Mexico:Los Alamitos:IEEE Computer Society Press,2008.463–470.</p><p>14.K.Sankaranarayanan,B.H.Meyer,M.R.Stan.Thermal Bene?t of Multi-core Floorplan-</p><p> ning:A Limits Study[J].Sustainable Computing,Informatics and Systems,2011,4:286–293.</p><p>15.V.Hanumaiah,R.Rao,S.Vrudhula.Throughput Optimal Task Allocation under Thermal</p><p> Constraints for Multi-core Processors[C].Proceedings of the 46th Design Automation Confer-</p><p> ence.New York:ACM Press,2009.776–781.</p><p>16.Y.Ge,Q.R.Qiu.Task Allocation for Minimum System Power in a Homogenous Multi-core</p><p> Processor[C].Proceedings of International Green Computing Conference.Los Alamitos:IEEE</p><p> Computer Society Press,2010.299–306.</p><p>17.C.L.Lung,Y.L.Ho,D.M.Kwai.Thermal-aware Online Task Allocation for 3D Multi-core</p><p> Processor Throughput Optimization[C].Proceedings of Design Automation &Test in Europe,</p><p> Grenoble,France:New York:ACM Press,2011.1–6.</p><p>18.D.C.Juan,D.Marculescu.A Learning-based Autoregressive Model for Fast Transient</p><p> Thermal Analysis of Chip-multiprocessors[C].Proceedings of Asia and South Paci?c Design</p><p> Automation Conference,Sydney,Australia:Piscataway,NJ:IEEE Press,2012.597–602.</p><p>19.K Skadron,T.Abdelzaher,R.M.Stan,et al.Control-Theoretic Techniques and Thermal-RC</p><p> Modeling for Accurate and Localized Dynamic Thermal Management[C].Proceedings of High</p><p> Performance Computer Architecture,Boston,USA,2002.17–28.</p><p>20.K.Skadron,R.M.Stan,K.Sankaranarayanan.Temperature-aware Microarchitecture:Mod-</p><p> eling and Implementation[J].ACM Transactions on Architecture and Code Optimization,2004,</p><p> 1(1):94–125.</p><p>21.J Srinivasan,S.V.Adve.Predictive Dynamic Thermal Management for Multimedia Appli-</p><p></p><p>参考文献</p><p>25.H.Huang,G.Quan.Leakage Aware Energy Minimization for Real-Time Systems under the</p><p> Maximum Temperature Constraint[C].Proceedings of Design,Automation &Test in Europe,</p><p> Grenoble,France,2011.479–484.</p><p>26.Y.Zhan,B.Goplen,S.S.Sapatnekar.Electrothermal Analysis and Optimization Techniques</p><p> for Nano-scale Integrated Circuits[C].Proceedings of Asia and South Paci?c Design Automa-</p><p> tion Conference,Yokohama,Japan:Piscataway,NJ:IEEE Press,2006.219–222.</p><p>27.W.Huang,S.Ghosh,S.Velusamy.HotSpot:A Compact Thermal Modeling Methodology</p><p> for Early-stage VLSI Design[J].IEEE Transactions on Very Large Scale Integration Systems,</p><p> 2006,14(5):501–513.</p><p>28.M.Janicki,J.H.Collet,A.Louri.HotSpots and Core-to-core Thermal Coupling in Fu-</p><p> ture Multi-core Architectures[C].Proceedings of the 26th IEEE Semiconductor Thermal Mea-</p><p> surement and Management Symposium.Los Alamitos:IEEE Computer Society Press,2010.</p><p> 205–210.</p><p>29.L.Thiele,S.Chakraborty,M.Naedele.Real-time Calculus for Scheduling Hard Real-</p><p> time Systems[C].Proceedings of International Symposium on Circuits and System,Geneva,</p><p> Switzerland,2000.101–104.</p><p>30.V.Chaturvedi,H.Huang,G.Quan.Leakage-aware Scheduling on Maximal Temperature</p><p> Minimization for Periodic Hard Real-time Systems[C].Proceedings of International Confer-</p><p> ence on Embedded Software and System,Bradford,UK,2010.1802–1809.</p><p>31.D.Rai,H.Yang,I.Bacivarov.Worst-Case Temperature Analysis for Real-Time Systems[C].</p><p> Proceedings of Design,Automation &Test in Europe,Grenoble,France,2011.631–636.</p><p>32.闫佳琪,骆祖莹,赵国兴.基于任务精确预测的实时功耗温度管理[C].Proceedings of 第</p><p></p><p>参考文献</p><p>38.Intel Sandy Bridge-E架构的8核高端CPU[Z].[OL].http://ark.intel.com/products/63696.</p><p>39.采用多核结构的iPhone移动设备[Z].[OL].http://www.apple.com/cn/iphone/compare/.</p><p>40.采用多核结构的iPad移动设备[Z].[OL].http://www.apple.com/cn/ipad/compare/.</p><p>41.手机GPU芯片图形性能跑分横向对比[Z].[OL].http://www.dashi.com/article/1148.html.</p><p></p></span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-----------------------------------------------表格检测结果-------------------------------------------->
+    <div style="display: none; position: absolute; z-index: 200; width: 800px; height: 400px;
+        margin: auto; background-color: #f0f8eb;" id="div_TableCheck">
+        <table width="100%" cellpadding="0" border="0" cellspacing="0">
+            <tr>
+                <td class="w_t_l">
+                    &nbsp;
+                </td>
+                <td class="w_t_c">
+                    表格检测结果
+                </td>
+                <td class="w_t_r" onclick="CloseMessage('div_TableCheck');">
+                    &nbsp;
+                </td>
+            </tr>
+        </table>
+        <div style="height: 380px; width: 800px; overflow-x: scroll; overflow-y: scroll;">
+            <div class="w_b">
+                
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------------------表格检测结果结束-------------------------------------------->
+    
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="PMLC12_bottom">
+            <div class="PMLC12_bottom_logo">
+                <div class="PMLC12_bottom_left">
+                </div>
+                <div class="PMLC12_bottom_right PMLC12_text_bottom">
+                    京ICP证040431号 互联网出版许可证 新出网证（京）字008号<br />
+                    北京市公安局海淀分局 备案号：110 1081725<br />
+                    © 2012 中国知网(cnki) 同方知网（北京）技术有限公司<br />
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<script type="text/javascript">
+    try {
+        //为解决在IE10中点击updatepanel里面的imagebutton时出现的错误
+        Sys.WebForms.PageRequestManager.getInstance()._origOnFormActiveElement = Sys.WebForms.PageRequestManager.getInstance()._onFormElementActive;
+        Sys.WebForms.PageRequestManager.getInstance()._onFormElementActive = function(element, offsetX, offsetY) {
+            if (element.tagName.toUpperCase() === 'INPUT' && element.type === 'image') {
+                offsetX = Math.floor(offsetX);
+                offsetY = Math.floor(offsetY);
+            }
+            this._origOnFormActiveElement(element, offsetX, offsetY);
+        };
+    }
+    catch (ieerror) { }
+</script>
+
+
+    
+
+<script type="text/javascript">
+//<![CDATA[
+SetMenu();Sys.Application.initialize();
+//]]>
+</script>
+</form>
+</body>
+</html>
