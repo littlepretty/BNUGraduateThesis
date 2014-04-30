@@ -62,6 +62,12 @@ H.~Sanchez, B.~Kuttanna, T.~Olson.
   Information Superhighway, San Jose, USA, 1997.
 \newblock  325--330.
 
+\bibitem{MySSTAPaper}
+闫佳琪, 骆祖莹, 唐亮, et~al.
+\newblock
+  考虑温度对漏电流功耗影响的MPSoC结构级热分析方法[J].
+\newblock 计算机辅助设计与图形学学报, 2013, 25(11):1767--1774.
+
 \bibitem{MnyDsgThemPer}
 W.~Huang, M.~R. Stan, K.~Sankaranarayanan.
 \newblock Many-core Design from a Thermal Perspective[C].
@@ -121,12 +127,6 @@ D.~C. Juan, D.~Marculescu.
 \newblock Proceedings of Asia and South Pacific Design Automation Conference,
   Sydney, Australia: Piscataway, NJ: IEEE Press, 2012.
 \newblock  597--602.
-
-\bibitem{MySSTAPaper}
-闫佳琪, 骆祖莹, 唐亮, et~al.
-\newblock
-  考虑温度对漏电流功耗影响的MPSoC结构级热分析方法[J].
-\newblock 计算机辅助设计与图形学学报, 2013, 25(11):1767--1774.
 
 \bibitem{CtrlTechThemRCMdlAccDTM}
 K~Skadron, T.~Abdelzaher, R.~M. Stan, et~al.
@@ -234,10 +234,21 @@ D.~Rai, H.~Yang, I.~Bacivarov.
   北京: 清华大学出版社.
 \newblock  513--516.
 
+\bibitem{GMModelGrayModel}
+谢乃明, 刘思锋.
+\newblock 离散GM(1,1)模型与灰色预测模型建模机理[J].
+\newblock 系统工程理论与实践, 2005, 25(1):93--99.
+
 \bibitem{MATLAB}
 MATLAB[Z].
 \newblock [EB/OL].
 \newblock \url{http://www.mathworks.com/products/matlab/}.
+
+\bibitem{HeatExtThreeDParelIC}
+骆祖莹, 韩银和, 赵国兴, et~al.
+\newblock
+  可热扩展的三维并行散热集成方法：用于大规模并行计算的片上系统关键技术[J].
+\newblock 计算机学报, 2011, 34(04):717--729.
 
 \bibitem{TemMicroArch}
 K.~Skadron, M.~R. Stan, W.~Huang.
