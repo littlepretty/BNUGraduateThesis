@@ -16,13 +16,13 @@
 本文通过与现有的TALk、PB、MO算法进行对比，来验证本文提出的VP-TALk算法的优越性。 实验中选取$p_r$、$c_r$取值分别为0.001$s$/$V$和0.01$J$/$V^2$，温度最高上限设为390K，任务周期固定为10$s$。 支持DVFS芯片的电压值从0.6$V$到1.4$V$可调，步长0.1$V$。根据电压可以得到归一化的速度序列为{0.574, 0.6611, 0.7324, 0.7926, 0.8446, 0.8901, 0.930, 0.9670, 1}。 任务负载率为5\%至95\%，变化步长为5\%。 对于4种对比算法，我们分别将能耗情况（单位为焦耳$J$）和峰值温度情况（单位为绝对温度$K$）绘制于 图\ref{fig:vp-talk-power-cmp}和图\ref{fig:vp-talk-temp-cmp}。
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.8\textwidth,height=0.4\textheight]{VP-TALK-POWER-CMP}
+  \includegraphics[width=0.9\textwidth,height=0.4\textheight]{VP-TALK-POWER-CMP}
   \caption{各种算法的能耗调度效果比较}
   \label{fig:vp-talk-power-cmp}
 \end{figure}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.8\textwidth,height=0.4\textheight]{VP-TALK-TEMP-CMP}
+  \includegraphics[width=0.9\textwidth,height=0.4\textheight]{VP-TALK-TEMP-CMP}
   \caption{各种算法的峰值温度调度效果比较}
   \label{fig:vp-talk-temp-cmp}
 \end{figure}

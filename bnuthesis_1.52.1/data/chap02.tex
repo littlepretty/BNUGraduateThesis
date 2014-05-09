@@ -123,13 +123,13 @@ G.Quan等\onlinecite{LkEngMinRTSysMaxTemConst}提出的MO算法存在两个主�
 在之前的分析中，我们已经指出，较轻工作负载时的MO必然要退化至PB的方法. 这是因为当工作所需电压低于可选的最小电压值时，MO中阶梯型工作电压策略无法通过逼近最优工作电压的方式节省动态功耗。 为了探究工作量与最优调度算法之间的关系，我们设定任务长度为10秒， 并考虑比文献\onlinecite{LkEngMinRTSysMaxTemConst}更强的温度对漏电流影响， 我们在工作负载率全区间（5\%-95\%）范围内，对TALk、PB与MO这3种已有调度源算法的调度效果进行了考察。 图\ref{fig:exp-power-cmp}给出了能耗的数据，图\ref{fig:exp-temp-cmp}给出了温度数据。
 \begin{figure}%[H] % use float package if you want it here
   \centering
-  \includegraphics[width=1.0\textwidth]{power_cmp}
+  \includegraphics[width=1.0\textwidth]{POWER-CMP}
   \caption{各种调度算法的能耗效果随负载率变化的比较}
   \label{fig:exp-power-cmp}
 \end{figure}
 \begin{figure}%[H] % use float package if you want it here
   \centering
-  \includegraphics[width=1.0\textwidth]{temp_cmp}
+  \includegraphics[width=1.0\textwidth]{TEMP-CMP}
   \caption{各种调度算法的峰值温度效果随负载率变化的比较}
   \label{fig:exp-temp-cmp}
 \end{figure}
