@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.6)  11 MAY 2014 12:26
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.6)  11 MAY 2014 12:57
 entering extended mode
 **C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/main.tex
 (C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/main.tex
@@ -1626,10 +1626,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/figures/
-HOTSPOT-MODEL.png>] <figures/TP-ITERATION.jpg, id=1023, 467.346pt x 331.9602pt>
-File: figures/TP-ITERATION.jpg Graphic file (type jpg)
+HOTSPOT-MODEL.png>] <figures/TP-ITERATION.png, id=1023, 586.3506pt x 410.0118pt
+>
+File: figures/TP-ITERATION.png Graphic file (type png)
 
-<use figures/TP-ITERATION.jpg>
+<use figures/TP-ITERATION.png>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/figures/
@@ -1637,7 +1638,7 @@ EV6-GRID-TEM-SURF.png (PNG copy)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/figures/
-TP-ITERATION.jpg>] <figures/MULTICORE-TEMP-MODEL.png, id=1040, 537.6888pt x 249
+TP-ITERATION.png>] <figures/MULTICORE-TEMP-MODEL.png, id=1041, 537.6888pt x 249
 .0906pt>
 File: figures/MULTICORE-TEMP-MODEL.png Graphic file (type png)
 
@@ -1683,7 +1684,7 @@ ex
 
 LaTeX Warning: File c7084.cmap not found on input line 15.
 
-<figures/Core-i7-3960X.jpg, id=1084, 416.538pt x 408.654pt>
+<figures/Core-i7-3960X.jpg, id=1085, 416.538pt x 408.654pt>
 File: figures/Core-i7-3960X.jpg Graphic file (type jpg)
 
 <use figures/Core-i7-3960X.jpg>
@@ -1694,7 +1695,7 @@ Underfull \vbox (badness 2142) has occurred while \output is active []
 
 
 ]
-<figures/InnerCore-Core-i7-3960X.png, id=1092, 697.60625pt x 352.31625pt>
+<figures/InnerCore-Core-i7-3960X.png, id=1093, 697.60625pt x 352.31625pt>
 File: figures/InnerCore-Core-i7-3960X.png Graphic file (type png)
 
 <use figures/InnerCore-Core-i7-3960X.png>
@@ -1726,11 +1727,11 @@ n/12.045/8b ï \C70/song/m/n/12.045/5d î \C70/song/m/n/12.045/8f ¾ \C70/song/m/n
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [33]
-<figures/EX1-PLK-ERROR.png, id=1130, 700.0554pt x 401.8212pt>
+<figures/EX1-PLK-ERROR.png, id=1131, 700.0554pt x 401.8212pt>
 File: figures/EX1-PLK-ERROR.png Graphic file (type png)
 
 <use figures/EX1-PLK-ERROR.png>
-<figures/EX1-TEMP-ERROR.png, id=1131, 671.6292pt x 364.2408pt>
+<figures/EX1-TEMP-ERROR.png, id=1132, 671.6292pt x 364.2408pt>
 File: figures/EX1-TEMP-ERROR.png Graphic file (type png)
 
 <use figures/EX1-TEMP-ERROR.png>
@@ -1868,7 +1869,7 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  16115 strings out of 495362
  230009 string characters out of 3184024
- 309878 words of memory out of 3000000
+ 309879 words of memory out of 3000000
  17874 multiletter control sequences out of 15000+200000
  192237 words of font info for 578 fonts, out of 3000000 for 9000
  15 hyphenation exceptions out of 8191
@@ -1952,9 +1953,9 @@ s/txsy.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txsyc.pfb><C:/CTEX/MiKTeX
 /fonts/type1/urw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmb
 8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on main.pdf (57 pages, 5832314 bytes).
+Output written on main.pdf (57 pages, 5821136 bytes).
 PDF statistics:
- 1770 PDF objects out of 2073 (max. 8388607)
+ 1771 PDF objects out of 2073 (max. 8388607)
  257 named destinations out of 1000 (max. 500000)
  862 words of extra memory for PDF output out of 10000 (max. 10000000)
 
