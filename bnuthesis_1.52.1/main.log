@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.6)  9 MAY 2014 20:06
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.6)  11 MAY 2014 12:26
 entering extended mode
 **C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/main.tex
 (C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/main.tex
@@ -1461,10 +1461,6 @@ LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5]
-
-LaTeX Warning: File ot165.cmap not found on input line 96.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
@@ -1588,7 +1584,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20]
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.52.1\data/chap04.t
-ex <figures/CPUDispersePackage.png, id=965, 246.0465pt x 184.9455pt>
+ex <figures/CPUDispersePackage.png, id=965, 1312.905pt x 915.42pt>
 File: figures/CPUDispersePackage.png Graphic file (type png)
 
 <use figures/CPUDispersePackage.png>
@@ -1870,10 +1866,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 427A0686826CFCC582FC0EB4B61E1858;9479.
  ) 
 Here is how much of TeX's memory you used:
- 16123 strings out of 495362
- 230144 string characters out of 3184024
- 309956 words of memory out of 3000000
- 17877 multiletter control sequences out of 15000+200000
+ 16115 strings out of 495362
+ 230009 string characters out of 3184024
+ 309878 words of memory out of 3000000
+ 17874 multiletter control sequences out of 15000+200000
  192237 words of font info for 578 fonts, out of 3000000 for 9000
  15 hyphenation exceptions out of 8191
  51i,9n,44p,1491b,2092s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1956,7 +1952,7 @@ s/txsy.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txsyc.pfb><C:/CTEX/MiKTeX
 /fonts/type1/urw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmb
 8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on main.pdf (57 pages, 5976621 bytes).
+Output written on main.pdf (57 pages, 5832314 bytes).
 PDF statistics:
  1770 PDF objects out of 2073 (max. 8388607)
  257 named destinations out of 1000 (max. 500000)
