@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.6)  11 MAY 2014 12:57
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.6)  12 MAY 2014 14:56
 entering extended mode
 **C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/main.tex
 (C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/main.tex
@@ -1837,10 +1837,13 @@ LaTeX Warning: File ot161.cmap not found on input line 31.
 
 
 
-])
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [47]
+ [47])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [48]
 \tf@thm=\write7
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
@@ -1867,10 +1870,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 427A0686826CFCC582FC0EB4B61E1858;9479.
  ) 
 Here is how much of TeX's memory you used:
- 16115 strings out of 495362
- 230009 string characters out of 3184024
+ 16126 strings out of 495362
+ 230149 string characters out of 3184024
  309879 words of memory out of 3000000
- 17874 multiletter control sequences out of 15000+200000
+ 17884 multiletter control sequences out of 15000+200000
  192237 words of font info for 578 fonts, out of 3000000 for 9000
  15 hyphenation exceptions out of 8191
  51i,9n,44p,1491b,2092s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1953,9 +1956,9 @@ s/txsy.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txsyc.pfb><C:/CTEX/MiKTeX
 /fonts/type1/urw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmb
 8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on main.pdf (57 pages, 5821136 bytes).
+Output written on main.pdf (58 pages, 5823262 bytes).
 PDF statistics:
- 1771 PDF objects out of 2073 (max. 8388607)
- 257 named destinations out of 1000 (max. 500000)
+ 1775 PDF objects out of 2073 (max. 8388607)
+ 258 named destinations out of 1000 (max. 500000)
  862 words of extra memory for PDF output out of 10000 (max. 10000000)
 
