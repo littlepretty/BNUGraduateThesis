@@ -9,7 +9,7 @@
 \label{cha:SSTAexperiments}
 
 \section{验证实验平台}
-本文选择热分析软件HotSpot（版本5.02）作为验证基准，构建3个测例进行温度-功耗数据对比分析， 从而检验所提出的模块级、核级、改良核级这3种热分析方法的精度与效率。HotSpot软件以及三种热分析方法的运行平台为为配有Intel酷睿i7，8G 内存，运行Ubuntu 10.04 LTS操作系统的PC机。
+本文选择热分析软件HotSpot（版本5.02）作为验证基准，构建3个测例进行温度-功耗数据对比分析， 从而检验所提出的模块级、核级、改良核级这3种热分析方法的精度与效率。HotSpot软件以及三种热分析方法的运行平台为为配有Intel酷睿i7，8G 内存，运行Ubuntu 12.04 LTS操作系统的PC机。
 
 \section{验证实验所用到的测例}
 测例1采用文献\onlinecite{LrnAutoRegMdlFstTransThemAlysCp}策略，将4个Alpha21264核心组合为一个4核处理器。 每个Alpha21264的处理核心核配有两块独享缓存L2\_Right、L2\_Left，4个核共享最后一级缓存L3。 芯片的布局为：将处理核心放置于芯片的四个角落，每个核的独享缓存处于核的周围， 而将共享缓存区置于芯片中心（这样做不仅考虑了处理单元的片上散热问题， 也有利于通过功率较低的共享缓存，隔断功率较大的多个核相互之间的热交换影响）。
@@ -35,15 +35,15 @@
 测例3基于测例1中采用过的Alpha21264核心，构建多个对于16核的虚拟芯片的布图规划。为了模拟温敏布局规划过程， 本文对各个布图方案进行热分析，在模拟过程中，测试本文方法的运行耗时或效率。
 
 \section{针对MPSoC结构级热分析算法精度的实验数据与分析}
-正如前文所提到的，本文按照表\ref{tab:chap5:exp-flp-parameters}中设定的功率参数\onlinecite{MySSTAPaper}，随机产生100个功率输入向量； 然后采用HotSpot、BlockTAM、BlockInsideCoreTAM、CoreTAM这4种热分析方法， 测试各个核与功能模块的温度与静态功耗。其中，一个核的静态功耗值等于所属模块的静态功耗值之和， 这个核的局部热点温度是它的Core\_x模块温度。本文以HotSpot的分析结果值作为基准，来计算其余3种方法的相对误差。 由于芯片的工作温度均是相对环境温度$T_{Amb}$而言，所以使用式\ref{equ:chap5:et}来计算温度误差$E_T$：
+正如前文所提到的，本文按照表\ref{tab:chap5:exp-flp-parameters}中设定的功率参数\onlinecite{MySSTAPaper}，随机产生100个功率输入向量； 然后采用HotSpot、BlockTAM、BlockInsideCoreTAM、CoreTAM这4种热分析方法， 测试各个核与功能模块的温度与静态功耗。其中，一个核的静态功耗值等于所属模块的静态功耗值之和， 这个核的局部热点温度是它的Core\_x模块温度。本文以HotSpot的分析结果值作为基准，来计算其余3种方法的相对误差。 由于芯片的工作温度均是相对环境温度$T_{Amb}$而言，所以使用式\ref{equ:chap5:et}来计算温度误差$Err_T$：
 \begin{equation}
 \label{equ:chap5:et}
-E_T = |\frac{T-T_{HotSpot}}{T_{HotSpot}-T_{Amb}}|
+Err_T = |\frac{T-T_{HotSpot}}{T_{HotSpot}-T_{Amb}}|
 \end{equation}
-其中$T_{HotSpot}$是HotSpot的测值，$T$是本文方法的温度计算值。同时，采用式\ref{equ:chap5:eplk}来计算静态功耗误差$E_{Plk}$：
+其中$T_{HotSpot}$是HotSpot的测值，$T$是本文方法的温度计算值。同时，采用式\ref{equ:chap5:eplk}来计算静态功耗误差$Err_{Plk}$：
 \begin{equation}
 \label{equ:chap5:eplk}
-E_{Plk} = |\frac{Plk-Plk_{HotSpot}}{Plk_{HotSpot}}|
+Err_{Plk} = |\frac{Plk-Plk_{HotSpot}}{Plk_{HotSpot}}|
 \end{equation}
 式\ref{equ:chap5:eplk}中$Plk_{HotSpot}$是HotSpot的静态功耗测值，$Plk$是本文方法的静态功耗计算值。
 
@@ -98,7 +98,7 @@ E_{Plk} = |\frac{Plk-Plk_{HotSpot}}{Plk_{HotSpot}}|
 \begin{tabular}{c c c c c c c}
 \hline\hline
  & \multicolumn{2}{c}{BlockTAM} & \multicolumn{2}{c}{CoreTAM} & \multicolumn{2}{c}{BlockInsideCoreTAM} \\
- & Avr.$E_T$ & Max.$E_T$ & Avr.$E_T$ & Max.$E_T$ & Avr.$E_T$ & Max.$E_T$ \\
+ & Avr.$Err_T$ & Max.$Err_T$ & Avr.$Err_T$ & Max.$Err_T$ & Avr.$Err_T$ & Max.$Err_T$ \\
  \hline
 测例1 & 1.361\% & 1.574\% & 6.573\% & 12.851\% & 2.223\% & 2.259\% \\
 \hline
@@ -114,7 +114,7 @@ E_{Plk} = |\frac{Plk-Plk_{HotSpot}}{Plk_{HotSpot}}|
 \begin{tabular}{c c c c c c c}
 \hline\hline
  & \multicolumn{2}{c}{BlockTAM} & \multicolumn{2}{c}{CoreTAM} & \multicolumn{2}{c}{BlockInsideCoreTAM} \\
- & Avr.$E_{Plk}$ & Max.$E_{Plk}$ & Avr.$E_{Plk}$ & Max.$E_{Plk}$ & Avr.$E_{Plk}$ & Max.$E_{Plk}$ \\
+ & Avr.$Err_{Plk}$ & Max.$Err_{Plk}$ & Avr.$Err_{Plk}$ & Max.$Err_{Plk}$ & Avr.$Err_{Plk}$ & Max.$Err_{Plk}$ \\
 \hline
 测例1 & 0.314\% & 0.327\% & 6.857\% & 10.816\% & 0.495\% & 0.570\% \\
 \hline
