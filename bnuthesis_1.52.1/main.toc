@@ -35,8 +35,8 @@
 \contentsline {subsection}{\numberline {4.1.4}电热耦合效应：温度对漏电流功耗的影响}{27}{subsection.4.1.4}
 \contentsline {section}{\numberline {4.2}3种多核片上系统的结构级热分析算法}{28}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}模块级热分析算法（简称BlockTAM算法）}{28}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}核级热分析方法（简称CoreTAM算法）}{30}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}考虑核内模块相互影响的改良核级热分析方法（简称BlockInsideCoreTAM算法）}{31}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.2}核级热分析方法（简称CoreTAM算法）}{29}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}考虑核内模块相互影响的改良核级热分析方法（简称BlockInsideCoreTAM算法）}{30}{subsection.4.2.3}
 \contentsline {chapter}{5\hspace {1em} MPSoC结构级热分析算法的验证实验}{33}{chapter.5}
 \contentsline {section}{\numberline {5.1}验证实验平台}{33}{section.5.1}
 \contentsline {section}{\numberline {5.2}验证实验所用到的测例}{33}{section.5.2}

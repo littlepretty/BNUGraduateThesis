@@ -13,7 +13,7 @@
 \contentsline {figure}{\numberline {4.4}{\ignorespaces HotSpot对芯片的电路等效热分析模型\relax }}{26}{figure.caption.33}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Alpha21264芯片的温度分布\relax }}{27}{figure.caption.34}
 \contentsline {figure}{\numberline {4.6}{\ignorespaces 考虑电热耦合效应的多核芯片最高温度与静态功耗的迭代求解\relax }}{28}{figure.caption.35}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces 多核实时功耗温度管理的单模块与单核热分析简化等效电路模型\relax }}{30}{figure.caption.36}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces 多核实时功耗温度管理的单模块与单核热分析简化等效电路模型\relax }}{29}{figure.caption.36}
 \contentsline {figure}{\numberline {5.1}{\ignorespaces 测例二i7-3960X芯片布局\relax }}{34}{figure.caption.38}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces 测例二i7-3960X核内的布局\relax }}{35}{figure.caption.39}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces 对测例1中各模块的静态功耗计算误差\relax }}{38}{figure.caption.44}
