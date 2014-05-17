@@ -131,13 +131,13 @@ Err_{Plk} = |\frac{Plk-Plk_{HotSpot}}{Plk_{HotSpot}}|
 \hline\hline
 分析算法 & HotSpot & BlockTAM & CoreTAM & BlockInsideCoreTAM \\ [0.5ex]
 \hline
-$T_{Anls}/s$ & 61.301 & 1.216 & 0.414 & 0.927 \\
+$T_{Analysis}/s$ & 61.301 & 1.216 & 0.414 & 0.927 \\
 \hline
-$T_{Totl}/s$ & 61.301 & 4.663 & 4.374 & 4.374 \\
+$T_{Total}/s$ & 61.301 & 4.663 & 4.374 & 4.374 \\
 \hline
-$X_{Anls}$ & BASE & 50.416 & 147.962 & 66.100 \\
+$X_{Analysis}$ & BASE & 50.416 & 147.962 & 66.100 \\
 \hline
-$X_{Totl}$ & BASE & 13.147 & 15.876 & 14.014 \\
+$X_{Total}$ & BASE & 13.147 & 15.876 & 14.014 \\
 \hline
 \end{tabular}
 \label{tab:chap5:time-speedup}
@@ -161,9 +161,9 @@ $X_{Totl}$ & BASE & 13.147 & 15.876 & 14.014 \\
 \label{exp-speedup}
 本文采用16核的测例3（大测例）对其进行计算速度的验证。3种方法需要采用HotSpot软件对相关热阻的参数提取， 由于芯片中有16个核、每核有4个模块， 所以本文方法需要进行64次HotSpot模拟，这部分耗时被称为建模时间$T_{Model}$。
 
-实验测试结果表明，$T_{Model} = 3.447$ 秒（S）。建模之后，本文方法基于这些参数，采用式\ref{equ:chap4:blotam-tii}、\ref{equ:chap4:cortam-tpp}、式\ref{equ:chap4:bicortam-tii} 对1000个输入功耗进行温度分析与静态功耗计算，这部分耗时被称为热分析时间$T_{Anls}$； 建模时间与热分析时间两部分的总和被称为总耗时$T_{Totl}=T_{Model}+T_{Anls}$。 本文方法所提供的加速倍数$X$是HotSpot的耗时与本文方法耗时之比，其中， 不计入建模时间而只计入热分析计算耗时的加速比被称为热分析加速倍数$X_{Anls}$， 而总耗时加速倍数为$X_{Totl}$。
+实验测试结果表明，$T_{Model} = 3.447$ 秒（S）。建模之后，本文方法基于这些参数，采用式\ref{equ:chap4:blotam-tii}、\ref{equ:chap4:cortam-tpp}、式\ref{equ:chap4:bicortam-tii} 对1000个输入功耗进行温度分析与静态功耗计算，这部分耗时被称为热分析时间$T_{Analysis}$； 建模时间与热分析时间两部分的总和被称为总耗时$T_{Total}=T_{Model}+T_{Analysis}$。 本文方法所提供的加速倍数$X$是HotSpot的耗时与本文方法耗时之比，其中， 不计入建模时间而只计入热分析计算耗时的加速比被称为热分析加速倍数$X_{Analysis}$， 而总耗时加速倍数为$X_{Total}$。
 
-表\ref{tab:chap5:time-speedup}列出了耗时与各种加速比的计算结果。可以看出，本文方法的总耗时主要一部分是建模时间消耗； 只要提取出了模型参数， 由于本文的模型复杂度很低，采用式\ref{equ:chap4:blotam-tii}、 \ref{equ:chap4:cortam-tpp}、式\ref{equ:chap4:bicortam-tii} 计算温度与静态功耗就是一个非常快速的计算过程（即$T_{Anls}$非常小， 只占$T_{Totl}$很小的部分）。 与HotSpot软件相比，本文3种方法分析计算的加速比$X_{Anls}$分别达到50、147、和66； 但考虑到$T_{Anls}$只占$T_{Totl}$很小的部分，所以本文3种方法总耗时的加速比只能达到13、15、和14。
+表\ref{tab:chap5:time-speedup}列出了耗时与各种加速比的计算结果。可以看出，本文方法的总耗时主要一部分是建模时间消耗； 只要提取出了模型参数， 由于本文的模型复杂度很低，采用式\ref{equ:chap4:blotam-tii}、 \ref{equ:chap4:cortam-tpp}、式\ref{equ:chap4:bicortam-tii} 计算温度与静态功耗就是一个非常快速的计算过程（即$T_{Analysis}$非常小， 只占$T_{Total}$很小的部分）。 与HotSpot软件相比，本文3种方法分析计算的加速比$X_{Analysis}$分别达到50、147、和66； 但考虑到$T_{Analysis}$只占$T_{Total}$很小的部分，所以本文3种方法总耗时的加速比只能达到13、15、和14。
 
 从表\ref{tab:chap5:temp-error}-表\ref{tab:chap5:time-speedup}的算法精度与复杂度的比较结果\onlinecite{MySSTAPaper}可以看出： 与HotSpot软件相比， 本文的BlockTAM和BlockInsideCoreTAM在满足精度要求的前提下（热点温度误差小于2.2\%）， 获得了满意的加速效果，总耗时的可以达到13倍和14倍的加速效果。
 
