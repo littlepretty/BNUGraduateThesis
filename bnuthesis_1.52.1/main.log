@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.6)  18 MAY 2014 08:35
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.6)  18 MAY 2014 08:48
 entering extended mode
 **C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/main.tex
 (C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/main.tex
@@ -1536,10 +1536,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
 
-LaTeX Warning: Command \textellipsis invalid in math mode on input line 171.
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 169.
 
 
-LaTeX Warning: Command \textellipsis invalid in math mode on input line 171.
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 169.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1917,10 +1917,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C7684D107CF21C9B82DBDB4322F3B068;9594.
  ) 
 Here is how much of TeX's memory you used:
- 16191 strings out of 495362
- 231148 string characters out of 3184024
+ 16203 strings out of 495362
+ 231304 string characters out of 3184024
  310036 words of memory out of 3000000
- 17922 multiletter control sequences out of 15000+200000
+ 17934 multiletter control sequences out of 15000+200000
  192820 words of font info for 580 fonts, out of 3000000 for 9000
  15 hyphenation exceptions out of 8191
  51i,9n,44p,1491b,2098s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2003,7 +2003,7 @@ TeX/fonts/type1/public/txfonts/txsy.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfo
 nts/txsyc.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/CTEX/MiKT
 eX/fonts/type1/urw/times/utmb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8
 a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (69 pages, 5839617 bytes).
+Output written on main.pdf (69 pages, 5840889 bytes).
 PDF statistics:
  1851 PDF objects out of 2073 (max. 8388607)
  280 named destinations out of 1000 (max. 500000)
