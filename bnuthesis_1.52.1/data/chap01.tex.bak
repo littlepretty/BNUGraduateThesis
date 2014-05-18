@@ -12,13 +12,14 @@
 
 \section{研究背景与相关科学问题}
 当前，面向复杂应用的高性能片上系统为了规避和减轻功耗墙（Power Wall）问题\onlinecite{ThouCrCpTechPer}，延续摩尔定律\onlinecite{MooreRule}，采用了两种主要的技术手段。
-首先，必须在芯片运行中，通过合理任务调度来降低芯片的运行能耗和峰值工作温度。 因此，对芯片进行实时功耗温度管理(DPTM)的算法研究就具有重要的理论意义与广阔的应用前景， 是目前电子设计自动化(EDA)研究的一个热点问题。
+首先，必须在芯片运行中，通过合理任务调度来降低芯片的运行能耗和峰值工作温度。 因此，对芯片进行实时功耗温度管理(DPTM)的算法研究就具有重要的理论意义与广阔的应用前景，也是目前电子设计自动化(EDA)研究的一个热点问题。
 最初为了降低芯片运行功耗、延长设备电池的使用寿命， 研究人员提出了运用动态电压调节技术（DVS）对系统动态功耗进行实时功耗管理（DPM）\onlinecite{TheoPracLimofDVS, LkDVSRTEmbSys, TemSchAsgnHdRTApp, TheIntMtLPICDigtDsg}。 然而，随着IC进入纳米工艺，漏电流静态功耗已经超过动态功耗，成为芯片功耗的主要来源， 而且漏电流和工作温度之间存在指数关系\onlinecite{TkSchAlgRTLkPowTemOpt, BSIM, TemMngSysHiPerfPPC}，如对于65nm工艺，当温度从60摄氏度增加到80摄氏度，芯片漏电流会增加21\%。
-其次，目前IC业界已经普遍采用多核并行计算结构来提升芯片性能（通量）、降低设计复杂度\onlinecite{MySSTAPaper}。 采用多核并行计算架构的多核片上系统(MPSoC)带来了热点分散的问题，即每个核都会产生一个局部热点\onlinecite{MnyDsgThemPer}。 为了将MPSoC多个热点的温度控制在一个安全阈值内，必须在设计与运行阶段，以功能模块与处理器核为单位， 对芯片的功耗分布、温度分布\onlinecite{ThemOptMulMulFlp, FreqVolPlMulProThemConst, ThmBefMulCrFlrPlLimSty}与任务调度实时性\onlinecite{ThrOptTskAllocThemConstMulPro, TskAllocMinSysPowHomoMulPro, ThemOlTskAllocMulProThrOpt}进行优化， 这些目标都需要对芯片进行快速准确的结构级热分析这重要的一环\onlinecite{ThmBefMulCrFlrPlLimSty,ThrOptTskAllocThemConstMulPro, LrnAutoRegMdlFstTransThemAlysCp,MySSTAPaper}。 鉴于纳米工艺CMOS器件的漏电流随着工作温度的升高而指数增加，漏电流功耗与温度之间存在直接的依赖关系， 即电热耦合效应\onlinecite{ThrOptTskAllocThemConstMulPro,MySSTAPaper}。 为了提高分析的精度，必须在结构级热分析方法研究中考虑电热耦合效应\onlinecite{ThrOptTskAllocThemConstMulPro, TskAllocMinSysPowHomoMulPro, MySSTAPaper, ThemOlTskAllocMulProThrOpt}。
+其次，目前IC业界已经普遍采用多核并行计算结构来提升芯片性能（通量）、降低设计复杂度\onlinecite{MySSTAPaper}。 采用多核并行计算架构的多核片上系统(MPSoC)带来了热点分散的问题，即每个核都会产生一个局部热点\onlinecite{MnyDsgThemPer}。 为了将MPSoC多个热点的温度控制在一个安全阈值内，必须在设计与运行阶段，以功能模块与处理器核为单位， 对芯片的功耗分布、温度分布\onlinecite{ThemOptMulMulFlp, FreqVolPlMulProThemConst, ThmBefMulCrFlrPlLimSty}与任务调度实时性\onlinecite{ThrOptTskAllocThemConstMulPro, TskAllocMinSysPowHomoMulPro, ThemOlTskAllocMulProThrOpt}进行优化， 这些目标都依赖于对芯片进行快速准确的结构级热分析这重要的一环\onlinecite{ThmBefMulCrFlrPlLimSty,ThrOptTskAllocThemConstMulPro, LrnAutoRegMdlFstTransThemAlysCp,MySSTAPaper}。 鉴于纳米工艺CMOS器件的漏电流随着工作温度的升高而指数增加，漏电流功耗与温度之间存在着直接的依赖关系， 即电热耦合效应\onlinecite{ThrOptTskAllocThemConstMulPro,MySSTAPaper}。 为了提高分析的精度，必须在结构级热分析方法研究中考虑电热耦合效应\onlinecite{ThrOptTskAllocThemConstMulPro, TskAllocMinSysPowHomoMulPro, MySSTAPaper, ThemOlTskAllocMulProThrOpt}。
 
 \section{目前已有研究成果及其缺陷}
-针对任务调度领域，研究人员开始针对微处理器和大型服务器系统进行实时温度管理（DTM）\onlinecite{CtrlTechThemRCMdlAccDTM, TemMicArcMdlImpl, PreDTMMulApp}。 为了对片上系统进行功耗、温度的统一调度与管理，最近开始出现了实时功耗温度管理(DPTM)的研究报道\onlinecite{TemLkMinTechRTSys, EngRTTskSchTemDepLk, TemIdDistEngOptDVS, LkEngMinRTSysMaxTemConst}， 在考虑漏电流、温度相互作用关系和实时任务的时间限制这两个前提下，采用不同的DPTM策略来达到最小化运行能耗的目的。
+针对任务调度领域，研究人员开始针对微处理器和大型服务器系统进行实时温度管理（DTM）\onlinecite{CtrlTechThemRCMdlAccDTM, TemMicArcMdlImpl, PreDTMMulApp}。 为了对片上系统进行功耗、温度的统一调度与管理，最近开始出现了实时功耗温度管理(DPTM)的研究\onlinecite{TemLkMinTechRTSys, EngRTTskSchTemDepLk, TemIdDistEngOptDVS, LkEngMinRTSysMaxTemConst}， 在考虑漏电流、温度相互作用关系和实时任务的时间限制这两个前提下，采用不同的DPTM策略来达到最小化运行能耗的目的。
 在DPTM研究中，为了提高DPTM系统的降温降耗效果，必须对系统的任务负载进行精确的预测， 事实上，任务负载的轻重决定了不同方法的DPTM效果。
+
 对于多核芯片的热分析，受惠于电热分析的相似性，可以采用有限差分方法(PDF)可以进行全芯片三维热分析， 获得温度分布的精确解\onlinecite{ElecAlysOptTechNanoIC,MySSTAPaper}； 为了考虑温度对功耗的影响，多数研究者均采用传统的数值迭代方法来逼近最后的精确解\onlinecite{HotSpotCmptThemMdlMethErVLSIDsn}。
 基于PDF求解的HotSpot是目前广泛采用的热分析工具软件\onlinecite{MySSTAPaper}，能够用于MPSoC的结构级热分析， 也能够对电热耦合效应进行求解\onlinecite{HotSpotCmptThemMdlMethErVLSIDsn}。 尽管PDF方法可以获得高精度的求解方案，但这类方法的算法复杂度非常高， 不满足MPSoC布图规划和实时功耗温度管理对结构级快速求解的需求\onlinecite{ThmBefMulCrFlrPlLimSty,LrnAutoRegMdlFstTransThemAlysCp}。
 为了对结构级设计的温度分布进行快速求解， 出现过多种加速算法\onlinecite{MnyDsgThemPer,MySSTAPaper,ThemOptMulMulFlp,ThrOptTskAllocThemConstMulPro, TskAllocMinSysPowHomoMulPro,LrnAutoRegMdlFstTransThemAlysCp}。 \onlinecite{ThemOptMulMulFlp}采用简单的物理距离模型，速度速度最快、精度最差，无法进行精确的MPSoC温度求解。 \onlinecite{MnyDsgThemPer,ThrOptTskAllocThemConstMulPro,TskAllocMinSysPowHomoMulPro}等人省略了核间的侧向热阻、来简化温度求解， 其优点是速度快，缺点是降低了求解的精度。 \onlinecite{HotCrThemCoupFtrMulArch}采用基于学习的自回归算法进行在线温度分析，提高热分析速度的同时、也降低了求解的精度。 换句话说，热分析求解加速的代价是其求解的精度。
@@ -38,4 +39,4 @@
 (2)热分析速度方面而言，在对具有16核心的CPU进行温敏布图规划的热分析过程中，BlockTAM和BlockInsideCoreTAM可以提供50倍左右的计算加速， 10倍以上的运算加速效果
 
 \section{文章结构安排}
-文章结构安排如下：第\ref{cha:DPTM}章介绍基于高精度组合式任务预测方法的DPTM原型系统，调度对象仅限于单一处理器。 第\ref{cha:DPTMexperiments}章给出大量模拟实验数据，以证实该调度系统在降低功耗和温敏控制上的优越性。 第\ref{cha:SSTA}章将研究对象扩展为多核处理器， 提出三种结构级热分析方法。 为衡量这三种热分析计算模型的精确度与加速效果，第\ref{cha:SSTAexperiments}章中设计了若干实验测例，并给出了模拟热分析结果。 第\ref{cha:Conclusion}章给出全文总结，并提出一些针对现有方法不足的解决方案。 
+文章结构安排如下：第\ref{cha:DPTM}章介绍基于高精度组合式任务预测方法的DPTM原型系统，调度对象仅限于单一处理器。 第\ref{cha:DPTMexperiments}章给出大量模拟实验数据，以证实该调度系统在降低功耗和温敏控制上的优越性。 第\ref{cha:SSTA}章将研究对象扩展为多核处理器， 提出三种结构级热分析方法。 为衡量这三种热分析计算模型的精确度与加速效果，第\ref{cha:SSTAexperiments}章中设计了若干实验测例，并给出了模拟热分析结果。 第\ref{cha:Conclusion}章给出全文总结，并针对现有方法的不足之处，对未来工作做进一步展望。 
