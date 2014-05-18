@@ -12,7 +12,7 @@
 本文选择热分析软件HotSpot（版本5.02）作为验证基准，构建3个测例进行温度-功耗数据对比分析， 从而检验所提出的模块级、核级、改良核级这3种热分析方法的精度与效率。HotSpot软件以及三种热分析方法的运行平台为为配有Intel酷睿i7，8G 内存，运行Ubuntu 12.04 LTS操作系统的PC机。
 
 \section{验证实验所用到的测例}
-测例1采用文献\onlinecite{LrnAutoRegMdlFstTransThemAlysCp}策略，将4个Alpha21264核心组合为一个4核处理器。 每个Alpha21264的处理核心核配有两块独享缓存L2\_Right、L2\_Left，4个核共享最后一级缓存L3。 芯片的布局为：将处理核心放置于芯片的四个角落，每个核的独享缓存处于核的周围， 而将共享缓存区置于芯片中心（这样做不仅考虑了处理单元的片上散热问题， 也有利于通过功率较低的共享缓存，隔断功率较大的多个核相互之间的热交换影响）。
+测例1采用文献\onlinecite{LrnAutoRegMdlFstTransThemAlysCp}策略，将4个Alpha21264核心组合为一个4核处理器。 每个Alpha21264的处理核心核配有两块独享缓存L2\_Right、L2\_Left，4个核共享最后一级缓存L3。 芯片的布局为：将处理核心放置于芯片的四个角落，每个核的独享缓存处于核的周围， 而将共享缓存区置于芯片中心。这样做不仅考虑了处理单元的片上散热问题， 也有利于通过功率较低的共享缓存，隔断功率较大的多个核相互之间的热交换影响。
 
 测例2采用Intel Sandy Bridge-E架构的8核高端CPU芯片\onlinecite{INTELi7}。 近似正方形的i7-3960X芯片核心面积为435$mm^2$（长宽尺寸分别为20.9$mm^2$、20.8$mm^2$）。本文中，我们按照Sandy Bridge-E i7-3960X的布局原则模拟生成了一种较为简略的芯片布局结构，整体平面图如图\ref{fig:core-i7-flp}所示， 主要具有的模块为：双精度数据输入输出模块（DDR IO），最后一级缓存模块（LLC），核心模块，快速互联通道模块（QPI）， 外设成员互联通道模块（PCI-E），功耗控制单元模块（PCU）等。 每个核心内的布局如图\ref{fig:inner-core-core-i7-flp}所示，主要组成单元为：执行单元模块（Execution Unit），第一级数据缓存模块（L1 Data Cache），指令获取和第一级指令缓存（Instruction Fetch \& L1 Cache），内存序列与执行模块（Memory Ordering \& Execution），分页单元模块（Paging），乱序执行调度与退化模块（Out-of-Order Scheduling \& Retirement），指令解码模块（Instruction Decode \& Microcode），分支预测模块（Branch Prediction）。
 
@@ -30,7 +30,7 @@
   \label{fig:inner-core-core-i7-flp}
 \end{figure}
 
-对于测例1和测例2，进行类似的实验方案。该方案过程如下：根据表\ref{tab:chap5:exp-flp-parameters}中所示功率参数分配设置方案， 首先重复地随机产生功耗分布；然后，在考虑电热耦合效应的情况下， 分别采用BlockTAM、CoreTAM和BlockInsideCoreTAM方法，获得每个功率分布的温度稳定分布；最后将得到的结果与HotSpot的分析结果进行对比。
+对于测例1和测例2，采用类似的实验方案。该方案过程如下：根据表\ref{tab:chap5:exp-flp-parameters}中所示功率参数分配设置方案， 首先重复地随机产生功耗分布；然后，在考虑电热耦合效应的情况下， 分别采用BlockTAM、CoreTAM和BlockInsideCoreTAM方法，获得每个功率分布的温度稳定分布；最后将得到的结果与HotSpot的分析结果进行对比。
 
 测例3基于测例1中采用过的Alpha21264核心，构建多个对于16核的虚拟芯片的布图规划。为了模拟温敏布局规划过程， 本文对各个布图方案进行热分析，在模拟过程中，测试本文方法的运行耗时或效率。
 
@@ -165,7 +165,7 @@ $X_{Total}$ & BASE & 13.147 & 15.876 & 14.014 \\
 
 表\ref{tab:chap5:time-speedup}列出了耗时与各种加速比的计算结果。可以看出，本文方法的总耗时主要一部分是建模时间消耗； 只要提取出了模型参数， 由于本文的模型复杂度很低，采用式\ref{equ:chap4:blotam-tii}、 \ref{equ:chap4:cortam-tpp}、式\ref{equ:chap4:bicortam-tii} 计算温度与静态功耗就是一个非常快速的计算过程（即$T_{Analysis}$非常小， 只占$T_{Total}$很小的部分）。 与HotSpot软件相比，本文3种方法分析计算的加速比$X_{Analysis}$分别达到50、147、和66； 但考虑到$T_{Analysis}$只占$T_{Total}$很小的部分，所以本文3种方法总耗时的加速比只能达到13、15、和14。
 
-从表\ref{tab:chap5:temp-error}-表\ref{tab:chap5:time-speedup}的算法精度与复杂度的比较结果\onlinecite{MySSTAPaper}可以看出： 与HotSpot软件相比， 本文的BlockTAM和BlockInsideCoreTAM在满足精度要求的前提下（热点温度误差小于2.2\%）， 获得了满意的加速效果，总耗时的可以达到13倍和14倍的加速效果。
+从表\ref{tab:chap5:temp-error}-表\ref{tab:chap5:time-speedup}的算法精度与复杂度的比较结果\onlinecite{MySSTAPaper}可以看出： 与HotSpot软件相比， 本文的BlockTAM和BlockInsideCoreTAM在满足精度要求的前提下（热点温度误差小于2.2\%）， 获得了满意的加速效果，热分析过程可以达到13倍和14倍的加速效果。
 
 \section{小结}
 第\ref{cha:SSTA}章中，采用自下而上的建模方法对MPSoC结构级热分析方法进行了探索，同时提出了3种具有不同算法复杂度与精度的热分析方法： 模块级方法、核级方法与考虑本核内模块相互影响的改良核级方法。 这三种算法之所以能在保证分析计算精度的前提下、 获得比较好的加速效果，归根结底是因为对整个芯片的热分析模型从结构级进行了合理适度的等效简化。
