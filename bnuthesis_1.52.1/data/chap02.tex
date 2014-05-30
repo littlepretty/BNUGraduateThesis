@@ -91,16 +91,12 @@ Gang Qu\onlinecite{TemLkMinTechRTSys,DPTMbyYJQ}提出的考虑漏电流的温度
 上面介绍的TALk算法和PB算法都要求处理器的工作速度要大于或者等于负载率$W/D$。 具有DVS或者DVFS功能的实时性系统往往只允许芯片可以工作在几个电压档上，并可以根据负载率调节实际处于的电压值。 这就会导致芯片一直工作在高于需求的速度上。这不仅增加了动态功耗和静态功耗（因为他们分别是电压的三次方和一次方函数），还 会加速温度的上升，提高平衡温度的值，最终导致漏电流以二次方的速度增长。一种显而易见的解决方法是允许处理器在两个不同速度下工作。 文献\onlinecite{LkSchMaxTemMinPerHdRTSys}证明，如果采用两个最接近的速度完成分配给处理器的任务， 那么相对于采用其他的工作速度组合， 处于该速度组下处理器的温度是最优的。 如果进一步地将这种两步策略应用在m个时间片中\onlinecite{DPTMbyYJQ}， 不仅温度可以进一步优化，还可以将$D$时间内的总功耗表达为$m$的函数， 而且必然存在能耗最小化的$m$值\onlinecite{LkEngMinRTSysMaxTemConst}。 由于要考虑电压切换所付出的时间开销和能耗开销，\onlinecite{LkEngMinRTSysMaxTemConst}给出了$m$所具有确定的 上限值$Ceil$。
 
 \subsection{小结与评价}
-作为温敏调度算法，TALk参照剩余任务量与当前温度、来合理地调度任务。 然而，简单的开关模式无法利用DVS技术，只能工作在固定速度。而且状态切换所导致的时间、能耗开销也是不可避免的。 根据切换时间和能耗开销\onlinecite{TemIdDistEngOptDVS}，从全速工作转变为零电压将产生最大的能耗和时间开销。
-
-无论采用TALk还是PB算法，都要求处理器工作在大于$W/D$的速度上。 大多数具有DVS或DVFS功能的实时系统通常只允许芯片的电压为若干离散值，根据负载率来调整电压工作档。 这往往会导致芯片实际上工作高于任务所需的速度，不仅增加了近似与电压三次方成正比的动态功耗和与电压近似成正比的 静态功耗， 而且加速了温度的攀升， 抬高了平衡态时的温度，进一步导致漏电流近似平方速度的增长。
-
-G.Quan等\onlinecite{LkEngMinRTSysMaxTemConst}提出的MO算法也存在两个主要缺陷。首先，假设功率为温度的线性函数， 使得峰值温度较PB有很大降低。 其次是在实际应用中不能忽略低工作负载率情况：当$W/D$小于处理器支持的最低工作速度时，MO只能退化为PB， 以防止不必要的功耗增加。
+作为温敏调度算法，TALk参照剩余任务量与当前温度、来合理地调度任务。 然而，简单的开关模式无法利用DVS技术，只能工作在固定速度。而且状态切换所导致的时间、能耗开销也是不可避免的。 根据切换时间和能耗开销\onlinecite{TemIdDistEngOptDVS}，从全速工作转变为零电压将产生最大的能耗和时间开销。 无论采用TALk还是PB算法，都要求处理器工作在大于$W/D$的速度上。 大多数具有DVS或DVFS功能的实时系统通常只允许芯片的电压为若干离散值，根据负载率来调整电压工作档。 这往往会导致芯片实际上工作高于任务所需的速度，不仅增加了近似与电压三次方成正比的动态功耗和与电压近似成正比的 静态功耗， 而且加速了温度的攀升， 抬高了平衡态时的温度，进一步导致漏电流近似平方速度的增长。 G.Quan等\onlinecite{LkEngMinRTSysMaxTemConst}提出的MO算法也存在两个主要缺陷。 首先，假设功率为温度的线性函数， 使得峰值温度较PB有很大降低。 其次是在实际应用中不能忽略低工作负载率情况：当$W/D$小于处理器支持的最低工作速度时，MO只能退化为PB， 以防止不必要的功耗增加。
 
 \section{基于电压预测的温敏漏电流技术（简称VP-TALk技术）}
 \begin{figure}[H] % use float package if you want it here
   \centering
-  \includegraphics[width=0.8\textwidth,height=0.8\textheight]{Visio-VS-TALK}
+  \includegraphics[width=0.62\textwidth,height=0.62\textheight]{Visio-VS-TALK}
   \caption{基于电压预测的温敏漏电流技术的流程图}
   \label{fig:vp-talk}
 \end{figure}

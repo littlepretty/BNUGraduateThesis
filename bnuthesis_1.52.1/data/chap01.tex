@@ -20,8 +20,8 @@
 针对任务调度领域，研究人员开始针对微处理器和大型服务器系统进行实时温度管理（DTM）\onlinecite{CtrlTechThemRCMdlAccDTM, TemMicArcMdlImpl, PreDTMMulApp}。 为了对片上系统进行功耗、温度的统一调度与管理，最近开始出现了实时功耗温度管理(DPTM)的研究\onlinecite{TemLkMinTechRTSys, EngRTTskSchTemDepLk, TemIdDistEngOptDVS, LkEngMinRTSysMaxTemConst}， 在考虑漏电流、温度相互作用关系和实时任务的时间限制这两个前提下，采用不同的DPTM策略来达到最小化运行能耗的目的。
 在DPTM研究中，为了提高DPTM系统的降温降耗效果，必须对系统的任务负载进行精确的预测， 事实上，任务负载的轻重决定了不同方法的DPTM效果。
 
-对于多核芯片的热分析，受惠于电热分析的相似性，可以采用有限差分方法(PDF)可以进行全芯片三维热分析， 获得温度分布的精确解\onlinecite{ElecAlysOptTechNanoIC,MySSTAPaper}； 为了考虑温度对功耗的影响，多数研究者均采用传统的数值迭代方法来逼近最后的精确解\onlinecite{HotSpotCmptThemMdlMethErVLSIDsn}。
-基于PDF求解的HotSpot是目前广泛采用的热分析工具软件\onlinecite{MySSTAPaper}，能够用于MPSoC的结构级热分析， 也能够对电热耦合效应进行求解\onlinecite{HotSpotCmptThemMdlMethErVLSIDsn}。 尽管PDF方法可以获得高精度的求解方案，但这类方法的算法复杂度非常高， 不满足MPSoC布图规划和实时功耗温度管理对结构级快速求解的需求\onlinecite{ThmBefMulCrFlrPlLimSty,LrnAutoRegMdlFstTransThemAlysCp}。
+对于多核芯片的热分析，受惠于电热分析的相似性，可以采用有限差分方法(FDM)可以进行全芯片三维热分析， 获得温度分布的精确解\onlinecite{ElecAlysOptTechNanoIC,MySSTAPaper}； 为了考虑温度对功耗的影响，多数研究者均采用传统的数值迭代方法来逼近最后的精确解\onlinecite{HotSpotCmptThemMdlMethErVLSIDsn}。
+基于FDM求解的HotSpot是目前广泛采用的热分析工具软件\onlinecite{MySSTAPaper}，能够用于MPSoC的结构级热分析， 也能够对电热耦合效应进行求解\onlinecite{HotSpotCmptThemMdlMethErVLSIDsn}。 尽管FDM方法可以获得高精度的求解方案，但这类方法的算法复杂度非常高， 不满足MPSoC布图规划和实时功耗温度管理对结构级快速求解的需求\onlinecite{ThmBefMulCrFlrPlLimSty,LrnAutoRegMdlFstTransThemAlysCp}。
 为了对结构级设计的温度分布进行快速求解， 出现过多种加速算法\onlinecite{MnyDsgThemPer,MySSTAPaper,ThemOptMulMulFlp,ThrOptTskAllocThemConstMulPro, TskAllocMinSysPowHomoMulPro,LrnAutoRegMdlFstTransThemAlysCp}。 \onlinecite{ThemOptMulMulFlp}采用简单的物理距离模型，速度最快、精度最差，无法进行精确的MPSoC温度求解。 \onlinecite{MnyDsgThemPer,ThrOptTskAllocThemConstMulPro,TskAllocMinSysPowHomoMulPro}等人省略了核间的侧向热阻、来简化温度求解， 其优点是速度快，缺点是降低了求解的精度。 \onlinecite{HotCrThemCoupFtrMulArch}采用基于学习的自回归算法进行在线温度分析，提高热分析速度的同时、也降低了求解的精度。 总而言之，热分析求解加速的代价是其求解的精度。
 为了考虑温度对功耗的影响（LDT），精确的求解算法必须采用迭代的方法进行逼近求解\onlinecite{ThmBefMulCrFlrPlLimSty}。 在现有结构级热分析算法中，为了提高求解速度，文献\onlinecite{MnyDsgThemPer,MySSTAPaper}没有考虑LDT， \onlinecite{TskAllocMinSysPowHomoMulPro}采用线性模型来拟合LDT效应， \onlinecite{ThrOptTskAllocThemConstMulPro,ThemOlTskAllocMulProThrOpt}等采用分段拟合系数矩阵来求解LDT效应， 其结果会带来求解精度不同程度的降低。
 
@@ -30,17 +30,17 @@
 
 首先，为了构建一个高效的DPTM系统，本文不仅提出了一种具有高精度的组合式任务预测方法， 而且还提出一种新的DPTM任务调度算法VP-TALk，并进一步集成了一个基于负载预测的DPTM原型系统，该系统主要包括工作负载预测、 任务实时调度两大模块：
 \begin{enumerate}[1)]
-\item 基于组合任务预测方法的负载预测模块：根据频率范围，先将对应于复杂应用的任务分为随机/周期/趋势三种组分， 然后采用灰色模型/傅里叶模型/RBF神经网络模型分别对这三种组分进行精确分析，最后将三部分预测结果合成为复杂任务的预测值。 
+\item 基于组合任务预测方法的负载预测模块：根据频率范围，先将对应于复杂应用的任务分为随机/周期/趋势三种组分， 然后采用灰色模型/傅里叶模型/RBF神经网络模型分别对这三种组分进行精确分析，最后将三部分预测结果合成为复杂任务的预测值。
 \item 基于多种调度算法的实时调度模块：先根据对工作负载率的精确预测值、计算出最优工作状态的电压/频率理想值， 再从系统的电压/频率对的实际设定值中选取相邻的两个工作状态，最后考虑系统实时性、温度上限限制、 静态功耗与温度的敏感关系以及芯片模式切换代价等多种因素， 利用机器学习的方法，选择一种最优的调度策略。
 \end{enumerate}
 大量的模拟实验表明，
 \begin{enumerate}[1)]
-\item 在负载预测方面， 本文实时功耗温度管理系统所采用的组合任务预测方法胜过众多的相关模型及算法，平均误差仅为2.89\%； 
-\item 在节能效果方面，当负载率高于55\%时，基于相同的峰值温度约束， 本文所提出的VP-TALk算法分别比Pattern-based、M-oscillating和TALk对比算法节能约20.5\%、11.0\%、11.5\%； 
+\item 在负载预测方面， 本文实时功耗温度管理系统所采用的组合任务预测方法胜过众多的相关模型及算法，平均误差仅为2.89\%；
+\item 在节能效果方面，当负载率高于55\%时，基于相同的峰值温度约束， 本文所提出的VP-TALk算法分别比Pattern-based、M-oscillating和TALk对比算法节能约20.5\%、11.0\%、11.5\%；
 \item 本文实时功耗温度管理原型系统的调度效果接近于理想调度效果。
 \end{enumerate}
 
-其次，本文采用自下而上的策略，使用HotSpot提取MPSoC功能模块之间的热相关系数，建立了模块级热分析方法BloTAM； 由于每个核内只产生一个热点，我们可以仅依靠热点之间的热相关系数、建立一个算法复杂度非常低的核级热分析方法CoreTAM； 为了提高CoreTAM的精度\onlinecite{MySSTAPaper}，我们进一步提出了考虑本核内模块相互影响的改良核级方法BlockInsideCoreTAM。 与较为复杂且精准的已有热分析软件的实验结果相比\onlinecite{MySSTAPaper}，对本文中所采用的方法的实验数据表明： 
+其次，本文采用自下而上的策略，使用HotSpot提取MPSoC功能模块之间的热相关系数，建立了模块级热分析方法BloTAM； 由于每个核内只产生一个热点，我们可以仅依靠热点之间的热相关系数、建立一个算法复杂度非常低的核级热分析方法CoreTAM； 为了提高CoreTAM的精度\onlinecite{MySSTAPaper}，我们进一步提出了考虑本核内模块相互影响的改良核级方法BlockInsideCoreTAM。 与较为复杂且精准的已有热分析软件的实验结果相比\onlinecite{MySSTAPaper}，对本文中所采用的方法的实验数据表明：
 \begin{enumerate}[1)]
 \item 热分析精度方面而言，对多核心MPSoC进行局部热点温度分析的结果表明， BlockTAM和BlockInsideCoreTAM仅产生4\%以下的温度增量平均误差；
 \item 热分析速度方面而言，在对具有16核心的CPU进行温敏布图规划的热分析过程中，BlockTAM和BlockInsideCoreTAM可以提供50倍左右的计算加速， 10倍以上的运算加速效果。
