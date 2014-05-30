@@ -28,7 +28,6 @@
 \end{figure}
 从图\ref{fig:vp-talk-power-cmp}可以看出，对于能耗：当负载率小于55\%时，VP-TALk优于TALk、PB与MO等价。 这是因为，在负载率不高于芯片最低运行速度（0.574）时，VP-TALk相当于使用DVS技术的TALk，PB相当于使用单一速度的MO。 此时，TALk与PB的调度效果相差无几。在负载率为25\%到50\%时，PB略优于VP-TALk算法。 原因是VP-TALk在电压和时间切换上付出了更大的代价。 然而，随着负载率的增加，当负载率大于55\%时，VP-TALk的调度效果全面优于其他三种算法， 比PB、MO以及TALk的平均能耗分别节省大约20.54\%、11.04\%、11.42\%。表\ref{tab:chap3:vp-talk-cmp}列出了当负载率大于55\%时，能耗节省数据的统计信息， 具体说明了VP-TALk的在能耗节约方面的优势。
 从图\ref{fig:vp-talk-temp-cmp}中可以看出，当工作负载率小于50\%时，各种算法所达到的峰值温度都不超过310$K$， 四种调度算法在峰值温度方面的差距基本小于1$K$，并在最大负载率时近似共同终结于384$K$。
-
 \begin{table}
 \centering
 \caption{VP-TALk算法调度效果与已有算法的比较}
@@ -42,7 +41,6 @@
 \end{tabular}
 \label{tab:chap3:vp-talk-cmp}
 \end{table}
-
 \section{基于在线评价的动态温度与功耗管理系统的效果评测}
 为了评价本文基于机器学习的实时功耗温度管理原型系统功耗与温度的调度效果，我们做了两组实验。
 首先，基于\onlinecite{DPTMbyYJQ}中所得到的每个时刻工作负载预测值，我们分别采用四种对比源算法， 即TALk\onlinecite{TemLkMinTechRTSys}、PB\onlinecite{EngRTTskSchTemDepLk}、 MO\onlinecite{LkEngMinRTSysMaxTemConst}，VP-TALk， 算出每个时刻每种算法的能耗值与峰值温度； 然后将四种对比源算法每个时刻的能耗值与峰值温度进行平均，得到四种对比源算法每个时刻的平均调度效果； 最后使用图\ref{fig:dptm-source-alg-power-cmp}与图\ref{fig:dptm-source-alg-temp-cmp}分别 比较了本文原型系统与四种对比源算法平均调度效果的能耗（单位$J$）和峰值温度（单位$\celsius$）。

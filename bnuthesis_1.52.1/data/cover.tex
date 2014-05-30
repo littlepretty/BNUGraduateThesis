@@ -26,15 +26,12 @@
 
 当前，面向复杂应用的高性能片上系统为了规避和减轻功耗墙问题，延续摩尔定律， 采用了实时温度功耗管理与多核并行计算结构两种主要的技术手段。
 
-
-实时功耗温度管理(DPTM)通过对任务的准确预测与合理调度，可以有效地降低片上系统的运行能耗与峰值温度。 为了获得更好的实时功耗温度管理调度效果，基于精确任务负载预测模块，本文在第一部分提出了一种新颖的任务调度算法VP-TALk， 并结合已有的多种流行调度算法，构建了一个完整的实时功耗温度管理原型系统。本文首先分析并总结已有的三种较为流行的实时系统调度算法。 在此基础上，提出VP-TALk算法。该算法通过计算出最优电压-频率对的理想值， 进而选择出两组与理想值相邻的电压-频率对，获得两个现实的工作状态。 VP-TALk算法将任务负载分配到这两个工作状态，考虑核心温度和任务实时性的条件， 以获得最优的实时功耗温度管理效果。最后基于简单地机器学习方法，我们综合四种源算法、构建了一套完整的实时功耗温度管理原型系统。 实验结果表明：当本文系统的任务预测组合模块达到平均误差2.89\%时，
+实时功耗温度管理通过对任务的准确预测与合理调度，可以有效地降低片上系统的运行能耗与峰值温度。 为了获得更好的实时功耗温度管理调度效果，基于精确任务负载预测模块，本文在第一部分提出了一种新颖的任务调度算法VP-TALk， 并结合已有的多种流行调度算法，构建了一个完整的实时功耗温度管理原型系统。本文首先分析并总结已有的三种较为流行的实时系统调度算法。 在此基础上，提出VP-TALk算法。该算法通过计算出最优电压-频率对的理想值， 进而选择出两组与理想值相邻的电压-频率对，获得两个现实的工作状态。 VP-TALk算法将任务负载分配到这两个工作状态，考虑核心温度和任务实时性的条件， 以获得最优的实时功耗温度管理效果。最后基于简单地机器学习方法，我们综合四种源算法、构建了一套完整的实时功耗温度管理原型系统。 实验结果表明：当本文系统的任务预测组合模块达到平均误差2.89\%时，
 在相同的峰值温度约束下，与已有调度算法的能耗值相比，尽管假设了更为敏感的功率-温度影响关系， 但对于较高的工作负载率，本文所提出的VP-TALk调度算法仍能够获得平均14.33\%的能耗降低；
 本文所提出实时功耗温度管理原型系统可以获得接近于理想的能耗优化效果。
 
-
-多核片上系统(MPSoC)的低功耗设计与温敏规划布局都需要高效精确的热分析方法作为支撑。 本文采用了更为简单地热系统建模方法，对多核片上系统的热分析方法进行了探索，并且得到了三种具有不同算法复杂度与精度的热分析方法， 分别为模块级方法、核级方法、考虑本核内模块相互影响的改良核级方法。 这些算法具有简单、高效、与现有简化模型兼容、易于扩展、能够解决温度对漏电流的影响等优点。实验数据表明：
-对核数较多MPSoC进行热分析的时候，CoreTAM算法的复杂度低但精度也低，BlockTAM算法的精度高但复杂度也高， 而BlockInsideCoreTAM则具有算法复杂度低和精度高的优点。算法可以将局部热点的峰值温度增量平均误差控制在4\%以下， 热分析耗时实现了近50倍以上的分析加速；采用BlockInsideCoreTAM等增量式的热分析建模方法，可以快速进行用于降低热点温度的MPSoC布图规划过程。
-
+多核片上系统的低功耗设计与温敏规划布局都需要高效精确的热分析方法作为支撑。 本文采用了更为简单地热系统建模方法，对多核片上系统的热分析方法进行了探索，并且得到了三种具有不同算法复杂度与精度的热分析方法， 分别为模块级方法、核级方法、考虑本核内模块相互影响的改良核级方法。 这些算法具有简单、高效、与现有简化模型兼容、易于扩展、能够解决温度对漏电流的影响等优点。实验数据表明：
+对核数较多的多核片上系统进行热分析的时候，CoreTAM算法的复杂度低但精度也低，BlockTAM算法的精度高但复杂度也高， 而BlockInsideCoreTAM则具有算法复杂度低和精度高的优点。算法可以将局部热点的峰值温度增量平均误差控制在4\%以下， 热分析耗时实现了近50倍以上的分析加速；采用BlockInsideCoreTAM等增量式的热分析建模方法， 可以快速进行用于降低热点温度的多核片上系统布图规划过程。
 
 \end{cabstract}
 
@@ -42,11 +39,9 @@
 
 \begin{eabstract}
 
-
 To tackle the Power Wall problem on high performance chip processors oriented for heavy-load applications and continue Moore's Rule, Dynamic Power and Temperature Management (DPTM) and Multi-chip Processor Architecture are adopted in the field of Integrated Circuits (IC) design.
 
 Optimal DPTM methods can effectively cut down the soaring power consumption and alleviate the problem of chip temperature. In order to get better scheduling results, this paper mainly accomplish three things. First, with principles derived from analyzing three previous methods as thumb rules, we obtain an improved DPTM algorithm, named VP-TALk, that carefully schedule the processor's running and dormant behaviors. Besides, we propose a combined predicting model. It may predict the workload on the chip so as to draw out optimal but unpractical frequency (F) and voltage (V). This F \& V pair decides two distinct pairs of F \& V, with which VP-TALK schedules the processor according to both the core temperature and remaindering work load. Finally, combining the workload prediction method and four DPTM algorithms, we further build a DPTM control system. Even though our model assume a tighter and more sensitive relationship between energy and temperature, experiments show that: 1) the workload prediction's error is as less as 2.89\%; 2) under even more tough assumptions about thermal and power interrelation and the same peak temperature ceiling value, our proposed DPTM algorithm gains averagely 14.33\% energy saving comparing to previous algorithms when the workload ratio is comparatively high; 3) comprehensive DPTM control system's managing effect is near to the most ideal one.
-
 
 Efficient thermal analysis plays a key role in the temperature-aware floorplan design for Multi-Processor System-on-Chip (MPSoC) and DPTM. This paper adopts bottom-up modeling method to study architecture-level MPSoC thermal analysis method. First extract relative thermal resistance between functional modules with HotSpot software, then, based on these parameters, we propose three analysis methods with different accuracy and algorithm complexity: Block-level Temperature Analysis Method (BlockTAM), Core-level Temperature Analysis Method (CoreTAM) and Block Inside Core Temperature Analysis Method (BlockInsideCoreTAM). Experiment shows that BlockTAM and BlockInsideCoreTAM substantially reduce the time for MPSoC thermal analysis with guarantee of accuracy: speedup as high as 100 times is achieved with average temperature delta error as low as 3\%. Both are ideal system-level analysis method.
 
