@@ -16,12 +16,12 @@
 \contentsline {subsection}{\numberline {2.4.2}基于固定周期的技术（简称Pattern-Based，PB技术）}{7}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}M阶震荡调节技术（简称M-Oscillating，MO技术）}{7}{subsection.2.4.3}
 \contentsline {subsection}{\numberline {2.4.4}小结与评价}{7}{subsection.2.4.4}
-\contentsline {section}{\numberline {2.5}基于电压预测的温敏漏电流技术（简称VP-TALk技术）}{9}{section.2.5}
-\contentsline {section}{\numberline {2.6}动态温度与功耗管理系统}{10}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}启发性示例}{10}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}基于时间序列分析的工作负载预测}{12}{subsection.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}基于在线评价的动态温度与功耗管理系统}{13}{subsection.2.6.3}
-\contentsline {subsection}{\numberline {2.6.4}基于单一调度策略的动态温度与功耗管理系统}{14}{subsection.2.6.4}
+\contentsline {section}{\numberline {2.5}基于电压预测的温敏漏电流技术（简称VP-TALk技术）}{8}{section.2.5}
+\contentsline {section}{\numberline {2.6}动态温度与功耗管理系统}{9}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}启发性示例}{9}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}基于时间序列分析的工作负载预测}{11}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}基于在线评价的动态温度与功耗管理系统}{12}{subsection.2.6.3}
+\contentsline {subsection}{\numberline {2.6.4}基于单一调度策略的动态温度与功耗管理系统}{13}{subsection.2.6.4}
 \contentsline {chapter}{3\hspace {1em} 动态温度与功耗管理系统的模拟验证}{15}{chapter.3}
 \contentsline {section}{\numberline {3.1}模拟实验环境}{15}{section.3.1}
 \contentsline {section}{\numberline {3.2}VP-TALk算法的动态温度与功耗管理效果验证}{15}{section.3.2}

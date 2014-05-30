@@ -1,6 +1,6 @@
-\contentsline {figure}{\numberline {2.1}{\ignorespaces 基于电压预测的温敏漏电流技术的流程图\relax }}{9}{figure.caption.17}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces 各种调度算法的能耗效果随负载率变化的比较\relax }}{11}{figure.caption.18}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces 各种调度算法的峰值温度效果随负载率变化的比较\relax }}{11}{figure.caption.19}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces 基于电压预测的温敏漏电流技术的流程图\relax }}{8}{figure.caption.17}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces 各种调度算法的能耗效果随负载率变化的比较\relax }}{10}{figure.caption.18}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces 各种调度算法的峰值温度效果随负载率变化的比较\relax }}{10}{figure.caption.19}
 \contentsline {figure}{\numberline {3.1}{\ignorespaces 各种算法的能耗调度效果比较\relax }}{16}{figure.caption.21}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces 各种算法的峰值温度调度效果比较\relax }}{16}{figure.caption.22}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces 基于在线评价的动态温度与功耗管理系统VS各种源算法均值（能耗调度效果）\relax }}{18}{figure.caption.24}

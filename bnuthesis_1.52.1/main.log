@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.6)  18 MAY 2014 15:21
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.6)  30 MAY 2014 14:02
 entering extended mode
 **C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/main.tex
 (C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/main.tex
@@ -1509,47 +1509,46 @@ File: figures/Visio-VS-TALK.pdf Graphic file (type pdf)
 <use figures/Visio-VS-TALK.pdf>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/figures/V
-isio-VS-TALK.pdf>] <figures/POWER-CMP.png, id=887, 682.7106pt x 397.9668pt>
+ [8 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/figures/V
+isio-VS-TALK.pdf>] <figures/POWER-CMP.png, id=881, 682.7106pt x 397.9668pt>
 File: figures/POWER-CMP.png Graphic file (type png)
 
 <use figures/POWER-CMP.png>
-<figures/TEMP-CMP.png, id=889, 683.1924pt x 398.4486pt>
+<figures/TEMP-CMP.png, id=883, 683.1924pt x 398.4486pt>
 File: figures/TEMP-CMP.png Graphic file (type png)
 
 <use figures/TEMP-CMP.png>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10]
+ [9]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/figures/
+ [10 <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.1/figures/
 POWER-CMP.png> <C:/Users/YJQ/Documents/GitHub/BNUGraduateThesis/bnuthesis_1.52.
 1/figures/TEMP-CMP.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12]
+ [11]
 
-LaTeX Warning: Command \textellipsis invalid in math mode on input line 169.
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 165.
 
 
-LaTeX Warning: Command \textellipsis invalid in math mode on input line 169.
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 165.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13])
+ [12])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14]
+ [13]
 (C:\Users\YJQ\Documents\GitHub\BNUGraduateThesis\bnuthesis_1.52.1\data/chap03.t
-ex <figures/VP-TALK-POWER-CMP.png, id=945, 682.7106pt x 398.4486pt>
+ex [14
+
+
+
+
+] <figures/VP-TALK-POWER-CMP.png, id=945, 682.7106pt x 398.4486pt>
 File: figures/VP-TALK-POWER-CMP.png Graphic file (type png)
 
 <use figures/VP-TALK-POWER-CMP.png>
@@ -1559,13 +1558,8 @@ File: figures/VP-TALK-TEMP-CMP.png Graphic file (type png)
 <use figures/VP-TALK-TEMP-CMP.png>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15
-
-
-
-
-]
-Underfull \hbox (badness 6110) in paragraph at lines 29--31
+ [15]
+Underfull \hbox (badness 6110) in paragraph at lines 29--44
 []\C70/song/m/n/12.045/4e Î \C70/song/m/n/12.045/56 þ[]\OT1/txr/m/n/12.045 3.1[
 ]\C70/song/m/n/12.045/53 ï \C70/song/m/n/12.045/4e å \C70/song/m/n/12.045/77  
 \C70/song/bx/n/12.045/51 ú \C70/song/m/n/12.045/ff  \C70/song/m/n/12.045/5b ù 
@@ -1919,7 +1913,7 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  16219 strings out of 495362
  231518 string characters out of 3184024
- 310036 words of memory out of 3000000
+ 310045 words of memory out of 3000000
  17950 multiletter control sequences out of 15000+200000
  192820 words of font info for 580 fonts, out of 3000000 for 9000
  15 hyphenation exceptions out of 8191
@@ -2003,9 +1997,9 @@ TeX/fonts/type1/public/txfonts/txsy.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfo
 nts/txsyc.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/CTEX/MiKT
 eX/fonts/type1/urw/times/utmb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8
 a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (69 pages, 5842634 bytes).
+Output written on main.pdf (69 pages, 5842077 bytes).
 PDF statistics:
- 1851 PDF objects out of 2073 (max. 8388607)
+ 1852 PDF objects out of 2073 (max. 8388607)
  280 named destinations out of 1000 (max. 500000)
  870 words of extra memory for PDF output out of 10000 (max. 10000000)
 
